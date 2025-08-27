@@ -1,0 +1,62 @@
+---
+import Social from './Social.astro';
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    padding: 24px 0 40px;
+    margin-top: 2rem;
+  }
+  footer .container {
+    display: flex;
+    width: 100%;
+  }
+  footer .container .introduction {
+    display: flex;
+    flex-grow: 1;
+  }
+  footer .container .introduction p {
+    margin: 0px;
+  }
+  footer .container .introduction p.name {
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+    font-size: 0.95em;
+  }
+  footer .container .introduction p.name:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    right: 10px;
+    opacity: 0.25;
+  }
+  footer .container .introduction p.sentence {
+    display: flex;
+    font-style: italic;
+    font-size: 0.87em;
+    line-height: 0.87em;
+    align-items: center;
+  }
+  footer .container .social {
+    display: flex;
+  }
+</style>
+
+<footer>
+  <div class="container">
+    <div class="introduction">
+      <p class="name">© 2025 Loïc Seguin</p>
+      <p class="sentence">Perfect is the enemy of good</p>
+    </div>
+    <div class="social">
+      <Social platform="dribbble" username="Loic_Seguin" />
+      <Social platform="github" username="SeguinLoic" />
+    </div>
+  </div>
+</footer>

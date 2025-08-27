@@ -1,0 +1,71 @@
+---
+---
+
+<style>
+    
+/* nav styles */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #000;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+</style>
+
+<div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/projects/">Projects</a>
+    <a href="/writing/">Writing</a>
+    <button class="contraste">Contraste</button>
+</div>

@@ -1,0 +1,27 @@
+---
+const {url, title, image} = Astro.props;
+---
+
+<style>
+li.shortProject a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+li.shortProject a img {
+    width: 100%;
+    border-radius: 7px;
+    max-height: 300px;
+}
+li.shortProject .title {
+    font-weight: 600;
+    color: #000;
+}
+</style>
+
+<li class="shortProject">
+    <a href={url}>
+        <img src={image} />
+        <p class="title">{title}</p>
+    </a>
+</li>

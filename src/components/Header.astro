@@ -1,0 +1,57 @@
+---
+import Navigation from './Navigation.astro';
+import Hamburger from './Hamburger.astro';
+---
+
+<style>
+    header {
+        display: flex;
+        position: relative;
+        padding: 30px 0px 10px;
+    }
+    header:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        opacity: .2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    header nav {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    .Logo {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Logo a {
+        font-size: 20px;
+        line-height: 1em;
+        font-weight: 600;
+        text-decoration: none;
+        color: #000;
+    }
+    .Logo p {
+        margin: 0px;
+        font-size: 0.9em;
+        padding-top: 4px;
+    }
+</style>
+
+<header>
+    <div class="Logo">
+        <a href="/">Loïc S.</a>
+        <p>Webdesigner level 8</p>
+    </div>
+    <nav>
+        <Hamburger />
+        <Navigation />
+    </nav>
+</header>
