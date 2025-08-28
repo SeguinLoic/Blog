@@ -3,11 +3,9 @@ import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TitleSection from '../components/TitleSection.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
-import ShortProject from '../components/ShortProject.astro';
 
 const pageTitle = "Home page";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
 ---
 
 <style>
@@ -28,12 +26,6 @@ const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: t
 
 <BaseLayout pageTitle={pageTitle}>
   <p class="about">Hi, I'm Loïc. Webdesigner since 2016, I like all kind of art and especially Digital Art. I really love bouldering with friends, mostly for the fresh cold beer after the session. I just discovered that i love writing.</p>
-  <TitleSection title={"Big projects"} />
-  <TitleSection title={"Playground"} />
-  <ul class="listShortProject">
-    {allProjects.map((project: any) => <ShortProject url={project.url} title={project.frontmatter.title} image={project.frontmatter.image.url} />)}
-  </ul>
-  <TitleSection title={"Resume"} />
   <TitleSection title={"My thougts"} />
   <ul class="listShortPost">
       {allPosts.map((post: any, index) => index < 3 && <ShortBlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
