@@ -16,7 +16,10 @@ let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, sys
 
 window.addEventListener("load", () => {
     console.log("load");
-    document.querySelector("html").setAttribute("data-theme", currentThemeSetting);
+    if (localStorageTheme !== currentThemeSetting) {
+        console.log("different");
+        return document.querySelector("html").setAttribute("data-theme", currentThemeSetting);
+    }
 })
 
 button.addEventListener("click", () => {
