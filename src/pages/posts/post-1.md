@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: '1_year_travelling'
 pubDate: 26/07/2025
-description: 'This is the first post of my new Astro blog.'
+description: 'It was not about seeing beautiful places, but seeing beauty in every places'
 author: 'One Human'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
