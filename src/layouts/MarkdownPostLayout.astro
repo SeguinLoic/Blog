@@ -15,9 +15,11 @@ const tags = frontmatter.tags;
         ))}
     </div>
     -->
-    <p class="postTitle">{frontmatter.title}</p>
-    <p class="postDescription">{frontmatter.description}</p>
-    <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+    <div class="postIntro">
+      <p class="postTitle">{frontmatter.title}</p>
+      <p class="postDescription">{frontmatter.description}</p>
+      <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+    </div>
     <slot />
 </BaseLayout>
 

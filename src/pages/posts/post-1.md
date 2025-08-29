@@ -6,7 +6,7 @@ description: 'This is the first post of my new Astro blog.'
 author: 'One Human'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
+    alt: 'It was not about seeing beautiful places, but seeing beauty in every places'
 tags: ["astro", "blogging", "learning in public"]
 category: 'Travel'
 ---
