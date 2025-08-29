@@ -2,3 +2,16 @@ html.contrast {
     background-color: #0a0a0a;
     color: #fff;
 }
+html.contrast a, 
+html.contrast p  {
+    color: #fff !important;
+}
+html.contrast header:after, 
+html.contrast .shortPost:not(:last-child) a:after,
+html.contrast footer .container .introduction p.name:after {
+    background-color: #fff;
+}
+html.contrast .shortPost a .category {
+    background-color: #fff;
+    color: #000;
+}
