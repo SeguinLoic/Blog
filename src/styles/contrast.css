@@ -8,20 +8,20 @@
   --color-fg: #ffffff;
 }
 
-html.contrast {
+html {
     background-color: var(--color-bg);
     color: var(--color-fg);
 }
-html.contrast a, 
-html.contrast p  {
+html a, 
+html p  {
     color: var(--color-fg) !important;
 }
-html.contrast header:after, 
-html.contrast .shortPost:not(:last-child) a:after,
-html.contrast footer .container .introduction p.name:after {
+html header:after, 
+html .shortPost:not(:last-child) a:after,
+html footer .container .introduction p.name:after {
     background-color: var(--color-fg) !important;
 }
-html.contrast .shortPost a .category {
+html .shortPost a .category {
     background-color: var(--color-fg) !important;
     color: var(--color-bg) !important;
 }
