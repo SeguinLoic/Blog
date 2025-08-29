@@ -1,16 +1,11 @@
+const button = document.querySelector('#contraste');
 const localStorageTheme = localStorage.getItem("theme");
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-window.addEventListener("load", () => {
-    console.log("load");
-    calculateSettingAsThemeString;
-})
 
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
   if (localStorageTheme !== null) {
     return localStorageTheme;
   }
-
   if (systemSettingDark.matches) {
     return "dark";
   }
@@ -19,8 +14,10 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
 
 let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
-// target the button using the data attribute we added earlier
-const button = document.querySelector('#contraste');
+window.addEventListener("load", () => {
+    console.log("load");
+    document.querySelector("html").setAttribute("data-theme", currentThemeSetting);
+})
 
 button.addEventListener("click", () => {
   const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
