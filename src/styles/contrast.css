@@ -12,6 +12,6 @@ html.contrast footer .container .introduction p.name:after {
     background-color: #fff;
 }
 html.contrast .shortPost a .category {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff !important;
+    color: #000 !important;
 }
