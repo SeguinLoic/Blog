@@ -12,6 +12,12 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>{pageTitle}</title>
+    <style>
+      html.contraste {
+        background-color: #0a0a0a;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <Header />
