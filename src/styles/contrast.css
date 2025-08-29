@@ -9,7 +9,7 @@ html.contrast p  {
 html.contrast header:after, 
 html.contrast .shortPost:not(:last-child) a:after,
 html.contrast footer .container .introduction p.name:after {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 html.contrast .shortPost a .category {
     background-color: #fff !important;
