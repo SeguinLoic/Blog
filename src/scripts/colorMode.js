@@ -1,10 +1,9 @@
 const localStorageTheme = localStorage.getItem("theme");
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 window.addEventListener("load", () => {
-    console.log(localStorageTheme);
+    calculateSettingAsThemeString;
 })
-
-const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
   if (localStorageTheme !== null) {
@@ -14,11 +13,8 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   if (systemSettingDark.matches) {
     return "dark";
   }
-  console.log("hey");
   return "light";
 }
-
-calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
 let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
