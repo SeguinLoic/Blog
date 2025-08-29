@@ -1,4 +1,9 @@
 const localStorageTheme = localStorage.getItem("theme");
+
+window.addEventListener("load", () => {
+    console.log(localStorageTheme);
+})
+
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
