@@ -25,7 +25,7 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
-  <p class="about">Hi, I'm a random human being. Webdesigner since 2016, I like all kind of art and especially Digital Art. I really love bouldering with friends, mostly for the fresh cold beer after the session. I just discovered that i love writing.</p>
+  <p class="about">Hi, I'm a random human being. I like all kind of art and especially Digital Art. I really love hiking bouldering with friends, mostly for the fresh cold beer after the session. I just discovered that i love writing.</p>
   <TitleSection title={"My thougts"} />
   <ul class="listShortPost">
       {allPosts.map((post: any, index) => index < 3 && <ShortBlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
