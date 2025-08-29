@@ -13,6 +13,8 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   return "light";
 }
 
+calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
 let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
 // target the button using the data attribute we added earlier
