@@ -9,7 +9,7 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   if (systemSettingDark.matches) {
     return "dark";
   }
-
+  console.log("hey");
   return "light";
 }
 
