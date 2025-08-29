@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My First Blog Post'
-pubDate: 01/07/2022
+title: '1_year_travelling'
+pubDate: 26/07/2025
 description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+author: 'One Human'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
-category: 'Digital'
+category: 'Travel'
 ---
 
 <video controls muted autoplay transition:persist>
