@@ -15,5 +15,6 @@ category: 'Travel'
   <source
     src="/one-year-travel.mp4"
     type="video/mp4"
+    width="500px"
   />
 </video>
