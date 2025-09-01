@@ -11,10 +11,10 @@ html {
   background-image: url('/background.png');
 }
 html:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(75deg, transparent, var(--color-bg) 40%);
+  background: linear-gradient(65deg, transparent, var(--color-bg) 30%);
   position: absolute;
   left: 0;
   top: 0;
