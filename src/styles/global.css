@@ -23,19 +23,21 @@ html:before {
 }
 
 body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 70vW;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: flex-end;
 }
 
 main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: 75%;
 }
 
 * {
