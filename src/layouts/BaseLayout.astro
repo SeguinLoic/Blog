@@ -16,10 +16,12 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Header />
-    <main>
-      <slot />
-    </main>
-    <Footer />
+    <div class="container">
+        <main>
+          <slot />
+        </main>
+        <Footer />
+    </div>
     <script>
       import "../scripts/menu.js";
       import "../scripts/colorMode.js";
