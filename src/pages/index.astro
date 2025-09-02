@@ -23,6 +23,11 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
       padding: 34px 0px;
       margin: 0px;
   }
+  @media screen and (max-width: 768px) {
+    p.about {
+        padding: 0px 0px 34px 0px;
+    }
+  }
 </style>
 
 <BaseLayout pageTitle={pageTitle}>

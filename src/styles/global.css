@@ -55,3 +55,27 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+
+@media screen and (max-width: 1300px) {
+  body {
+      max-width: 80vW;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+      max-width: 90vW;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      width: 100%;
+      max-width: 90vW;
+  }
+  body>.container {
+      width: 100%;
+      padding: 40px 0 40px 0px;
+      flex-grow: 1;
+  }
+}
