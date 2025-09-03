@@ -1,6 +1,5 @@
 ---
 import Navigation from './Navigation.astro';
-import Hamburger from './Hamburger.astro';
 ---
 
 <style>
@@ -44,11 +43,12 @@ import Hamburger from './Hamburger.astro';
 </style>
 
 <header>
-    <div class="Logo">
-        <a href="/">One Human's Adventures</a>
+    <div class="container">
+        <div class="Logo">
+            <a href="/">One Human's Adventures</a>
+        </div>
+        <nav>
+            <Navigation />
+        </nav>
     </div>
-    <nav>
-        <Hamburger />
-        <Navigation />
-    </nav>
 </header>
