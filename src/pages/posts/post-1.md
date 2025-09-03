@@ -11,7 +11,6 @@ tags: ["astro", "blogging", "learning in public"]
 category: 'Travel'
 ---
 
-<div class="post">
 <video controls muted autoplay transition:persist>
   <source
     src="/one-year-travel.mp4"
@@ -46,4 +45,3 @@ Voyager en couple, c'est une aventure fantastique. C'est découvrir l'autre, ple
 Voyager seul, c'est une autre aventure. Bien que je m'en sentirais capable aujourd'hui, j'aime par dessus tout cette idée de partage. Parce que des gens, on en rencontre, mais c'est souvent des relations éphémères. On croise le chemin de gens, en voyage ou dans leur quotidien, on partage quelques heures, quelques jours, et puis chacun reprend sa route comme si rien ne s'était passé. On rencontre des gens avec qui on n'est pas compatibles, et parfois, on rencontre des gens avec qui c'est fou, dès la première minute, et qu'est-ce que ça fait du bien. Ça donne l'impression, pendant quelques heures, d'être à la maison, avec de la famille. Comme si on se connaissait depuis toujours alors qu'on se rencontre pour la première fois dans un bar prout-prout du Kazakhstan. 
 
 Bon, finalement, au bout d'un an, à dormir n'importe où, à vivre avec 4 slips et 4 T-shirts, à traverser des métropoles archi peuplées et des villages perdus dans la jungle du Laos, à voir des paysages d'une nature vraiment sublime et découvrir une faune unique, à manger des ramens, des pad thaïs ou juste du pain. Un an à prendre des bus, des pirogues, des tuk-tuks. On se demande ce que c'est, vraiment, "chez nous". Chez moi, c'est la Terre, c'est partout où je pourrais poser mon sac. Chez moi, c'est Maéva, c'est ma famille, mes amis. Orelsan disait : "après avoir fait le tour du monde, tout ce qu'on veut c'est être à la maison". Sauf que pour moi, la maison, c'est avec vous.
-</div>
