@@ -6,17 +6,11 @@ const tags = frontmatter.tags;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-    <!-- 
-    <p>Written by {frontmatter.author}</p> 
-    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-    <div class="tags">
-        {tags.map((tag) => (
-            <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-        ))}
-    </div>
-    -->
     <div class="postIntro">
-      <p class="postTitle">{frontmatter.title}</p>
+      <div class="containerTitle">
+        <a href="/" class="returnHome">return</a>
+        <p class="postTitle">{frontmatter.title}</p>
+      </div>
       <p class="postDescription">{frontmatter.description}</p>
       <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
     </div>
