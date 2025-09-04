@@ -34,10 +34,26 @@
 
 
 button#contraste {
-    border: 1px solid red;
+    border: none;
     padding: 8px !important;
     background-color: transparent;
+    position: relative;
+}
+button#contraste:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fg);
+    position: absolute;
+    left: 0;
+    top: 0;
     border-radius: 4px;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+button#contraste:hover::before {
+    opacity: 0.1;
 }
 button#contraste img.icon {
     width: 24px;
