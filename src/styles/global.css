@@ -76,6 +76,7 @@ h1 {
   body {
       width: 100%;
       max-width: 90vW;
+      flex-direction: column;
   }
   body>.container {
       width: 100%;
