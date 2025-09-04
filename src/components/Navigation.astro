@@ -31,6 +31,25 @@
   display: unset;
 }
 
+
+
+button#contraste {
+    border: 1px solid red;
+    padding: 8px !important;
+    background-color: transparent;
+    border-radius: 4px;
+}
+button#contraste img.icon {
+    width: 24px;
+    height: 24px;
+}
+button#contraste[aria-label="Thème sombre"] .icon-dark {
+    display: none;
+}
+button#contraste[aria-label="Thème clair"] .icon-light {
+    display: none;
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
     display: block;
