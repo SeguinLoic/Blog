@@ -5,7 +5,7 @@ import Navigation from './Navigation.astro';
 <style>
     header {
         display: flex;
-        position: relative;
+        position: sticky;
         padding: 48px 0px;
         width: 30%;
         flex-direction: column;
@@ -13,9 +13,8 @@ import Navigation from './Navigation.astro';
     }
 
     header .container {
-        position: fixed;
-        width: inherit;
-        max-width: inherit;
+        position: sticky;
+        width: 100%;
         bottom: 48px;
     }
     header nav {
