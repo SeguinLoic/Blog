@@ -1,24 +1,26 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
 
 const { frontmatter } = Astro.props;
-const tags = frontmatter.tags; 
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-    <div class="postIntro">
-      <div class="containerTitle">
+    <div class="postNavigation">
         <a href="/" class="returnHome"></a>
-        <p class="postTitle">{frontmatter.title}</p>
-      </div>
-      <p class="postDescription">{frontmatter.description}</p>
-      <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+        <Navigation />
     </div>
-    <slot />
+    <div class="postIntro">
+        <p class="postTitle">{frontmatter.title}</p>
+        <p class="postDescription">{frontmatter.description}</p>
+        <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+    </div>
+    <div class="postContent">
+        <slot />
+    </div>
 </BaseLayout>
 
 <style>
-
   .containerTitle {
     display: flex;
     align-items: center;
@@ -70,5 +72,4 @@ const tags = frontmatter.tags;
     font-size: 0.85em;
     margin-top: 4px;
   }
-
 </style>
