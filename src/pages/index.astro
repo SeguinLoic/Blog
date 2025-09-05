@@ -3,7 +3,6 @@ import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TitleSection from '../components/TitleSection.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
-import Navigation from '../components/Navigation.astro';
 
 const pageTitle = "Home page";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
@@ -32,7 +31,6 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
-  <Navigation />
   <p class="about">Hi, I'm a random human being. I like all kind of art and especially Digital Art. I really love hiking && bouldering with friends, mostly for the fresh beer after the session. I just discovered that i love writing.</p>
   <TitleSection title={"Latest Experiences"} />
   <ul class="listShortPost">
