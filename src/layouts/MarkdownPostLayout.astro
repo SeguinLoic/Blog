@@ -18,20 +18,39 @@ const tags = frontmatter.tags;
 </BaseLayout>
 
 <style>
-  a {
-    color: #00539F;
-  }
-  .tags {
+
+  .containerTitle {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
   }
-  .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
-    padding: .5em 1em;
-    font-size: 1.15em;
-    background-color: #F8FCFD;
+  a.returnHome {
+    width: 40px;
+    height: 32px;
+    margin-right: 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  a.returnHome:before {
+    content: "<";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    line-height: 1em;
+    opacity: 0.5;
+  }
+  a.returnHome:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background-color: var(--color-fg);
+    opacity: 0.2;
   }
 
   .postIntro {
@@ -40,40 +59,21 @@ const tags = frontmatter.tags;
   .postTitle {
     font-size: 1.6em;
     font-weight: 600;
+    margin: 0px;
+  }
+  p.postDescription {
+    margin-top: 24px;
+    font-weight: 200 !important;
+    margin-bottom: 0px;
+  }
+  p.postDate {
+    font-size: 0.85em;
+    margin-top: 4px;
   }
 
-  .containerTitle {
-      display: flex;
-      align-items: center;
-  }
-  a.returnHome {
-      width: 40px;
-      height: 32px;
-      margin-right: 16px;
-      text-decoration: none;
-      position: relative;
-  }
-  a.returnHome:before {
-      content: "<";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.1em;
-      line-height: 1em;
-      opacity: 0.5;
-  }
-  a.returnHome:after {
-      content: '';
-      width: 1px;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0%;
-      background-color: var(--color-fg);
-      opacity: 0.2;
+  video.videoPost {
+    max-width: 500px !important;
+    margin-bottom: 24px;
   }
 
 </style>
