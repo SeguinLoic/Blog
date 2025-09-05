@@ -25,7 +25,6 @@ const { frontmatter } = Astro.props;
 </style>
 
 <BaseLayout pageTitle={frontmatter.title}>
-    <Navigation />
     <div class="postIntro">
         <p class="postTitle">{frontmatter.title}</p>
         <p class="postDescription">{frontmatter.description}</p>
