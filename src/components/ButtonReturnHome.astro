@@ -1,0 +1,26 @@
+---
+---
+
+<a href="/" class="returnHome"></a>
+
+<style>
+  a.returnHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  a.returnHome:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    mask-image: url('/icon-arrow.svg');
+    background-color: var(--color-fg);
+    position: absolute;
+    pointer-events: none;
+  }
+</style>

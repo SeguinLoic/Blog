@@ -1,0 +1,43 @@
+---
+---
+
+<button type="button" data-theme-toggle aria-label="Change to light theme" id="contraste">
+    <img class="icon icon-light" src="/icon-moon.svg"/>
+    <img class="icon icon-dark" src="/icon-sun.svg"/>
+</button>
+
+<style>
+  button#contraste {
+    border: none;
+    padding: 8px !important;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  button#contraste:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+  button#contraste:hover::before {
+    opacity: 0.1;
+  }
+  button#contraste img.icon {
+    width: 24px;
+    height: 24px;
+  }
+  button#contraste[aria-label="Thème sombre"] .icon-dark {
+    display: none;
+  }
+  button#contraste[aria-label="Thème clair"] .icon-light {
+    display: none;
+  }
+</style>
