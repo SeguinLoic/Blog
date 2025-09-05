@@ -14,6 +14,7 @@ category: 'Travel'
 <video controls muted autoplay transition:persist class="videoPost">
   <source src="/one-year-travel.mp4" type="video/mp4" />
 </video>
+
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
 
 Lorsqu'on décide d'une telle aventure, dans un premier temps, ça donne l'impression d'un rêve, d'une utopie. À la limite du réel. On s'imagine échapper à notre quotidien pour vivre une vie d'expériences, de découvertes, d'exotisme. On formule une demande, c'est accepté, le chrono est lancé. Alors notre vie s'agrémente de tout un tas de nouveaux sujets. On se surprend à connaître toutes les gammes de sac à dos 40L, les avantages des cartes bancaires. On fait un rétroplanning de tous les vaccins à faire. C'est dans notre tête, tous les jours, à chaque instant. On fait tout un tas de trucs qui auront pleinement du sens le jour du grand départ. 
