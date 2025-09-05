@@ -5,23 +5,7 @@ import Navigation from '../components/Navigation.astro';
 const { frontmatter } = Astro.props;
 ---
 
-<BaseLayout pageTitle={frontmatter.title}>
-    <div class="postNavigation">
-        <a href="/" class="returnHome"></a>
-        <Navigation />
-    </div>
-    <div class="postIntro">
-        <p class="postTitle">{frontmatter.title}</p>
-        <p class="postDescription">{frontmatter.description}</p>
-        <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
-    </div>
-    <div class="postContent">
-        <slot />
-    </div>
-</BaseLayout>
-
 <style>
-
   .postNavigation {
       display: flex;
       align-items: center;
@@ -93,3 +77,18 @@ const { frontmatter } = Astro.props;
     margin-top: 4px;
   }
 </style>
+
+<BaseLayout pageTitle={frontmatter.title}>
+    <div class="postNavigation">
+        <a href="/" class="returnHome"></a>
+        <Navigation />
+    </div>
+    <div class="postIntro">
+        <p class="postTitle">{frontmatter.title}</p>
+        <p class="postDescription">{frontmatter.description}</p>
+        <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+    </div>
+    <div class="postContent">
+        <slot />
+    </div>
+</BaseLayout>
