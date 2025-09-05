@@ -52,8 +52,7 @@ body > .container {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 48px 0px;
-    padding-left: 32px;
+    padding: 48px 0 48px 48px;
 }
 
 main {
