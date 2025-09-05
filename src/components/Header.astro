@@ -1,6 +1,13 @@
 ---
-import Navigation from './Navigation.astro';
 ---
+
+<header>
+    <div class="container">
+        <div class="Logo">
+            <a href="/">One Human's Adventures</a>
+        </div>
+    </div>
+</header>
 
 <style>
     header {
@@ -11,7 +18,6 @@ import Navigation from './Navigation.astro';
         flex-direction: column;
         justify-content: flex-end;
     }
-
     header .container {
         position: sticky;
         width: 100%;
@@ -28,7 +34,7 @@ import Navigation from './Navigation.astro';
         position: relative;
         margin-bottom: 8px;
     }
-    .Logo:after {
+    /*.Logo:after {
         content: '';
         width: 100%;
         height: 1px;
@@ -38,7 +44,7 @@ import Navigation from './Navigation.astro';
         left: 0;
         opacity: 0.15;
         pointer-events: none;
-    }
+    }*/
     .Logo a {
         font-size: 2.3em;
         line-height: 1.2em;
@@ -46,11 +52,6 @@ import Navigation from './Navigation.astro';
         text-decoration: none;
         color: #000;
         padding-bottom: 16px;
-    }
-    .Logo p {
-        margin: 0px;
-        font-size: 0.9em;
-        padding-top: 4px;
     }
 
     @media screen and (max-width: 768px) {
@@ -61,14 +62,3 @@ import Navigation from './Navigation.astro';
         }
     }
 </style>
-
-<header>
-    <div class="container">
-        <div class="Logo">
-            <a href="/">One Human's Adventures</a>
-        </div>
-        <nav>
-            <Navigation />
-        </nav>
-    </div>
-</header>
