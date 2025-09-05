@@ -11,7 +11,7 @@ tags: ["astro", "blogging", "learning in public"]
 category: 'Travel'
 ---
 
-<video controls muted autoplay transition:persist>
+<video controls muted autoplay transition:persist class="videoPost">
   <source
     src="/one-year-travel.mp4"
     type="video/mp4"
