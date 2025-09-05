@@ -1,0 +1,9 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<div class=`button button-${frontmatter.type}`>
+    <a href={frontmatter.link}>
+        {frontmatter.type}
+    </a>
+</div>

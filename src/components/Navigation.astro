@@ -1,6 +1,7 @@
 ---
 import ButtonContrast from "./ButtonContrast.astro"
 import ButtonReturnHome from "./ButtonReturnHome.astro"
+import Button from "./Button.astro"
 ---
 
 <style>
@@ -24,6 +25,9 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
 </style>
 
 <div class="nav-links">
+  <Button type="home" link="/" />
   <ButtonReturnHome />
-  <ButtonContrast />
+  <div class="">
+    <ButtonContrast />
+  </div>
 </div>
