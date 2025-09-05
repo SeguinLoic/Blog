@@ -33,9 +33,14 @@ const tags = frontmatter.tags;
     text-decoration: none;
     position: relative;
   }
-  a.returnHome img {
-    width: 24px;
-    opacity: 1;
+  a.returnHome:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    mask-image: url('/icon-arrow.svg');
+    background-color: var(--color-fg);
+    position: absolute;
+    pointer-events: none;
   }
   a.returnHome:after {
     content: '';
