@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Dec4thlon et la boucle de c0n
+title: Dec4thlon and the dumb loop
 author: Astro Learner
 description: "After learning some Astro, I couldn't stop!"
 image:
