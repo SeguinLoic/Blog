@@ -3,6 +3,10 @@ const {url, title, desc, date, category} = Astro.props;
 ---
 
 <style>
+
+    .containerInfo {
+        width: 100%;
+    }
     .shortPost {
         display: flex;
     }
@@ -43,9 +47,8 @@ const {url, title, desc, date, category} = Astro.props;
     }
     .shortPost .containerCategory {
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 96px;
+        justify-content: space-between;
+        align-content: center;
     }
     .shortPost a .category {
         font-size: .7em;

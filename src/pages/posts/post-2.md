@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Second Blog Post
+title: Dec4thlon et la boucle de c0n
 author: Astro Learner
 description: "After learning some Astro, I couldn't stop!"
 image:
