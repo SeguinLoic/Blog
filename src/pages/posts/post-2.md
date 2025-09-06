@@ -8,7 +8,7 @@ image:
     alt: "The Astro logo on a dark background with a purple gradient arc."
 pubDate: 08/07/2022
 tags: ["astro", "blogging", "learning in public", "successes"]
-category: 'TTRPG'
+category: 'Hiking'
 ---
 
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
