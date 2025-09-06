@@ -22,5 +22,5 @@ html footer .container .introduction p.name:after {
     background-color: var(--color-fg) !important;
 }
 html .shortPost a .category {
-    color: var(--color-bg) !important;
+    color: var(--color-fg) !important;
 }
