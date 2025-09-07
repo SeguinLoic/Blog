@@ -7,15 +7,21 @@
 }
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/Inter_18pt-Bold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Inter';
   src: url('/fonts/Inter_18pt-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
 }
 
 html {
