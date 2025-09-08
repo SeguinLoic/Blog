@@ -91,11 +91,11 @@ const {url, title, desc, date, category} = Astro.props;
 <li class="shortPost">
     <a href={url}>
         <div class="containerInfo">
+            <p class="title">{title}</p>
             <div class="containerCategory">
-                <p class="category">{category}</p>
+                <!-- <p class="category">{category}</p> -->
                 <p class="date">{date}</p>
             </div>
-            <p class="title">{title}</p>
             <p class="description">{desc}</p>
         </div>
     </a>
