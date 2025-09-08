@@ -43,12 +43,11 @@ const {url, title, desc, date, category} = Astro.props;
     }
     .shortPost p.date {
         font-size: 0.85em;
-        padding-bottom: 4px;
     }
     .shortPost .containerCategory {
         display: flex;
         justify-content: space-between;
-        align-content: center;
+        align-items: flex-end;
         position: relative;
     }
     .shortPost .containerCategory:after {
@@ -63,12 +62,13 @@ const {url, title, desc, date, category} = Astro.props;
     }
     .shortPost a .category {
         font-size: .7em;
-        padding: 6px 12px;
+        padding: 0px 12px;
         text-transform: uppercase;
-        line-height: 1.1em;
+        line-height: 1em;
         color: #fff;
         letter-spacing: 1px;
         position: relative;
+}
     }
     .shortPost a .category:after {
         content: '';
