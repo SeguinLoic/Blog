@@ -39,13 +39,17 @@ const {url, title, desc, date, category} = Astro.props;
         flex-grow: 1;
         font-size: 1.6em;
         font-weight: 600;
+        transition: all 0.3s;
+    }
+    .shortPost a:hover .title {
+        transform: translateX(20px);
     }
     .shortPost a p {
         margin: 0px;
     }
     .shortPost p.date {
         font-size: 0.85em;
-        padding: 0px 12px;
+        padding: 4px 12px;
         position: relative;
     }
     .shortPost .containerTitle {
