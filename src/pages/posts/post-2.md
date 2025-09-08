@@ -6,7 +6,7 @@ description: "After learning some Astro, I couldn't stop!"
 image:
     url: "https://docs.astro.build/assets/arc.webp"
     alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 08/07/2022
+pubDate: 23/08/2025
 tags: ["astro", "blogging", "learning in public", "successes"]
 category: 'Hiking'
 ---
