@@ -6,6 +6,9 @@ const {url, title, desc, date, category} = Astro.props;
 
     .containerInfo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .shortPost {
         display: flex;
@@ -36,7 +39,6 @@ const {url, title, desc, date, category} = Astro.props;
         flex-grow: 1;
         font-size: 1.8em;
         font-weight: 600;
-        padding-bottom: 12px;
     }
     .shortPost a p {
         margin: 0px;
@@ -46,7 +48,7 @@ const {url, title, desc, date, category} = Astro.props;
     }
     .shortPost .containerTitle {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         position: relative;
         align-items: flex-end;
     }
@@ -79,7 +81,6 @@ const {url, title, desc, date, category} = Astro.props;
         top: 0;
         left: 0;
         border: 1px inset var(--color-fg);
-        border-bottom: transparent;
         opacity: .15;
         box-sizing: border-box;
     }
