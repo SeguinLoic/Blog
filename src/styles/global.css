@@ -30,6 +30,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
 }
 html:before {
   content: "";
@@ -58,6 +59,7 @@ body {
   width: 100%;
   max-width: 80ch;
   line-height: 1.5;
+  height: 100%;
 }
 
 body > .container {
