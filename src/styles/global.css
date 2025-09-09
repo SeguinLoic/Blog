@@ -44,21 +44,28 @@ html:before {
 }
 
 body {
-    margin: 0 auto;
+    /*margin: 0 auto;
     width: 100%;
     max-width: 70vW;
     line-height: 1.5;
     display: flex;
     flex-direction: row;
     height: auto;
-    min-height: 100vH;
+    min-height: 100vH;*/
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
 }
 
 body > .container {
     display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 48px 0 48px 48px;
+    /*flex-direction: column;
+    width: 70%;*/
+    width: 100%;
+    /*padding: 48px 0 48px 48px;*/
+    padding-bottom: 48px;
 }
 
 main {
