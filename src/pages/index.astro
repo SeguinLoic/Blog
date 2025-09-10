@@ -19,9 +19,12 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
       column-gap: 20px;
   }
   p.about {
-      line-height: 1.9em;
-      padding: 34px 0px;
+      line-height: 2em;
+      padding-top: 40px;
+      padding-bottom: 64px;
       margin: 0px;
+      font-size: 1.04em;
+      font-weight: 300;
   }
   @media screen and (max-width: 768px) {
     p.about {

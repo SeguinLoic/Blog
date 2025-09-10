@@ -7,6 +7,12 @@
 }
 @font-face {
   font-family: 'Inter';
+  src: url('/fonts/Inter_18pt-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Inter';
   src: url('/fonts/Inter_18pt-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
