@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: '1 year on the road'
-pubDate: 26/07/2025
+pubDate: 2025-07-26
 description: 'It was not about seeing beautiful places, but seeing beauty in every places'
 author: 'One Human'
 image:
