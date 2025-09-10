@@ -1,11 +1,11 @@
 ---
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import TitleSection from '../components/TitleSection.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 const page = "home";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 ---
 
 <style>
@@ -35,8 +35,7 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 
 <BaseLayout page={page}>
   <p class="about">Hi, I'm a random human being. I like all kind of art and especially digital art. I really love hiking && bouldering with friends, mostly for the fresh beer after the session. I just discovered that I love writing.</p>
-  <!-- <TitleSection title={"Latest Experiences"} /> -->
   <ul class="listShortPost">
-      {allPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
+      {sortedPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
   </ul>
 </BaseLayout>
