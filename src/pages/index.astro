@@ -1,15 +1,10 @@
 ---
 import '../styles/global.css';
-import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 const page = "home";
-const allBlogPosts = await getCollection('posts');
-const sortedPosts = allBlogPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
-
-//layout: ../../layouts/MarkdownPostLayout.astro
-
+const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <style>
@@ -40,6 +35,6 @@ const sortedPosts = allBlogPosts.sort((a, b) => Date.parse(b.data.pubDate) - Dat
 <BaseLayout page={page}>
   <p class="about">Hi, I'm a random human being. I like all kind of art and especially digital art. I really love hiking && bouldering with friends, mostly for the fresh beer after the session. I just discovered that I love writing.</p>
   <ul class="listShortPost">
-      {sortedPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
+      {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
   </ul>
 </BaseLayout>
