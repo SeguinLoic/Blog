@@ -6,8 +6,8 @@ import Navigation from "./Navigation.astro"
     <div class="container">
         <div class="logo">
             <a href="/">
-                <img src="/logo-blog-ok.png"/>
-                <!--One Human's Adventures-->
+                <!-- <img src="/logo-blog-ok.png"/> -->
+                <!-- One Human's Adventures -->
             </a>
         </div>
         <Navigation />
@@ -38,14 +38,13 @@ import Navigation from "./Navigation.astro"
         max-width: 180px;
     }
     .logo a {
-        font-size: 1.6em;
-        line-height: 1.2em;
-        font-weight: 500;
-        text-decoration: none;
-        color: #000;
-    }
-    .logo a img {
+        display: flex;
         width: 270px;
+        height: 66px;
+        mask-image: url('/logo-blog-ok.png');
+        mask-position: top left;
+        mask-size: cover;
+        background-color: var(--color-fg);
     }
     @media screen and (max-width: 768px) {
         header {
