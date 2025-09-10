@@ -5,6 +5,7 @@ import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 const page = "home";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+console.log(allPosts);
 const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 ---
 
