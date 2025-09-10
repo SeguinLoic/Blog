@@ -8,6 +8,7 @@ const page = "home";
 const allBlogPosts = await getCollection('posts');
 const sortedPosts = allBlogPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 
+//layout: ../../layouts/MarkdownPostLayout.astro
 
 ---
 

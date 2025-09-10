@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Dec4thlon and the dumb loop
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+pubDate: 2025-08-23
+description: After learning some Astro, I couldn't stop!
+author: One Human
 image:
     url: "https://docs.astro.build/assets/arc.webp"
     alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2025-08-23
 tags: ["astro", "blogging", "learning in public", "successes"]
-category: 'Hiking'
+category: Hiking
 ---
 
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
