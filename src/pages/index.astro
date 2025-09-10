@@ -5,7 +5,6 @@ import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 const page = "home";
 const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const sortedPosts = posts.sort((a, b) => Date.parse(b.pubDate) - Date.parse(a.pubDate));
 ---
 
 <style>
@@ -36,6 +35,6 @@ const sortedPosts = posts.sort((a, b) => Date.parse(b.pubDate) - Date.parse(a.pu
 <BaseLayout page={page}>
   <p class="about">Hi, I'm a random human being. I like all kind of art and especially digital art. I really love hiking && bouldering with friends, mostly for the fresh beer after the session. I just discovered that I love writing.</p>
   <ul class="listShortPost">
-      {sortedPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} category={post.frontmatter.category} />)}
+      {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} category={post.frontmatter.category} />)}
   </ul>
 </BaseLayout>
