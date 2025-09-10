@@ -1,13 +1,13 @@
 ---
-title: 1 year on the road
+title: '1 year on the road'
 pubDate: 2025-07-26
-description: It was not about seeing beautiful places, but seeing beauty in every places
-author: One Human
+description: 'It was not about seeing beautiful places, but seeing beauty in every places'
+author: 'One Human'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'It was not about seeing beautiful places, but seeing beauty in every places'
 tags: ["astro", "blogging", "learning in public"]
-category: Travel
+category: 'Travel'
 ---
 
 <video controls muted autoplay transition:persist class="videoPost">
