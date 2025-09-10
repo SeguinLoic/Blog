@@ -6,7 +6,7 @@ import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 const page = "home";
 const allBlogPosts = await getCollection('posts');
-const sortedPosts = allBlogPosts.sort((a, b) => Date.parse(b.data.publishDate) - Date.parse(a.data.publishDate));
+const sortedPosts = allBlogPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 
 
 ---
