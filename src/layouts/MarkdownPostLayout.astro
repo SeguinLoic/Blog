@@ -5,8 +5,22 @@ import ButtonReturnHome from '../components/ButtonReturnHome.astro';
 const { frontmatter } = Astro.props;
 ---
 
+<BaseLayout pageTitle={frontmatter.title}>
+    <div class="postIntro">
+        <div class="containerTitle">
+          <ButtonReturnHome />
+          <p class="postTitle">{frontmatter.title}</p>
+        </div>
+        <p class="postDescription">{frontmatter.description}</p>
+        <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+    </div>
+    <div class="postContent">
+        <slot />
+    </div>
+</BaseLayout>
+
 <style>
-.postIntro {
+  .postIntro {
     position: relative;
     padding-bottom: 24px;
     margin-bottom: 24px;
@@ -37,23 +51,12 @@ const { frontmatter } = Astro.props;
     font-size: 0.85em;
     margin-top: 4px;
   }
+  .containerTitle {
+    display: flex;
+  }
   @media screen and (max-width: 768px) {
     .postIntro {
       padding-top: 0px;
   }
   }
 </style>
-
-<BaseLayout pageTitle={frontmatter.title}>
-    <div class="postIntro">
-        <div class="containerTitle">
-          <ButtonReturnHome />
-          <p class="postTitle">{frontmatter.title}</p>
-        </div>
-        <p class="postDescription">{frontmatter.description}</p>
-        <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
-    </div>
-    <div class="postContent">
-        <slot />
-    </div>
-</BaseLayout>
