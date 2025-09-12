@@ -46,8 +46,10 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout pageTitle={frontmatter.title}>
     <div class="postIntro">
-        <ButtonReturnHome />
-        <p class="postTitle">{frontmatter.title}</p>
+        <div class="containerTitle">
+          <ButtonReturnHome />
+          <p class="postTitle">{frontmatter.title}</p>
+        </div>
         <p class="postDescription">{frontmatter.description}</p>
         <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
     </div>
