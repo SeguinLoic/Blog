@@ -2,13 +2,22 @@
 const {url, title, desc, date, category} = Astro.props;
 ---
 
-<style>
+<li class="shortPost">
+    <a href={url}>
+        <div class="containerInfo">
+            <!-- <p class="category">{category}</p> -->
+            <div class="containerTitle">
+                <p class="title">{title}</p>
+                <p class="date">{date}</p>
+            </div>
+            <p class="description">{desc}</p>
+        </div>
+    </a>
+</li>
 
+<style>
     .containerInfo {
         width: 100%;
-        /*display: flex;
-        flex-direction: column;
-        align-items: flex-start;*/
     }
     .shortPost {
         display: flex;
@@ -91,17 +100,19 @@ const {url, title, desc, date, category} = Astro.props;
     .shortPost a .description {
         display: none;
     }
+    @media screen and (max-width: 768px) {
+        .shortPost .containerTitle {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+        .shortPost a .date:after {
+            border-bottom: 1px inset var(--color-fg);
+        }
+        .shortPost a .title {
+            margin-top: 8px;
+        }
+        .shortPost .containerTitle:after {
+            display: none;
+        }
+    }
 </style>
-
-<li class="shortPost">
-    <a href={url}>
-        <div class="containerInfo">
-            <!-- <p class="category">{category}</p> -->
-            <div class="containerTitle">
-                <p class="title">{title}</p>
-                <p class="date">{date}</p>
-            </div>
-            <p class="description">{desc}</p>
-        </div>
-    </a>
-</li>
