@@ -33,4 +33,10 @@ const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
       display: flex;
       column-gap: 20px;
   }
+  ul.listShortPost {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 </style>
