@@ -74,6 +74,12 @@ body > .col-left {
     width: 30vW;
     padding: 40px;
 }
+body>.col-right {
+    border: 1px solid blue;
+    width: 70vw;
+    padding: 40px;
+}
+
 body > .content {
     border: 1px solid blue;
     width: 70vW;
