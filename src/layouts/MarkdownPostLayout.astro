@@ -12,10 +12,10 @@ const { frontmatter } = Astro.props;
         <div class="container">
             <Header />
             <div class="postIntro">
-                <ButtonReturnHome />
+                <!-- <ButtonReturnHome /> -->
+                 <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
                 <p class="postTitle">{frontmatter.title}</p>
                 <p class="postDescription">{frontmatter.description}</p>
-                <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
             </div>
         </div>
     </div>
