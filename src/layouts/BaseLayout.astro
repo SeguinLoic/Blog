@@ -15,19 +15,17 @@ const { page } = Astro.props;
     <title>One Human's Adventures</title>
   </head>
   <body>
-    <div class="container">
       <div class="navigation">
-        <Header />
+          <Header />
       </div>
       <div class="content">
           <main>
-            <slot />
+              <slot />
           </main>
           <Footer />
       </div>
-    </div>
-    <script>
-      import "../scripts/colorMode.js";
-    </script>
+      <script>
+        import "../scripts/colorMode.js";
+      </script>
   </body>
 </html>
