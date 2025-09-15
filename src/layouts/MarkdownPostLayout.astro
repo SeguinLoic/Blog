@@ -12,10 +12,8 @@ const { frontmatter } = Astro.props;
         <div class="container">
             <Header />
             <div class="postIntro">
-                <div class="containerTitle">
-                  <ButtonReturnHome />
-                  <p class="postTitle">{frontmatter.title}</p>
-                </div>
+                <ButtonReturnHome />
+                <p class="postTitle">{frontmatter.title}</p>
                 <p class="postDescription">{frontmatter.description}</p>
                 <p class="postDate">Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
             </div>
@@ -47,10 +45,11 @@ const { frontmatter } = Astro.props;
   }
   p.postTitle {
     font-family: 'Space Grotesk';
-    font-size: 1.8em;
+    font-size: 2.5em;
     font-weight: 600;
     margin: 0px;
     line-height: 1.2em;
+    margin-top: 8px;
   }
   p.postDescription {
     margin-top: 24px;
@@ -60,9 +59,6 @@ const { frontmatter } = Astro.props;
   p.postDate {
     font-size: 0.85em;
     margin-top: 4px;
-  }
-  .containerTitle {
-    display: flex;
   }
   @media screen and (max-width: 768px) {
     .postIntro {
