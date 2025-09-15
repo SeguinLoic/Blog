@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 1 year on the road
+title: Une année en vadrouille
 pubDate: 26-07-2025
 description: It was not about seeing beautiful places, but seeing beauty in every places
 author: One Human

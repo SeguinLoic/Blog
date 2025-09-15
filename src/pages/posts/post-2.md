@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Dec4thlon and the dumb loop
+title: Dec4thl0n et la b0ucle de c0n
 pubDate: 23-08-2025
-description: After learning some Astro, I could not stop!
+description: Un trek entre pote au Puy de Sancy
 author: One Human
 image:
     url: https://docs.astro.build/assets/arc.webp
