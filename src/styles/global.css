@@ -70,13 +70,11 @@ body {
   min-height: 100%;
 }
 body>.col-left {
-    border: 1px solid red;
     width: 30vW;
     padding: 40px;
     position: sticky;
 }
 body>.col-right {
-    border: 1px solid blue;
     width: 70vw;
     padding: 40px;
     display: flex;
@@ -89,14 +87,12 @@ body>.col-left .container {
 }
 
 body > .content {
-    border: 1px solid blue;
     width: 70vW;
     padding: 40px;
     display: flex;
     flex-direction: column;
 }
 body>.content main {
-    border: 1px solid red;
     display: flex;
     flex-grow: 1;
 }
