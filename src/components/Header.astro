@@ -34,10 +34,14 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
     header .container {
         flex-direction: column;
     }
+    header .container .intro {
+        display: flex;
+        flex-direction: row;
+    }
     header .container .navigation {
         flex-direction: row;
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     .logo {
         display: flex;
