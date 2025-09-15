@@ -73,6 +73,7 @@ body > .col-left {
     border: 1px solid red;
     width: 30vW;
     padding: 40px;
+    position: sticky;
 }
 body>.col-right {
     border: 1px solid blue;
