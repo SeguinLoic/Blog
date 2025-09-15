@@ -71,7 +71,7 @@ body > .content {
     padding: 40px;
 }
 
-body > .navigation {
+body > .col-left {
     border: 1px solid red;
     width: 30vW;
     padding: 40px;
