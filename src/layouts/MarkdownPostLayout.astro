@@ -32,9 +32,7 @@ const { frontmatter } = Astro.props;
 <style>
   .postIntro {
     position: relative;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    padding-top: 56px;
+    padding: 40px;
   }
   .postIntro::after {
     content: "";
@@ -43,8 +41,8 @@ const { frontmatter } = Astro.props;
     background-color: var(--color-fg);
     position: absolute;
     left: 0;
-    bottom: 0;
-    opacity: 0.15;
+    top: 0;
+    opacity: 0.13;
     pointer-events: none;
   }
   p.postTitle {

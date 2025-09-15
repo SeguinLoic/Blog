@@ -71,7 +71,6 @@ body {
 }
 body>.col-left {
     width: 30vW;
-    padding: 40px;
     position: sticky;
 }
 body>.col-right {
