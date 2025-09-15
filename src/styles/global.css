@@ -61,9 +61,20 @@ body {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
   line-height: 1.5;
   height: 100%;
+}
+
+body > .content {
+    border: 1px solid blue;
+    width: 70vW;
+    padding: 40px;
+}
+
+body > .navigation {
+    border: 1px solid red;
+    width: 30vW;
+    padding: 40px;
 }
 
 body > .container {
