@@ -22,7 +22,7 @@ const {url, title, desc, date, category} = Astro.props;
     .shortPost a {
         display: flex;
         width: 100%;
-        padding: 16px 0px;
+        padding: 24px 0;
         position: relative;
         color: #000;
         text-decoration: none;
@@ -41,7 +41,8 @@ const {url, title, desc, date, category} = Astro.props;
         font-family: Space Grotesk;
         font-weight: 400;
         font-size: 2em;
-        padding: 4px 0;
+        padding-bottom: 6px;
+        line-height: 1em;
     }
     /*.shortPost a:hover .title {
         transform: translateX(10px);
@@ -50,9 +51,10 @@ const {url, title, desc, date, category} = Astro.props;
         margin: 0px;
     }
     .shortPost p.date {
-        font-size: 0.85em;
-        padding: 4px 12px;
-        position: relative;
+        font-size: .85em;
+        padding-right: 18px;
+        padding-top: 1px;
+        opacity: 0.8;
     }
     /*.shortPost .containerTitle {
         display: flex;
