@@ -1,5 +1,4 @@
 ---
-import Header from '../components/Header.astro';
 import '../styles/global.css';
 import '../styles/contrast.css';
 const { page } = Astro.props;
@@ -14,10 +13,7 @@ const { page } = Astro.props;
     <title>One Human's Adventures</title>
   </head>
   <body>
-      <div class="col-left">
-          <Header />
-          <slot />
-      </div>
+      <slot />
       <script>
         import "../scripts/colorMode.js";
       </script>

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 import Footer from '../components/Footer.astro';
@@ -9,6 +10,7 @@ const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <BaseLayout page={page}>
+  <Header />
   <ul class="listShortPost">
       {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} category={post.frontmatter.category} />)}
   </ul>
