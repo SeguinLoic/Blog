@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Dec4thlon and the dumb loop
-pubDate: 2025-08-23
+pubDate: 23 août 2025
 description: After learning some Astro, I could not stop!
 author: One Human
 image:
