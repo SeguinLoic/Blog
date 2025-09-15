@@ -74,11 +74,11 @@ body {
   min-height: 100%;
 }
 body>.col-left {
-    width: 30vW;
+    width: 35vW;
     position: sticky;
 }
 body>.col-right {
-    width: 70vw;
+    width: 65vw;
     padding: 40px;
     display: flex;
     flex-direction: column;
