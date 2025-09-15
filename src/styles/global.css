@@ -44,6 +44,9 @@ html {
   background-attachment: fixed;
   height: 100%;
 }
+html:not(#home) p.about {
+    display: none;
+}
 /*html:before {
   content: "";
   width: 100%;
