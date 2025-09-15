@@ -80,6 +80,29 @@ body>.col-right {
     display: flex;
     flex-direction: column;
 }
+body>.col-left:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-fg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 body>.col-left .container {
     position: sticky;
