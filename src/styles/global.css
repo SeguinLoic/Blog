@@ -79,7 +79,7 @@ body>.col-left {
 }
 body>.col-right {
     width: 65vw;
-    padding: 40px;
+    padding: 56px;
     display: flex;
     flex-direction: column;
 }
