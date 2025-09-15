@@ -64,19 +64,23 @@ body {
   line-height: 1.5;
   height: 100%;
 }
-
-body > .content {
-    border: 1px solid blue;
-    width: 70vW;
-    padding: 40px;
-}
-
 body > .col-left {
     border: 1px solid red;
     width: 30vW;
     padding: 40px;
 }
-
+body > .content {
+    border: 1px solid blue;
+    width: 70vW;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+body>.content main {
+    border: 1px solid red;
+    display: flex;
+    flex-grow: 1;
+}
 body > .container {
     display: flex;
     flex-direction: column;
