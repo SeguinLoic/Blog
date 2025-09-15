@@ -128,12 +128,6 @@ h1 {
     margin-bottom: 24px;
   }
 
-@media screen and (max-width: 1300px) {
-  body {
-      max-width: 80vW;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   body {
       max-width: 90vW;
