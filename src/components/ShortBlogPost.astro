@@ -1,5 +1,5 @@
 ---
-const {url, title, desc, date, category} = Astro.props;
+const {url, title, desc, date} = Astro.props;
 ---
 
 <li class="shortPost">
@@ -17,23 +17,13 @@ const {url, title, desc, date, category} = Astro.props;
         display: flex;
         position: relative;
     }
-    /*.shortPost:not(:last-child)::after {
+    .shortPost:not(:last-child)::after {
         content: '';
         width: 100%;
         height: 1px;
         background-color: var(--color-fg);
         position: absolute;
         bottom: 0;
-        left: 0;
-        opacity: 0.15;
-    }*/
-    .shortPost::after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: var(--color-fg);
-        position: absolute;
-        top: 0;
         left: 0;
         opacity: 0.15;
     }
@@ -60,16 +50,6 @@ const {url, title, desc, date, category} = Astro.props;
     .shortPost a:hover::before {
         opacity: 0.05;
     }
-    /*.shortPost:not(:last-child) a:after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: #000;
-        opacity: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }*/
     .shortPost a .title {
         font-family: Space Grotesk;
         font-weight: 500;
