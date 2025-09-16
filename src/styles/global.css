@@ -192,4 +192,7 @@ video.videoPost {
   video.videoPost {
       max-width: 100% !important;
   }
+  body>.col-right {
+    padding-bottom: 32px;
+  }
 }
