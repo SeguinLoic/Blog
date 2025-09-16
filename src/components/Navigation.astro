@@ -6,3 +6,18 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
     <ButtonReturnHome />
     <ButtonContrast />
 </div>
+
+<style>
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        height: 56px;
+        padding: 0px 32px;
+    }
+    @media screen and (max-width: 1200px) {
+        .navigation {
+            height: 40px;
+            padding: 0px 24px;
+        }
+    }
+</style>
