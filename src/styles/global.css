@@ -174,19 +174,21 @@ video.videoPost {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+  body>.col-left {
+    width: 100%;
+    position: relative;
+  }
+  body>.col-right {
+    width: 100%;
+    padding-bottom: 56px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-      width: 100%;
-      flex-direction: column;
-  }
-  body>.container {
-      width: 100%;
-      padding: 24px 0px;
-      flex-grow: 1;
-  }
   video.videoPost {
       max-width: 100% !important;
   }
