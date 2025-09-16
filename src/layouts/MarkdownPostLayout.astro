@@ -2,7 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import ButtonReturnHome from '../components/ButtonReturnHome.astro';
+import Navigation from '../components/Navigation.astro';
 
 const { frontmatter } = Astro.props;
 ---
@@ -12,7 +12,6 @@ const { frontmatter } = Astro.props;
         <div class="container">
             <Header />
             <div class="postIntro">
-                <!-- <ButtonReturnHome /> -->
                  <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
                 <p class="postTitle">{frontmatter.title}</p>
                 <p class="postDescription">{frontmatter.description}</p>
@@ -20,6 +19,7 @@ const { frontmatter } = Astro.props;
         </div>
     </div>
     <div class="col-right">
+        <Navigation />
         <div class="postContent">
             <slot />
         </div>

@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 
 const page = "home";
 const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
@@ -11,15 +12,16 @@ const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 
 <BaseLayout page={page}>
   <div class="col-left">
-      <div class="container">
-          <Header />
-      </div>
+        <div class="container">
+            <Header />
+        </div>
   </div>
   <div class="col-right">
-      <ul class="listShortPost">
-          {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} category={post.frontmatter.category} />)}
-      </ul>
-      <Footer />
+        <Navigation />
+        <ul class="listShortPost">
+            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} category={post.frontmatter.category} />)}
+        </ul>
+        <Footer />
   </div>
 </BaseLayout>
 
