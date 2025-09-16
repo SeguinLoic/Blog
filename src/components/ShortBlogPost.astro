@@ -135,6 +135,11 @@ const {url, title, desc, date, category} = Astro.props;
         opacity: .15;
         box-sizing: border-box;
     }*/
+    @media screen and (max-width: 1200px) {
+        .shortPost a {
+            padding: 32px 40px;
+        }
+    }
     @media screen and (max-width: 768px) {
         /*.shortPost .containerTitle {
             flex-direction: column-reverse;
