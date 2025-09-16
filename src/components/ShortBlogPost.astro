@@ -13,9 +13,6 @@ const {url, title, desc, date, category} = Astro.props;
 </li>
 
 <style>
-    .containerInfo {
-        width: 100%;
-    }
     .shortPost {
         display: flex;
         position: relative;
@@ -60,7 +57,7 @@ const {url, title, desc, date, category} = Astro.props;
         opacity: 0;
         pointer-events: none;
     }
-        .shortPost a:hover::before {
+    .shortPost a:hover::before {
         opacity: 0.05;
     }
     /*.shortPost:not(:last-child) a:after {
@@ -80,9 +77,6 @@ const {url, title, desc, date, category} = Astro.props;
         padding-bottom: 6px;
         line-height: 1em;
     }
-    /*.shortPost a:hover .title {
-        transform: translateX(10px);
-    }*/
     .shortPost a p {
         margin: 0px;
     }
@@ -92,67 +86,17 @@ const {url, title, desc, date, category} = Astro.props;
         padding-top: 1px;
         opacity: 0.8;
     }
-    /*.shortPost .containerTitle {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        align-items: flex-end;
-    }*/
-    /*.shortPost .containerTitle:after {
-        content: "";
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        opacity: .15;
-        border-bottom: 1px solid var(--color-fg);
-    }*/
-    /*.shortPost a .category {
-        font-size: 11px;
-        padding: 5px 12px;
-        text-transform: uppercase;
-        line-height: 10px;
-        color: #fff;
-        letter-spacing: 1px;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }*/
     .shortPost a .description {
         opacity: 0.8;
     }
-    /*.shortPost a .category:after, 
-    .shortPost a .date:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid var(--color-fg);
-        border-bottom: transparent;
-        opacity: .15;
-        box-sizing: border-box;
-    }*/
     @media screen and (max-width: 1200px) {
         .shortPost a {
             padding: 32px 40px;
         }
     }
     @media screen and (max-width: 768px) {
-        /*.shortPost .containerTitle {
-            flex-direction: column-reverse;
-            align-items: flex-start;
-        }
-        .shortPost a .date:after {
-            border-bottom: 1px solid var(--color-fg);
-        }*/
         .shortPost a .title {
             margin-top: 8px;
         }
-        /*.shortPost .containerTitle:after {
-            display: none;
-        }*/
     }
 </style>
