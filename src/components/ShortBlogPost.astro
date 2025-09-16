@@ -75,15 +75,15 @@ const {url, title, desc, date} = Astro.props;
         }
     }
     @media screen and (max-width: 768px) {
-        .shortPost a .title {
-            font-size: 1.7em;
-            padding-bottom: 8px;
-        }
         .shortPost a {
             padding: 32px 24px;
             flex-direction: column;
-        }     
-        .shortPost p.date {
+        }   
+        .shortPost a .title {
+            font-size: 1.7em;
+            padding-bottom: 8px;
+        }  
+        .shortPost a p.date {
             margin-bottom: 8px;
         } 
     }
