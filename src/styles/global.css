@@ -71,7 +71,7 @@ html:not(#home) .logo a {
     width: 160px;
     height: 43px;
 }
-/*html:before {
+html:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -81,7 +81,7 @@ html:not(#home) .logo a {
   top: 0;
   z-index: -1;
   pointer-events: none;
-}*/
+}
 
 body {
   display: flex;
