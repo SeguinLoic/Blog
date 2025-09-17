@@ -186,6 +186,9 @@ video.videoPost {
     width: 100%;
     padding-bottom: 56px;
   }
+  .col-left .navigation {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
