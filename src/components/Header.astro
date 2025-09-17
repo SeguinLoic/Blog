@@ -1,13 +1,6 @@
 ---
 import Navigation from "./Navigation.astro"
-
-const widthWindow = window.innerWidth;
 ---
-
-<script>
-    const widthWindow = window.innerWidth;
-    console.log(widthWindow);
-</script>
 
 <header>
     <div class="container">
@@ -18,7 +11,7 @@ const widthWindow = window.innerWidth;
                     <!-- One Human's Adventures -->
                 </a>
             </div>
-            {widthWindow <= 768 ? <Navigation /> : ""}
+            <!-- <Navigation /> -->
         </div>
         <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p>
     </div>
@@ -92,3 +85,8 @@ const widthWindow = window.innerWidth;
         }
     }
 </style>
+
+<script is:inline>
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
+</script>
