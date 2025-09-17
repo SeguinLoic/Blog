@@ -188,7 +188,7 @@ video.videoPost {
   }
   .col-right .navigation,
   body>.col-left:after {
-    display: none;
+    display: none !important;
   }
 }
 
