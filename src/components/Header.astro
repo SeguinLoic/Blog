@@ -2,6 +2,11 @@
 import Navigation from "./Navigation.astro"
 ---
 
+<script is:inline>
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
+</script>
+
 <header>
     <div class="container">
         <div class="intro">
@@ -11,6 +16,7 @@ import Navigation from "./Navigation.astro"
                     <!-- One Human's Adventures -->
                 </a>
             </div>
+            {windowWidth <= 768 ? console.log("small") : ""}
             <!-- <Navigation /> -->
         </div>
         <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p>
@@ -85,8 +91,3 @@ import Navigation from "./Navigation.astro"
         }
     }
 </style>
-
-<script is:inline>
-    let windowWidth = window.innerWidth;
-    console.log(windowWidth);
-</script>
