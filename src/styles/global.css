@@ -186,10 +186,6 @@ video.videoPost {
     width: 100%;
     padding-bottom: 56px;
   }
-  /*.col-right .navigation,
-  body>.col-left:after {
-    display: none !important;
-  }*/
   body>.col-left:after {
     display: none !important;
   }
