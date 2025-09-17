@@ -191,6 +191,12 @@ video.videoPost {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .col-left .navigation {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   video.videoPost {
       max-width: 100% !important;
