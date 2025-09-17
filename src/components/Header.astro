@@ -1,6 +1,5 @@
 ---
-import ButtonContrast from "./ButtonContrast.astro"
-import ButtonReturnHome from "./ButtonReturnHome.astro"
+import Navigation from "./Navigation.astro"
 ---
 
 <header>
@@ -12,10 +11,7 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
                     <!-- One Human's Adventures -->
                 </a>
             </div>
-            <!-- <div class="navigation">
-                <ButtonReturnHome />
-                <ButtonContrast />
-            </div>-->
+            <Navigation />
         </div>
         <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p>
     </div>
@@ -72,6 +68,11 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         header {
             padding: 40px;
         } 
+    }
+    @media screen and (min-width: 900px) {
+        .navigation {
+            display: none;
+        }
     }
     @media screen and (max-width: 768px) {
         header {
