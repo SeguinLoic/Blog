@@ -189,6 +189,9 @@ video.videoPost {
   body>.col-left:after {
     display: none !important;
   }
+  html {
+    background-image: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
