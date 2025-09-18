@@ -87,9 +87,14 @@ const { frontmatter } = Astro.props;
       font-size: 1em;
     }
     p.postDate {
-      font-size: .85em;
-      margin-top: 0px;
-      margin-bottom: 8px;
+        font-size: .85em;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .postIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
   }
   @media screen and (max-width: 768px) {
