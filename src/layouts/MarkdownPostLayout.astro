@@ -12,7 +12,7 @@ const { frontmatter } = Astro.props;
         <div class="container">
             <Header />
             <div class="postIntro">
-                 <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
+                <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
                 <p class="postTitle">{frontmatter.title}</p>
                 <p class="postDescription">{frontmatter.description}</p>
             </div>
@@ -76,19 +76,26 @@ const { frontmatter } = Astro.props;
       max-width: 100%;
     }
   }
-  @media screen and (max-width: 768px) {
-    .postIntro {
-        padding: 24px;
-    }
-    .postContent {
-      padding: 0px 24px;
-    }
+  @media screen and (max-width: 900px) {
     p.postTitle {
       font-size: 2.2em;
     }
     p.postDescription {
       margin-top: 16px;
       font-size: 1em;
+    }
+    p.postDate {
+      font-size: .85em;
+      margin-top: 0px;
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .postIntro {
+        padding: 24px;
+    }
+    .postContent {
+      padding: 0px 24px;
     }
   }
 </style>

@@ -25,12 +25,16 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
             margin-top: 40px;
         }
     }
+    @media screen and (max-width: 900px) {
+        .navigation {
+            justify-content: flex-end;
+            margin-top: 0px;
+        }
+    }
     @media screen and (max-width: 768px) {
         .navigation {
             height: 24px;
             padding: 0 24px;
-            margin-top: 0px;
-            justify-content: flex-end;
         }
     }
 </style>
