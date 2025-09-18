@@ -185,6 +185,7 @@ video.videoPost {
   body>.col-right {
     width: 100%;
     padding-bottom: 56px;
+    flex-grow: 1;
   }
   body>.col-left:after {
     display: none !important;
