@@ -199,8 +199,8 @@ video.videoPost {
   html {
     background-image: none;
   }
-  body>.col-right .contraste {
-    display: none;
+  body>.col-right .navigation {
+    display: none !important;
   }
 }
 
