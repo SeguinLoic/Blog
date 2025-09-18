@@ -176,7 +176,7 @@ video.videoPost {
 
 @media screen and (min-width: 900px){
   body>.col-left .contraste {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -198,6 +198,9 @@ video.videoPost {
   }
   html {
     background-image: none;
+  }
+  body>.col-right .contraste {
+    display: none;
   }
 }
 
