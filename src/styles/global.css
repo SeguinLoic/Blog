@@ -175,7 +175,8 @@ video.videoPost {
 }
 
 @media screen and (min-width: 900px){
-  body>.col-left .contraste {
+  body>.col-left .contraste,
+  .blocTitle .returnHome {
     display: none !important;
   }
 }
