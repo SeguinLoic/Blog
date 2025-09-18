@@ -80,6 +80,11 @@ const { frontmatter } = Astro.props;
       max-width: 100%;
     }
   }
+  @media screen and (min-width: 900px) {
+    .blocTitle .returnHome {
+      display: none !important;
+    }
+  }
   @media screen and (max-width: 900px) {
     p.postTitle {
       font-size: 2.2em;
