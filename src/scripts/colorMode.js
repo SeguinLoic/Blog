@@ -13,11 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* fonction pour mettre à jour l'aria-label et le texte du bonton */
-    function updateButton({ buttonEl, isDark }) {
+    function updateButton({ buttons, isDark }) {
         const newCta = isDark ? "Thème clair" : "Thème sombre";
         // use an aria-label if you are omitting text on the button
         // and using a sun/moon icon, for example
-        buttonEl.setAttribute("aria-label", newCta);
+        buttons.forEach(button => {
+            button.setAttribute("aria-label", newCta);
+        });
         //buttonEl.querySelector.innerText = newCta;
     }
 
@@ -29,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* fonction principale, au chargement de la page */
     function switchColor() {
         /* récupération des éléments */
-        const button = document.getElementById("contraste");
+        const buttons = document.querySelectorAll(".contraste");
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -37,19 +39,22 @@ document.addEventListener("DOMContentLoaded", () => {
         let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
         /* mise à jour du bouton en fonction du thème */
-        updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
+        updateButton({ buttons: buttons, isDark: currentThemeSetting === "dark" });
         updateThemeOnHtmlEl({ theme: currentThemeSetting });
 
         /* event listener au click sur le bouton pour changer de thème */
-        button.addEventListener("click", (event) => {
-        const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+        buttons.forEach(button => {
+            button.addEventListener("click", (event) => {
+                const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
 
-        localStorage.setItem("theme", newTheme);
-        updateButton({ buttonEl: button, isDark: newTheme === "dark" });
-        updateThemeOnHtmlEl({ theme: newTheme });
+                localStorage.setItem("theme", newTheme);
+                updateButton({ buttons: buttons, isDark: newTheme === "dark" });
+                updateThemeOnHtmlEl({ theme: newTheme });
 
-        currentThemeSetting = newTheme;
-      });
+                currentThemeSetting = newTheme;
+            });
+        })
+        
     }
     switchColor();
 });
