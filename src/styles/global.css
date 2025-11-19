@@ -56,7 +56,7 @@
 
 html {
   display: flex;
-  background-color: #fffdf8;
+  background-color: #fff;
   /*background-image: url('/background.png');*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,13 +90,14 @@ body {
   width: 100%;
   line-height: 1.5;
   min-height: 100%;
+  justify-content: center;
 }
 body>.col-left {
-    width: 35vW;
+    width: 150px;
     position: sticky;
 }
 body>.col-right {
-    width: 65vw;
+    width: 780px;
     padding-bottom: 56px;
     display: flex;
     flex-direction: column;
