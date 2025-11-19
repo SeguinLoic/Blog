@@ -101,8 +101,10 @@ body>.col-right {
     padding-bottom: 56px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
-body>.col-left:after {
+body>.col-left:after,
+body>.col-right:after {
     content: '';
     width: 1px;
     height: 100%;
