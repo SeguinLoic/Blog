@@ -141,35 +141,10 @@ body>.container:after {
   pointer-events: none;
 }
 
-/*body > .content {
-    width: 70vW;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-}
-body>.content main {
-    display: flex;
-    flex-grow: 1;
-}*/
-
-/*main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}*/
-
-
-/*
-h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
-}*/
-
 video.videoPost,
 .postContent img {
   max-width: 100% !important;
 }
-
 .postContent p {
     padding: 0px 24px;
 }
