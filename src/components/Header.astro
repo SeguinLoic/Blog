@@ -1,26 +1,21 @@
 ---
-import ButtonContrast from "./ButtonContrast.astro"
 import Navigation from "./Navigation.astro"
 ---
 
 <header>
-    <div class="container">
-        <div class="intro">
-            <div class="logo">
-                <a href="/">6R05L0L0</a>
-                <p class="desc">I'm just a human being.</p>
-            </div>
-            <ButtonContrast />
+    <div class="intro">
+        <div class="logo">
+            <a href="/">6R05L0L0</a>
+            <p class="desc">I'm just a human being.</p>
         </div>
-        <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p>
-        <Navigation />
     </div>
+    <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p>
+    <Navigation />
 </header>
 
 <style>
     header,
-    header .container,
-    header .container .navigation {
+    header .navigation {
         display: flex;
         width: 100%;
     }
@@ -38,14 +33,14 @@ import Navigation from "./Navigation.astro"
         opacity: .15;
         background-color: var(--color-fg);
     }
-    header .container {
+    header {
         flex-direction: column;
     }
-    header .container .intro {
+    header .intro {
         display: flex;
         flex-direction: row;
     }
-    header .container .navigation {
+    header .navigation {
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
@@ -103,7 +98,7 @@ import Navigation from "./Navigation.astro"
         p.about {
             padding-bottom: 0px;
         }
-        header .container .intro {
+        header .intro {
             justify-content: space-between;
             align-items: flex-end;
         }
