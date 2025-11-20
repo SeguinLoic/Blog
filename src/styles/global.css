@@ -67,10 +67,10 @@ html {
 html:not(#home) p.about {
     display: none;
 }
-html:not(#home) .logo a {
+/*html:not(#home) .logo a {
     width: 160px;
     height: 43px;
-}
+}*/
 html:before {
     content: "";
     width: 100%;
