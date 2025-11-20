@@ -25,12 +25,11 @@ const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
   </div>-->
     <div class="container">
         <Header />
-        <Navigation />
+        <ul class="listShortPost">
+            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} />)}
+        </ul>
+        <Footer />
     </div>
-    <ul class="listShortPost">
-        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} />)}
-    </ul>
-    <Footer />
 </BaseLayout>
 
 <style>
