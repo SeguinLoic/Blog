@@ -12,16 +12,16 @@ const { frontmatter } = Astro.props;
     <div class="col-left">
         <div class="container">
             <Header />
-            <div class="postIntro">
-                <ButtonReturnHome />
-                <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
-                <p class="postTitle">{frontmatter.title}</p>
-                <p class="postDescription">{frontmatter.description}</p>
-            </div>
         </div>
     </div>
     <div class="col-right">
         <Navigation />
+        <div class="postIntro">
+          <ButtonReturnHome />
+          <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
+          <p class="postTitle">{frontmatter.title}</p>
+          <p class="postDescription">{frontmatter.description}</p>
+        </div>
         <div class="postContent">
             <slot />
         </div>
