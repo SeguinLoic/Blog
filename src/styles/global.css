@@ -101,7 +101,7 @@ body>.container {
 }
 body>.container:after {
   content: "";
-  width: 100%;
+  width: calc(100% - 1px);
   height: 100%;
   position: absolute;
   top: 0;
