@@ -42,18 +42,7 @@ const { frontmatter } = Astro.props;
 <style>
   .postIntro {
     position: relative;
-    padding: 56px;
-  }
-  .postIntro::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-fg);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.13;
-    pointer-events: none;
+    padding: 40px;
   }
   p.postTitle {
     font-family: 'Space Grotesk';
@@ -74,7 +63,7 @@ const { frontmatter } = Astro.props;
     margin-top: 4px;
   }
   .postContent {
-    padding: 0px 56px;
+    padding: 0px 40px;
   }
   @media screen and (max-width: 1200px) {
     .postIntro {
