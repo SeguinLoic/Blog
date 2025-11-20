@@ -159,11 +159,11 @@ body>.content main {
 }*/
 
 
-
+/*
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
-}
+}*/
 
 video.videoPost {
   max-width: 100% !important;
@@ -171,9 +171,6 @@ video.videoPost {
 }
 
 @media screen and (max-width: 1200px) {
-  body>.col-right {
-      padding-bottom: 40px;
-  }
 }
 
 @media screen and (min-width: 900px){
@@ -187,22 +184,10 @@ video.videoPost {
   body {
     flex-direction: column;
   }
-  body>.col-left {
-    width: 100%;
-    position: relative;
-  }
-  body>.col-right {
-    width: 100%;
-    padding-bottom: 40px;
-    flex-grow: 1;
-  }
-  body>.col-left:after {
-    display: none !important;
-  }
   html {
     background-image: none;
   }
-  body>.col-right .navigation {
+  body .navigation {
     display: none !important;
   }
 }
@@ -210,8 +195,5 @@ video.videoPost {
 @media screen and (max-width: 768px) {
   video.videoPost {
       max-width: 100% !important;
-  }
-  body>.col-right {
-    padding-bottom: 32px;
   }
 }
