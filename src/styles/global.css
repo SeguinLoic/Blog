@@ -185,15 +185,6 @@ video.videoPost {
 }
 
 @media screen and (max-width: 900px) {
-  body {
-    flex-direction: column;
-  }
-  html {
-    background-image: none;
-  }
-  body .navigation {
-    display: none !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
