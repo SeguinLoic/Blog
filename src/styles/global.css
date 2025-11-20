@@ -95,7 +95,7 @@ body>.container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 40px 0px;
+    padding: 40px 0 24px;
     max-width: 42rem;
     position: relative;
 }
