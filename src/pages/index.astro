@@ -4,7 +4,6 @@ import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
 
 const page = "home";
 const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
