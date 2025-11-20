@@ -10,18 +10,6 @@ const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <BaseLayout page={page}>
-  <!-- <div class="col-left">
-        <div class="container">
-            <Header />
-        </div>
-  </div>
-  <div class="col-right">
-        <Navigation />
-        <ul class="listShortPost">
-            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} />)}
-        </ul>
-        <Footer />
-  </div>-->
     <div class="container">
         <Header />
         <ul class="listShortPost">

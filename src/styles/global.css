@@ -54,6 +54,10 @@
   font-weight: 400;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
 html {
   display: flex;
   background-color: #fff;
@@ -66,10 +70,6 @@ html {
 html:not(#home) p.about {
     display: none;
 }
-/*html:not(#home) .logo a {
-    width: 160px;
-    height: 43px;
-}*/
 html:before {
     content: "";
     width: 100%;
@@ -81,7 +81,6 @@ html:before {
     z-index: -1;
     pointer-events: none;
 }
-
 body {
   display: flex;
   flex-direction: row;
@@ -111,35 +110,8 @@ body>.container:after {
   border-right: 1px solid var(--color-fg);
   pointer-events: none;
 }
-/*body>.col-left {
-    width: 150px;
-    position: sticky;
-}
-body>.col-right {
-    width: 780px;
-    padding-bottom: 56px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-body>.col-left:after,
-body>.col-right:after {
-    content: '';
-    width: 1px;
-    height: 100%;
-    background-color: var(--color-fg);
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 0.13;
-    pointer-events: none;
-}
-body>.col-left .container {
-    position: sticky;
-    top: 0px;
-}*/
 
-body > .content {
+/*body > .content {
     width: 70vW;
     padding: 40px;
     display: flex;
@@ -148,18 +120,15 @@ body > .content {
 body>.content main {
     display: flex;
     flex-grow: 1;
-}
+}*/
 
-main {
+/*main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-}
+}*/
 
-* {
-  box-sizing: border-box;
-  font-family: 'Inter';
-}
+
 
 h1 {
   margin: 1rem 0;
