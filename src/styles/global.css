@@ -53,6 +53,36 @@
   font-style: normal;
   font-weight: 400;
 }
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/fonts/StackSansNotch-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/fonts/StackSansNotch-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  src: url('/fonts/MuktaMalar-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  src: url('/fonts/MuktaMalar-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  src: url('/fonts/MuktaMalar-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
 
 * {
   box-sizing: border-box;
