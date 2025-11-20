@@ -11,9 +11,7 @@ tags: ["astro", "blogging", "learning in public"]
 category: Travel
 ---
 
-<video controls muted autoplay transition:persist class="videoPost">
-  <source src="/one-year-travel.mp4" type="video/mp4" />
-</video>
+<img src="/travel-1.jpg"/>
 
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
 
