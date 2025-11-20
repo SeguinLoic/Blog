@@ -6,15 +6,11 @@ import ButtonContrast from "./ButtonContrast.astro"
     <div class="container">
         <div class="intro">
             <div class="logo">
-                <!--<a href="/">
-                    <img src="/logo-blog-ok.png"/>
-                    One Human
-                </a>-->
                 <a href="/">6R05L0L0</a>
             </div>
             <ButtonContrast />
+            <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p>
         </div>
-        <!-- <p class="about">Salut, je suis un humain plutôt ordinaire. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager && randonner && l'escalade avec les amis (principalement pour la bière fraiche à la fin de la session). Ah, oui, et j'adore écrire.</p> -->
     </div>
 </header>
 
@@ -51,10 +47,25 @@ import ButtonContrast from "./ButtonContrast.astro"
     .logo a {
         display: flex;
         font-family: 'Space Grotesk';
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-weight: 600;
         text-decoration: none;
         line-height: 1.2;
+        position: relative;
+        z-index: 1;
+        color: var(--color-bg) !important;
+        padding: 0px 8px;
+    }
+    .logo a:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-fg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) skew(-5deg);
+        z-index: -1;
     }
     p.about {
         line-height: 2em;
