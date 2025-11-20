@@ -59,28 +59,19 @@
   footer .container .social {
     display: flex;
   }
-  @media screen and (max-width: 1200px) {
-    footer {
-      padding: 24px 40px 0px;
-    }
-  }
-  @media screen and (max-width: 900px) {
-    footer .container .introduction p.name:after {
-      display: none;
-    }
-    footer .container .introduction p.name {
-      padding-right: 0px;
-      padding-bottom: 4px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    footer {
-      padding: 24px 32px 0px;
-    }
-  }
+  @media screen and (max-width: 1200px) {}
+
+  @media screen and (max-width: 900px) {}
+
+  @media screen and (max-width: 768px) {}
+
   @media screen and (max-width: 500px) {
     footer .container .introduction {
       flex-direction: column;
+      gap: 4px;
+    }
+    footer .container .introduction p.mention:after {
+      display: none;
     }
   }
 </style>
