@@ -6,26 +6,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-        <div class="container">
-          <Header />
-          <div class="postIntro">
-              <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
-              <p class="postTitle">{frontmatter.title}</p>
-              <p class="postDescription">{frontmatter.description}</p>
-          </div>
-          <div class="postContent">
-              <slot />
-          </div>
-          <Footer />
-        </div>
-    <!-- 
-    <div class="col-left">
-        <div class="container">
-            <Header />
-        </div>
-    </div>
-    <div class="col-right">
-        <Navigation />
+    <div class="container">
+        <Header />
         <div class="postIntro">
             <p class="postDate">{frontmatter.pubDate.toString().slice(0,10)}</p>
             <p class="postTitle">{frontmatter.title}</p>
@@ -36,7 +18,6 @@ const { frontmatter } = Astro.props;
         </div>
         <Footer />
     </div>
-    -->
 </BaseLayout>
 
 <style>
@@ -47,7 +28,7 @@ const { frontmatter } = Astro.props;
   p.postTitle {
     font-family: 'Space Grotesk';
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0px;
     line-height: 1.2em;
     margin-top: 8px;
