@@ -97,7 +97,19 @@ body>.container {
     flex-grow: 1;
     padding: 40px 0px;
     max-width: 42rem;
-    border: 1px solid red;
+    position: relative;
+}
+body>.container:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .15;
+  border-left: 1px solid var(--color-fg);
+  border-right: 1px solid var(--color-fg);
+  pointer-events: none;
 }
 /*body>.col-left {
     width: 150px;
