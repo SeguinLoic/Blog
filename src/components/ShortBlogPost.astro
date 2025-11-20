@@ -4,11 +4,11 @@ const {url, title, desc, date} = Astro.props;
 
 <li class="shortPost">
     <a href={url}>
-        <p class="date">{date}</p>
-        <div class="containerInfo">
-            <p class="title">{title}</p>
-            <p class="description">{desc}</p>
+        <div class="postDatas">
+            <p class="date">{date}</p>
         </div>
+        <p class="title">{title}</p>
+        <p class="description">{desc}</p>
     </a>
 </li>
 
