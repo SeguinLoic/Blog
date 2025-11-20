@@ -170,6 +170,10 @@ video.videoPost {
   /*margin-bottom: 24px;*/
 }
 
+.postContent p {
+    padding: 0px 24px;
+}
+
 @media screen and (max-width: 1200px) {
 }
 
