@@ -4,7 +4,7 @@
 <footer>
   <div class="container">
     <div class="introduction">
-      <p class="name">© 2025 6R05L0L0</p>
+      <p class="mention">© 2025 <span class="name">6R05L0L0</span></p>
       <p class="sentence">Le mieux est l'ennemi du bien</p>
     </div>
   </div>
@@ -29,13 +29,13 @@
   footer .container .introduction p {
     margin: 0px;
   }
-  footer .container .introduction p.name {
+  footer .container .introduction p.mention {
     display: flex;
     padding-right: 20px;
     position: relative;
     font-size: 0.95em;
   }
-  footer .container .introduction p.name:after {
+  footer .container .introduction p.mention:after {
     content: '';
     width: 1px;
     height: 100%;
@@ -44,6 +44,9 @@
     top: 0;
     right: 10px;
     opacity: 0.25;
+  }
+  footer .container .introduction span.name {
+    font-weight: 600;
   }
   footer .container .introduction p.sentence {
     display: flex;
