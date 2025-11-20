@@ -166,7 +166,7 @@ h1 {
 }
 
 video.videoPost {
-  max-width: 500px !important;
+  max-width: 100% !important;
   margin-bottom: 24px;
 }
 
