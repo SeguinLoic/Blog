@@ -1,6 +1,6 @@
 ---
 import Navigation from "./Navigation.astro"
-//const { tags } = Astro.props;
+const { tags } = Astro.props;
 ---
 
 <header>
@@ -11,6 +11,7 @@ import Navigation from "./Navigation.astro"
         </div>
     </div>
     <p class="about">"Salut. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager, randonner, escalader avec les copaings (principalement pour la bière fraiche à la fin de la session). J'aime les jeux de rôles... Ah, oui, et j'adore écrire."</p>
+    <p>{tags}</p>
     <!--{tags.map((tag) => (
         <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
     ))}-->
