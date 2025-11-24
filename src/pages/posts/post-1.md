@@ -2,11 +2,11 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Une année en vadrouille
 pubDate: 26-07-2025
-description: It was not about seeing beautiful places, but seeing beauty in every places
+description: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
 author: One Human
 image:
     url: https://docs.astro.build/assets/rose.webp
-    alt: It was not about seeing beautiful places, but seeing beauty in every places
+    alt: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
 tags: ["astro", "blogging", "learning in public"]
 category: Travel
 ---
