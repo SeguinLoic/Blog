@@ -11,6 +11,11 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
 console.log(tags);
 ---
 
+<script>
+    console.log(frontmatter.tags);
+    console.log(tags);
+</script>
+
 <BaseLayout page={page}>
     <div class="container">
         <Header tags={tags} />
