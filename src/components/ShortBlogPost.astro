@@ -10,9 +10,9 @@ const {url, title, desc, date, tags} = Astro.props;
         <p class="title">{title}</p>
         <p class="description">{desc}</p>
         <div class="tags">
-            {tags.map((tag: string) => (
+            {tags.forEach(tag => {
                 <p class="tag">#{tag}</p>
-            ))}
+            })}
         </div>
     </a>
 </li>
