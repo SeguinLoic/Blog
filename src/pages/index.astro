@@ -7,14 +7,13 @@ import Footer from '../components/Footer.astro';
 
 const page = "home";
 const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())];
 ---
 
 <BaseLayout page={page}>
     <div class="container">
         <Header tags={tags} />
         <ul class="listShortPost">
-            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={tags} />)}
+            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} />)}
         </ul>
         <Footer />
     </div>
