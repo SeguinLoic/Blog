@@ -1,6 +1,8 @@
 ---
 import Navigation from "./Navigation.astro"
-const { tags } = Astro.props;
+const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())];
+//const { tags } = Astro.props;
 ---
 
 <header>
@@ -11,17 +13,8 @@ const { tags } = Astro.props;
         </div>
     </div>
     <p class="about">"Salut. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager, randonner, escalader avec les copaings (principalement pour la bière fraiche à la fin de la session). J'aime les jeux de rôles... Ah, oui, et j'adore écrire."</p>
-    <p>{tags.map((tag) => {
-        tag
-    })}</p>
-    <!--{tags.map((tag) => (
-        <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}-->
-    <!-- <Navigation tags={tags} /> -->
+    <p>{tags}</p>
     <Navigation />
-    <script>
-        console.log({tags});
-    </script>
 </header>
 
 <style>
