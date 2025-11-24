@@ -5,9 +5,13 @@ const posts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: tru
 const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())];
 ---
 <div class="navigation">
-    <ButtonReturnHome />
-    <ul class="tags">{tags.map((tag)=> <li class="tag"><a href={`/tags/${tag}`}>{tag}</a></li>)}</ul>
-    <ButtonContrast />
+    <div class="colLeft">
+        <ButtonReturnHome />
+        <ul class="tags">{tags.map((tag)=> <li class="tag"><a href={`/tags/${tag}`}>{tag}</a></li>)}</ul>
+    </div>
+    <div class="colRight">
+        <ButtonContrast />
+    </div>
 </div>
 
 <style>
@@ -28,9 +32,9 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
         opacity: .15;
         background-color: var(--color-fg);
     }
-    html#home .navigation {
+    /*html#home .navigation {
         justify-content: flex-end;
-    }
+    }*/
     @media screen and (max-width: 1200px) {}
     @media screen and (max-width: 900px) {}
     @media screen and (max-width: 768px) {}
