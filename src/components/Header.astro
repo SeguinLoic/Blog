@@ -1,6 +1,7 @@
 ---
 import Navigation from "./Navigation.astro"
 const { tags } = Astro.props;
+console.log(tags);
 ---
 
 <header>
@@ -86,3 +87,7 @@ const { tags } = Astro.props;
     @media screen and (max-width: 900px) { }
     @media screen and (max-width: 768px) { }
 </style>
+
+<script>
+    console.log(tags);
+</script>
