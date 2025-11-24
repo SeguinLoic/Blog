@@ -1,13 +1,10 @@
 ---
 import ButtonContrast from "./ButtonContrast.astro"
 import ButtonReturnHome from "./ButtonReturnHome.astro"
-const { tags } = Astro.props;
+//const { tags } = Astro.props;
 ---
 <div class="navigation">
     <div class="tags">
-        {tags.map((tag) => (
-            <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-        ))}
     </div>
     <ButtonReturnHome />
     <ButtonContrast />
