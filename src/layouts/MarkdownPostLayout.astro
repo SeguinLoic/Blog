@@ -3,10 +3,9 @@ import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const { frontmatter } = Astro.props;
-const page = {frontmatter.title};
 ---
 
-<BaseLayout page={page}>
+<BaseLayout page={frontmatter.title}>
     <div class="container">
         <Header />
         <div class="postIntro">

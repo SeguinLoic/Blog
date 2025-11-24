@@ -18,9 +18,8 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-const page = {tag};
 ---
-<BaseLayout page={page}>
+<BaseLayout page={tag}>
     <div class="container">
         <Header/>
         <div class="titleTag">
