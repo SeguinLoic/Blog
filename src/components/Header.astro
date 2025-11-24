@@ -13,7 +13,7 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
         </div>
     </div>
     <p class="about">"Salut. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager, randonner, escalader avec les copaings (principalement pour la bière fraiche à la fin de la session). J'aime les jeux de rôles... Ah, oui, et j'adore écrire."</p>
-    <p>{tags}</p>
+    <ul>{tags.map((tag)=> <li>tag</li>)}</ul>
     <Navigation />
 </header>
 
