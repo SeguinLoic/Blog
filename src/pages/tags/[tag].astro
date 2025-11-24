@@ -33,18 +33,27 @@ const { posts } = Astro.props;
 </BaseLayout>
 
 <style>
-  .listShortPost, .listShortProject {
-      padding: 0px;
-      list-style: none;
-      margin: 0px;
+  ul.listShortPost {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
   }
   .listShortProject {
       display: flex;
       column-gap: 20px;
   }
-  ul.listShortPost {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
+  .listShortPost, .listShortProject {
+      padding: 0px;
+      list-style: none;
+      margin: 0px;
+  }
+  .titleTag {
+      padding: 40px 24px;
+      background-color: var(--color-fg);
+      color: var(--color-bg) !important;
+  }
+  .titleTag p {
+      color: var(--color-bg) !important;
+      margin: 0px;
   }
 </style>
