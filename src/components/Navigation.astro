@@ -1,9 +1,7 @@
 ---
 import ButtonContrast from "./ButtonContrast.astro"
 import ButtonReturnHome from "./ButtonReturnHome.astro"
-
-const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())];
+const { tags } = Astro.props;
 ---
 <div class="navigation">
     <div class="tags">
