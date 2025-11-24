@@ -6,20 +6,25 @@ const pageTitle = "Tag index";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <div class="tags">{tags.map((tag) => (
-    <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}</div>
+      <div class="container">
+          <Header />
+              <div class="tags">
+                  {tags.map((tag) => (
+                      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+                  ))}
+              </div>
+          <Footer />
+      </div>
 </BaseLayout>
+
 <style>
   a {
     color: #00539F;
   }
-
   .tags {
     display: flex;
     flex-wrap: wrap;
   }
-
   .tag {
     margin: 0.25em;
     border: dotted 1px #a1a1a1;
