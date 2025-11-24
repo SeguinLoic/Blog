@@ -23,7 +23,7 @@ const { posts } = Astro.props;
     <div class="container">
         <Header/>
         <div class="titleTag">
-            <p>Les posts avec le tag : <span class="tag">{tag}</span></p>
+            <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
         </div>
         <ul class="listShortPost">
             {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} />)}
