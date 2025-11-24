@@ -7,7 +7,7 @@ author: One Human
 image:
     url: https://docs.astro.build/assets/rose.webp
     alt: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
-tags: ["astro", "blogging", "learning in public"]
+tags: ["Voyage", "1AnEnVadrouille",]
 category: Travel
 ---
 
