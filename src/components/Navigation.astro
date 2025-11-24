@@ -6,7 +6,7 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
 ---
 <div class="navigation">
     <ButtonReturnHome />
-    <ul class="tags">{tags.map((tag)=> <li class="tag">{tag}</li>)}</ul>
+    <ul class="tags">{tags.map((tag)=> <li class="tag"><a href={`/tags/${tag}`}>{tag}</a></li>)}</ul>
     <ButtonContrast />
 </div>
 
