@@ -10,7 +10,7 @@ const {url, title, desc, date, tags} = Astro.props;
         <p class="title">{title}</p>
         <p class="description">{desc}</p>
         <div class="tags">
-            <ul class="tag"><li>#{tags.toString().slice(0,10)}</li></ul>
+            <ul class="tag"><li>#{tags.toString().split(",")}</li></ul>
         </div>
     </a>
 </li>
