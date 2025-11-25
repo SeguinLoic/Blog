@@ -137,9 +137,6 @@ video.videoPost,
 .postContent img {
   max-width: 100% !important;
 }
-.postContent p {
-    padding: 0px 24px;
-}
 
 @media screen and (max-width: 1200px) {
 }
