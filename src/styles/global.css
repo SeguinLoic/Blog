@@ -127,6 +127,7 @@ body>.container:before {
     opacity: 0.15;
     pointer-events: none;
     background-color: var(--color-fg);
+    z-index: 1;
 }
 body>.container:after {
     right: 0;
