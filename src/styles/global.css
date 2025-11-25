@@ -100,17 +100,6 @@ html {
 html:not(#home) p.about {
     display: none;
 }
-html:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(25deg, transparent, var(--color-bg) 30%);
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    pointer-events: none;
-}
 body {
   display: flex;
   flex-direction: row;
@@ -128,17 +117,22 @@ body>.container {
     max-width: 42rem;
     position: relative;
 }
+body>.container:after,
+body>.container:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.15;
+    pointer-events: none;
+    background-color: var(--color-fg);
+}
 body>.container:after {
-  content: "";
-  width: calc(100% - 1px);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .15;
-  border-left: 1px solid var(--color-fg);
-  border-right: 1px solid var(--color-fg);
-  pointer-events: none;
+    right: 0;
+}
+body>.container:before {
+    left: 0;
 }
 
 video.videoPost,
