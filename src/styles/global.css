@@ -161,4 +161,7 @@ video.videoPost,
   body>.container {
       padding: 24px 0 24px;
   }
+  html p, html a {
+      font-size: 15px;
+  }
 }
