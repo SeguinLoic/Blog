@@ -60,6 +60,10 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
     @media screen and (max-width: 768px) {
         .navigation {
             margin-top: 24px;
+            height: auto;
+        }
+        ul.tags {
+            flex-wrap: wrap;
         }
     }
 </style>
