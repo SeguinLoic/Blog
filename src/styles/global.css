@@ -132,11 +132,15 @@ body>.container:after {
 body>.container:before {
     left: 0;
 }
-
+.postContent p {
+    padding: 0px 24px;
+}
 video.videoPost,
 .postContent img {
   max-width: 100% !important;
 }
+
+
 
 @media screen and (max-width: 1200px) {
 }
@@ -160,6 +164,9 @@ video.videoPost,
   }
   html p, html a {
       font-size: 15px;
+  }
+  .postContent p {
+      padding: 0px 16px;
   }
 }
 @media screen and (max-width: 672px) {
