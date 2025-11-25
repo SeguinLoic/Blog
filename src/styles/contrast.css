@@ -1,11 +1,13 @@
 [data-theme="light"] {
   --color-bg: #fbfaf3;
   --color-fg: #1c1c1c;
+  --color-3: #000;
 }
 
 [data-theme="dark"] {
   --color-bg: #1c1c1c;
   --color-fg: #fbfaf3;
+  --color-3: #292929;
 }
 
 html {
