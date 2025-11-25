@@ -7,9 +7,7 @@ const allTags = tags.toString().split(",");
     <a href={url}>
         <div class="postDatas">
             <p class="date">{date}</p>
-            <div class="tags">
-                <ul class="tag">{allTags.map((tag) => <li>{tag}</li>)}</ul>
-            </div>
+            <ul class="tags">{allTags.map((tag) => <li class="tag">{tag}</li>)}</ul>
         </div>
         <p class="title">{title}</p>
         <p class="description">{desc}</p>
@@ -45,6 +43,9 @@ const allTags = tags.toString().split(",");
     }
     .shortPost a:hover::before {
         opacity: 0.05;
+    }
+    .shortPost .postDatas {
+        display: flex;
     }
     .shortPost a .title {
         font-family: Space Grotesk;
