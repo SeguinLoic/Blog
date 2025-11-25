@@ -47,6 +47,36 @@ const allTags = tags.toString().split(",");
     .shortPost .postDatas {
         display: flex;
     }
+    .shortPost p.date {
+        font-size: .85em;
+        padding-right: 8px;
+        opacity: 0.8;
+    }
+    .shortPost .postDatas .tags {
+        padding-left: 8px;
+        display: flex;
+        list-style: none;
+        position: relative;
+    }
+    .shortPost .postDatas .tags:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: var(--color-fg);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.15;
+    }
+    .shortPost .postDatas .tags .tag {
+        padding-right: 8px;
+        font-size: 0.9em;
+        line-height: 1em;
+        display: flex;
+        align-items: center;
+        opacity: 0.8;
+    }
     .shortPost a .title {
         font-family: Space Grotesk;
         font-weight: 500;
@@ -55,12 +85,6 @@ const allTags = tags.toString().split(",");
     }
     .shortPost a p {
         margin: 0px;
-    }
-    .shortPost p.date {
-        font-size: .85em;
-        padding-right: 18px;
-        padding-top: 1px;
-        opacity: 0.8;
     }
     .shortPost a .description {
         opacity: 0.8;
