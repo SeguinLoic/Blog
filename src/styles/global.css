@@ -91,9 +91,6 @@
 html {
   display: flex;
   background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: auto;
   min-height: 100%;
 }
