@@ -82,7 +82,7 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
     }
     @media screen and (max-width: 400px) {
         .navigation ul.tags {
-            max-width: 60%;
+            display: none;
         }
     }
 </style>
