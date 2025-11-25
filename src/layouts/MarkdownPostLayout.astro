@@ -27,44 +27,54 @@ const { frontmatter } = Astro.props;
 
 <style>
   .postIntro {
-      position: relative;
-      padding: 40px 24px;
-      gap: 8px;
-      display: flex;
-      flex-direction: column;
-      background-color: #000;
+        position: relative;
+        padding: 40px 24px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
   }
+  .postIntro:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+    }
   .postIntro p {
-      margin: 0px;
-      color: #fff !important;
+        margin: 0px;
+        color: #fff !important;
   }
   p.postTitle {
-      font-family: 'Space Grotesk';
-      font-size: 2.3em;
-      font-weight: 500;
-      margin: 8px 0 0;
-      line-height: 1.2em;
-      max-width: 100%;
+        font-family: 'Space Grotesk';
+        font-size: 2.3em;
+        font-weight: 500;
+        margin: 8px 0 0;
+        line-height: 1.2em;
+        max-width: 100%;
   }
   p.postDescription {
-      margin-bottom: 0px;
-      font-size: 1.1em;
+        margin-bottom: 0px;
+        font-size: 1.1em;
   }
   p.postDate {
-      font-size: 0.85em;
+        font-size: 0.85em;
   }
   .postIntro .tags {
-      display: flex;
+        display: flex;
   }
   .postIntro .tags .tag a {
-      color: #fff !important;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9em;
-      padding-right: 8px;
+        color: #fff !important;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.9em;
+        padding-right: 8px;
   }
   .postContent p {
-      padding: 0px 24px !important;
+        padding: 0px 24px !important;
   }
   @media screen and (max-width: 1200px) {
     .postIntro {
