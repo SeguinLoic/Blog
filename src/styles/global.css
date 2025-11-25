@@ -162,6 +162,9 @@ video.videoPost,
       max-width: 100% !important;
   }
   body>.container {
-    padding: 24px 0 24px;
-}
+      padding: 24px 0 24px;
+  }
+  body {
+      justify-content: inherit;
+  }
 }
