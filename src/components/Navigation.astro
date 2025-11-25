@@ -57,5 +57,9 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
     }
     @media screen and (max-width: 1200px) {}
     @media screen and (max-width: 900px) {}
-    @media screen and (max-width: 768px) {}
+    @media screen and (max-width: 768px) {
+        .navigation {
+            margin-top: 24px;
+        }
+    }
 </style>
