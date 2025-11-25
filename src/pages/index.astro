@@ -7,7 +7,6 @@ import Footer from '../components/Footer.astro';
 
 const page = "home";
 const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-//const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())];
 ---
 
 <BaseLayout page={page}>
