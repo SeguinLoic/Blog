@@ -11,7 +11,7 @@ tags: ["Rando","Écriture","Pensées"]
 category: Hiking
 ---
 
-<img src="/rando-1.jpg"/>
+![Randonnée au Puy de Sancy](../../assets/rando-1.jpg)
 
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
 
