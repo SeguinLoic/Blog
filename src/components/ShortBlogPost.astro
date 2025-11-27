@@ -1,14 +1,14 @@
 ---
 const {url, title, desc, date, tags, image} = Astro.props;
-const maDate = date;
-maDate.toLocaleDateString("fr");
+const formatedDate = date.toString().split("-");
+[formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
 const allTags = tags.toString().split(",");
 ---
 
 <li class="shortPost">
     <div class="colContent">
         <div class="postDatas">
-            <p class="date">{maDate}</p>
+            <p class="date">{formatedDate}</p>
             <div class="tags">
                 {allTags.map((tag) => <a class="tag" href={`/tags/${tag}`}>#{tag}</a>)}
             </div>
