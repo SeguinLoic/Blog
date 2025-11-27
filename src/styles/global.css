@@ -89,7 +89,6 @@
   font-style: normal;
   font-weight: 400;
 }
-
 * {
   box-sizing: border-box;
   font-family: 'Inter';
@@ -143,26 +142,25 @@ body>.container:before {
     font-family: "Roboto Slab";
     font-weight: 400;
 }
+.postContent p:has(img) {
+    margin: 0px !important;
+    padding: 0px;
+}
+.postContent img {
+    height: auto;
+}
 video.videoPost,
 .postContent img {
   max-width: 100% !important;
 }
-
-
-
-@media screen and (max-width: 1200px) {
-}
-
+@media screen and (max-width: 1200px) {}
 @media screen and (min-width: 900px){
   body>.col-left .contraste,
   body>.col-left .returnHome {
     display: none !important;
   }
 }
-
-@media screen and (max-width: 900px) {
-}
-
+@media screen and (max-width: 900px) {}
 @media screen and (max-width: 768px) {
   video.videoPost {
       max-width: 100% !important;
