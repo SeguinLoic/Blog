@@ -4,21 +4,23 @@ const allTags = tags.toString().split(",");
 ---
 
 <li class="shortPost">
-    <a href={url}>
         <div class="colContent">
             <div class="postDatas">
                 <p class="date">{date}</p>
-                <!-- <div class="tags">
+                <div class="tags">
                     {allTags.map((tag) => <a class="tag" href={`/tags/${tag}`}>#{tag}</a>)}
-                </div>-->
+                </div>
             </div>
-            <p class="title">{title}</p>
-            <p class="description">{desc}</p>
+            <a href={url}>
+                <p class="title">{title}</p>
+                <p class="description">{desc}</p>
+            </a>
         </div>
         <div class="colImage">
-            <img src={image} />
+            <a href={url}>
+                <img src={image} />
+            </a>
         </div>
-    </a>
 </li>
 
 <style>
