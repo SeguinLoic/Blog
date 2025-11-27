@@ -99,9 +99,6 @@ html {
   height: auto;
   min-height: 100%;
 }
-html:not(#home) p.about {
-    display: none;
-}
 body {
   display: flex;
   flex-direction: row;
