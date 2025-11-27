@@ -173,7 +173,7 @@ video.videoPost,
   }
   .postContent p {
       padding: 0px 16px;
-      line-height: 1.6;
+      line-height: 1.7;
   }
 }
 @media screen and (max-width: 672px) {
