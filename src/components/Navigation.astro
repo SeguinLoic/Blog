@@ -1,9 +1,6 @@
 ---
 import ButtonContrast from "./ButtonContrast.astro"
 import ButtonReturnHome from "./ButtonReturnHome.astro"
-
-/*const posts = await Astro.glob('../pages/posts/*.md', { eager: true });
-const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())];*/
 ---
 <div class="navigation">
     <div class="colLeft">
@@ -30,23 +27,23 @@ const tags = [...new Set(posts.map((post: any) => post.frontmatter.tags).flat())
         display: flex;
         width: 100%;
     }
-    ul.tags {
-        display: flex;
-        list-style: none;
+    ul.nav {
         margin: 0px;
-        height: 100%;
-        padding-left: 24px;
-    }
-    ul.tags li.tag {
-        align-items: center;
+        padding: 0px;
+        list-style: none;
         display: flex;
-        padding-right: 8px;
     }
-    ul.tags li.tag a {
+    ul.nav li {
+        display: flex;
+    }
+    ul.nav li a {
+        display: flex;
+        align-items: center;
+        padding: 0px 8px;
         text-decoration: none;
-        font-weight: 600;
-        font-size: 0.9em;
         color: #fff !important;
+        font-weight: 700;
+        font-size: 14px !important;
     }
     @media screen and (max-width: 1200px) {}
     @media screen and (max-width: 900px) {}
