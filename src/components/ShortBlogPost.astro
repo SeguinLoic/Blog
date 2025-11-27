@@ -1,10 +1,8 @@
 ---
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
-
 const formatedDate = date.toString().split("-");
 [formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
-
 const insertBetween = (ele, array) => {
   return array.flatMap((x) => [ele, x]).slice(1);
 };
