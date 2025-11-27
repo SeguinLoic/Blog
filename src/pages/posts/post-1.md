@@ -23,6 +23,8 @@ On règle les derniers détails administratifs, on fait un grand ménage. Tout s
 
 Le premier avion fait l'effet d'une claque. On est comme téléportés dans un univers différent de ce qu'on a connu hier. Les gens, la langue, la ville, tout est différent. On doit tout réapprendre. De la façon de se transporter à la manière de communiquer. Il y a tout un tas de petites connaissances, de petites habitudes qui font partie de la routine de voyageur. Par chance, ça vient très vite. Et puis, la meilleure façon de faire, c'est de regarder comment font les autres. 
 
+<img src="/travel-2.jpg"/>
+
 Les autres ce sont les locaux mais aussi les autres voyageurs que l'on rencontre dans les parties communes des hostels. C'est à la fois impressionnant et excitant. Déjà parce que, toi, tu apprends tout juste à marcher, alors qu'eux ils ne voyagent qu'à vélo, en stop ou sans avion. Ils font des treks en slip dans la montagne. Ils vont dans des pays qui te paraîssent dangereux. C'est hyper inspirant d'écouter les histoires de ces aventuriers. 
 
 Et puis un beau jour, tu décides de partir à l'aventure, toi aussi. Tu fais un groupe avec de parfaits inconnus, tu prends un cheval pour aller faire de la randonnée, tu fais caca entre deux planches, tu joues aux cartes et tu apprends à faire du pain et du lait fermenté avec les familles. Ça c'est fou. Le soir, quand tu as bien mangé, bien rigolé avec tes compagnons de voyage et que tu vas dans ta yourte pour te coucher, à 3000m d'altitude au milieu de nulle part, tu te dis qu'il ne faut pas grand chose pour être heureux : un toit, de la nourriture, de l'eau et surtout des gens.
