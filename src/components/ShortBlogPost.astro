@@ -127,11 +127,14 @@ const allTags = tags.toString().split(",");
     .shortPost p {
         margin: 0px;
     }
-    .shortPost .colImage img {
-        width: 100%;
-    }
     .shortPost .colImage {
         width: 30%;
+    }
+    .shortPost .colImage a {
+        display: flex;
+    }
+    .shortPost .colImage img {
+        width: 100%;
     }
     @media screen and (max-width: 768px) {
         .shortPost {
