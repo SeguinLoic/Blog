@@ -36,13 +36,12 @@ const allTags = tags.toString().split(",");
     }
     .shortPost a {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         padding: 32px 24px;
         position: relative;
         color: #000;
         text-decoration: none;
-        gap: 8px;
     }
     .shortPost a::before {
         content: '';
@@ -58,6 +57,11 @@ const allTags = tags.toString().split(",");
     }
     .shortPost a:hover::before {
         opacity: 0.05;
+    }
+    .shortPost a .colContent {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
     .shortPost .postDatas {
         display: flex;
