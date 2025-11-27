@@ -13,7 +13,7 @@ const posts = await Astro.glob('./posts/*.md', { eager: true });
     <div class="container">
         <Header />
         <ul class="listShortPost">
-            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image} />)}
+            {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)}
         </ul>
         <Footer />
     </div>
