@@ -11,7 +11,7 @@ const allTags = tags.toString().split(",");
                 {allTags.map((tag) => <a class="tag" href={`/tags/${tag}`}>#{tag}</a>)}
             </div>
         </div>
-        <a href={url}>
+        <a href={url} class="postTitle">
             <p class="title">{title}</p>
             <p class="description">{desc}</p>
         </a>
@@ -70,7 +70,7 @@ const allTags = tags.toString().split(",");
     .shortPost .colContent {
         display: flex;
         flex-direction: column;
-        gap: 8px;  
+        gap: 12px;  
         width: 70%;
         padding-right: 24px;
     }
@@ -106,19 +106,23 @@ const allTags = tags.toString().split(",");
         align-items: center;
         opacity: 0.8;
     }
+    .shortPost .postTitle {
+        gap: 8px;
+    }
     .shortPost .title {
         font-family: Space Grotesk;
         font-weight: 500;
         font-size: 1.7em;
         line-height: 1em;
         padding-top: 4px;
+        text-decoration: none;
     }
     .shortPost p {
         margin: 0px;
-        text-decoration: none;
     }
     .shortPost .description {
         opacity: 0.8;
+        text-decoration: none;
     }
     .shortPost .colImage img {
         width: 100%;
