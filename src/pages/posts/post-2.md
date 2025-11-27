@@ -7,7 +7,7 @@ author: One Human
 image:
     url: /rando-1.jpg
     alt: The Astro logo on a dark background with a purple gradient arc.
-tags: ["Rando","Écriture","Pensées"]
+tags: ["Rando"]
 category: Hiking
 ---
 
