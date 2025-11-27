@@ -1,16 +1,21 @@
 ---
-const {url, title, desc, date, tags} = Astro.props;
+const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
 ---
 
 <li class="shortPost">
     <a href={url}>
-        <div class="postDatas">
-            <p class="date">{date}</p>
-            <ul class="tags">{allTags.map((tag) => <li class="tag">{tag}</li>)}</ul>
+        <div class="colContent">
+            <div class="postDatas">
+                <p class="date">{date}</p>
+                <ul class="tags">{allTags.map((tag) => <li class="tag">{tag}</li>)}</ul>
+            </div>
+            <p class="title">{title}</p>
+            <p class="description">{desc}</p>
         </div>
-        <p class="title">{title}</p>
-        <p class="description">{desc}</p>
+        <div class="colImage">
+            <img src={image.url} />
+        </div>
     </a>
 </li>
 
