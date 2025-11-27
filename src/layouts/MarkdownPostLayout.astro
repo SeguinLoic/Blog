@@ -26,20 +26,23 @@ const insertBetween = (ele, array) => {
         <div class="postContent">
             <slot />
         </div>
+        <div class="progressBar">
+            <span class="bar"></span>
+        </div>
         <Footer />
     </div>
 </BaseLayout>
 
 <style>
-  .postIntro {
+    .postIntro {
         position: relative;
         padding: 40px 24px;
         gap: 8px;
         display: flex;
         flex-direction: column;
         background-color: var(--color-3);
-  }
-  .postIntro:before {
+    }
+    .postIntro:before {
         content: '';
         width: 100%;
         height: 1px;
@@ -49,66 +52,88 @@ const insertBetween = (ele, array) => {
         left: 0;
         opacity: 0.2;
     }
-  .postIntro p {
+    .postIntro p {
         margin: 0px;
         color: #fff !important;
-  }
-  p.postTitle {
+    }
+    p.postTitle {
         font-family: 'Space Grotesk';
         font-size: 2.3em;
         font-weight: 500;
         margin: 8px 0 0;
         line-height: 1.2em;
         max-width: 100%;
-  }
-  p.postDescription {
+    }
+    p.postDescription {
         margin-bottom: 0px;
         font-size: 1.1em;
-  }
-  p.postDate {
+    }
+    p.postDate {
         font-size: 0.85em;
-  }
-  .postIntro .tags {
+    }
+    .postIntro .tags {
         display: flex;
-  }
-  .postIntro .tags .tag a {
+    }
+    .postIntro .tags .tag a {
         color: #fff !important;
         font-weight: 600;
         text-decoration: none;
         font-size: 0.9em;
         padding-right: 8px;
-  }
-  @media screen and (max-width: 1200px) {
-    .postIntro {
-        padding: 40px;
     }
-    p.postTitle {
-        font-size: 2.7em;
-        max-width: 100%;
+    .bar {
+        position: fixed;
+        width: 100%;
+        height: 3px;
+        z-index: 1337;
+        animation: auto linear forwards progressAnimation;
+        animation-timeline: scroll(root);
+        transform-origin: left;
+        background-color: var(--color-fg);
     }
-  }
-  @media screen and (max-width: 900px) {
-    p.postTitle {
-        font-size: 2.2em;
+    @keyframes progressAnimation {
+        0% {
+            transform: scaleX(1);
+        }
+        1% {
+            transform: scaleX(0);
+        }
+        100% {
+            transform: scaleX(1);
+        }
     }
-    p.postDescription {
-        margin-top: 16px;
-        font-size: 1em;
+
+    @media screen and (max-width: 1200px) {
+        .postIntro {
+            padding: 40px;
+        }
+        p.postTitle {
+            font-size: 2.7em;
+            max-width: 100%;
+        }
     }
-    p.postDate {
-        font-size: .85em;
-        margin-top: 16px;
-        margin-bottom: 0px;
+    @media screen and (max-width: 900px) {
+        p.postTitle {
+            font-size: 2.2em;
+        }
+        p.postDescription {
+            margin-top: 16px;
+            font-size: 1em;
+        }
+        p.postDate {
+            font-size: .85em;
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+        .postIntro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
-    .postIntro {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    @media screen and (max-width: 768px) {
+        .postIntro {
+            padding: 24px 16px;
+        }
     }
-  }
-  @media screen and (max-width: 768px) {
-    .postIntro {
-        padding: 24px 16px;
-    }
-  }
 </style>
