@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Dec4thl0n et la b0ucle de c0n
-pubDate: 23-08-2025
+pubDate: 2025-08-23
 description: Un trek entre potes au Puy de Sancy
 author: One Human
 image:
