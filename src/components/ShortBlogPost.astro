@@ -131,6 +131,25 @@ const insertBetween = (ele, array) => {
         }
     }
     @media screen and (max-width: 500px) {
+        .shortPost .colContent {
+            width: 100%;
+        }
+        .shortPost .colImage {
+            width: 72px;
+        }
+        .shortPost .colImage a {
+            display: flex;
+            max-height: 72px;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1 / 1;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        .shortPost .colImage img {
+            width: auto;
+            height: 100%;
+        }
         .shortPost .postDatas {
             flex-direction: column;
             gap: 6px;
