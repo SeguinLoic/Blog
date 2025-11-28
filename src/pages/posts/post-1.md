@@ -11,7 +11,8 @@ tags: ["Voyage", "1AnEnVadrouille"]
 category: Travel
 ---
 
-<img src="/travel-1.jpg"/>
+![Dune de Khongor](../../assets/travel-1.jpg)
+*Vue époustouflante depuis la Dune de Khongor - Mongolie*
 
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
 
@@ -23,7 +24,8 @@ On règle les derniers détails administratifs, on fait un grand ménage. Tout s
 
 Le premier avion fait l'effet d'une claque. On est comme téléportés dans un univers différent de ce qu'on a connu hier. Les gens, la langue, la ville, tout est différent. On doit tout réapprendre. De la façon de se transporter à la manière de communiquer. Il y a tout un tas de petites connaissances, de petites habitudes qui font partie de la routine de voyageur. Par chance, ça vient très vite. Et puis, la meilleure façon de faire, c'est de regarder comment font les autres. 
 
-<img src="/travel-3.jpg"/>
+![Marché de Mysore](../../assets/travel-3.jpg)
+*Les couleurs du marché aux fleurs de Mysore - Inde*
 
 Les autres ce sont les locaux mais aussi les autres voyageurs que l'on rencontre dans les parties communes des hostels. C'est à la fois impressionnant et excitant. Déjà parce que, toi, tu apprends tout juste à marcher, alors qu'eux ils ne voyagent qu'à vélo, en stop ou sans avion. Ils font des treks en slip dans la montagne. Ils vont dans des pays qui te paraîssent dangereux. C'est hyper inspirant d'écouter les histoires de ces aventuriers. 
 
@@ -33,7 +35,8 @@ Le voyage prend enfin tout son sens. Tu décides de te laisser porter par les op
 
 Il est déjà temps de passer au prochain pays. Ton visa expire bientôt et l'aventure t'appelle, ailleurs. C'est la première fois que tu passes une frontière en terrestre, c'est assez intimidant. Tu te demandes s'ils vont te fouiller, t'interroger sur ton itinéraire (que tu ne connais pas, puisque tu ne planifies plus). Plus les tampons s'additionnent sur ton passeport et moins ces questions te préoccupent.
 
-<img src="/travel-4.jpg"/>
+![Coucher de soleil au Japon](../../assets/travel-4.jpg)
+*Rouler sur une plage au coucher de soleil à Hakui - Japon*
 
 Passer les frontières en terrestre, c'est voir le paysage évoluer, c'est se sentir voyager. Tu comprends vraiment la notion de frontière lorsque tu dois franchir une rivière ou un col de montagne. Étrangement, malgré son immensité, le monde devient si petit. Tu te surprends à le considérer comme ton quartier lorsque tu en parles avec d'autres voyageurs : "Ah, tu prendrais sud-est après le Kazakhstan ? Nous en pensait passer par la Chine pour arriver en Mongolie puis redescendre en Chine". Bien sûr, tout ceci n'est possible qu'avec notre précieux passeport. On a de la chance, vraiment. Le monde nous est ouvert, à portée de main, parce qu'on est nés au bon endroit, au bon moment. On apprend beaucoup sur les relations entre les pays, la géopolitique, les conflits, les alliances. On comprend que la paix est quelque chose de précieux et fragile, et que beaucoup, beaucoup de gens n'ont pas un quotidien aussi confortable que le nôtre.
 
@@ -41,7 +44,8 @@ Fatalement, plus le temps passe, plus on se pose des questions sur notre façon 
 
 Voyager en couple, c'est une aventure fantastique. C'est découvrir l'autre, pleinement, dans ses moments de joie, de fatigue, de doute. Découvrir ses besoins les plus primaires, sa passion pour les glaces et les pipas. C'est découvrir la beauté de notre planète et de ses habitants, main dans la main. C'est transporter notre amour partout dans le monde, sous toutes les conditions et se rendre compte à quel point il est fort. Et si vous ne comprenez par pourquoi on rigole si on dit "green", "wallpaper" ou bien encore "stunning", c'est parce que le voyage aura créé un lien invisible vraiment fort entre nous. On cimente, Sandra, on cimente.
 
-<img src="/travel-2.jpg"/>
+![Soleil couchant à Koh Lipe](../../assets/travel-2.jpg)
+*Baignade de nuit à Koh Lipe - Thaïlande*
 
 Voyager seul, c'est une autre aventure. Bien que je m'en sentirais capable aujourd'hui, j'aime par dessus tout cette idée de partage. Parce que des gens, on en rencontre, mais c'est souvent des relations éphémères. On croise le chemin de gens, en voyage ou dans leur quotidien, on partage quelques heures, quelques jours, et puis chacun reprend sa route comme si rien ne s'était passé. On rencontre des gens avec qui on n'est pas compatibles, et parfois, on rencontre des gens avec qui c'est fou, dès la première minute, et qu'est-ce que ça fait du bien. Ça donne l'impression, pendant quelques heures, d'être à la maison, avec de la famille. Comme si on se connaissait depuis toujours alors qu'on se rencontre pour la première fois dans un bar prout-prout du Kazakhstan. 
 
