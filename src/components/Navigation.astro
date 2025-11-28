@@ -23,6 +23,16 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         position: relative;
         background-color: var(--color-3);
     }
+    .navigation:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .2;
+    }
     .colLeft {
         display: flex;
         width: 100%;
