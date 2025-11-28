@@ -184,4 +184,9 @@ video.videoPost,
   body>.container:before {
       display:none;
   }
+  .postContent p em {
+    width: 100%;
+    display: flex;
+    line-height: 1.5;
+  }
 }
