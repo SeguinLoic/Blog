@@ -12,6 +12,7 @@ category: Hiking
 ---
 
 ![Randonnée au Puy de Sancy](../../assets/rando-1.jpg)
+*Départ de la randonnée du Puy de Sancy*
 
 Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
 
