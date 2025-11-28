@@ -109,15 +109,27 @@ const insertBetween = (ele, array) => {
     .shortPost p {
         margin: 0px;
     }
+
+    /* COL IMAGE */
+    .shortPost .colContent {
+        width: 100%;
+    }
     .shortPost .colImage {
-        width: 25%;
+        width: 80px;
     }
     .shortPost .colImage a {
         display: flex;
+        max-height: 80px;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
     }
     .shortPost .colImage img {
-        width: 100%;
+        width: auto;
+        height: 100%;
     }
+
     @media screen and (max-width: 768px) {
         .shortPost {
             padding: 24px 16px;
@@ -131,24 +143,6 @@ const insertBetween = (ele, array) => {
         }
     }
     @media screen and (max-width: 500px) {
-        .shortPost .colContent {
-            width: 100%;
-        }
-        .shortPost .colImage {
-            width: 80px;
-        }
-        .shortPost .colImage a {
-            display: flex;
-            max-height: 80px;
-            justify-content: center;
-            align-items: center;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-        }
-        .shortPost .colImage img {
-            width: auto;
-            height: 100%;
-        }
         .shortPost .postDatas {
             flex-direction: column;
             gap: 6px;
@@ -168,6 +162,9 @@ const insertBetween = (ele, array) => {
         .shortPost .postDatas .tags .tag {
             font-size: 0.8em;
             font-weight: 500;
+        }
+        .shortPost .colImage a {
+            max-height: 80px;
         }
     }
 </style>
