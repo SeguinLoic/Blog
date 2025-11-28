@@ -121,17 +121,19 @@ const insertBetween = (ele, array) => {
         justify-content: center;
         align-items: center;
     }
-    /*.shortPost .colImage a {
-        display: flex;
-        max-height: 120px;
-        justify-content: center;
-        align-items: center;
-        aspect-ratio: 1 / 1;
-        overflow: hidden;
-    }*/
     .shortPost .colImage img {
         width: auto;
         height: 100%;
+    }
+
+    a.linkPost {
+        border: 1px solid blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 
     @media screen and (max-width: 768px) {
