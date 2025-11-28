@@ -23,15 +23,21 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         position: relative;
         background-color: var(--color-3);
     }
-    .navigation:before {
+    .navigation:before,
+    .navigation:after {
         content: "";
         width: 100%;
         height: 1px;
         background-color: #fff;
         position: absolute;
-        top: 0;
         left: 0;
         opacity: .2;
+    }
+    .navigation:before {
+        top: 0;
+    }
+    .navigation:after {
+        bottom: 0;
     }
     .colLeft {
         display: flex;
