@@ -17,16 +17,13 @@ const insertBetween = (ele, array) => {
                 {allTags.map((tag) => <a class="tag" href={`/tags/${tag}`}>#{tag}</a>)}
             </div>
         </div>
-        <a href={url} class="postTitle">
+        <div class="postTitle">
             <p class="title">{title}</p>
             <p class="description">{desc}</p>
-            <a href="/">home</a>
-        </a>
+        </div>
     </div>
     <div class="colImage">
-        <a href={url}>
-            <img src={image} />
-        </a>
+        <img src={image} />
     </div>
 </li>
 
