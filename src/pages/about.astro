@@ -10,12 +10,19 @@ const page = "about";
 <BaseLayout page={page}>
     <div class="container">
         <Header />
-        <p class="about">"Salut. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager, randonner, escalader avec les copaings (principalement pour la bière fraiche à la fin de la session). J'aime les jeux de rôles... Ah, oui, et j'adore écrire."</p>
+        <div class="containerAbout">
+            <p class="about">"Salut. J'aime tout ce qui touche à l'art et spécialement le "digital art". J'adore voyager, randonner, escalader avec les copaings (principalement pour la bière fraiche à la fin de la session). J'aime les jeux de rôles... Ah, oui, et j'adore écrire."</p>
+        </div>
         <Footer />
     </div>
 </BaseLayout>
 
 <style>
+    .containerAbout {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
     p.about {
         line-height: 1.5em;
         margin: 0;
