@@ -115,15 +115,20 @@ const insertBetween = (ele, array) => {
     }
     .shortPost .colImage {
         width: 120px;
+        height: 120px;
+        overflow: clip;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .shortPost .colImage a {
+    /*.shortPost .colImage a {
         display: flex;
         max-height: 120px;
         justify-content: center;
         align-items: center;
         aspect-ratio: 1 / 1;
         overflow: hidden;
-    }
+    }*/
     .shortPost .colImage img {
         width: auto;
         height: 100%;
@@ -164,9 +169,7 @@ const insertBetween = (ele, array) => {
         }
         .shortPost .colImage {
             width: 80px;
-        }
-        .shortPost .colImage a {
-            max-height: 80px;
+            height: 80px;
         }
     }
 </style>
