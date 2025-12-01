@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
+
+const page = "inspiration";
+---
+
+<BaseLayout page={page}>
+    <div class="container">
+        <Header />
+        <div class="containerCopains">
+            <h2>Le coin des copains.</h2>
+            <ul class="copains">
+                <li><a href="#">copain 1</a></li>
+                <li><a href="#">copain 2</a></li>
+                <li><a href="#">copain 3</a></li>
+            </ul>
+            <h2>Bookshelf</h2>
+        </div>
+        <Footer />
+    </div>
+</BaseLayout>
+
+<style>
+    .containerCopains {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+</style>
