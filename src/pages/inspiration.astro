@@ -71,13 +71,21 @@ const page = "inspiration";
         font-weight: 600;
         font-size: 0.9em;
     }
-    ul.livres li img {
+    .couverture {
+        height: 300px;
+        overflow: hidden;
         margin-bottom: 8px;
+    }
+    ul.livres li img {
         width: 100%;
     }
     .auteur {
         font-weight: 400;
         font-style: italic;
     }
-
+    @media screen and (max-width: 688px) {
+        .couverture {
+            height: auto;
+        }
+    }
 </style>
