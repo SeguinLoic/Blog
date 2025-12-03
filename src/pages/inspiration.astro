@@ -45,8 +45,8 @@ const page = "inspiration";
                         <div class="infos">Atomic Habits <span class="auteur">James Clear</span></div>
                     </li>
                     <li>
-                        <div class="couverture"><img src="/livres/ikigai.jpg" /></div>Ikigai <span class="auteur">
-                        <div class="infos">Héctor Garcia et Francesc Miralles</span></div>
+                        <div class="couverture"><img src="/livres/ikigai.jpg" /></div>
+                        <div class="infos">Ikigai <span class="auteur">Héctor Garcia et Francesc Miralles</span></div>
                     </li>
                     <li>
                         <div class="couverture"><img src="/livres/homme-rune-t1.jpg" /></div>
@@ -115,13 +115,34 @@ const page = "inspiration";
     ul.livres li img {
         width: 100%;
     }
+    .infos {
+        display: flex;
+        flex-direction: column;
+    }
     .auteur {
         font-weight: 400;
         font-style: italic;
     }
+    @media screen and (max-width: 768px) {
+        .containerCopains {
+            padding: 24px 16px 0;
+        }
+    }
     @media screen and (max-width: 688px) {
         .couverture {
             height: auto;
+            width: 130px;
+            margin: 0px;
+        }
+        ul.livres li {
+            width: 100%;
+            flex-direction: row;
+        }
+        .infos {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 16px;
         }
     }
 </style>
