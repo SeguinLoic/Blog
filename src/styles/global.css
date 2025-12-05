@@ -134,13 +134,9 @@ body>.container:after {
 body>.container:before {
     left: 0;
 }
-.postContent p {
-    padding: 0px 24px;
-    font-family: "Roboto Slab";
-    font-weight: 400;
-    line-height: 1.7;
-}
+.postContent p,
 .postContent li {
+    padding: 0px 24px;
     font-family: "Roboto Slab";
     font-weight: 400;
     line-height: 1.7;
