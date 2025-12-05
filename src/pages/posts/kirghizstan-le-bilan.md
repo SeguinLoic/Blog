@@ -2,51 +2,47 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Kirghizstan le bilan
 pubDate: 12-05-2025
-description: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
+description: Premier pays de notre long périple, un gros coup de coeur
 author: One Human
 image:
     url: /kyrgyzstan-1.jpg
-    alt: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
+    alt: Montage photo du Kirghizstan
 tags: ["Voyage", "1AnEnVadrouille"]
 category: Travel
 ---
 
 ![Dune de Khongor](../../assets/kyrgyzstan-1.jpg)
-*Vue époustouflante depuis la Dune de Khongor - Mongolie*
 
-Qu'est-ce que ça fait, de partir pour la première fois pour un voyage de un an à l'autre bout du monde ?
+N'est-il pas magnifique ce drapeau ? 
+Les rayons du soleil symbolisent les 40 tribus kirghizes et en son centre, le tunduk. Il représente le haut de la yourte mais c'est surtout un symbole d'unité, qui engage tout le monde à avancer ensemble.
 
-Lorsqu'on décide d'une telle aventure, dans un premier temps, ça donne l'impression d'un rêve, d'une utopie. À la limite du réel. On s'imagine échapper à notre quotidien pour vivre une vie d'expériences, de découvertes, d'exotisme. On formule une demande, c'est accepté, le chrono est lancé. Alors notre vie s'agrémente de tout un tas de nouveaux sujets. On se surprend à connaître toutes les gammes de sac à dos 40L, les avantages des cartes bancaires. On fait un rétroplanning de tous les vaccins à faire. C'est dans notre tête, tous les jours, à chaque instant. On fait tout un tas de trucs qui auront pleinement du sens le jour du grand départ. 
+Le tunduk c'était aussi le nom de notre première auberge. Point de départ de notre année de voyage. C'est le moment de dresser un petit bilan après 24 jours dans ce pays qui, je pense, aura placé la barre très haute. 
 
-Plus on s'approche du moment fatidique et plus on regarde nos proches différemment. On se demande ce que ça fait de ne plus voir les gens que l'on aime pendant une année entière. De quelle façon la vie va suivre son cours ici, au pays, alors que nous on sera loin. On procède à un grand dépouillement. On se rend compte de l'espace physique de nos objets, de la place qu'ils occupent dans notre vie et surtout dans notre tête. On met dans un garage tout ce qui caractérisait notre vie d'avant. Notre sac à dos devient notre nouvelle maison. Qu'est-ce que ça fait du bien de n'avoir pour possession que 8 kg. 
+![Son Kul](../../assets/kyrgyz-1.jpg)
+*Une jolie petite yourte avec de beaux motifs - Son Kul*
 
-On règle les derniers détails administratifs, on fait un grand ménage. Tout s'accélère les derniers jours. Un mélange d'excitation et d'appréhension s'installe dans notre tête. Et puis, un matin, vers 5h, on fait un gros câlin à Lolo, un gros bisou à Lumo, et on referme la porte derrière nous. On laisse le connu, le confortable derrière cette porte. On avance dans la nuit vers la nouveauté et l'aventure. Un grand saut dans l'inconnu.
+J'ai lu plusieurs fois que les voyageurs trouvent les Kirghizes froids, impolis. Je peux comprendre ce ressenti, mais je ne le partage pas. C'est assez étonnant de voir que les Kirghizes ne communiquent pas entre eux, lorsqu'ils rentrent dans le bus, dans un magasin, à la caisse du supermarché. Ils ne disent pas un mot. On ne les entend pas s'énerver non plus. Nous les avons trouvés calmes, sereins. Les enfants aussi. Vous ne verrez jamais un enfant faire un caprice dans la rue. Ils sont disciplinés, ils écoutent. Tout ça, ça fait partie d'une éducation et d'une culture qui est radicalement différente de la nôtre. Durant ce voyage on en a beaucoup appris sur l'éducation, la famille, le mariage, la religion, le travail. Je prends toujours un réel plaisir à découvrir tous ces aspects de la vie de gens qui habitent à des milliers de kilomètres de chez moi.
 
-Le premier avion fait l'effet d'une claque. On est comme téléportés dans un univers différent de ce qu'on a connu hier. Les gens, la langue, la ville, tout est différent. On doit tout réapprendre. De la façon de se transporter à la manière de communiquer. Il y a tout un tas de petites connaissances, de petites habitudes qui font partie de la routine de voyageur. Par chance, ça vient très vite. Et puis, la meilleure façon de faire, c'est de regarder comment font les autres. 
+![Skazka Canyon](../../assets/kyrgyz-2.jpg)
+*Le canyone des contes de fées - Skazka Canyon*
 
-![Marché de Mysore](../../assets/travel-3.jpg)
-*Les couleurs du marché aux fleurs de Mysore - Inde*
+Est-ce qu'on a trouvé les Kirghizes froids ? Non pas vraiment. Durant notre périple, nous avons pu discuter avec nombre d'entre eux : un policier, un pharmacien, un manager de l'équipe costume d'un spectacle, des guides de montagnes, des gens dans la rue et puis Maftuna et Madina. Tous étaient préoccupés de notre bien-être dans leur pays. Tous espéraient que les gens nous traitent bien. Tous voulaient savoir ce que l'on avait aimé ou non dans leur culture. De nombreux enfants étaient heureux de pouvoir se présenter, nous serrer la main, avoir un contact. Et ça, bah ça fait chaud au cœur. 
+Alors oui, ils ne sont pas tous comme ça. Et ceux avec qui nous ne pouvions communiquer semblaient gênés, presque timides face à cette barrière de langage. Nous n'avons jamais ressenti de pressions, d'agressions de leur part. À mes yeux, les Kirghizes sont vraiment sympas. 
 
-Les autres ce sont les locaux mais aussi les autres voyageurs que l'on rencontre dans les parties communes des hostels. C'est à la fois impressionnant et excitant. Déjà parce que, toi, tu apprends tout juste à marcher, alors qu'eux ils ne voyagent qu'à vélo, en stop ou sans avion. Ils font des treks en slip dans la montagne. Ils vont dans des pays qui te paraîssent dangereux. C'est hyper inspirant d'écouter les histoires de ces aventuriers. 
+![Ala Kul](../../assets/kyrgyz-3.jpg)
+*Les montagnes célestes qui craquent, en arrière plan - Ala Kul*
 
-Et puis un beau jour, tu décides de partir à l'aventure, toi aussi. Tu fais un groupe avec de parfaits inconnus, tu prends un cheval pour aller faire de la randonnée, tu fais caca entre deux planches, tu joues aux cartes et tu apprends à faire du pain et du lait fermenté avec les familles. Ça c'est fou. Le soir, quand tu as bien mangé, bien rigolé avec tes compagnons de voyage et que tu vas dans ta yourte pour te coucher, à 3000m d'altitude au milieu de nulle part, tu te dis qu'il ne faut pas grand chose pour être heureux : un toit, de la nourriture, de l'eau et surtout des gens.
+Il y a certainement plusieurs facteurs à ça, personnellement j'en vois un : le tourisme n'est pas encore très développé ici. Alors s'il vous plaît, n'y allez pas. (Enfin si, allez-y, c'est trop stylé). Les paysages sont magnifiques ici, les montagnes, les canyons, les lacs. Les amoureux de la nature tomberont amoureux une nouvelle fois. 
 
-Le voyage prend enfin tout son sens. Tu décides de te laisser porter par les opportunités d'aventures, l'infinité de nouvelles expériences à vivre. Ici il n'est plus question d'heure, de jour, de mois. On se rend compte qu'il existe des pays où on prend la vie comme elle vient. Pas de réservation, pas de planification, c'est ton environnement qui décide comment et quand. Ce que j'apprends ici c'est que la France c'est un système, et ailleurs ils ont d'autres systèmes. Pas mieux, pas pires, différents.
+![Osh Bazar](../../assets/kyrgyz-4.jpg)
+*Les traditionels petits pains ronds d'Asie Centrale - Osh Bazar*
 
-Il est déjà temps de passer au prochain pays. Ton visa expire bientôt et l'aventure t'appelle, ailleurs. C'est la première fois que tu passes une frontière en terrestre, c'est assez intimidant. Tu te demandes s'ils vont te fouiller, t'interroger sur ton itinéraire (que tu ne connais pas, puisque tu ne planifies plus). Plus les tampons s'additionnent sur ton passeport et moins ces questions te préoccupent.
-
-![Coucher de soleil au Japon](../../assets/travel-4.jpg)
-*Rouler sur une plage au coucher de soleil à Hakui - Japon*
-
-Passer les frontières en terrestre, c'est voir le paysage évoluer, c'est se sentir voyager. Tu comprends vraiment la notion de frontière lorsque tu dois franchir une rivière ou un col de montagne. Étrangement, malgré son immensité, le monde devient si petit. Tu te surprends à le considérer comme ton quartier lorsque tu en parles avec d'autres voyageurs : "Ah, tu prendrais sud-est après le Kazakhstan ? Nous en pensait passer par la Chine pour arriver en Mongolie puis redescendre en Chine". Bien sûr, tout ceci n'est possible qu'avec notre précieux passeport. On a de la chance, vraiment. Le monde nous est ouvert, à portée de main, parce qu'on est nés au bon endroit, au bon moment. On apprend beaucoup sur les relations entre les pays, la géopolitique, les conflits, les alliances. On comprend que la paix est quelque chose de précieux et fragile, et que beaucoup, beaucoup de gens n'ont pas un quotidien aussi confortable que le nôtre.
-
-Fatalement, plus le temps passe, plus on se pose des questions sur notre façon de voyager. En prenant l'avion, l'impact sur notre magnifique planète et ses écosystèmes est énorme. Parfois on se demande si aller voir certaines populations ne va pas faire comme dans un zoo. Parfois on se demande si visiter certains pays ne revient pas à donner de l'argent à un gouvernement qui opprime ses populations. Alors on se renseigne, on se questionne sur nos valeurs, on cherche des solutions. On fait le choix de voyager plus lentement en prenant des trains, des bus et des slow boats. Le mot "voyage" prend tout son sens, et je dirais même qu'il se transforme en aventure.
-
-Voyager en couple, c'est une aventure fantastique. C'est découvrir l'autre, pleinement, dans ses moments de joie, de fatigue, de doute. Découvrir ses besoins les plus primaires, sa passion pour les glaces et les pipas. C'est découvrir la beauté de notre planète et de ses habitants, main dans la main. C'est transporter notre amour partout dans le monde, sous toutes les conditions et se rendre compte à quel point il est fort. Et si vous ne comprenez par pourquoi on rigole si on dit "green", "wallpaper" ou bien encore "stunning", c'est parce que le voyage aura créé un lien invisible vraiment fort entre nous. On cimente, Sandra, on cimente.
-
-![Soleil couchant à Koh Lipe](../../assets/travel-2.jpg)
-*Baignade de nuit à Koh Lipe - Thaïlande*
-
-Voyager seul, c'est une autre aventure. Bien que je m'en sentirais capable aujourd'hui, j'aime par dessus tout cette idée de partage. Parce que des gens, on en rencontre, mais c'est souvent des relations éphémères. On croise le chemin de gens, en voyage ou dans leur quotidien, on partage quelques heures, quelques jours, et puis chacun reprend sa route comme si rien ne s'était passé. On rencontre des gens avec qui on n'est pas compatibles, et parfois, on rencontre des gens avec qui c'est fou, dès la première minute, et qu'est-ce que ça fait du bien. Ça donne l'impression, pendant quelques heures, d'être à la maison, avec de la famille. Comme si on se connaissait depuis toujours alors qu'on se rencontre pour la première fois dans un bar prout-prout du Kazakhstan. 
-
-Bon, finalement, au bout d'un an, à dormir n'importe où, à vivre avec 4 slips et 4 T-shirts, à traverser des métropoles archi peuplées et des villages perdus dans la jungle du Laos, à voir des paysages d'une nature vraiment sublime et découvrir une faune unique, à manger des ramens, des pad thaïs ou juste du pain. Un an à prendre des bus, des pirogues, des tuk-tuks. On se demande ce que c'est, vraiment, "chez nous". Chez moi, c'est la Terre, c'est partout où je pourrais poser mon sac. Chez moi, c'est mon chou, c'est ma famille, mes amis. Orelsan disait : "après avoir fait le tour du monde, tout ce qu'on veut c'est être à la maison". Sauf que pour moi, la maison, c'est avec vous.
+Il y a encore tant de choses que j'aimerais dire sur ce pays et ses habitants, je ne vais pas trop m'étendre. Je vais simplement dresser une petite liste des trucs cool qu'on a découverts et qui m'ont marqué :
+- Les Kirghizes n'utilisent pas de couteau pour manger,
+- Ils ne boivent pas d'eau, que du thé,
+- À table on sert toujours les hommes en premier et on ne met pas beaucoup de thé dans la tasse (resservir quelqu'un souvent veut dire que l'on a envie de lui accorder du temps),
+- Les Kirghizes ne s'assoient jamais par terre, ils font la pose kirghize et c'est vachement impressionnant,
+- La bague de fiançailles est remplacée par des boucles d'oreilles,
+- Les Kirghizes fabriquent leur propre Cognac et ils adorent ça,
+- Les conteurs de Manas sont hyper forts, on en a rencontré un qui un jour a improvisé 56h sans s'arrêter sur Manas,
+- Les taxis adorent coller des hélicoptères en plastique sur leur tableau de bord.
