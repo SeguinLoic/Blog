@@ -18,7 +18,7 @@ Les rayons du soleil symbolisent les 40 tribus kirghizes et en son centre, le tu
 
 Le tunduk c'était aussi le nom de notre première auberge. Point de départ de notre année de voyage. C'est le moment de dresser un petit bilan après 24 jours dans ce pays qui, je pense, aura placé la barre très haute. 
 
-![Son Kul](../../assets/kyrgyz-1.jpg)
+![Son Kul](../../assets/kyrgyz-1.JPG)
 *Une jolie petite yourte avec de beaux motifs - Son Kul*
 
 J'ai lu plusieurs fois que les voyageurs trouvent les Kirghizes froids, impolis. Je peux comprendre ce ressenti, mais je ne le partage pas. C'est assez étonnant de voir que les Kirghizes ne communiquent pas entre eux, lorsqu'ils rentrent dans le bus, dans un magasin, à la caisse du supermarché. Ils ne disent pas un mot. On ne les entend pas s'énerver non plus. Nous les avons trouvés calmes, sereins. Les enfants aussi. Vous ne verrez jamais un enfant faire un caprice dans la rue. Ils sont disciplinés, ils écoutent. Tout ça, ça fait partie d'une éducation et d'une culture qui est radicalement différente de la nôtre. Durant ce voyage on en a beaucoup appris sur l'éducation, la famille, le mariage, la religion, le travail. Je prends toujours un réel plaisir à découvrir tous ces aspects de la vie de gens qui habitent à des milliers de kilomètres de chez moi.
