@@ -140,6 +140,11 @@ body>.container:before {
     font-weight: 400;
     line-height: 1.7;
 }
+.postContent li {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    line-height: 1.7;
+}
 .postContent p:has(img) {
     margin: 0px !important;
     padding: 0px;
