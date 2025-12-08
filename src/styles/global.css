@@ -93,6 +93,9 @@
   box-sizing: border-box;
   font-family: 'Inter';
 }
+p.visibility-hidden {
+  visibility: hidden;
+}
 html {
   display: flex;
   background-color: #fff;
