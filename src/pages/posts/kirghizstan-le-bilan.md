@@ -13,7 +13,7 @@ category: Travel
 
 ![Dune de Khongor](../../assets/kyrgyzstan-1.jpg)
 
-N'est-il pas magnifique ce drapeau ? 
+N'est-il pas magnifique le drapeau du Kirghizstan ? 
 Les rayons du soleil symbolisent les 40 tribus kirghizes et en son centre, le tunduk. Il représente le haut de la yourte mais c'est surtout un symbole d'unité, qui engage tout le monde à avancer ensemble.
 
 Le tunduk c'était aussi le nom de notre première auberge. Point de départ de notre année de voyage. C'est le moment de dresser un petit bilan après 24 jours dans ce pays qui, je pense, aura placé la barre très haute. 
@@ -24,7 +24,7 @@ Le tunduk c'était aussi le nom de notre première auberge. Point de départ de 
 J'ai lu plusieurs fois que les voyageurs trouvent les Kirghizes froids, impolis. Je peux comprendre ce ressenti, mais je ne le partage pas. C'est assez étonnant de voir que les Kirghizes ne communiquent pas entre eux, lorsqu'ils rentrent dans le bus, dans un magasin, à la caisse du supermarché. Ils ne disent pas un mot. On ne les entend pas s'énerver non plus. Nous les avons trouvés calmes, sereins. Les enfants aussi. Vous ne verrez jamais un enfant faire un caprice dans la rue. Ils sont disciplinés, ils écoutent. Tout ça, ça fait partie d'une éducation et d'une culture qui est radicalement différente de la nôtre. Durant ce voyage on en a beaucoup appris sur l'éducation, la famille, le mariage, la religion, le travail. Je prends toujours un réel plaisir à découvrir tous ces aspects de la vie de gens qui habitent à des milliers de kilomètres de chez moi.
 
 ![Skazka Canyon](../../assets/kyrgyz-2.jpg)
-*Le canyone des contes de fées - Skazka Canyon*
+*Le canyon des contes de fées - Skazka Canyon*
 
 Est-ce qu'on a trouvé les Kirghizes froids ? Non pas vraiment. Durant notre périple, nous avons pu discuter avec nombre d'entre eux : un policier, un pharmacien, un manager de l'équipe costume d'un spectacle, des guides de montagnes, des gens dans la rue et puis Maftuna et Madina. Tous étaient préoccupés de notre bien-être dans leur pays. Tous espéraient que les gens nous traitent bien. Tous voulaient savoir ce que l'on avait aimé ou non dans leur culture. De nombreux enfants étaient heureux de pouvoir se présenter, nous serrer la main, avoir un contact. Et ça, bah ça fait chaud au cœur. 
 Alors oui, ils ne sont pas tous comme ça. Et ceux avec qui nous ne pouvions communiquer semblaient gênés, presque timides face à cette barrière de langage. Nous n'avons jamais ressenti de pressions, d'agressions de leur part. À mes yeux, les Kirghizes sont vraiment sympas. 
