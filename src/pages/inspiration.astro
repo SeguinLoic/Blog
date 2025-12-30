@@ -20,31 +20,9 @@ const page = "inspiration";
             <h2>Bibliothèque</h2>
             <div class="containerLivres">
                 <span class="annee">2026</span>
-                <ul class="livres">
-                    <!-- {lectures.filter((lecture) => lecture.date === 2026).map(book => (
-                        <li>
-                            <div class="couverture"><img src={`${book.image}`} /></div>
-                            <div class="contenu">
-                                {book.name} 
-                                <span class="auteur">{book.author}</span>
-                                <p class="note">"{book.note}"</p>
-                            </div>
-                        </li>
-                    ))} -->
-                </ul>
+                <Livres date={2026} />
                 <span class="annee">2025</span>
-                <ul class="livres">
-                    <!-- {lectures.filter((lecture) => lecture.date === 2025).map(book => (
-                        <li>
-                            <div class="couverture"><img src={`${book.image}`} /></div>
-                            <div class="contenu">
-                                {book.name} 
-                                <span class="auteur">{book.author}</span>
-                                <p class="note">"{book.note}"</p>
-                            </div>
-                        </li>
-                    ))} -->
-                </ul>
+                <Livres date={2025} />
                 <span class="annee">2024</span>
                 <Livres date={2024} />
             </div>
