@@ -3,9 +3,9 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
+import lectures from './lectures.json';
 
 import { getCollection } from 'astro:content';
-
 const books = await getCollection('lectures');
 
 const page = "inspiration";
@@ -23,6 +23,14 @@ const page = "inspiration";
             <h2>Bibliothèque</h2>
             <div class="containerLivres">
                 <span class="annee">2026</span>
+                <ul class="livres">
+                    {lectures.map(book => (
+                        <li>
+                            <div class="couverture"><img src={`${book.image}`} /></div>
+                            <div class="infos">{book.name} <span class="auteur">{book.author}</span></div>
+                        </li>
+                    ))}
+                </ul>
                 <ul class="livres">
                     {books.map(book => (
                         <li>
