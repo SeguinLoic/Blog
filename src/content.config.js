@@ -15,7 +15,7 @@ const lectures = defineCollection({
         author: z.string(),
         year: z.number(),
         image: z.string()
-    }),
+    })
 });
 
 // 5. Exporter un seul objet `collections` pour enregistrer votre/vos collection(s)
