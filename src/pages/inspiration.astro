@@ -24,7 +24,11 @@ const page = "inspiration";
                     {lectures.map(book => (
                         <li>
                             <div class="couverture"><img src={`${book.image}`} /></div>
-                            <div class="infos">{book.name} <span class="auteur">{book.author}</span></div>
+                            <div class="contenu">
+                                {book.name} 
+                                <span class="auteur">{book.author}</span>
+                                <p class="note">{book.note}</p>
+                            </div>
                         </li>
                     ))}
                 </ul>
@@ -75,7 +79,7 @@ const page = "inspiration";
     ul.livres li img {
         width: 90px;
     }
-    .infos {
+    .contenu {
         display: flex;
         flex-direction: column;
         padding: 0px 12px;
