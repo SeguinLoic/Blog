@@ -17,3 +17,48 @@ const books = lectures.filter((lecture) => lecture.year === date);
         </li>
     ))}
 </ul>
+
+<style>
+    ul.livres {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        gap: 24px;
+        margin: 0px;
+        flex-direction: column;
+    }
+    ul.livres li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-weight: 600;
+        font-size: .9em;
+    }
+    .couverture {
+        height: auto;
+    }
+    ul.livres li img {
+        width: 90px;
+    }
+    .contenu {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+    }
+    .auteur {
+        font-weight: 400;
+    }
+    p.note {
+        font-weight: 400;
+        font-style: italic;
+    }
+    @media screen and (max-width: 768px) {
+        .containerCopains {
+            padding: 24px 16px 0;
+        }
+        .contenu {
+            padding-left: 12px;
+        }
+    }
+</style>
