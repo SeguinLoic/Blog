@@ -46,6 +46,18 @@ const page = "inspiration";
     }
     span.annee {
         display: flex;
-        margin-bottom: 16px !important;
+        margin-bottom: 24px !important;
+        position: relative;
+        padding-bottom: 8px;
+    }
+    span.annee:after {
+        content: "";
+        width: calc(100% + 48px);
+        height: 1px;
+        background-color: var(--color-fg);
+        position: absolute;
+        bottom: 0;
+        left: -24px;
+        opacity: .15;
     }
 </style>
