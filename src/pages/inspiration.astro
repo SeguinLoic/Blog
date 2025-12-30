@@ -5,9 +5,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
 import lectures from './lectures.json';
 
-import { getCollection } from 'astro:content';
-const books = await getCollection('lectures');
-
 const page = "inspiration";
 ---
 
@@ -28,14 +25,6 @@ const page = "inspiration";
                         <li>
                             <div class="couverture"><img src={`${book.image}`} /></div>
                             <div class="infos">{book.name} <span class="auteur">{book.author}</span></div>
-                        </li>
-                    ))}
-                </ul>
-                <ul class="livres">
-                    {books.map(book => (
-                        <li>
-                            <div class="couverture"><img src={`${book.data.image}`} /></div>
-                            <div class="infos">{book.data.name} <span class="auteur">{book.data.author}</span></div>
                         </li>
                     ))}
                 </ul>

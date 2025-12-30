@@ -22,5 +22,59 @@
     "author": "George Orwell",
     "year": 2024,
     "image": "/livres/1984.jpg"
+  },
+    {
+    "name": "Conquérant de l'impossible",
+    "author": "Mike Horn",
+    "year": 2025,
+    "image": "/livres/conquerant.jpg"
+  },
+    {
+    "name": "Atomic Habits",
+    "author": "James Clear",
+    "year": 2024,
+    "image": "/livres/atomic.jpg"
+  },
+    {
+    "name": "Ikigai",
+    "author": "Héctor Garcia et Francesc Miralles",
+    "year": 2024,
+    "image": "/livres/ikigai.jpg"
+  },
+    {
+    "name": "Le Cycle Des Démons : L'Homme Rune",
+    "author": "Peter V. Brett",
+    "year": 2025,
+    "image": "/livres/homme-rune-t1.jpg"
+  },
+    {
+    "name": "Le Cycle Des Démons : La Lance Du Désert",
+    "author": "Peter V. Brett",
+    "year": 2025,
+    "image": "/livres/homme-rune-t2.jpg"
+  },
+    {
+    "name": "Careless People",
+    "author": "Sarah Wynn-Williams",
+    "year": 2025,
+    "image": "/livres/careless.jpg"
+  },
+    {
+    "name": "Au détour du Caucase",
+    "author": "Clara Arnaud",
+    "year": 2025,
+    "image": "/livres/caucase.jpg"
+  },
+    {
+    "name": "La Faucheuse",
+    "author": "Neal Shusterman",
+    "year": 2025,
+    "image": "/livres/faucheuse.jpg"
+  },
+    {
+    "name": "La Faucheuse Thunderhead",
+    "author": "Neal Shusterman",
+    "year": 2025,
+    "image": "/livres/faucheuse.jpg"
   }
 ]
