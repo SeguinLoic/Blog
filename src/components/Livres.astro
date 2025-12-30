@@ -1,16 +1,18 @@
 ---
 import lectures from '../pages/lectures.json';
-const {date} = Astro.props;
+const { date } = Astro.props;
 const books = lectures.filter((lecture) => lecture.date === date);
 ---
 
-{books.map(book => (
-    <li>
-        <div class="couverture"><img src={`${book.image}`} /></div>
-        <div class="contenu">
-            {book.name} 
-            <span class="auteur">{book.author}</span>
-            <p class="note">"{book.note}"</p>
-        </div>
-    </li>
-))}
+<ul class="livres">
+    {books.map(book => (
+        <li>
+            <div class="couverture"><img src={`${book.image}`} /></div>
+            <div class="contenu">
+                {book.name} 
+                <span class="auteur">{book.author}</span>
+                <p class="note">"{book.note}"</p>
+            </div>
+        </li>
+    ))}
+</ul>
