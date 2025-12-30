@@ -1,7 +1,8 @@
 ---
 import lectures from '../pages/lectures.json';
+
 const { date } = Astro.props;
-const books = lectures.filter((lecture) => lecture.date == date);
+const books = lectures.filter((lecture) => lecture.year === date);
 ---
 
 <ul class="livres">
