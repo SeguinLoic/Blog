@@ -66,6 +66,7 @@ const page = "inspiration";
         flex-direction: column;
     }
     ul.livres li {
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -96,16 +97,7 @@ const page = "inspiration";
         }
     }
     @media screen and (max-width: 688px) {
-        .couverture {
-            height: auto;
-            width: 130px;
-            margin: 0px;
-        }
-        ul.livres li {
-            width: 100%;
-            flex-direction: row;
-        }
-        .infos {
+        .contenu {
             display: flex;
             flex-direction: column;
             width: 100%;
