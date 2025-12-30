@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
-import lectures from './lectures.json';
+import Livres from '../components/Livres.astro';
 
 const page = "inspiration";
 ---
@@ -21,7 +21,7 @@ const page = "inspiration";
             <div class="containerLivres">
                 <span class="annee">2026</span>
                 <ul class="livres">
-                    {lectures.filter((lecture) => lecture.date === 2026).map(book => (
+                    <!-- {lectures.filter((lecture) => lecture.date === 2026).map(book => (
                         <li>
                             <div class="couverture"><img src={`${book.image}`} /></div>
                             <div class="contenu">
@@ -30,11 +30,11 @@ const page = "inspiration";
                                 <p class="note">"{book.note}"</p>
                             </div>
                         </li>
-                    ))}
+                    ))} -->
                 </ul>
                 <span class="annee">2025</span>
                 <ul class="livres">
-                    {lectures.filter((lecture) => lecture.date === 2025).map(book => (
+                    <!-- {lectures.filter((lecture) => lecture.date === 2025).map(book => (
                         <li>
                             <div class="couverture"><img src={`${book.image}`} /></div>
                             <div class="contenu">
@@ -43,20 +43,11 @@ const page = "inspiration";
                                 <p class="note">"{book.note}"</p>
                             </div>
                         </li>
-                    ))}
+                    ))} -->
                 </ul>
                 <span class="annee">2024</span>
                 <ul class="livres">
-                    {lectures.filter((lecture) => lecture.date === 2024).map(book => (
-                        <li>
-                            <div class="couverture"><img src={`${book.image}`} /></div>
-                            <div class="contenu">
-                                {book.name} 
-                                <span class="auteur">{book.author}</span>
-                                <p class="note">"{book.note}"</p>
-                            </div>
-                        </li>
-                    ))}
+                    <Livres date={2024} />
                 </ul>
             </div>
         </div>
