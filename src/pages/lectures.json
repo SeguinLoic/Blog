@@ -1,0 +1,26 @@
+[
+  {
+    "name": "The Great Game",
+    "author": "Peter Hopkirk",
+    "year": 2025,
+    "image": "/livres/the-great-game.jpg"
+  },
+    {
+    "name": "Aylal, une année en Mongolie",
+    "author": "Linda Gardelle",
+    "year": 2024,
+    "image": "/livres/aylal.jpg"
+  },
+    {
+    "name": "Ten Years A Nomad",
+    "author": "Matthew Kepnes",
+    "year": 2025,
+    "image": "/livres/ten-years.jpg"
+  },
+    {
+    "name": "1984",
+    "author": "George Orwell",
+    "year": 2024,
+    "image": "/livres/1984.jpg"
+  }
+]
