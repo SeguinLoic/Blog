@@ -5,7 +5,7 @@ pubDate: 07-26-2025
 description: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
 author: One Human
 image:
-    url: /travel-1.jpg
+    url: ../../assets/travel-1.jpg
     alt: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
 tags: ["Voyage", "1AnEnVadrouille"]
 category: Travel
