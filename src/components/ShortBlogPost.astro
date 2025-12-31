@@ -1,12 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
-import monImage from "../assets/mon_image.png"; // Image a une résolution de 1600x900
 
 const {url, title, desc, date, tags, image} = Astro.props;
-
-const prefix = "../assets";
-const myImage = toString(prefix.concat("", image));
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
 [formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
@@ -15,7 +10,6 @@ const insertBetween = (ele, array) => {
 };
 
 ---
-<Debug {myImage} />
 <article>
     <div class="content">
         <div class="postDatas">
@@ -28,7 +22,6 @@ const insertBetween = (ele, array) => {
         <p class="description">{desc}</p>
     </div>
     <Image src={image} alt="blablabla" width="120px" height="120px" />
-    <Image src={myImage} alt="blablabla" width="120px" height="120px" />
     <a class="linkPost" href={url}></a>
 </article>
 
