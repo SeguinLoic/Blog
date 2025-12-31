@@ -3,14 +3,10 @@ import Navigation from "./Navigation.astro"
 ---
 
 <header>
-    <div class="intro">
-        <div class="logo">
-            <a href="/">
-                <h1>One Human</h1>
-            </a>
-            <p class="desc">Vivre des expériences.</p>
-        </div>
-    </div>
+    <a href="/" class="logo">
+        <h1>One Human</h1>
+    </a>
+    <p class="desc">Vivre des expériences.</p>
     <Navigation />
 </header>
 
@@ -21,39 +17,35 @@ import Navigation from "./Navigation.astro"
         width: 100%;
         position: relative;
     }
-    header .intro {
+    /*header .intro {
         display: flex;
         flex-direction: row;
         padding: 0px 24px;  
-    }
-    .logo {
+    }*/
+    /*.logo {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         position: relative;
-    }
-    .logo a {
+    }*/
+    .logo {
         display: flex;
-        font-family: "Stack Sans Notch";
-        font-size: 1.3em;
-        font-weight: 600;
         text-decoration: none;
-        line-height: 1.2;
         position: relative;
         z-index: 1;
         color: var(--color-bg) !important;
         padding: 2px 8px 0px;
         background-color: var(--color-fg);
     }
-    .logo p.desc {
+    p.desc {
         margin-bottom: 0px;
         margin-top: 6px;
     }
     @media screen and (max-width: 900px) { }
     @media screen and (max-width: 768px) { 
-        header .intro {
+        /*header .intro {
             padding: 0px 16px;  
-        }
+        }*/
     }
 </style>
