@@ -96,6 +96,9 @@
 p.visibility-hidden {
   visibility: hidden;
 }
+h1 {
+  margin: 0px;
+}
 html {
   display: flex;
   background-color: #fff;
