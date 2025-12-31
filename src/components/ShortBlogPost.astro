@@ -5,7 +5,7 @@ import { Debug } from 'astro:components';
 const {url, title, desc, date, tags, image} = Astro.props;
 
 const prefix = "../assets";
-const myImage = prefix.concat("", toString(image));
+const myImage = prefix.concat("", image);
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
 [formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
