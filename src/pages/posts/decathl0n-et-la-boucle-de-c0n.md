@@ -5,8 +5,8 @@ pubDate: 08-23-2025
 description: Un trek entre potes au Puy de Sancy
 author: One Human
 image:
-    url: ../../assets/rando-1.jpg
-    alt: The Astro logo on a dark background with a purple gradient arc.
+    url: ../assets/rando-1.jpg
+    alt: Deux randonneuses sur un sentier
 tags: ["Rando"]
 ---
 
