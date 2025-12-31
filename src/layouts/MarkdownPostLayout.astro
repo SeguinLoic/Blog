@@ -22,7 +22,7 @@ const insertBetween = (ele, array) => {
                 <p class="postDescription">{frontmatter.description}</p>
                 <div class="tags">
                     {frontmatter.tags.map((tag: string) => (
-                        <p class="tag"><a href={`/tags/${tag}`}>#{tag}</a></p>
+                        <p class="tag"><a href={`${tag}`}>#{tag}</a></p>
                     ))}
                 </div>
             </div>
