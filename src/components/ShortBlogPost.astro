@@ -1,8 +1,9 @@
 ---
-import { Image } from 'astro:assets';
 import myImage from '../assets/rando-1.jpg';
 
 const {url, title, desc, date, tags, image, heroImage} = Astro.props;
+import { Image } from 'astro:assets';
+
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
 [formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
