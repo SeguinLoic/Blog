@@ -4,9 +4,8 @@ title: Kirghizstan le bilan
 pubDate: 12-05-2025
 description: Premier pays de notre long périple, un gros coup de coeur
 author: One Human
-preview: /kyrgyzstan-1.jpg
 image:
-    url: ../assets/kyrgyzstan-1.jpg
+    url: ../../assets/kyrgyzstan-1.jpg
     alt: Montage photo du Kirghizstan
 tags: ["Voyage", "1AnEnVadrouille"]
 ---
