@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import myImage from '../assets/rando-1.jpg';
 
-const {url, title, desc, date, tags, image, preview} = Astro.props;
+const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
 [formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
@@ -23,7 +23,7 @@ const insertBetween = (ele, array) => {
         <h2>{title}</h2>
         <p class="description">{desc}</p>
     </div>
-    <Image src={myImage} alt="blablabla" />
+    <Image src={myImage} alt="blablabla" width="120px" height="120px" />
     <!-- <div class="colImage"> -->
     <img src={image} /> 
     <!-- </div> -->
@@ -107,12 +107,13 @@ const insertBetween = (ele, array) => {
         margin: 0px;
     }
 
-    
+    /*
     article img {
         width: 120px;
         height: 120px;
         object-fit: cover;
     }
+    */
 
     article .content {
         width: 100%;
