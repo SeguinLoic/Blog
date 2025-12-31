@@ -115,7 +115,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 40px 0 24px;
   max-width: 42rem;
   position: relative;
   margin: 0 auto;
@@ -172,9 +171,6 @@ main {
 }
 @media screen and (max-width: 900px) {}
 @media screen and (max-width: 768px) {
-  body {
-    padding: 24px 0 24px;
-  }
   html p, 
   html a {
     font-size: 15px;
