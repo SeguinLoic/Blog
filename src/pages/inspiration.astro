@@ -9,26 +9,24 @@ const page = "inspiration";
 ---
 
 <BaseLayout page={page}>
-    <div class="container">
-        <Header />
-        <div class="containerCopains">
-            <h2>Le coin des copains</h2>
-            <ul class="copains">
-                <li><a href="https://audioblog.arteradio.com/blog/261344/lectus-podcast" target="_blank"><img src="/lectus.png"/>LectUs Podcast</a></li>
-            </ul>
-            <br/>
-            <h2>Bibliothèque</h2>
-            <div class="containerLivres">
-                <span class="annee">2026</span>
-                <Livres date={2026} />
-                <span class="annee">2025</span>
-                <Livres date={2025} />
-                <span class="annee">2024</span>
-                <Livres date={2024} />
-            </div>
+    <Header />
+    <div class="containerCopains">
+        <h2>Le coin des copains</h2>
+        <ul class="copains">
+            <li><a href="https://audioblog.arteradio.com/blog/261344/lectus-podcast" target="_blank"><img src="/lectus.png"/>LectUs Podcast</a></li>
+        </ul>
+        <br/>
+        <h2>Bibliothèque</h2>
+        <div class="containerLivres">
+            <span class="annee">2026</span>
+            <Livres date={2026} />
+            <span class="annee">2025</span>
+            <Livres date={2025} />
+            <span class="annee">2024</span>
+            <Livres date={2024} />
         </div>
-        <Footer />
     </div>
+    <Footer />
 </BaseLayout>
 
 <style>
