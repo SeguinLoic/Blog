@@ -15,7 +15,9 @@ html {
     color: var(--color-fg);
 }
 html a, 
-html p  {
+html p,
+h2, 
+h3  {
     color: var(--color-fg) !important;
 }
 html header:after, 
