@@ -1,8 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+import { Debug } from 'astro:components';
 import myImage from '../assets/rando-1.jpg';
 
-const {url, title, desc, date, tags, image, heroImage} = Astro.props;
-import { Image } from 'astro:assets';
+const {url, title, desc, date, tags, image} = Astro.props;
 
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
@@ -12,6 +13,8 @@ const insertBetween = (ele, array) => {
 };
 
 ---
+
+<Debug {image} />
 
 <article>
     <div class="content">
