@@ -13,9 +13,9 @@ posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatte
 <BaseLayout page={page}>
     <div class="container">
         <Header />
-        <ul class="listShortPost">
+        <main class="listShortPost">
             {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)}
-        </ul>
+        </main>
         <Footer />
     </div>
 </BaseLayout>
@@ -30,7 +30,7 @@ posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatte
       display: flex;
       column-gap: 20px;
   }
-  ul.listShortPost {
+  .listShortPost {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
