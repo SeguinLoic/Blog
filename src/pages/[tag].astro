@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 
@@ -21,6 +22,7 @@ const { posts } = Astro.props;
 ---
 <BaseLayout page={tag}>
     <Header/>
+    <Navigation />
     <main>
         <div class="titleTag">
             <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
 import Livres from '../components/Livres.astro';
@@ -10,6 +11,7 @@ const page = "inspiration";
 
 <BaseLayout page={page}>
     <Header />
+    <Navigation />
     <main>
         <h2>Le coin des copains</h2>
         <ul class="copains">
