@@ -24,26 +24,25 @@ const { posts } = Astro.props;
     <Header/>
     <Navigation />
     <main>
-        <div class="titleTag">
-            <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
-        </div>
+        <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
         {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)}
     </main>
     <Footer />
 </BaseLayout>
 
 <style>
-    .titleTag {
-        padding: 40px 24px;
-        background-color: var(--color-3);
+    p {
         color: #fff !important;
         position: relative;
-    }
-    .titleTag p {
-        color: #fff !important;
-        margin: 0px;
+        padding: 32px 24px;
+        background-color: var(--color-3);
     }
     .tag {
         font-weight: 600;
+    }
+    @media screen and (max-width: 768px) {
+        p {
+            padding: 24px 16px;
+        }
     }
 </style>
