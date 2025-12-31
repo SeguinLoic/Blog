@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
@@ -22,7 +22,7 @@ const insertBetween = (ele, array) => {
         <h2>{title}</h2>
         <p class="description">{desc}</p>
     </div>
-    <Image src={image} alt="Une description de mon image." />
+    <Picture src={image} alt="Une description de mon image." />
 
     <!-- <div class="colImage"> -->
     <img src={image} /> 
@@ -117,7 +117,7 @@ const insertBetween = (ele, array) => {
     article .content {
         width: 100%;
     }
-    
+
     /*article .colImage {
         width: 120px;
         height: 120px;
