@@ -17,14 +17,12 @@ const insertBetween = (ele, array) => {
                 {allTags.map((tag) => <a class="tag" href={`/tags/${tag}`}>#{tag}</a>)}
             </div>
         </div>
-        <!-- <div class="postTitle"> -->
-        <h2 class="title">{title}</h2>
+        <h2>{title}</h2>
         <p class="description">{desc}</p>
-        <!-- </div> -->
     </div>
-    <div class="colImage">
+    <!-- <div class="colImage"> -->
         <img src={image} />
-    </div>
+    <!-- </div> -->
     <a class="linkPost" href={url}></a>
 </article>
 
@@ -90,12 +88,6 @@ const insertBetween = (ele, array) => {
         font-weight: 700;
         text-decoration: none;
     }
-    /* article .postTitle {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        text-decoration: none;
-    } */
     article h2 {
         font-family: Space Grotesk;
         font-weight: 500;
