@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 export async function getStaticPaths() {
-    const allPosts = await Astro.glob('../posts/*.md', { eager: true });
+    const allPosts = await Astro.glob('./posts/*.md', { eager: true });
     const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
     return uniqueTags.map((tag) => {
         const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
