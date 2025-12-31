@@ -31,9 +31,6 @@ const page = "inspiration";
 
 <style>
     main {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
         padding: 40px 24px 0px;
     }
     main h2 {
@@ -74,5 +71,10 @@ const page = "inspiration";
     ul.copains li a img {
         width: 190px;
         margin-bottom: 6px;
+    }
+    @media screen and (max-width: 768px) {
+        main {
+            padding: 24px 16px;
+        }   
     }
 </style>

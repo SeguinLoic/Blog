@@ -96,8 +96,14 @@
 p.visibility-hidden {
   visibility: hidden;
 }
-h1, h2 {
+h1, h2, h3 {
   margin: 0px;
+}
+h1 {
+  font-family: "Stack Sans Notch";
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.2;
 }
 html {
   display: flex;
@@ -131,6 +137,11 @@ body:after {
 }
 body:before {
   left: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .postContent p,
 .postContent li {
