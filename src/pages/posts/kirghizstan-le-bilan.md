@@ -8,7 +8,6 @@ image:
     url: ../../assets/kyrgyzstan-1.jpg
     alt: Montage photo du Kirghizstan
 tags: ["Voyage", "1AnEnVadrouille"]
-category: Travel
 ---
 
 ![Dune de Khongor](../../assets/kyrgyzstan-1.jpg)

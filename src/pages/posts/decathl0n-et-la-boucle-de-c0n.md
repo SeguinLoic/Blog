@@ -8,7 +8,6 @@ image:
     url: ../../assets/rando-1.jpg
     alt: The Astro logo on a dark background with a purple gradient arc.
 tags: ["Rando"]
-category: Hiking
 ---
 
 ![Randonnée au Puy de Sancy](../../assets/rando-1.jpg)

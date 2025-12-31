@@ -8,7 +8,6 @@ image:
     url: ../../assets/travel-1.jpg
     alt: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
 tags: ["Voyage", "1AnEnVadrouille"]
-category: Travel
 ---
 
 ![Dune de Khongor](../../assets/travel-1.jpg)
