@@ -10,17 +10,17 @@ const insertBetween = (ele, array) => {
 ---
 
 <article>
-    <div class="colContent">
+    <div class="content">
         <div class="postDatas">
             <p class="date">{insertBetween('-', formatedDate)}</p>
             <div class="tags">
                 {allTags.map((tag) => <a class="tag" href={`/tags/${tag}`}>#{tag}</a>)}
             </div>
         </div>
-        <div class="postTitle">
-            <p class="title">{title}</p>
-            <p class="description">{desc}</p>
-        </div>
+        <!-- <div class="postTitle"> -->
+        <h2 class="title">{title}</h2>
+        <p class="description">{desc}</p>
+        <!-- </div> -->
     </div>
     <div class="colImage">
         <img src={image} />
@@ -48,7 +48,7 @@ const insertBetween = (ele, array) => {
         left: 0;
         opacity: 0.15;
     }
-    article .colContent {
+    article .content {
         display: flex;
         flex-direction: column;
         gap: 12px;  
@@ -90,13 +90,13 @@ const insertBetween = (ele, array) => {
         font-weight: 700;
         text-decoration: none;
     }
-    article .postTitle {
+    /* article .postTitle {
         display: flex;
         flex-direction: column;
         gap: 8px;
         text-decoration: none;
-    }
-    article .title {
+    } */
+    article h2 {
         font-family: Space Grotesk;
         font-weight: 500;
         font-size: 1.7em;
@@ -111,7 +111,7 @@ const insertBetween = (ele, array) => {
     }
 
     /* COL IMAGE */
-    article .colContent {
+    article .content {
         width: 100%;
     }
     article .colImage {
@@ -146,11 +146,11 @@ const insertBetween = (ele, array) => {
         article {
             padding: 24px 16px;
         }   
-        article .title {
+        article h2 {
             font-size: 1.7em;
             padding-bottom: 8px;
         }  
-        article .colContent {
+        article .content {
             padding-right: 16px;
         }
     }
@@ -165,7 +165,7 @@ const insertBetween = (ele, array) => {
         article .postDatas .tags:before {
             display: none;
         }
-        article .title {
+        article h2 {
             font-size: 1.5em;
         }
         article .description {
