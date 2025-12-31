@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
@@ -21,10 +22,12 @@ const insertBetween = (ele, array) => {
         <h2>{title}</h2>
         <p class="description">{desc}</p>
     </div>
-    <!-- <div class="colImage"> -->
     <Image src={image} />
+
+    <!-- <div class="colImage"> -->
     <!-- <img src={image} /> -->
     <!-- </div> -->
+     
     <a class="linkPost" href={url}></a>
 </article>
 
@@ -103,29 +106,29 @@ const insertBetween = (ele, array) => {
     article p {
         margin: 0px;
     }
-
+/*
 article img {
     width: 120px;
     height: 120px;
     object-fit: cover;
-}
+}*/
 
     /* COL IMAGE */
     article .content {
         width: 100%;
     }
-    article .colImage {
+    /*article .colImage {
         width: 120px;
         height: 120px;
         overflow: clip;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    article .colImage img {
+    }*/
+    /*article .colImage img {
         width: auto;
         height: 100%;
-    }
+    }*/
 
     a.linkPost {
         position: absolute;
@@ -175,9 +178,9 @@ article img {
             font-size: 0.8em;
             font-weight: 500;
         }
-        article .colImage {
+        /*article .colImage {
             width: 80px;
             height: 80px;
-        }
+        }*/
     }
 </style>
