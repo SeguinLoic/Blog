@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import myImage from '../assets/rando-1.jpg';
 const {url, title, desc, date, tags, image} = Astro.props;
 
 const allTags = tags.toString().split(",");
@@ -24,7 +23,6 @@ const insertBetween = (ele, array) => {
         <p class="description">{desc}</p>
     </div>
     <Image src={image} alt="blablabla" width="120px" height="120px" />
-    <Image src={myImage} alt="blablabla" width="120px" height="120px" ImageQualityPreset="max" />
     <a class="linkPost" href={url}></a>
 </article>
 
