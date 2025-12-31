@@ -10,7 +10,7 @@ const page = "inspiration";
 
 <BaseLayout page={page}>
     <Header />
-    <div class="containerCopains">
+    <main>
         <h2>Le coin des copains</h2>
         <ul class="copains">
             <li><a href="https://audioblog.arteradio.com/blog/261344/lectus-podcast" target="_blank"><img src="/lectus.png"/>LectUs Podcast</a></li>
@@ -25,18 +25,18 @@ const page = "inspiration";
             <span class="annee">2024</span>
             <Livres date={2024} />
         </div>
-    </div>
+    </main>
     <Footer />
 </BaseLayout>
 
 <style>
-    .containerCopains {
+    main {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         padding: 40px 24px 0px;
     }
-    .containerCopains h2 {
+    main h2 {
         margin: 0px;
     }
     .containerLivres {

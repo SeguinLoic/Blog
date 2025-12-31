@@ -9,15 +9,13 @@ const pageTitle = "Tag index";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-      <div class="container">
-          <Header />
-              <div class="tags">
-                  {tags.map((tag) => (
-                      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-                  ))}
-              </div>
-          <Footer />
-      </div>
+    <Header />
+    <div class="tags">
+        {tags.map((tag) => (
+            <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+        ))}
+    </div>
+    <Footer />
 </BaseLayout>
 
 <style>
