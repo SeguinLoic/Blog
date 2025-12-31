@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
 const formatedDate = date.toString().split("-");
@@ -21,7 +22,8 @@ const insertBetween = (ele, array) => {
         <p class="description">{desc}</p>
     </div>
     <!-- <div class="colImage"> -->
-        <img src={image} />
+     <Image src={image} />
+    <!-- <img src={image} /> -->
     <!-- </div> -->
     <a class="linkPost" href={url}></a>
 </article>
