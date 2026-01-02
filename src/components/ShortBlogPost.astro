@@ -4,7 +4,7 @@ import { Debug } from 'astro:components';
 
 const {url, title, desc, date, tags, image} = Astro.props;
 
-import myImage from `../assets/${image}`;
+import myImage from `../assets${image}`;
 
 const allTags = tags.toString().split(",");
 ---
