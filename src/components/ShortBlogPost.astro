@@ -3,19 +3,17 @@ import { Image } from 'astro:assets';
 
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
-
 ---
+
 <article>
-    <div class="content">
-        <!-- <div class="postDatas"> -->
-            <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-            <ul class="tags">
-                {allTags.map((tag) => <li><a class="tag" href={`/${tag}`}>#{tag}</a></li>)}
-            </ul>
-        <!-- </div> -->
+    <section>
+        <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+        <ul>
+            {allTags.map((tag) => <li><a class="tag" href={`/${tag}`}>#{tag}</a></li>)}
+        </ul>
         <h2>{title}</h2>
         <p>{desc}</p>
-    </div>
+    </section>
     <Image src={image} alt="blablabla" width="120px" height="120px" />
     <a class="link" href={url}></a>
 </article>
@@ -40,32 +38,25 @@ const allTags = tags.toString().split(",");
         left: 0;
         opacity: 0.15;
     }
-
-    article .content {
+    article section {
         display: flex;
         flex-direction: column;
         gap: 12px;  
-        width: 75%;
+        width: 100%;
         padding-right: 24px;
     }
-/* 
-    article .postDatas {
-        display: flex;
-    } */
-
     article time {
         font-size: .85em;
         padding-right: 8px;
     }
-
-    article .tags {
+    article ul {
         padding-left: 8px;
         display: flex;
         list-style: none;
         position: relative;
         z-index: 2;
     }
-    article .tags:before {
+    article ul:before {
         content: '';
         width: 1px;
         height: 100%;
@@ -76,7 +67,7 @@ const allTags = tags.toString().split(",");
         transform: translateY(-50%);
         opacity: 0.15;
     }
-    article .tags .tag {
+    article ul li a {
         padding-right: 8px;
         font-size: 0.9em;
         line-height: 1em;
@@ -86,7 +77,6 @@ const allTags = tags.toString().split(",");
         font-weight: 700;
         text-decoration: none;
     }
-
     article h2 {
         font-family: Space Grotesk;
         font-weight: 500;
@@ -102,11 +92,6 @@ const allTags = tags.toString().split(",");
         object-fit: cover;
         overflow-clip-margin: unset;
     }
-
-    article .content {
-        width: 100%;
-    }
-
     a.link {
         position: absolute;
         top: 0;
@@ -121,7 +106,6 @@ const allTags = tags.toString().split(",");
     a.link:hover {
         opacity: 0.05;
     }
-
     @media screen and (max-width: 768px) {
         article {
             padding: 24px 16px;
@@ -130,28 +114,24 @@ const allTags = tags.toString().split(",");
             font-size: 1.7em;
             padding-bottom: 8px;
         }  
-        article .content {
+        article section {
             padding-right: 16px;
         }
     }
     @media screen and (max-width: 500px) {
-        /* article .postDatas {
-            flex-direction: column;
-            gap: 6px;
-        } */
-        article .tags {
-            padding-left: 0px;
-        }
-        article .tags:before {
-            display: none;
-        }
         article h2 {
             font-size: 1.5em;
         }
         article p {
             display: none;
         }
-        article .tags .tag {
+        article ul {
+            padding-left: 0px;
+        }
+        article ul:before {
+            display: none;
+        }
+        article ul li a {
             font-size: 0.8em;
             font-weight: 500;
         }
