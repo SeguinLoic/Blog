@@ -18,7 +18,9 @@
   }
   footer span {
     font-weight: 600;
-    margin-left: 4px;
+    margin: 0px 4px;
+    position: relative;
+    padding-right: 10px;
   }
   footer span:after {
     content: '';
@@ -27,17 +29,12 @@
     position: absolute;
     background-color: var(--color-fg);
     top: 0;
-    right: 10px;
+    right: 0;
     opacity: 0.25;
   }
   @media screen and (max-width: 768px) {
       footer {
           padding: 24px 16px;
-      }
-  }
-  @media screen and (max-width: 500px) {
-      footer span:after {
-        display: none;
       }
   }
 </style>
