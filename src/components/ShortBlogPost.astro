@@ -4,22 +4,15 @@ import { Image } from 'astro:assets';
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
 
-const formatedDate = date.toString().split("-");
-[formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
-const insertBetween = (ele, array) => {
-  return array.flatMap((x) => [ele, x]).slice(1);
-};
-
 ---
 <article>
     <div class="content">
-        <div class="postDatas">
+        <!-- <div class="postDatas"> -->
             <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-            <!-- <time class="date">{insertBetween('-', formatedDate)}</time> -->
             <ul class="tags">
                 {allTags.map((tag) => <li><a class="tag" href={`/${tag}`}>#{tag}</a></li>)}
             </ul>
-        </div>
+        <!-- </div> -->
         <h2>{title}</h2>
         <p>{desc}</p>
     </div>
@@ -55,24 +48,24 @@ const insertBetween = (ele, array) => {
         width: 75%;
         padding-right: 24px;
     }
-
+/* 
     article .postDatas {
         display: flex;
-    }
+    } */
 
     article time {
         font-size: .85em;
         padding-right: 8px;
     }
 
-    article .postDatas .tags {
+    article .tags {
         padding-left: 8px;
         display: flex;
         list-style: none;
         position: relative;
         z-index: 2;
     }
-    article .postDatas .tags:before {
+    article .tags:before {
         content: '';
         width: 1px;
         height: 100%;
@@ -83,7 +76,7 @@ const insertBetween = (ele, array) => {
         transform: translateY(-50%);
         opacity: 0.15;
     }
-    article .postDatas .tags .tag {
+    article .tags .tag {
         padding-right: 8px;
         font-size: 0.9em;
         line-height: 1em;
@@ -142,14 +135,14 @@ const insertBetween = (ele, array) => {
         }
     }
     @media screen and (max-width: 500px) {
-        article .postDatas {
+        /* article .postDatas {
             flex-direction: column;
             gap: 6px;
-        }
-        article .postDatas .tags {
+        } */
+        article .tags {
             padding-left: 0px;
         }
-        article .postDatas .tags:before {
+        article .tags:before {
             display: none;
         }
         article h2 {
@@ -158,7 +151,7 @@ const insertBetween = (ele, array) => {
         article p {
             display: none;
         }
-        article .postDatas .tags .tag {
+        article .tags .tag {
             font-size: 0.8em;
             font-weight: 500;
         }
