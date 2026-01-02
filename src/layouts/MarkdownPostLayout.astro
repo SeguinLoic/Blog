@@ -35,7 +35,7 @@ const { frontmatter } = Astro.props;
     .introduction {
         position: relative;
         padding: 40px 24px;
-        gap: 8px;
+        gap: 12px;
         display: flex;
         flex-direction: column;
         background-color: var(--color-3);
@@ -49,7 +49,6 @@ const { frontmatter } = Astro.props;
         font-family: 'Space Grotesk';
         font-size: 2.3em;
         font-weight: 500;
-        margin: 8px 0 0;
         line-height: 1.2em;
         max-width: 100%;
     }
@@ -61,6 +60,8 @@ const { frontmatter } = Astro.props;
     }
     ul {
         display: flex;
+        list-style: none;
+        margin: 0px;
     }
     ul li a {
         color: #b38c40 !important;
