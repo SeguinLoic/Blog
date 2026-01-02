@@ -11,6 +11,7 @@ tags: ["Voyage", "1AnEnVadrouille"]
 ---
 
 ![Dune de Khongor](../../assets/Kazakhstan.jpg)
+
 Notre séjour au Kazakhstan se termine aujourd'hui. C'est un vaste pays et je sais que nous n'avons qu'effleuré sa surface. Je vais quand même dresser un petit bilan de notre ressenti et nos expériences. 
 
 Le Kazakhstan. Nous ne l'avons pas choisi par hasard. Cette année, la 5ème édition des World Nomad Games se déroulait à Astana, capitale du Kazakhstan. C'était quelque chose qui nous faisait terriblement envie. Pouvoir être aux premières loges de sports dont on ignore tout. La cérémonie d'ouverture était grandiose, les différentes compétitions étaient très intéressantes à découvrir. Tout cela, nous l'avons partagé avec vous. Mais il y a quelque chose que vous n'avez peut-être pas perçu et qui nous a marqué tout au long de notre séjour : le Kazakhstan, c'est grand. (Et ça rime en plus) 
