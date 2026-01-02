@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
     <Navigation />
     <main>
         <div class="postIntro">
-            <time datetime={frontmatter.date}>{new Date(frontmatter.date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            <time datetime={frontmatter.pubDate}>{new Date(frontmatter.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
             <h2 class="postTitle">{frontmatter.title}</h2>
             <p class="postDescription">{frontmatter.description}</p>
             <div class="tags">
