@@ -14,7 +14,7 @@ const insertBetween = (ele, array) => {
 <article>
     <div class="content">
         <div class="postDatas">
-            <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</time>
+            <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
             <!-- <time class="date">{insertBetween('-', formatedDate)}</time> -->
             <ul class="tags">
                 {allTags.map((tag) => <li><a class="tag" href={`/${tag}`}>#{tag}</a></li>)}
