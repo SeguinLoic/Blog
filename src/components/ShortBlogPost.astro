@@ -87,6 +87,9 @@ const allTags = tags.toString().split(",");
         font-size: 1.7em;
         line-height: 1em;
     }
+    article p {
+        line-height: 1.4;
+    }
     article img {
         object-fit: cover;
         overflow-clip-margin: unset;
@@ -118,6 +121,9 @@ const allTags = tags.toString().split(",");
         }
     }
     @media screen and (max-width: 500px) {
+        article time {
+            width: 100%;
+        }
         article h2 {
             font-size: 1.5em;
         }
