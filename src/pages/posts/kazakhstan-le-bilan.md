@@ -5,8 +5,8 @@ pubDate: 2026-01-02
 description: Premier pays de notre long périple, un gros coup de coeur
 author: One Human
 image:
-    url: /kyrgyzstan-1.jpg
-    alt: Montage photo du Kirghizstan
+    url: /Kazakhstan.jpg
+    alt: Montage photo du Kazakhstan
 tags: ["Voyage", "1AnEnVadrouille"]
 ---
 
