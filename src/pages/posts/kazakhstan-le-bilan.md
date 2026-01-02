@@ -11,37 +11,19 @@ tags: ["Voyage", "1AnEnVadrouille"]
 ---
 
 ![Dune de Khongor](../../assets/Kazakhstan.jpg)
+Notre séjour au Kazakhstan se termine aujourd'hui. C'est un vaste pays et je sais que nous n'avons qu'effleuré sa surface. Je vais quand même dresser un petit bilan de notre ressenti et nos expériences. 
 
-N'est-il pas magnifique le drapeau du Kirghizstan ? 
-Les rayons du soleil symbolisent les 40 tribus kirghizes et en son centre, le tunduk. Il représente le haut de la yourte mais c'est surtout un symbole d'unité, qui engage tout le monde à avancer ensemble.
+Le Kazakhstan. Nous ne l'avons pas choisi par hasard. Cette année, la 5ème édition des World Nomad Games se déroulait à Astana, capitale du Kazakhstan. C'était quelque chose qui nous faisait terriblement envie. Pouvoir être aux premières loges de sports dont on ignore tout. La cérémonie d'ouverture était grandiose, les différentes compétitions étaient très intéressantes à découvrir. Tout cela, nous l'avons partagé avec vous. Mais il y a quelque chose que vous n'avez peut-être pas perçu et qui nous a marqué tout au long de notre séjour : le Kazakhstan, c'est grand. (Et ça rime en plus) 
 
-Le tunduk c'était aussi le nom de notre première auberge. Point de départ de notre année de voyage. C'est le moment de dresser un petit bilan après 24 jours dans ce pays qui, je pense, aura placé la barre très haute. 
+Pas évident d'explorer les nombreuses curiosités que ce pays a à nous offrir. Les villes telles que Almaty et Astana prennent du temps à parcourir. Cette dernière est d'ailleurs considérée comme la Dubai de l'Asie Centrale, avec d'immenses buildings plus originaux les uns que les autres. Pour relier ces deux villes, nous avons découvert cette merveille qu'est le train de nuit. Il faut dire qu'avec un peu de pratique, on est vite devenus des experts. On connaît les bonnes places, l'emplacement de l'eau chaude pour le thé, comment avoir le train au meilleur prix... Bon par contre, je ne sais pas ce qu'il s'est passé avec le dernier trajet, mais le train était vieux, il vibrait de partout, on n'a pas beaucoup dormi. Il va falloir s'y habituer je crois. 
 
-![Son Kul](../../assets/kyrgyz-1.JPG)
-*Une jolie petite yourte avec de beaux motifs - Son Kul*
+Vous saviez qu'il existe une zone de décollage pour les fusées et qu'on peut avoir la chance d'en voir une s'élancer vers l'espace ? Et qu'il était possible, il n'y a pas si longtemps, de visiter un ancien site d'essais atomiques ? Ou encore que vous pouviez croiser dans l'un des nombreux parcs nationaux un léopard des neiges, un ours brun ou encore une antilope. Tout cela on ne l'a pas vu, par choix, mais également par manque de temps et d'organisation. Je reste persuadé aujourd'hui que le Kazakhstan est un pays riche en découvertes, mais qu'il vaut mieux arpenter avec son propre véhicule. 
 
-J'ai lu plusieurs fois que les voyageurs trouvent les Kirghizes froids, impolis. Je peux comprendre ce ressenti, mais je ne le partage pas. C'est assez étonnant de voir que les Kirghizes ne communiquent pas entre eux, lorsqu'ils rentrent dans le bus, dans un magasin, à la caisse du supermarché. Ils ne disent pas un mot. On ne les entend pas s'énerver non plus. Nous les avons trouvés calmes, sereins. Les enfants aussi. Vous ne verrez jamais un enfant faire un caprice dans la rue. Ils sont disciplinés, ils écoutent. Tout ça, ça fait partie d'une éducation et d'une culture qui est radicalement différente de la nôtre. Durant ce voyage on en a beaucoup appris sur l'éducation, la famille, le mariage, la religion, le travail. Je prends toujours un réel plaisir à découvrir tous ces aspects de la vie de gens qui habitent à des milliers de kilomètres de chez moi.
+Par contre, si vous souhaitez visiter ce pays, il va falloir vous faire des épaules et jouer des coudes, parce que les Kazakhs ils n'ont pas le temps d'attendre. C'est assez perturbant et parfois agaçant de se faire bousculer, piétiner. Il ne faut pas s'attendre à un sourire et parfois même un "bonjour" ou un "merci". En voyage, il faut savoir aussi prendre du recul et observer, comprendre, accepter les différences culturelles. Malgré ça, nous avons quand même reçu de la part de certains des gestes d'une infinie gentillesse et d'une spontanéité très touchante. Il y a du bon partout sur cette terre et il vaut savoir le garder en mémoire. 
 
-![Skazka Canyon](../../assets/kyrgyz-2.jpg)
-*Le canyon des contes de fées - Skazka Canyon*
-
-Est-ce qu'on a trouvé les Kirghizes froids ? Non pas vraiment. Durant notre périple, nous avons pu discuter avec nombre d'entre eux : un policier, un pharmacien, un manager de l'équipe costume d'un spectacle, des guides de montagnes, des gens dans la rue et puis Maftuna et Madina. Tous étaient préoccupés de notre bien-être dans leur pays. Tous espéraient que les gens nous traitent bien. Tous voulaient savoir ce que l'on avait aimé ou non dans leur culture. De nombreux enfants étaient heureux de pouvoir se présenter, nous serrer la main, avoir un contact. Et ça, bah ça fait chaud au cœur. 
-Alors oui, ils ne sont pas tous comme ça. Et ceux avec qui nous ne pouvions communiquer semblaient gênés, presque timides face à cette barrière de langage. Nous n'avons jamais ressenti de pressions, d'agressions de leur part. À mes yeux, les Kirghizes sont vraiment sympas. 
-
-![Ala Kul](../../assets/kyrgyz-3.jpg)
-*Les montagnes célestes qui craquent, en arrière plan - Ala Kul*
-
-Il y a certainement plusieurs facteurs à ça, personnellement j'en vois un : le tourisme n'est pas encore très développé ici. Alors s'il vous plaît, n'y allez pas. (Enfin si, allez-y, c'est trop stylé). Les paysages sont magnifiques ici, les montagnes, les canyons, les lacs. Les amoureux de la nature tomberont amoureux une nouvelle fois. 
-
-![Osh Bazar](../../assets/kyrgyz-4.jpg)
-*Les traditionels petits pains ronds d'Asie Centrale - Osh Bazar*
-
-Il y a encore tant de choses que j'aimerais dire sur ce pays et ses habitants, je ne vais pas trop m'étendre. Je vais simplement dresser une petite liste des trucs cool qu'on a découverts et qui m'ont marqué :
-- Les Kirghizes n'utilisent pas de couteau pour manger,
-- Ils ne boivent pas d'eau, que du thé,
-- À table on sert toujours les hommes en premier et on ne met pas beaucoup de thé dans la tasse (resservir quelqu'un souvent veut dire que l'on a envie de lui accorder du temps),
-- Les Kirghizes ne s'assoient jamais par terre, ils font la pose kirghize et c'est vachement impressionnant,
-- La bague de fiançailles est remplacée par des boucles d'oreilles,
-- Les Kirghizes fabriquent leur propre Cognac et ils adorent ça,
-- Les conteurs de Manas sont hyper forts, on en a rencontré un qui un jour a improvisé 56h sans s'arrêter sur Manas,
-- Les taxis adorent coller des hélicoptères en plastique sur leur tableau de bord.
+Dans les derniers faits marquants, les expérimentations et les découvertes, voici une petite liste : 
+- On a fait une soirée quiz en Russe dans un bar, et on a eu quelques réponses (merci google lens), 
+- Je me suis fait tondre à 13mm par un coiffeur fan de Mbappé, 
+- Il y a un restaurant coréen qu'il vaut mieux éviter à Almaty si vous tenez à votre bide, 
+- Dans pas mal d'endroits ils n'auront pas la monnaie à vous rendre (et kaspi c'est kaspieds) 
+- Pour eux, il n'y a aucun souci à passer un appel à 3h du mat' et parler comme s'il n'y avait personne dans le dortoir. 
