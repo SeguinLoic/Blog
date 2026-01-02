@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import lectures from '../pages/lectures.json';
 
 const { date } = Astro.props;
@@ -10,8 +9,7 @@ const books = lectures.filter((lecture) => lecture.year === date);
     {books.map(book => (
         <li>
             <div class="couverture">
-                <Image src={book.image} alt="blablabla" width="90px" height="auto" />
-                {/* <img src={`${book.image}`} /> */}
+                <img src={`${book.image}`} />
             </div>
             <div class="contenu">
                 {book.name} 
