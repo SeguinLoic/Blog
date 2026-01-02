@@ -4,11 +4,6 @@ import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 const { frontmatter } = Astro.props;
-const formatedDate = frontmatter.pubDate.toString().split("-");
-[formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
-const insertBetween = (ele, array) => {
-  return array.flatMap((x) => [ele, x]).slice(1);
-};
 ---
 
 <BaseLayout page={frontmatter.title}>
@@ -16,8 +11,8 @@ const insertBetween = (ele, array) => {
     <Navigation />
     <main>
         <div class="postIntro">
-            <p class="postDate">{insertBetween('-', formatedDate)}</p>
-            <p class="postTitle">{frontmatter.title}</p>
+            <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            <h2 class="postTitle">{frontmatter.title}</h2>
             <p class="postDescription">{frontmatter.description}</p>
             <div class="tags">
                 {frontmatter.tags.map((tag: string) => (
@@ -45,11 +40,12 @@ const insertBetween = (ele, array) => {
         flex-direction: column;
         background-color: var(--color-3);
     }
-    .postIntro p {
-        margin: 0px;
+    h2, 
+    p.postDescription, 
+    time  {
         color: #fff !important;
     }
-    p.postTitle {
+    h2 {
         font-family: 'Space Grotesk';
         font-size: 2.3em;
         font-weight: 500;
@@ -58,10 +54,9 @@ const insertBetween = (ele, array) => {
         max-width: 100%;
     }
     p.postDescription {
-        margin-bottom: 0px;
         font-size: 1.1em;
     }
-    p.postDate {
+    time {
         font-size: 0.85em;
     }
     .postIntro .tags {
@@ -107,10 +102,8 @@ const insertBetween = (ele, array) => {
             margin-top: 16px;
             font-size: 1em;
         }
-        p.postDate {
+        time {
             font-size: .85em;
-            margin-top: 16px;
-            margin-bottom: 0px;
         }
         .postIntro {
             display: flex;
