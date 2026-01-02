@@ -23,6 +23,7 @@ const allTags = tags.toString().split(",");
         display: flex;
         position: relative;
         flex-direction: row;
+        align-items: flex-start;
         width: 100%;
         padding: 32px 24px;
         position: relative;
@@ -42,8 +43,8 @@ const allTags = tags.toString().split(",");
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 12px;  
+        align-items: flex-start; 
+        row-gap: 12px;
         width: 100%;
         padding-right: 24px;
     }
@@ -85,7 +86,6 @@ const allTags = tags.toString().split(",");
         font-weight: 500;
         font-size: 1.7em;
         line-height: 1em;
-        padding-top: 4px;
     }
     article img {
         object-fit: cover;
