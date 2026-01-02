@@ -153,6 +153,9 @@ main {
   margin: 0px !important;
   padding: 0px;
 }
+.content p {
+  margin: 16px 0px;
+}
 .content p em {
   padding: 0px 24px;
   font-size: 0.95em;
