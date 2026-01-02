@@ -5,13 +5,15 @@ const { date } = Astro.props;
 const books = lectures.filter((lecture) => lecture.year === date);
 ---
 
-<ul class="livres">
+<ul>
     {books.map(book => (
         <li>
-            <div class="couverture"><img src={`${book.image}`} /></div>
+            <div class="couverture">
+                <img src={`${book.image}`} />
+            </div>
             <div class="contenu">
                 {book.name} 
-                <span class="auteur">{book.author}</span>
+                <p class="auteur">{book.author}</p>
                 <p class="note">"{book.note}"</p>
             </div>
         </li>
@@ -19,7 +21,7 @@ const books = lectures.filter((lecture) => lecture.year === date);
 </ul>
 
 <style>
-    ul.livres {
+    ul {
         display: flex;
         list-style: none;
         padding: 0px;
@@ -28,7 +30,7 @@ const books = lectures.filter((lecture) => lecture.year === date);
         flex-direction: column;
         margin-bottom: 48px;
     }
-    ul.livres li {
+    ul li {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -38,15 +40,16 @@ const books = lectures.filter((lecture) => lecture.year === date);
     .couverture {
         height: auto;
     }
-    ul.livres li img {
+    ul li img {
         width: 90px;
     }
     .contenu {
         display: flex;
         flex-direction: column;
         padding-left: 16px;
+        gap: 8px;
     }
-    .auteur {
+    p.auteur {
         font-weight: 400;
         font-size: .9em;
     }
@@ -54,11 +57,10 @@ const books = lectures.filter((lecture) => lecture.year === date);
         font-weight: 400;
         font-style: italic;
         font-size: .9em;
+        line-height: 1.4em;
+        padding-top: 8px;
     }
     @media screen and (max-width: 768px) {
-        .containerCopains {
-            padding: 24px 16px 0;
-        }
         .contenu {
             padding-left: 12px;
         }
