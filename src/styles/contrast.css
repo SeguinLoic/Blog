@@ -16,6 +16,7 @@ html {
 }
 html a, 
 html p,
+html time,
 h2, 
 h3  {
     color: var(--color-fg) !important;
