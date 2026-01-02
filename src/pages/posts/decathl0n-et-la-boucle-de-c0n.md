@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Decathl0n et la boucle de c0n
-pubDate: 08-23-2025
+pubDate: 2025-08-23
 description: Un trek entre potes au Puy de Sancy
 author: One Human
 image:

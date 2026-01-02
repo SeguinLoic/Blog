@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Kirghizstan le bilan
-pubDate: 12-05-2025
+pubDate: 2025-12-05
 description: Premier pays de notre long périple, un gros coup de coeur
 author: One Human
 image:
