@@ -2,20 +2,17 @@
 import ButtonContrast from "./ButtonContrast.astro"
 import ButtonReturnHome from "./ButtonReturnHome.astro"
 ---
-<div class="navigation">
-    <div class="colLeft">
-        <ButtonReturnHome />
-        <ul class="nav">
-            <li><a href="/inspiration">Inspiration</a></li>
-        </ul>
-    </div>
-    <div class="colRight">
-        <ButtonContrast />
-    </div>
-</div>
+
+<nav class="navigation">
+    <ButtonReturnHome />
+    <ul>
+        <li><a href="/inspiration">Inspiration</a></li>
+    </ul>
+    <ButtonContrast />
+</nav>
 
 <style>
-    .navigation {
+    nav {
         display: flex;
         justify-content: space-between;
         height: 40px;
@@ -23,8 +20,8 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         background-color: var(--color-3);
         width: 100%;
     }
-    .navigation:before,
-    .navigation:after {
+    nav:before,
+    nav:after {
         content: "";
         width: 100%;
         height: 1px;
@@ -33,27 +30,23 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         left: 0;
         opacity: .2;
     }
-    .navigation:before {
+    nav:before {
         top: 0;
     }
-    .navigation:after {
+    nav:after {
         bottom: 0;
     }
-    .colLeft {
-        display: flex;
-        width: 100%;
-    }
-    ul.nav {
+    ul {
         margin: 0px;
         padding-left: 24px;
         list-style: none;
         display: flex;
         gap: 16px;
     }
-    ul.nav li {
+    ul li {
         display: flex;
     }
-    ul.nav li a {
+    ul li a {
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -62,10 +55,7 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         font-size: 14px !important;
     }
     @media screen and (max-width: 768px) {
-        .navigation ul.tags {
-            display: none;
-        }
-        ul.nav {
+        ul {
             padding-left: 16px;
         }
     }
