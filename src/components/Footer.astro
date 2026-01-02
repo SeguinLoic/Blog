@@ -33,8 +33,22 @@
     opacity: 0.25;
   }
   @media screen and (max-width: 768px) {
-      footer {
-          padding: 24px 16px;
-      }
+    footer {
+      padding: 24px 16px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    footer p {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 1.3em;
+    }
+    footer span {
+      margin: 0 6px;
+      padding-right: 0px;
+    }
+    footer span:after {
+      display: none;
+    }
   }
 </style>
