@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Kazakhstan le bilan
 pubDate: 2026-01-02
-description: Premier pays de notre long périple, un gros coup de coeur
+description: Le kazakhstan c'était grand, pourtant, on a eu du mal à rentrer dedans
 author: One Human
 image:
     url: /Kazakhstan.jpg
