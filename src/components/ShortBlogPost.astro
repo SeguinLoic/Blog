@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
+
 const formatedDate = date.toString().split("-");
 [formatedDate[1], formatedDate[0]] = [formatedDate[0], formatedDate[1]];
 const insertBetween = (ele, array) => {
@@ -13,16 +14,19 @@ const insertBetween = (ele, array) => {
 <article>
     <div class="content">
         <div class="postDatas">
-            <p class="date">{insertBetween('-', formatedDate)}</p>
-            <div class="tags">
-                {allTags.map((tag) => <a class="tag" href={`/${tag}`}>#{tag}</a>)}
-            </div>
+            <time datetime={date}>
+                {new Date(date).toLocaleDateString()}
+            </time>
+            <!-- <time class="date">{insertBetween('-', formatedDate)}</time> -->
+            <ul class="tags">
+                {allTags.map((tag) => <li><a class="tag" href={`/${tag}`}>#{tag}</a></li>)}
+            </ul>
         </div>
         <h2>{title}</h2>
-        <p class="description">{desc}</p>
+        <p>{desc}</p>
     </div>
     <Image src={image} alt="blablabla" width="120px" height="120px" />
-    <a class="linkPost" href={url}></a>
+    <a class="link" href={url}></a>
 </article>
 
 <style>
@@ -45,6 +49,7 @@ const insertBetween = (ele, array) => {
         left: 0;
         opacity: 0.15;
     }
+
     article .content {
         display: flex;
         flex-direction: column;
@@ -52,13 +57,16 @@ const insertBetween = (ele, array) => {
         width: 75%;
         padding-right: 24px;
     }
+
     article .postDatas {
         display: flex;
     }
-    article p.date {
+
+    article time {
         font-size: .85em;
         padding-right: 8px;
     }
+
     article .postDatas .tags {
         padding-left: 8px;
         display: flex;
@@ -87,6 +95,7 @@ const insertBetween = (ele, array) => {
         font-weight: 700;
         text-decoration: none;
     }
+
     article h2 {
         font-family: Space Grotesk;
         font-weight: 500;
@@ -94,44 +103,20 @@ const insertBetween = (ele, array) => {
         line-height: 1em;
         padding-top: 4px;
     }
-    article .description {
-        opacity: 0.8;
-    }
     article p {
         margin: 0px;
+        opacity: 0.8;
     }
-
     article img {
         object-fit: cover;
         overflow-clip-margin: unset;
     }
-    
-    /*
-    article img {
-        width: 120px;
-        height: 120px;
-        object-fit: cover;
-    }
-    */
 
     article .content {
         width: 100%;
     }
 
-    /*article .colImage {
-        width: 120px;
-        height: 120px;
-        overflow: clip;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }*/
-    /*article .colImage img {
-        width: auto;
-        height: 100%;
-    }*/
-
-    a.linkPost {
+    a.link {
         position: absolute;
         top: 0;
         left: 0;
@@ -142,7 +127,7 @@ const insertBetween = (ele, array) => {
         opacity: 0;
         transition: all 0.3s;
     }
-    a.linkPost:hover {
+    a.link:hover {
         opacity: 0.05;
     }
 
@@ -172,7 +157,7 @@ const insertBetween = (ele, array) => {
         article h2 {
             font-size: 1.5em;
         }
-        article .description {
+        article p {
             display: none;
         }
         article .postDatas .tags .tag {
