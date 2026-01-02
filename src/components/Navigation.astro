@@ -3,7 +3,7 @@ import ButtonContrast from "./ButtonContrast.astro"
 import ButtonReturnHome from "./ButtonReturnHome.astro"
 ---
 
-<nav class="navigation">
+<nav>
     <ButtonReturnHome />
     <ul>
         <li><a href="/inspiration">Inspiration</a></li>
@@ -42,6 +42,7 @@ import ButtonReturnHome from "./ButtonReturnHome.astro"
         list-style: none;
         display: flex;
         gap: 16px;
+        flex-grow: 1;
     }
     ul li {
         display: flex;
