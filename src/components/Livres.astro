@@ -17,9 +17,12 @@ if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "s
 //const books = lectures.filter((lecture) => lecture.year === year);
 ---
 
+<Debug {newImage} />
+<Debug {images} />
+
 <li>
     <div class="couverture">
-        <Image src={images[newImage]()} alt="alt" />
+        <!-- <Image src={images[newImage]()} alt="alt" /> -->
         <!-- <img src={newImage} /> -->
     </div>
     <div class="contenu">
