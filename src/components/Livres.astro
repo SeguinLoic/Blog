@@ -11,8 +11,7 @@ interface Props {
 }
 
 const { image, name, author, note} = Astro.props;
-let newImage = image.replace(/"/g, "");
-//const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+let newImage = image.split("../assets/livres/").split(".jpg");
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
 });
