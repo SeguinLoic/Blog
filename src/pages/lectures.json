@@ -6,7 +6,7 @@
     "year": 2025,
     "image": {
       "source": "../assets/livres/faucheuse-t2.jpg",
-      "alt": "le alt de mon img"
+      "alt": "Image de couverture du livre la faucheuse tome 2"
     },
     "note" : "C'est intéressant de persévérer. À la moitié du bouquin je n'avais plus la foi. Mais finalement, j'ai trouvé la fin plutôt intéressante."
   },
@@ -16,8 +16,118 @@
     "year": 2025,
     "image": {
       "source": "../assets/livres/faucheuse-t1.jpg",
-      "alt": "le alt de mon img"
+      "alt": "Image de couverture du livre la faucheuse tome 1"
     },
     "note" : "Sans la mort, la vie n'aurait pas la même saveur."
+  },
+    {
+    "name": "Careless People",
+    "author": "Sarah Wynn-Williams",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/careless.jpg",
+      "alt": "Image de couverture du livre careless people"
+    },
+    "note" : "Les riches n'ont vraiment pas les mêmes délires. Et je suis content de ne pas être sur Facebook."
+  },
+    {
+    "name": "Au détour du Caucase",
+    "author": "Clara Arnaud",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/caucase.jpg",
+      "alt": "Image de couverture du livre au détour du caucase"
+    },
+    "note" : "Le cheval, le cheval, le cheval c'est génial."
+  },
+    {
+    "name": "Conquérant de l'impossible",
+    "author": "Mike Horn",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/conquerant.jpg",
+      "alt": "Image de couverture du livre conquérant de l'impossible"
+    },
+    "note" : "L'homme est capable de choses extraordinaires."
+  },
+    {
+    "name": "Le Cycle Des Démons : La Lance Du Désert",
+    "author": "Peter V. Brett",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/homme-rune-t2.jpg",
+      "alt": "Image de couverture du livre l'homme rune T2"
+    },
+    "note" : "Je ne savais pas qu'un livre pouvait me faire ressentir des choses de manière fortes. L'énervement en l'occurrence (pour un personnage). Sinon le livre est cool."
+  },
+    {
+    "name": "Le Cycle Des Démons : L'Homme Rune",
+    "author": "Peter V. Brett",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/homme-rune-t1.jpg",
+      "alt": "Image de couverture du livre l'homme rune T1"
+    },
+    "note" : "Le tatouage."
+  },
+    {
+    "name": "The Great Game",
+    "author": "Peter Hopkirk",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/the-great-game.jpg",
+      "alt": "Image de couverture du livre the great game"
+    },
+    "note" : "Game of Thrones ça a existé. En vrai."
+  },
+    {
+    "name": "Ten Years A Nomad",
+    "author": "Matthew Kepnes",
+    "year": 2025,
+    "image": {
+      "source": "../assets/livres/ten-years.jpg",
+      "alt": "Image de couverture du livre ten years a nomad"
+    },
+    "note" : "Il ne faut pas essayer de reproduire les bons moments du passé. C'est comme chasser un fantôme."
+  },
+    {
+    "name": "Ikigai",
+    "author": "Héctor Garcia et Francesc Miralles",
+    "year": 2024,
+    "image": {
+      "source": "../assets/livres/ikigai.jpg",
+      "alt": "Image de couverture du livre ikigai"
+    },
+    "note" : "Je ne sais plus, ça fait longtemps."
+  },
+    {
+    "name": "Atomic Habits",
+    "author": "James Clear",
+    "year": 2024,
+    "image": {
+      "source": "../assets/livres/atomic.jpg",
+      "alt": "Image de couverture du livre atomic habit"
+    },
+    "note" : "C'est l'accumulation de petits efforts qui fait les grands changements."
+  },
+    {
+    "name": "Aylal, une année en Mongolie",
+    "author": "Linda Gardelle",
+    "year": 2024,
+    "image": {
+      "source": "../assets/livres/aylal.jpg",
+      "alt": "Image de couverture du livre aylal une année en mongolie"
+    },
+    "note" : "Il faut apprendre à attendre, sans savoir pourquoi. C'est vraiment délicieux."
+  },
+    {
+    "name": "1984",
+    "author": "George Orwell",
+    "year": 2024,
+    "image": {
+      "source": "../assets/livres/1984.jpg",
+      "alt": "Image de couverture du livre 1984"
+    },
+    "note" : "Les gouvernements. La manipulation. On ne sait jamais vraiment le vrai du vrai."
   }
 ]
