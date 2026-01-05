@@ -5,12 +5,13 @@ import { Debug } from 'astro:components';
 
 interface Props {
     image: string;
+    alt: string;
     name: string;
     author: string;
     note: string;
 }
 
-const { image, name, author, note} = Astro.props;
+const { image, alt, name, author, note} = Astro.props;
 const newImage = image.source.split("../assets/livres/").pop().split(".jpg")[0];
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
@@ -23,7 +24,7 @@ const myImage = images.find(({ src }) => src.includes(newImage));
 
 <li>
     <div class="couverture">
-        <Image src={myImage.src} alt="alt" layout="full-width" width={myImage.width} height={myImage.height} />
+        <Image src={myImage.src} alt={alt} layout="full-width" width={myImage.width} height={myImage.height} />
     </div>
     <div class="contenu">
         {name} 
