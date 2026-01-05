@@ -4,7 +4,7 @@
     "name": "La Faucheuse Thunderhead",
     "author": "Neal Shusterman",
     "year": 2025,
-    "image": {"src":"../assets/livres/faucheuse-t2.jpg", "alt":"Couverture du livre la faucheuse tome 2"},
+    "image": [{"src":"../assets/livres/faucheuse-t2.jpg", "alt":"Couverture du livre la faucheuse tome 2"}],
     "note" : "C'est intéressant de persévérer. À la moitié du bouquin je n'avais plus la foi. Mais finalement, j'ai trouvé la fin plutôt intéressante."
   },
     {
