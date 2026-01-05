@@ -16,17 +16,16 @@ let newImage = image.replace(/"/g, "");
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
 });
-if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+// if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 
 //const books = lectures.filter((lecture) => lecture.year === year);
 ---
-
-<Debug {newImage} />
 <Debug {images} />
+<Debug {newImage} />
 
 <li>
     <div class="couverture">
-        <Image src={images[newImage]()} alt="alt" width="90px" height="90px" />
+        <!-- <Image src={images[newImage]()} alt="alt" width="90px" height="90px" /> -->
         <!-- <img src={newImage} /> -->
     </div>
     <div class="contenu">
