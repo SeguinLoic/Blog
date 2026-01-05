@@ -4,7 +4,7 @@ title: Decathl0n et la boucle de c0n
 pubDate: 2025-08-23
 description: Un trek entre potes au Puy de Sancy
 author: One Human
-thumbnail: ../../assets/rando-1.jpg
+thumbnail: rando-1
 image:
     url: /rando-1.jpg
     alt: Deux randonneuses sur un sentier
