@@ -4,9 +4,18 @@ import { Debug } from 'astro:components';
 
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
+
+const newImage = image.source.split("/").pop().split(".jpg")[0];
+const images = await Astro.glob("/src/assets/*").then(files => {
+  return files.map(file => file.default);
+});
+const myImage = images.find(({ src }) => src.includes(newImage));
 ---
 
 <Debug {image} />
+<Debug {newImage} />
+<Debug {images} />
+<Debug {myImage} />
 
 <article>
     <section>
