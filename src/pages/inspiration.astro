@@ -8,7 +8,6 @@ import Footer from '../components/Footer.astro';
 import lectures from './lectures.json';
 import Livres from '../components/Livres.astro';
 
-const books = lectures.filter((lecture) => lecture.year === 2025);
 const page = "inspiration";
 ---
 
@@ -16,25 +15,32 @@ const page = "inspiration";
     <Header />
     <Navigation />
     <main>
-        <section>
+        <section class="friends">
             <h2>Le coin des copains</h2>
             <ul>
                 <li><a href="https://audioblog.arteradio.com/blog/261344/lectus-podcast" target="_blank"><img src="/lectus.png"/>LectUs Podcast</a></li>
             </ul>
         </section>
-        <section>
+        <section class="books">
             <h2>Bibliothèque</h2>
             <h3>2026</h3>
-            <!-- <Livres date={2026} /> -->
-            <h3>2025</h3>
             <ul>
-                {books.map(book => (
+                {lectures.filter((lecture) => lecture.year === 2026).map(book => (
                     <Livres image={book.image} name={book.name} author={book.author} note={book.note} />
                 ))}
             </ul>
-            <!-- <Livres date={2025} /> -->
+            <h3>2025</h3>
+            <ul>
+                {lectures.filter((lecture) => lecture.year === 2025).map(book => (
+                    <Livres image={book.image} name={book.name} author={book.author} note={book.note} />
+                ))}
+            </ul>
             <h3>2024</h3>
-            <!-- <Livres date={2024} /> -->
+            <ul>
+                {lectures.filter((lecture) => lecture.year === 2024).map(book => (
+                    <Livres image={book.image} name={book.name} author={book.author} note={book.note} />
+                ))}
+            </ul>
         </section>
     </main>
     <Footer />
@@ -67,21 +73,30 @@ const page = "inspiration";
         left: -24px;
         opacity: .15;
     }
-    ul {
+    section.friends ul {
         padding: 0px;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
     }
-    ul li a {
+    section.friends ul li a {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         font-size: 0.9em;
     }
-    ul li a img {
+    section.friends ul li a img {
         width: 190px;
         margin-bottom: 6px;
+    }
+    section.books ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        gap: 24px;
+        margin: 0px;
+        flex-direction: column;
+        margin-bottom: 48px;
     }
     @media screen and (max-width: 768px) {
         main {

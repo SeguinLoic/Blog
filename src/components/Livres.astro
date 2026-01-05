@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
 
 interface Props {
     image: string;
@@ -11,17 +10,11 @@ interface Props {
 
 const { image, name, author, note} = Astro.props;
 const newImage = image.split("../assets/livres/").pop().split(".jpg")[0];
-
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
 });
 const myImage = images.find(({ src }) => src.includes(newImage));
-
-
-//const books = lectures.filter((lecture) => lecture.year === year);
 ---
-<!-- <Debug {newImage} />
-<Debug {myImage} /> -->
 
 <li>
     <div class="couverture">
@@ -34,32 +27,8 @@ const myImage = images.find(({ src }) => src.includes(newImage));
     </div>
 </li>
 
-<!-- <ul>
-    {books.map(book => (
-        <li>
-            <div class="couverture">
-                <img src={`${book.image}`} />
-            </div>
-            <div class="contenu">
-                {book.name} 
-                <p class="auteur">{book.author}</p>
-                <p class="note">"{book.note}"</p>
-            </div>
-        </li>
-    ))}
-</ul> -->
-
 <style>
-    ul {
-        display: flex;
-        list-style: none;
-        padding: 0px;
-        gap: 24px;
-        margin: 0px;
-        flex-direction: column;
-        margin-bottom: 48px;
-    }
-    ul li {
+    li {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -73,10 +42,6 @@ const myImage = images.find(({ src }) => src.includes(newImage));
         max-width: 90px;
         height: auto;
     }
-    /* ul li img {
-        max-width: 90px;
-        height: auto;
-    } */
     .contenu {
         display: flex;
         flex-direction: column;
