@@ -1,31 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
-
-// interface Props {
-//     url: string;
-//     title: string;
-//     desc: string;
-//     date: number;
-//     tags: string;
-//     image: string;
-//     thumbnail: string;
-// }
 
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
-
-const newImage = image.split("/").pop().split(".jpg")[0];
-const images = await Astro.glob("/src/assets/*").then(files => {
-  return files.map(file => file.default);
-});
-const myImage = images.find(({ src }) => src.includes(newImage));
 ---
-
-<Debug {image} />
-<Debug {newImage} />
-<Debug {images} />
-<Debug {myImage} />
 
 <article>
     <section>
@@ -36,7 +14,7 @@ const myImage = images.find(({ src }) => src.includes(newImage));
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
-    <Image src={myImage.src} alt="coucou" layout="full-width" width={myImage.width} height={myImage.height} />
+    <Image src={image} alt="thumbnail" width="120px" height="120px" />
     <a class="link" href={url}></a>
 </article>
 
