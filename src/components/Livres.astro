@@ -1,11 +1,33 @@
 ---
-import lectures from '../pages/lectures.json';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
 
-const { date } = Astro.props;
-const books = lectures.filter((lecture) => lecture.year === date);
+interface Props {
+    image: string;
+    name: string;
+    author: string;
+    note: string;
+}
+
+const { image, name, author, note} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[image]) throw new Error(`"${image}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+//const books = lectures.filter((lecture) => lecture.year === year);
 ---
 
-<ul>
+<li>
+    <div class="couverture">
+        <Image src={images[image]()} alt="alt" />
+        <!-- <img src={`${image}`} /> -->
+    </div>
+    <div class="contenu">
+        {name} 
+        <p class="auteur">{author}</p>
+        <p class="note">"{note}"</p>
+    </div>
+</li>
+
+<!-- <ul>
     {books.map(book => (
         <li>
             <div class="couverture">
@@ -18,7 +40,7 @@ const books = lectures.filter((lecture) => lecture.year === date);
             </div>
         </li>
     ))}
-</ul>
+</ul> -->
 
 <style>
     ul {

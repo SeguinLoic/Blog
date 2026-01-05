@@ -4,8 +4,11 @@ import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
+
+import lectures from '../pages/lectures.json';
 import Livres from '../components/Livres.astro';
 
+const books = lectures.filter((lecture) => lecture.year === 2025);
 const page = "inspiration";
 ---
 
@@ -22,11 +25,16 @@ const page = "inspiration";
         <section>
             <h2>Bibliothèque</h2>
             <h3>2026</h3>
-            <Livres date={2026} />
+            <!-- <Livres date={2026} /> -->
             <h3>2025</h3>
-            <Livres date={2025} />
+            <ul>
+                {books.map(book => (
+                    <Livres image={book.image} name={book.name} author={book.author} note={book.note} />
+                ))}
+            </ul>
+            <!-- <Livres date={2025} /> -->
             <h3>2024</h3>
-            <Livres date={2024} />
+            <!-- <Livres date={2024} /> -->
         </section>
     </main>
     <Footer />
