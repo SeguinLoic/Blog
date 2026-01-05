@@ -15,12 +15,18 @@ let newImage = image.split("../assets/livres/").pop().split(".jpg")[0];
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
 });
+
+const myImage = images.find(({ src }) => src.includes(newImage));
+
+
+
 // if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 
 //const books = lectures.filter((lecture) => lecture.year === year);
 ---
 <Debug {images} />
 <Debug {newImage} />
+<Debug {myImage} />
 
 <li>
     <div class="couverture">
