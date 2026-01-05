@@ -25,9 +25,9 @@ const page = "inspiration";
             <h2>Bibliothèque</h2>
             <h3>2026</h3>
             <ul>
-                <!-- {lectures.filter((lecture) => lecture.year === 2026).map(book => (
-                    <Livres image={book.image} name={book.name} author={book.author} note={book.note} />
-                ))} -->
+                {lectures.filter((lecture) => lecture.year === 2026).map(book => (
+                    <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
+                ))}
             </ul>
             <h3>2025</h3>
             <ul>
@@ -37,9 +37,9 @@ const page = "inspiration";
             </ul>
             <h3>2024</h3>
             <ul>
-                <!-- {lectures.filter((lecture) => lecture.year === 2024).map(book => (
-                    <Livres image={book.image} name={book.name} author={book.author} note={book.note} />
-                ))} -->
+                {lectures.filter((lecture) => lecture.year === 2024).map(book => (
+                    <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
+                ))}
             </ul>
         </section>
     </main>
