@@ -11,7 +11,7 @@ const images = await Astro.glob("/src/assets/*").then(files => {
 });
 const myImage = images.find(({ src }) => src.includes(newImage));
 ---
-
+<Debug {alt} />
 <Debug {image} />
 <Debug {newImage} />
 <Debug {images} />
@@ -26,7 +26,7 @@ const myImage = images.find(({ src }) => src.includes(newImage));
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
-    <Image src={myImage.src} alt={alt} width="120px" height="120px" />
+    <Image src={myImage.src} alt="coucou" width="120px" height="120px" />
     <!-- <Image src={image} alt={alt} width="120px" height="120px" /> -->
     <a class="link" href={url}></a>
 </article>
