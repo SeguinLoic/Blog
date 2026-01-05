@@ -12,8 +12,12 @@ interface Props {
 
 const { image, name, author, note} = Astro.props;
 let newImage = image.replace(/"/g, "");
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+//const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+const images = await Astro.glob("/src/assets/livres/*").then(files => {
+  return files.map(file => file.default);
+});
 if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+
 //const books = lectures.filter((lecture) => lecture.year === year);
 ---
 
@@ -22,7 +26,7 @@ if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "s
 
 <li>
     <div class="couverture">
-        <!-- <Image src={images[newImage]()} alt="alt" /> -->
+        <Image src={images[newImage]()} alt="alt" width="90px" height="90px" />
         <!-- <img src={newImage} /> -->
     </div>
     <div class="contenu">
