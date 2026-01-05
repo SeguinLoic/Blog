@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
 import { Debug } from 'astro:components';
 
 interface Props {
@@ -11,16 +10,13 @@ interface Props {
 }
 
 const { image, name, author, note} = Astro.props;
-let newImage = image.split("../assets/livres/").pop().split(".jpg")[0];
+const newImage = image.split("../assets/livres/").pop().split(".jpg")[0];
+
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
 });
-
 const myImage = images.find(({ src }) => src.includes(newImage));
 
-
-
-// if (!images[newImage]) throw new Error(`"${newImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 
 //const books = lectures.filter((lecture) => lecture.year === year);
 ---
@@ -30,8 +26,7 @@ const myImage = images.find(({ src }) => src.includes(newImage));
 
 <li>
     <div class="couverture">
-        <Image src={myImage.src} alt="alt" width="90px" height="90px" />
-        <!-- <img src={newImage} /> -->
+        <Image src={myImage.src} alt="alt" width="90px" height="auto" />
     </div>
     <div class="contenu">
         {name} 
