@@ -12,7 +12,7 @@ import { Debug } from 'astro:components';
 //     alt: string;
 // }
 
-const {url, title, desc, date, tags, image} = Astro.props;
+const {url, title, desc, date, tags, image, thumbnail} = Astro.props;
 const allTags = tags.toString().split(",");
 
 const newImage = image.split("/").pop().split(".jpg")[0];
@@ -21,6 +21,8 @@ const images = await Astro.glob("/src/assets/*").then(files => {
 });
 const myImage = images.find(({ src }) => src.includes(newImage));
 ---
+
+<Debug {thumbnail} />
 <Debug {image} />
 <Debug {newImage} />
 <Debug {images} />
