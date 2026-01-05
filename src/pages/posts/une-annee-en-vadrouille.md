@@ -4,7 +4,6 @@ title: Une année en vadrouille
 pubDate: 2025-07-26
 description: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit
 author: One Human
-thumbnail: travel-1
 image:
     url: /travel-1.jpg
     alt: Le but n'est pas de voir de beaux endroits, mais plutôt de voir la beauté dans chaque endroit

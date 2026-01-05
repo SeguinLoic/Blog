@@ -4,7 +4,6 @@ title: Kazakhstan le bilan
 pubDate: 2026-01-02
 description: Le kazakhstan c'était grand, pourtant, on a eu du mal à rentrer dedans
 author: One Human
-thumbnail: Kazakhstan
 image:
     url: /Kazakhstan.jpg
     alt: Montage photo du Kazakhstan
