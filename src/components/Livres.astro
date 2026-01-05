@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets';
+import { Debug } from 'astro:components';
+
 
 interface Props {
     image: string;
@@ -9,12 +11,13 @@ interface Props {
 }
 
 const { image, name, author, note} = Astro.props;
-const newImage = image.split("../assets/livres/").pop().split(".jpg")[0];
+const newImage = image.src.split("../assets/livres/").pop().split(".jpg")[0];
 const images = await Astro.glob("/src/assets/livres/*").then(files => {
   return files.map(file => file.default);
 });
 const myImage = images.find(({ src }) => src.includes(newImage));
 ---
+<Debug {myImage} />
 
 <li>
     <div class="couverture">
