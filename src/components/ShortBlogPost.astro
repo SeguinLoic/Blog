@@ -35,7 +35,7 @@ const myImage = images.find(({ src }) => src.includes(newImage));
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
-    <Image src={myImage.src} alt="coucou" width="120px" height="120px" />
+    <Image src={myImage.src} alt="coucou" layout="full-width" width={myImage.width} height={myImage.height} />
     <a class="link" href={url}></a>
 </article>
 
