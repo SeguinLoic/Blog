@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import { Debug } from 'astro:components';
 
-const {url, title, desc, date, tags, image} = Astro.props;
+const {url, title, desc, date, tags, image, alt} = Astro.props;
 const allTags = tags.toString().split(",");
 
 const newImage = image.split("/").pop().split(".jpg")[0];
@@ -26,7 +26,8 @@ const myImage = images.find(({ src }) => src.includes(newImage));
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
-    <Image src={image} alt="blablabla" width="120px" height="120px" />
+    <Image src={myImage.src} alt={alt} width="120px" height="120px" />
+    <!-- <Image src={image} alt={alt} width="120px" height="120px" /> -->
     <a class="link" href={url}></a>
 </article>
 
