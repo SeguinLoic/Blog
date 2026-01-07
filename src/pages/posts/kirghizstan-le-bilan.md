@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Premier pas en Asie, le Kirghizstan
+title: Premiers pas en Asie, le Kirghizstan
 pubDate: 2025-12-05
 description: Premier pays de notre long périple, un gros coup de coeur
 author: One Human
