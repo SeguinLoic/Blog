@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Kazakhstan le bilan
-pubDate: 2026-01-02
+pubDate: 2026-01-07
 description: Le kazakhstan c'était grand, pourtant, on a eu du mal à rentrer dedans
 author: One Human
 image:
