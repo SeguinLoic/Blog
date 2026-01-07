@@ -142,9 +142,11 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+.content p {
+  padding: 0px 24px;
+}
 .content p,
 .content li {
-  padding: 0px 24px;
   font-family: "Roboto Slab";
   font-weight: 400;
   line-height: 1.7;
