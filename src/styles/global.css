@@ -146,6 +146,9 @@ main {
 .content p {
   padding: 0px 24px;
 }
+.content ul {
+  padding: 0px 24px 0px 40px;
+}
 .content p,
 .content li {
   font-family: "Roboto Slab";
@@ -184,6 +187,9 @@ main {
   .content p,
   .content p em {
     padding: 0px 16px;
+  }
+  .content ul {
+    padding: 0px 16px 0px 33px;
   }
 }
 @media screen and (max-width: 672px) {
