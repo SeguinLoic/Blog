@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Perdre la notion du temps, en Mongolie
-pubDate: 2026-01-07
+pubDate: 2026-01-08
 description: C'est probablement le pays qui m'a le plus marqué de notre voyage en Asie
 author: One Human
 image:
