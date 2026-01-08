@@ -96,6 +96,7 @@
 p.visibility-hidden {
   visibility: hidden;
   height: 0;
+  overflow: hidden;
 }
 h1, h2, h3, p, ul {
   margin: 0px;
