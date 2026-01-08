@@ -27,7 +27,7 @@ Pas évident d'explorer les nombreuses curiosités que ce pays a à nous offrir.
 Vous saviez qu'il existe une zone de décollage pour les fusées et qu'on peut avoir la chance d'en voir une s'élancer vers l'espace ? Et qu'il était possible, il n'y a pas si longtemps, de visiter un ancien site d'essais atomiques ? Ou encore que vous pouviez croiser dans l'un des nombreux parcs nationaux un léopard des neiges, un ours brun ou encore une antilope. Tout cela on ne l'a pas vu, par choix, mais également par manque de temps et d'organisation. Je reste persuadé aujourd'hui que le Kazakhstan est un pays riche en découvertes, mais qu'il vaut mieux arpenter avec son propre véhicule. 
 
 ![Lutte à cheval](../../assets/kazak-3.JPG)
-*La fameuse lutte à cheval aux Wolrd Nomad Games - Astana*
+*La lutte à cheval aux World Nomad Games - Astana*
 
 Par contre, si vous souhaitez visiter ce pays, il va falloir vous faire des épaules et jouer des coudes, parce que les Kazakhs ils n'ont pas le temps d'attendre. C'est assez perturbant et parfois agaçant de se faire bousculer, piétiner. Il ne faut pas s'attendre à un sourire et parfois même un "bonjour" ou un "merci". En voyage, il faut savoir aussi prendre du recul et observer, comprendre, accepter les différences culturelles. Malgré ça, nous avons quand même reçu de la part de certains des gestes d'une infinie gentillesse et d'une spontanéité très touchante. Il y a du bon partout sur cette terre et il vaut savoir le garder en mémoire. 
 
