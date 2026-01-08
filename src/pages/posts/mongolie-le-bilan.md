@@ -39,6 +39,6 @@ Une petite liste en vrac d'autres trucs qui m'ont marqué :
 - Il y a 65 millions d'animaux pour 3,5 millions d'habitants (dont 1,7 million à UB),
 - Caffé Béné, c'est de la balle. 
 
-Aujourd'hui, on quitte ce magnifique pays. Un pays aux mille couleurs et textures, couvert d'un ciel bleu infini. J'ai été émerveillé par la beauté des paysages. Mais je le quitte en ayant beaucoup appris, et, en tant que voyageur/nomade, j'espère garder avec moi, et pour longtemps, ces enseignements m'ont plus que touché. 
+Aujourd'hui, on quitte ce magnifique pays. Un pays aux mille couleurs et textures, couvert d'un ciel bleu infini. J'ai été émerveillé par la beauté des paysages. Mais je le quitte en ayant beaucoup appris, et, en tant que voyageur/nomade, j'espère garder avec moi, et pour longtemps, ces enseignements qui m'ont plus que touché. 
 
 "Bayarlalaa Mongolia" ❤️
