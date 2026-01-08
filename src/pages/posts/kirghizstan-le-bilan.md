@@ -24,18 +24,6 @@ blockquote
 > blockquote
 > blockquote
 
-
-	| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-> blockquote
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
 N'est-il pas magnifique le drapeau du Kirghizstan ? 
 Les rayons du soleil symbolisent les 40 tribus kirghizes et en son centre, le tunduk. Il représente le haut de la yourte mais c'est surtout un symbole d'unité, qui engage tout le monde à avancer ensemble.
 
