@@ -16,9 +16,6 @@ La Mongolie, c'était incroyable. La Mongolie, c'est un gros gros coup de cœur.
 
 Mais la Mongolie, on ne peut pas dire que c'est un pays facile. Déjà, il n'est pas évident à visiter en tant que voyageur. Il y a peu de routes, seulement 20% d'entre elles sont goudronnées. Il existe des bus pour les longues distances, bus qui ramènent toujours au même point : Ulaanbaatar. 
 
-![Kolsai Lake](../../assets/kazak-1.jpg)
-*Les beaux lacs proche d'Almaty - Kolsai Lake*
-
 Si vous voulez découvrir ce pays par vous-même il faut être bien accroché. Vous avez de grandes chances de vous perdre, de grandes chances de heurter des animaux, de grandes chances d'être en danger... Parce que la nature ici est rude, inhospitalière. Le climat est extrême, les températures peuvent descendre jusqu'à -40°C en hiver, c'est inhumain. Et pourtant, pourtant, il y a des gens qui vivent ici, des gens qui vivent depuis des millénaires dans des conditions difficiles, des gens qui ont un train de vie qu'on ne peut imaginer, nous, bien confortablement assis dans nos canapés. 
 
 Ces gens-là m'ont impressionné, bluffé, de par leurs connaissances, leur humilité, leur gentillesse. Les nomades, qui s'occupent de leur bétail et prennent soin de leur famille n'ont rien à apprendre de nos sociétés. Ils se nourissent de leurs bêtes, ils réparent leurs véhicules, ils savent faire du feu, cuisiner. Ils n'ont absolument pas besoin de GPS, ils savent se repérer, comprendre la nature. Transportant leur habitat de paysage en paysage, au gré des saisons, ils s'adaptent à leur environnement. Ils sont autonomes. 
