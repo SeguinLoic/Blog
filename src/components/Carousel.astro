@@ -1,40 +1,15 @@
 ---
+// import { Image } from 'astro:assets';
 const { images } = Astro.props; 
 ---
 
 <div class="carousel">
-    <!-- Conteneur interne pour les diapositives -->
     <div class="carousel-inner">
-        <!-- Première diapositive -->
-        <div class="slide">
-            <!-- Image de la première diapositive -->
-            <img src="https://images.pexels.com/photos/1242764/pexels-photo-1242764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="Image 1">
-        </div>
-        <!-- Deuxième diapositive -->
-        <div class="slide">
-            <!-- Image de la deuxième diapositive -->
-            <img src="https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2p"
-                        alt="Image 2">
-        </div>
-        <!-- Troisième diapositive -->
-        <div class="slide">
-            <!-- Image de la troisième diapositive -->
-            <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="Image 3">
-        </div>
-        <!-- Quatrième diapositive -->
-        <div class="slide">
-            <!-- Image de la quatrième diapositive -->
-            <img src="https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="Image 4">
-        </div>
-        <!-- Cinquième diapositive -->
-        <div class="slide">
-            <!-- Image de la cinquième diapositive -->
-            <img src="https://images.pexels.com/photos/3555161/pexels-photo-3555161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="Image 5">
-        </div>
+        {images.map((image) => (
+            <div class="slide">
+                <img src={image} alt="Image 1" />
+            </div>
+        ))}
     </div>
     <!-- Conteneur pour les boutons de navigation -->
     <div class="carousel-controls">
@@ -142,7 +117,7 @@ const { images } = Astro.props;
     /* Affiche les éléments en ligne */
     overflow: hidden;
     /* Cache les éléments qui dépassent */
-    height: 100vh;
+    height: 500px;
     /* Hauteur égale à 100% de la hauteur de la vue */
     flex-wrap: nowrap;
     /* Empêche les éléments de se placer sur plusieurs lignes */

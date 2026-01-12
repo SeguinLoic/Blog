@@ -10,6 +10,7 @@ image:
 tags: ["Voyage", "1AnEnVadrouille"]
 ---
 import Carousel from '../../components/Carousel.astro';
+const images = 
 
 ![Présentation de la Mongolie](../../assets/Mongolia-1.jpg)
 
@@ -41,4 +42,4 @@ Aujourd'hui, on quitte ce magnifique pays. Un pays aux mille couleurs et texture
 
 "Bayarlalaa Mongolia" ❤️
 
-<Carousel client:load />
+<Carousel images={['../../assets/kazak-1.jpg', '../../assets/kazak-2.jpg', '../../assets/kazak-3.JPG', '../../assets/kazak-4.JPG']} client:load />
