@@ -4,16 +4,16 @@ import { Debug } from 'astro:components';
 const { images } = Astro.props; 
 
 const newImage = images.map((image) => image.source.split("../assets/").pop().split(".jpg")[0]);
-const allImages = await Astro.glob("/src/assets/*").then(files => {
-  return files.map(file => file.default);
-});
-const myImages = newImage.map((image) => allImages.find(({ src }) => src.includes(image)));
+// const allImages = await Astro.glob("/src/assets/*").then(files => {
+//   return files.map(file => file.default);
+// });
+//const myImages = newImage.map((image) => allImages.find(({ src }) => src.includes(image)));
 
 
 ---
 <Debug {images} />
 <Debug {newImage} />
-<Debug {myImages} />
+<!-- <Debug {myImages} /> -->
 
 <div class="carousel">
     <div class="carousel-inner">
