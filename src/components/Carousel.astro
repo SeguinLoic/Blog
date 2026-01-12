@@ -1,7 +1,10 @@
 ---
 // import { Image } from 'astro:assets';
+import { Debug } from 'astro:components';
 const { images } = Astro.props; 
 ---
+
+<Debug {images} />
 
 <div class="carousel">
     <div class="carousel-inner">
