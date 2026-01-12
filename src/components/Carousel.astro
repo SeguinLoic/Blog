@@ -1,6 +1,5 @@
 ---
 // import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
 const { images } = Astro.props; 
 
 const newImage = images.map((image) => image.split("../assets/").pop().split(".jpg")[0]);
@@ -11,9 +10,6 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
 
 
 ---
-<Debug {images} />
-<Debug {newImage} />
-<Debug {myImages} />
 
 <div class="carousel">
     <div class="carousel-inner">
@@ -23,14 +19,10 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
             </div>
         ))}
     </div>
-    <!-- Conteneur pour les boutons de navigation -->
     <div class="carousel-controls">
-        <!-- Bouton pour passer à la diapositive précédente -->
         <button id="prev">Précédent</button>
-        <!-- Bouton pour passer à la diapositive suivante -->
         <button id="next">Suivant</button>
     </div>
-    <!-- Conteneur pour les points de navigation -->
     <div class="carousel-dots"></div>
 </div>
 
