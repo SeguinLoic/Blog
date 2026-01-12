@@ -1,5 +1,5 @@
 ---
-// import { Image } from 'astro:assets';
+import { Image } from 'astro:assets';
 const { images } = Astro.props; 
 
 const newImage = images.map((image) => image.toLowerCase().split("../assets/").pop().split(".jpg")[0]);
@@ -15,7 +15,8 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     <div class="carousel-inner">
         {myImages.map((image) => (
             <div class="slide">
-                <img src={image.src} alt="Image 1" />
+                <Image src={myImage.src} alt="image" layout="full-width" width={myImage.width} height={myImage.height} />
+                {/* <img src={image.src} alt="Image 1" /> */}
             </div>
         ))}
     </div>
