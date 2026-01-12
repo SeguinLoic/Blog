@@ -19,7 +19,7 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     <div class="carousel-inner">
         {images.map((image) => (
             <div class="slide">
-                <img src={image} alt="Image 1" />
+                <img src={image.src} alt="Image 1" />
             </div>
         ))}
     </div>
