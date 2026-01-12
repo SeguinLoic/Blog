@@ -2,7 +2,7 @@
 // import { Image } from 'astro:assets';
 const { images } = Astro.props; 
 
-const newImage = images.map((image) => image.split("../assets/").pop().split(".jpg")[0]);
+const newImage = images.map((image) => image.split("../assets/").pop().split([".jpg",".JPG",".png",".PNG"])[0]);
 const allImages = await Astro.glob("/src/assets/*").then(files => {
   return files.map(file => file.default);
 });
