@@ -15,7 +15,7 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     <div class="carousel-inner">
         {myImages.map((image) => (
             <div class="slide">
-                <Image src={image.src} alt="image" layout="full-width" loading="lazy" width={image.width} height={image.height} />
+                <Image src={image.src} alt="image" layout="full-width" format="webp" loading="lazy" widths={[672]} sizes="672px" />
             </div>
         ))}
     </div>
