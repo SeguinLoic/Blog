@@ -15,7 +15,7 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     <div class="carousel-inner">
         {myImages.map((image) => (
             <div class="slide">
-                <Image src={image.src} alt="image" layout="constrained" ImageOutputFormat="webp" loading="lazy" width={672} height={672} />
+                <Image src={image.src} alt="image" layout='constrained' ImageOutputFormat="webp" loading="lazy" width={672} height={672} />
             </div>
         ))}
     </div>
@@ -33,16 +33,11 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
 // déclaration de la fonction et les parenthèses à la fin de la déclaration 
 // définissent la fonction et permettent de l'exécuter immédiatement.
 (function () {
-    // Utilisation de la directive "use strict" pour activer le mode strict en JavaScript
-    // Cela implique une meilleure gestion des erreurs et une syntaxe plus stricte pour le code
     "use stict"
     const slideTimeout = 5000;
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
     const $slides = document.querySelectorAll('.slide');
-
-    // let $dots;
-
     let intervalId;
     let currentSlide = 1;
     
@@ -60,17 +55,6 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
         slideTo(currentSlide);
         currentSlide++;
     }
-    // Boucle pour créer les "dots" en fonction du nombre de slides
-    // for (let i = 1; i <= $slides.length; i++) {
-    //     let dotClass = i == currentSlide ? 'active' : 'inactive';
-    //     let $dot = `<span data-slidId="${i}" class="dot ${dotClass}"></span>`;
-    //     document.querySelector('.carousel-dots').innerHTML += $dot;
-    // }
-    // Récupère tous les "dots"
-    // $dots = document.querySelectorAll('.dot');
-
-    // Boucle pour ajouter des écouteurs d'événement "click" sur chaque "dot"
-    // $dots.forEach(($elt, key) => $elt.addEventListener('click', () => slideTo(key)));
 
     // Ajout d'un écouteur d'événement "click" sur le bouton "prev" pour afficher le slide précédent
     prev.addEventListener('click', () => slideTo(--currentSlide))
@@ -145,24 +129,4 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     padding: 10px;
     background-color: aquamarine;
 }
-/* .carousel-dots {
-    position: absolute;
-    z-index: 5;
-    left: 50%;
-    right: 50%;
-    bottom: 10%;
-    display: flex;
-    justify-content: center;
-}
-.carousel-dots .dot {
-    border-radius: 50%;
-    margin: 5px;
-    cursor: pointer;
-}
-.carousel-dots .active {
-    border: 10px solid #761530 !important;
-}
-.carousel-dots .inactive {
-    border: 10px solid #2596be;
-} */
 </style>
