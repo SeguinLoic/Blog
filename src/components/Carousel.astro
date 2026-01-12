@@ -16,7 +16,6 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
         {myImages.map((image) => (
             <div class="slide">
                 <Image src={image.src} alt="image" layout="full-width" width={image.width} height={image.height} />
-                {/* <img src={image.src} alt="Image 1" /> */}
             </div>
         ))}
     </div>
@@ -122,10 +121,11 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     /* Affiche les éléments en ligne */
     overflow: hidden;
     /* Cache les éléments qui dépassent */
-    height: 500px;
+    /*height: 500px;*/
     /* Hauteur égale à 100% de la hauteur de la vue */
     flex-wrap: nowrap;
     /* Empêche les éléments de se placer sur plusieurs lignes */
+    aspect-ratio: 1;
 }
 /* Définition des diapositives */
 .slide {
