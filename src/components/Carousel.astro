@@ -18,8 +18,8 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
         ))}
     </div>
     <div class="carousel-controls">
-        <button id="prev">Précédent</button>
-        <button id="next">Suivant</button>
+        <button id="prev"><img src="/icon-arrow.svg"/></button>
+        <button id="next"><img src="/icon-arrow.svg"/></button>
     </div>
     <!-- <div class="carousel-dots"></div> -->
 </div>
@@ -34,7 +34,7 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
     
     //let $dots;
     //let intervalId;
-    
+
     let currentSlide = 1;
     function slideTo(index) {
         currentSlide = index >= $slides.length || index < 1 ? 0 : index;
@@ -88,6 +88,7 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
 <style>
 .carousel {
     position: relative;
+    margin-top: 24px;
 }
 .carousel-inner {
     display: flex;
