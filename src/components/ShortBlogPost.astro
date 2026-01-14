@@ -1,8 +1,18 @@
 ---
 import { Image } from 'astro:assets';
+
+import type { ImageMetadata } from 'astro';
 import { Debug } from 'astro:components';
 
-const {url, title, desc, date, tags, image} = Astro.props;
+interface Props {
+   imagePath: string;
+}
+
+const {url, title, desc, date, tags, imagePath} = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+
 const allTags = tags.toString().split(",");
 ---
 <Debug {image} />
@@ -16,7 +26,8 @@ const allTags = tags.toString().split(",");
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
-    <Image src={image} alt="thumbnail" width="120px" height="120px" />
+    <!-- <Image src={image} alt="thumbnail" width="120px" height="120px" /> -->
+    <Image src={images[imagePath]()} alt="thumbnail" width="120px" height="120px" />
     <a class="link" href={url}></a>
 </article>
 

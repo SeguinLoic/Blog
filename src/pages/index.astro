@@ -15,7 +15,7 @@ posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatte
     <Header />
     <Navigation />
     <main>
-        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)}
+        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} imagePath={post.frontmatter.image.url} />)}
     </main>
     <Footer />
 </BaseLayout>
