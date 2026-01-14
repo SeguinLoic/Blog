@@ -10,7 +10,7 @@ import { Image } from 'astro:assets';
 import myImage from '../assets/mongolia-2.jpg';
 
 const page = "home";
-const posts = await Astro.glob('../content/posts/*.mdx', { eager: true });
+const posts = await Astro.glob('./posts/*.mdx', { eager: true });
 posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
 
