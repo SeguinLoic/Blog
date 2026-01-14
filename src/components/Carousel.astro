@@ -109,16 +109,27 @@ const myImages = newImage.map((image) => allImages.find(({ src }) => src.include
 .carousel-controls {
     position: absolute;
     z-index: 5;
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
     top: 50%;
     display: flex;
     justify-content: space-between;
 }
 .carousel-controls button {
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
 }
+.carousel-controls button img {
+    width: 22px;
+    filter: invert(1);
+    height: 20px;
+}
+.carousel-controls button#next img {
+    transform: rotate(180deg);
+}
+
 /*
 .carousel-dots {
     position: absolute;
