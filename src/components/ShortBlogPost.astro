@@ -1,9 +1,11 @@
 ---
 import { Image } from 'astro:assets';
+import { Debug } from 'astro:assets';
 
 const {url, title, desc, date, tags, image} = Astro.props;
 const allTags = tags.toString().split(",");
 ---
+<Debug {image} />
 
 <article>
     <section>
