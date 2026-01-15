@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 
-const {url, title, desc, date, tags, image} = Astro.props;
+const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
 const allTags = tags.toString().split(",");
 ---
 
@@ -14,7 +14,7 @@ const allTags = tags.toString().split(",");
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
-    <Image src={image} alt="thumbnail" width="120px" height="120px" />
+    <Image src={image} alt={imageAlt} width="120px" height="120px" />
     <a class="link" href={url}></a>
 </article>
 
