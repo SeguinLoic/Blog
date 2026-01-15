@@ -9,14 +9,20 @@ import Footer from '../components/Footer.astro';
 const page = "home";
 //const posts = await Astro.glob('./posts/*.mdx', { eager: true });
 //const posts = await Astro.glob('../content/posts/*.mdx', { eager: true });
-const posts = import.meta.glob('../content/posts/*.mdx', { eager: true });
-posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+// const posts = import.meta.glob('../content/posts/*.mdx', { eager: true });
+// posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+
+const modules = import.meta.glob('../content/posts/*.mdx', { eager: true });
+const posts = Object.values(modules).map(m => m.frontmatter || m);
+const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 ---
 
 <BaseLayout page={page}>
     <Header />
     <Navigation />
     <main>
-        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)}
+        <!-- {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)} -->
+        {sortedPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)}
     <Footer />
 </BaseLayout>
