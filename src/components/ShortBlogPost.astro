@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { Picture } from 'astro:assets';
 
 // const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
 // const allTags = tags.toString().split(",");
@@ -25,7 +24,7 @@ const {title, image, imageAlt} = Astro.props;
     <section>
         <h2>{title}</h2>
     </section>
-    <Picture src={image} alt={imageAlt} width={120} height={120} formats={['avif', 'webp']} />
+    <Image src={image} alt={imageAlt} width={120} height={120} />
 </article>
 
 <style>
