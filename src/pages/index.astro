@@ -15,12 +15,12 @@ const allBlogPosts = await getCollection("blog");
 
 const page = "home";
 // const posts = Object.values(import.meta.glob('./posts/*.mdx', { eager: true }));
-const posts = Object.values(import.meta.glob('../content/blog/*.mdx', { eager: true }));
-posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+// const posts = Object.values(import.meta.glob('../content/blog/*.mdx', { eager: true }));
+// posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 
 ---
 
-<Debug {posts} />
+<!-- <Debug {posts} /> -->
 <Debug {allBlogPosts} />
 
 <BaseLayout page={page}>

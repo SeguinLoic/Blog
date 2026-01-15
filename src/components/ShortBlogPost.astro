@@ -1,11 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 
-const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
-const allTags = tags.toString().split(",");
+// const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
+// const allTags = tags.toString().split(",");
+
+const {title, image, imageAlt} = Astro.props;
 ---
 
-<article>
+<!-- <article>
     <section>
         <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
         <ul>
@@ -15,7 +17,14 @@ const allTags = tags.toString().split(",");
         <p>{desc}</p>
     </section>
     <Image src={image} alt={imageAlt} width="120px" height="120px" />
-    <a class="link" href={url}></a>
+    <a class="link" href={url}></a> 
+</article> -->
+
+<article>
+    <section>
+        <h2>{title}</h2>
+    </section>
+    <Image src={image} alt={imageAlt} width="120px" height="120px" />
 </article>
 
 <style>
