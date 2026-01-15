@@ -25,7 +25,7 @@ const {title, image, imageAlt} = Astro.props;
     <section>
         <h2>{title}</h2>
     </section>
-    <Picture src={image} alt={imageAlt} width="120px" height="120px" formats={['webp']}  />
+    <Picture src={image} alt={imageAlt} width={120} height={120} formats={['avif', 'webp']} />
 </article>
 
 <style>
