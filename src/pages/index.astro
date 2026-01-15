@@ -6,6 +6,8 @@ import Navigation from '../components/Navigation.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 import Footer from '../components/Footer.astro';
 
+import { Debug } from 'astro:components';
+
 // import { getCollection } from "astro:content";
 // const allBlogPosts = await getCollection("thumbnail");
 // const posts = Object.values(import.meta.glob('../content/blog/*.mdx', { eager: true }));
@@ -16,11 +18,14 @@ posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatte
 
 ---
 
+<Debug {image} />
+
 <BaseLayout page={page}>
     <Header />
     <Navigation />
     <main>
-        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image} imageAlt={post.frontmatter.imageAlt} />)}
+        {posts.map((post: any) => <ShortBlogPost image={post.frontmatter.image} />)}
+        <!-- {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image} imageAlt={post.frontmatter.imageAlt} />)} -->
         <!-- {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} image={post.data.image.src} imageAlt={post.data.imageAlt} />)} -->
     <Footer />
 </BaseLayout>
