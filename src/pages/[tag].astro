@@ -27,8 +27,8 @@ posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatte
     <Navigation />
     <main>
         <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
-        <!-- {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} tags={post.frontmatter.tags} image={post.frontmatter.image} imageAlt={post.frontmatter.imageAlt} />)}
-    </main> -->
+        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)} tags={post.frontmatter.tags} image={post.frontmatter.image} imageAlt={post.frontmatter.imageAlt} />)}
+    </main>
     <Footer />
 </BaseLayout>
 
