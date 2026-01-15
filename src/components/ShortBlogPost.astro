@@ -1,11 +1,31 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
 
-const {url, title, desc, date, tags, image} = Astro.props;
-const allTags = tags.toString().split(",");
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+
+//const {url, title, desc, date, tags, image} = Astro.props;
+//const allTags = tags.toString().split(",");
 ---
 
 <article>
+    <section>
+        <time datetime={post.data.pubDate}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+        <!-- <ul>
+            {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+        </ul> -->
+        <h2>{post.data.title}</h2>
+        <p>{post.data.description}</p>
+    </section>
+    <Image src={post.data.image} alt={post.data.imageAlt} width="120px" height="120px" />
+    <!-- <a class="link" href={url}></a> -->
+</article>
+
+<!-- <article>
     <section>
         <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
         <ul>
@@ -16,7 +36,7 @@ const allTags = tags.toString().split(",");
     </section>
     <Image src={image} alt="thumbnail" width="120px" height="120px" />
     <a class="link" href={url}></a>
-</article>
+</article> -->
 
 <style>
     article {
