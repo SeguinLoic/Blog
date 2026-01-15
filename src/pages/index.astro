@@ -7,7 +7,8 @@ import ShortBlogPost from '../components/ShortBlogPost.astro';
 import Footer from '../components/Footer.astro';
 
 const page = "home";
-const posts = await Astro.glob('./posts/*.mdx', { eager: true });
+//const posts = await Astro.glob('./posts/*.mdx', { eager: true });
+const posts = await Astro.glob('../content/posts/*.mdx', { eager: true });
 posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
 
