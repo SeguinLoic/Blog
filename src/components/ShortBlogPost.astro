@@ -9,19 +9,19 @@ interface Props {
 const { post } = Astro.props;
 
 //const {url, title, desc, date, tags, image} = Astro.props;
-const allTags = post.data.tags.toString().split(",");
+const allTags = post.tags.toString().split(",");
 ---
 
 <article>
     <section>
-        <time datetime={post.data.pubDate}>{new Date(post.data.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+        <time datetime={post.pubDate}>{new Date(post.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
         <ul>
             {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
         </ul>
-        <h2>{post.data.title}</h2>
-        <p>{post.data.description}</p>
+        <h2>{post.title}</h2>
+        <p>{post.description}</p>
     </section>
-    <Image src={post.data.image} alt={post.data.imageAlt} width="120px" height="120px" />
+    <Image src={post.image} alt={post.imageAlt} width="120px" height="120px" />
     <!-- <a class="link" href={url}></a> -->
 </article>
 
