@@ -4,9 +4,12 @@ import { Debug } from 'astro:components';
 
 const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
 const allTags = tags.toString().split(",");
+const module = await import(`${image}`);
+
 ---
 
 <Debug {image} />
+<Debug {module} />
 
 <article>
     <section>
