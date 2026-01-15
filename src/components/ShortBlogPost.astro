@@ -1,11 +1,32 @@
 ---
 import { Image } from 'astro:assets';
 import { Debug } from 'astro:components';
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+
+interface Props {
+    image: string | ImageMetadata;
+}
+
+interface ImageMetadata {
+  src: string;
+  width: number;
+  height: number;
+  format: string;
+}
+
+const {title, image, imageAlt} = Astro.props;
+
+const imageOptimized = await getImage({
+    src: image,
+    format: "webp",
+    width: 120,
+    height: 120,
+});
 
 // const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
 // const allTags = tags.toString().split(",");
 
-const {title, image, imageAlt} = Astro.props;
 ---
 
 <!-- <article>
@@ -27,7 +48,7 @@ const {title, image, imageAlt} = Astro.props;
     <section>
         <h2>{title}</h2>
     </section>
-    <Image src={image} alt={imageAlt} width={120} height={120} />
+    <Image src={imageOptimized} alt={imageAlt} width={120} height={120} />
 </article>
 
 <style>
