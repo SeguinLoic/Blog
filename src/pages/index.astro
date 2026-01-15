@@ -16,7 +16,7 @@ const page = "home";
 
 const modules = import.meta.glob('../content/posts/*.mdx', { eager: true });
 const posts = Object.values(modules).map(m => m.frontmatter || m);
-const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+const sortedPosts = posts.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
 ---
 
@@ -27,6 +27,6 @@ const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
     <Navigation />
     <main>
         <!-- {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} desc={post.frontmatter.description} date={post.frontmatter.pubDate.toString().slice(0,10)}  tags={post.frontmatter.tags} image={post.frontmatter.image.url} />)} -->
-        <!-- {sortedPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.title} desc={post.description} date={post.pubDate.toString().slice(0,10)}  tags={post.tags} image={post.image} />)} -->
+        {sortedPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.title} desc={post.description} date={post.pubDate.toString().slice(0,10)}  tags={post.tags} image={post.image} imageAlt={post.imageAlt} />)}
     <Footer />
 </BaseLayout>
