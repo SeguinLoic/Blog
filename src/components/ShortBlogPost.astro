@@ -1,37 +1,29 @@
 ---
 import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
-import type { ImageMetadata } from "astro";
-import { getImage } from "astro:assets";
+// import type { ImageMetadata } from "astro";
+// import { getImage } from "astro:assets";
 
-interface Props {
-    title: string;
-    image: string | ImageMetadata;
-    imageAlt: string;
-}
+// interface Props {
+//     title: string;
+//     image: string | ImageMetadata;
+//     imageAlt: string;
+// }
 
-interface ImageMetadata {
-  src: string;
-  width: number;
-  height: number;
-  format: string;
-}
+// const {title, image, imageAlt} = Astro.props;
 
-const {title, image, imageAlt} = Astro.props;
+// const imageOptimized = await getImage({
+//     src: image,
+//     format: "webp",
+//     width: 120,
+//     height: 120,
+// });
 
-const imageOptimized = await getImage({
-    src: image,
-    format: "webp",
-    width: 120,
-    height: 120,
-});
-
-// const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
-// const allTags = tags.toString().split(",");
+const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
+const allTags = tags.toString().split(",");
 
 ---
 
-<!-- <article>
+<article>
     <section>
         <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
         <ul>
@@ -42,17 +34,14 @@ const imageOptimized = await getImage({
     </section>
     <Image src={image} alt={imageAlt} width="120px" height="120px" />
     <a class="link" href={url}></a> 
-</article> -->
+</article>
 
-<Debug {image} />
-<Debug {imageOptimized} />
-
-<article>
+<!-- <article>
     <section>
         <h2>{title}</h2>
     </section>
     <img src={imageOptimized} alt={imageAlt} width={120} height={120} />
-</article>
+</article> -->
 
 <style>
     article {
