@@ -113,6 +113,23 @@ html {
   height: auto;
   min-height: 100%;
 }
+html {
+    background-image: url(map.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+html:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--color-bg);
+    z-index: -1;
+    opacity: 0.95;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -120,6 +137,7 @@ body {
   max-width: 42rem;
   position: relative;
   margin: 0 auto;
+  background-color:var(--color-bg);
 }
 body:after,
 body:before {
