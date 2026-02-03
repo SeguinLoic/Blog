@@ -114,7 +114,7 @@ html {
   min-height: 100%;
 }
 html {
-    background-image: url(map.jpg);
+    background-image: url(/map.jpg);
     background-size: contain;
     background-position: 50% 50%;
     background-attachment: fixed;
