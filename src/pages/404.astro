@@ -13,7 +13,18 @@ const page = "404";
     <Navigation />
     <main>
         <h2>404</h2>
-        <p>Retour à la <a>page d'accueil</a></p>
+        <p>Retour à la <a href="/">page d'accueil</a></p>
     </main>
     <Footer />
 </BaseLayout>
+
+<style>
+    main {
+        padding: 40px 24px 0px;
+    }
+    @media screen and (max-width: 768px) {
+        main {
+            padding: 24px 16px;
+        }   
+    }
+</style>
