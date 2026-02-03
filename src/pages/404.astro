@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const page = "404";
+---
+
+<BaseLayout page={page}>
+    <Header />
+    <Navigation />
+    <main>
+        <h2>404</h2>
+        <p>Retour à la <a>page d'accueil</a></p>
+    </main>
+    <Footer />
+</BaseLayout>
