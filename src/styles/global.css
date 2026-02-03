@@ -138,7 +138,7 @@ html:before {
     top: 0;
     left: 0;
     background-color: var(--color-bg);
-    opacity: 0.5;
+    opacity: 0.8;
     pointer-events: none;
 }
 body {
