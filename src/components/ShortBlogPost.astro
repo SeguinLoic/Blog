@@ -84,7 +84,7 @@ const allTags = tags.toString().split(",");
     article h2 {
         font-family: Space Grotesk;
         font-weight: 500;
-        font-size: 1.7em;
+        font-size: clamp(1.375rem, 1.275rem + 0.5vw, 1.875rem);
         line-height: 1.2em;
         text-wrap: pretty;
     }
@@ -113,9 +113,6 @@ const allTags = tags.toString().split(",");
         article {
             padding: 24px 16px;
         }   
-        article h2 {
-            font-size: 1.5em;
-        }  
         article section {
             padding-right: 16px;
         }
@@ -124,9 +121,6 @@ const allTags = tags.toString().split(",");
         article time {
             width: 100%;
             font-size: 0.8em;
-        }
-        article h2 {
-            font-size: 1.3em;
         }
         article p {
             display: none;
