@@ -115,6 +115,7 @@ html {
 }
 html {
     background-image: url(/map.jpg);
+    background-image: url(/map-2.png);
     background-size: contain;
     background-position: 50% 50%;
     background-attachment: fixed;
