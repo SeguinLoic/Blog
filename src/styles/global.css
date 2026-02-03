@@ -109,16 +109,9 @@ h1 {
 }
 html {
   display: flex;
-  background-color: #fff;
   height: auto;
   min-height: 100%;
-}
-html {
-    /* background-image: url(/map.jpg); */
-    background-image: url(/map-2.png);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+  background-color: var(--color-bg);
 }
 html:after {
     content: "";
@@ -127,20 +120,24 @@ html:after {
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, var(--color-bg) 20%, transparent, var(--color-bg) 80%);
+    background: linear-gradient(45deg, var(--color-bg) 10%, transparent, var(--color-bg) 90%);
     z-index: -1;
-    opacity: 0.85;
+    opacity: .85;
     pointer-events: none;
+    background-color: #7f7f7f;
+    mask-image: url(/map.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
 }
 html:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background-color: var(--color-bg);
-    opacity: 0.7;
+    opacity: 0.5;
     pointer-events: none;
 }
 body {
