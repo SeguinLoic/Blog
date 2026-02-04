@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
+
+const page = "À propos";
+---
+
+<BaseLayout page={page}>
+    <Header />
+    <Navigation />
+    <main>
+        <section class="friends">
+            <h2>Le coin des copains</h2>
+            <ul>
+                <li><a href="https://audioblog.arteradio.com/blog/261344/lectus-podcast" target="_blank"><img src="/lectus.png"/>LectUs Podcast</a></li>
+                <li><a href="https://grammar-oisif.vercel.app/" target="_blank"><img src="/grammar.png"/>Grammar Oisif</a></li>
+            </ul>
+        </section>
+    </main>
+    <Footer />
+</BaseLayout>
+
+<style>
+    main {
+        padding: 40px 24px 0px;
+    }
+    section:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    section h2 {
+        margin-bottom: 12px;
+    }
+    h3 {
+        display: flex;
+        margin-bottom: 24px !important;
+        position: relative;
+        padding-bottom: 8px;
+        font-weight: 500;
+    }
+    h3:after {
+        content: "";
+        width: calc(100% + 48px);
+        height: 1px;
+        background-color: var(--color-fg);
+        position: absolute;
+        bottom: 0;
+        left: -24px;
+        opacity: .15;
+    }
+    section.friends ul {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.friends ul li a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    section.friends ul li a img {
+        width: 190px;
+        margin-bottom: 6px;
+    }
+    @media screen and (max-width: 768px) {
+        main {
+            padding: 24px 16px;
+        }   
+        section:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+</style>
