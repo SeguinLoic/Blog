@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+const allBlogPosts = await getCollection("blog");
+
+const page = "test";
+---
+
+<BaseLayout page={page}>
+    <Header />
+    <Navigation />
+    <main>
+        {
+            allBlogPosts.map((post) => (
+                <div>
+                <Image src={post.data.cover} alt="image" />
+                </div>
+            ))
+        }
+    </main>
+    <Footer />
+</BaseLayout>
+
+<style>
+    main {
+        padding: 40px 24px 0px;
+    }
+    @media screen and (max-width: 768px) {
+        main {
+            padding: 24px 16px;
+        }   
+    }
+</style>
