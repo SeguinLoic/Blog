@@ -3,11 +3,10 @@ import { z } from "astro/zod";
 
 const blogCollection = defineCollection({
   schema: ({ image }) => z.object({
-    url: z.string(),
     title: z.string(),
     pubDate: z.date(),
     description: z.string(),
-    tags: z.array(z.string()),
+    tags: z.array(),
     cover: image()
   }),
 });
