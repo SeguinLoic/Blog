@@ -6,7 +6,7 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import ComposantTest from '../components/ComposantTest.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
-import ShortBlogPostTest from '../components/ShortBlogPost.astro';
+import ShortBlogPostTest from '../components/ShortBlogPostTest.astro';
 
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
@@ -32,9 +32,7 @@ const page = "test";
             ))
         }
         {
-            allBlogPosts.map((post) => (
-                <ShortBlogPostTest title={post.data.title} desc={post.data.description} image={post.data.cover} />
-            ))
+            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} image={post.data.cover} />)
         }        
         <!-- {
             allBlogPosts.map((post) => (
