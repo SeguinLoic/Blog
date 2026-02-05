@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+
+const {image} = Astro.props;
+---
+
+<article>
+    <Image src={image} alt="image" width="120px" height="120px" />
+</article>
