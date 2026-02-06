@@ -3,10 +3,8 @@ import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
-import ShortBlogPost from '../components/ShortBlogPost.astro';
+import ShortBlogPost from '@components/ShortBlogPost.astro';
 import Footer from '../components/Footer.astro';
-
-import ShortBlogPostTest from '@components/ShortBlogPostTest.astro';
 
 const page = "home";
 
@@ -29,7 +27,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
             allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} />)
         } -->
         {
-            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} />)
+            allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} />)
         }
     <Footer />
 </BaseLayout>

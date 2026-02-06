@@ -4,28 +4,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
-
-import ComposantTest from '../components/ComposantTest.astro';
-import ShortBlogPost from '../components/ShortBlogPost.astro';
-
-import ShortBlogPostTest from '../components/ShortBlogPostTest.astro';
+import ShortBlogPost from '@components/ShortBlogPost.astro'
 
 import { Debug } from "astro:components";
-import { Image } from "astro:assets";
 
 import { getCollection } from "astro:content";
 const allBlogPosts = await getCollection('blog');
-
-// export async function getStaticPaths() {
-//   const allBlogPosts = await getCollection('blog');
-//   return allBlogPosts.map(post => ({
-//     params: { id: post.id },
-//     props: { post },
-//   }));
-// }
-
-// const { post } = Astro.props;
-// const { Content } = await render(post);
 
 const page = "test";
 ---
@@ -36,26 +20,9 @@ const page = "test";
     <Header />
     <Navigation />
     <main>
-        <!-- {
-            allBlogPosts.map((post) => (
-                <div>
-                <Image src={post.data.cover} alt="image" />
-                </div>
-            ))
-        }
         {
-            allBlogPosts.map((post) => (
-                <ComposantTest image={post.data.cover} title={post.data.title} />
-            ))
-        } -->
-        {
-            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} />)
+            allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)
         }
-        <!-- {
-            allBlogPosts.map(post => (
-                <a href={`/posts/${post.id}`}>{post.data.title}</a>
-            ))
-        } -->
     </main>
     <Footer />
 </BaseLayout>

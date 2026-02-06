@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
-import ShortBlogPost from '../components/ShortBlogPost.astro';
+import ShortBlogPost from '@components/ShortBlogPost.astro';
 
 export async function getStaticPaths() {
     const allPosts = Object.values(import.meta.glob('./posts/*.mdx', { eager: true }));
