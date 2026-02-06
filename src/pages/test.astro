@@ -4,14 +4,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+
 import ComposantTest from '../components/ComposantTest.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
+
 import ShortBlogPostTest from '../components/ShortBlogPostTest.astro';
 
 import { Debug } from "astro:components";
 
 import { Image } from "astro:assets";
+
 import { getCollection } from "astro:content";
+
 const allBlogPosts = await getCollection("blog");
 
 const page = "test";
@@ -35,9 +39,12 @@ const page = "test";
                 <ComposantTest image={post.data.cover} title={post.data.title} />
             ))
         } -->
-        {
+        <!-- {
             allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/blog/${post.id}`} image={post.data.cover} />)
-        }
+        } -->
+        {allBlogPosts.map(post => (
+            <li><a href={`/blog/${post.id}`}>{post.data.title}</a></li>
+        ))}
     </main>
     <Footer />
 </BaseLayout>
