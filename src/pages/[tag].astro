@@ -20,6 +20,7 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
+
 posts.sort((a, b) => Date.parse(b.data.pubDate.valueOf()) - Date.parse(a.data.pubDate.valueOf()));
 ---
 
@@ -28,7 +29,7 @@ posts.sort((a, b) => Date.parse(b.data.pubDate.valueOf()) - Date.parse(a.data.pu
     <Navigation />
     <main>
         <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
-        {posts.map((post: any) => <ShortBlogPost url={post.url} title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+        {posts.map((post: any) => <ShortBlogPost url={`/posts/${post.id}`} title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
     </main>
     <Footer />
 </BaseLayout>
