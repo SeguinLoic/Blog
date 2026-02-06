@@ -27,7 +27,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
             allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} />)
         } -->
         {
-            allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} />)
+            allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)
         }
     <Footer />
 </BaseLayout>
