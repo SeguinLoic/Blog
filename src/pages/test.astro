@@ -51,9 +51,9 @@ const page = "test";
         <!-- {
             allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/blog/${post.id}`} image={post.data.cover} />)
         } -->
-        {allBlogPosts.map(post => (
+        <!-- {allBlogPosts.map(post => (
             <li><a href={`/blog/${post.id}`}>{post.data.title}</a></li>
-        ))}
+        ))} -->
     </main>
     <Footer />
 </BaseLayout>
