@@ -23,7 +23,7 @@ const page = "test";
     <Header />
     <Navigation />
     <main>
-        {
+        <!-- {
             allBlogPosts.map((post) => (
                 <div>
                 <Image src={post.data.cover} alt="image" />
@@ -34,9 +34,9 @@ const page = "test";
             allBlogPosts.map((post) => (
                 <ComposantTest image={post.data.cover} title={post.data.title} />
             ))
-        }
+        } -->
         {
-            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} image={post.data.cover} />)
+            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} image={post.data.cover} />)
         }
     </main>
     <Footer />

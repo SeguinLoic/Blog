@@ -1,16 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 
-const {title, desc, date, image} = Astro.props;
-// const allTags = tags.toString().split(",");
+const {title, desc, date, tags, image} = Astro.props;
+const allTags = tags.toString().split(",");
 ---
 
 <article>
     <section>
         <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-        <!-- <ul>
+        <ul>
             {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
-        </ul> -->
+        </ul>
         <h2>{title}</h2>
         <p>{desc}</p>
     </section>
