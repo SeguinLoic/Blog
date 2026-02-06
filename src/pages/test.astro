@@ -14,7 +14,7 @@ import { Debug } from "astro:components";
 
 import { Image } from "astro:assets";
 
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const allBlogPosts = await getCollection('blog');
