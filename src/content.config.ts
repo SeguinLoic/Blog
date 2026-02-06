@@ -4,7 +4,7 @@ import { z } from "astro/zod";
 const blogCollection = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
-    pubDate: z.string(),
+    pubDate: z.date(),
     description: z.string(),
     cover: image()
   }),
