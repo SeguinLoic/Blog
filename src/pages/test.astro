@@ -14,9 +14,18 @@ import { Debug } from "astro:components";
 
 import { Image } from "astro:assets";
 
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
-const allBlogPosts = await getCollection("blog");
+export async function getStaticPaths() {
+  const allBlogPosts = await getCollection('blog');
+  return allBlogPosts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+// const { post } = Astro.props;
+// const { Content } = await render(post);
 
 const page = "test";
 ---
