@@ -11,7 +11,9 @@ import ShortBlogPostTest from '@components/ShortBlogPostTest.astro';
 const page = "home";
 
 import { getCollection } from "astro:content";
-const allBlogPosts = await getCollection('blog');
+const allBlogPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
 // const posts = Object.values(import.meta.glob('./posts/*.mdx', { eager: true }));
 // posts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
