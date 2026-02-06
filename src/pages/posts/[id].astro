@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-// 1. Génére un nouveau chemin pour chaque entrée de collection
+
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map(post => ({
@@ -8,7 +8,7 @@ export async function getStaticPaths() {
     props: { post },
   }));
 }
-// 2. Pour votre modèle, vous pouvez obtenir l'entrée directement à partir de la propriété
+
 const { post } = Astro.props;
 const { Content } = await render(post);
 ---
