@@ -32,7 +32,8 @@ const page = "test";
             ))
         }
         {
-            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} image={post.data.cover} />)
+            // allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} image={post.data.cover} />)
+            allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.slice(0,10)} image={post.data.cover} />)
         }        
         <!-- {
             allBlogPosts.map((post) => (
