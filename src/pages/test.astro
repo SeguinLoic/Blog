@@ -11,18 +11,18 @@ import ShortBlogPost from '../components/ShortBlogPost.astro';
 import ShortBlogPostTest from '../components/ShortBlogPostTest.astro';
 
 import { Debug } from "astro:components";
-
 import { Image } from "astro:assets";
 
 import { getCollection } from "astro:content";
+const allBlogPosts = await getCollection('blog');
 
-export async function getStaticPaths() {
-  const allBlogPosts = await getCollection('blog');
-  return allBlogPosts.map(post => ({
-    params: { id: post.id },
-    props: { post },
-  }));
-}
+// export async function getStaticPaths() {
+//   const allBlogPosts = await getCollection('blog');
+//   return allBlogPosts.map(post => ({
+//     params: { id: post.id },
+//     props: { post },
+//   }));
+// }
 
 // const { post } = Astro.props;
 // const { Content } = await render(post);
@@ -51,9 +51,11 @@ const page = "test";
         <!-- {
             allBlogPosts.map((post) => <ShortBlogPostTest title={post.data.title} desc={post.data.description} date={post.data.pubDate.toString().slice(0,10)} tags={post.data.tags} url={`/blog/${post.id}`} image={post.data.cover} />)
         } -->
-        <!-- {allBlogPosts.map(post => (
-            <li><a href={`/blog/${post.id}`}>{post.data.title}</a></li>
-        ))} -->
+        {
+            allBlogPosts.map(post => (
+                <a href={`/blog/${post.id}`}>{post.data.title}</a>
+            ))
+        }
     </main>
     <Footer />
 </BaseLayout>

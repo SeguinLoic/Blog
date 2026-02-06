@@ -1,15 +1,30 @@
 ---
 import { Image } from 'astro:assets';
+
 import type { CollectionEntry } from 'astro:content';
 interface Props {
   post: CollectionEntry<'blog'>;
 }
 
-const {title, desc, date, tags, url, image} = Astro.props;
-const allTags = tags.toString().split(",");
+//const {title, desc, date, tags, url, image} = Astro.props;
+const { post } = Astro.props;
+const allTags = post.tags.toString().split(",");
 ---
 
 <article>
+    <section>
+        <time datetime={post.date}>{new Date(post.date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+        <ul>
+            {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+        </ul>
+        <h2>{post.title}</h2>
+        <p>{post.desc}</p>
+    </section>
+    <Image src={post.image} alt="image" width="120px" height="120px" />
+    <a class="link" href={post.url}></a>
+</article>
+
+<!-- <article>
     <section>
         <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
         <ul>
@@ -20,7 +35,7 @@ const allTags = tags.toString().split(",");
     </section>
     <Image src={image} alt="image" width="120px" height="120px" />
     <a class="link" href={url}></a>
-</article>
+</article> -->
 
 <style>
     article {
