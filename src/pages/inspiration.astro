@@ -4,21 +4,13 @@ import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
-
-import { Image } from 'astro:assets';
-
-import lectures from './lectures.json';
 import Livres from '../components/Livres.astro';
-
 import { getCollection } from "astro:content";
-import { Debug } from 'astro:components';
 
 const allBooks = await getCollection('books');
 
 const page = "inspiration";
 ---
-
-<Debug {allBooks} />
 
 <BaseLayout page={page}>
     <Header />
@@ -30,37 +22,29 @@ const page = "inspiration";
         <section class="books">
             <h2>Bibliothèque</h2>
             <h3>2026</h3>
-            {
-                allBooks.filter((books) => books.data.year === 2026).map(book => (
-                    <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
-                    // <Image src={book.data.image.source} alt={book.data.image.alt} width="90px" />
-                ))
-            }
-            <h3>2025</h3>
-            {
-                allBooks.filter((books) => books.data.year === 2025).map(book => (
-                    <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
-                    // <Image src={book.data.image.source} alt={book.data.image.alt} width="90px" />
-                ))
-            }
-            <!-- <h3>2026</h3>
             <ul>
-                {lectures.filter((lecture) => lecture.year === 2026).map(book => (
-                    <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
-                ))}
+                {
+                    allBooks.filter((books) => books.data.year === 2026).map(book => (
+                        <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
+                    ))
+                }
             </ul>
             <h3>2025</h3>
             <ul>
-                {lectures.filter((lecture) => lecture.year === 2025).map(book => (
-                    <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
-                ))}
+                {
+                    allBooks.filter((books) => books.data.year === 2025).map(book => (
+                        <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
+                    ))
+                }
             </ul>
-            <h3>2024</h3>
+            <h3>2025</h3>
             <ul>
-                {lectures.filter((lecture) => lecture.year === 2024).map(book => (
-                    <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
-                ))}
-            </ul> -->
+                {
+                    allBooks.filter((books) => books.data.year === 2024).map(book => (
+                        <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
+                    ))
+                }
+            </ul>
         </section>
     </main>
     <Footer />
