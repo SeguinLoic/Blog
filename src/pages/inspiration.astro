@@ -8,8 +8,15 @@ import Footer from '../components/Footer.astro';
 import lectures from './lectures.json';
 import Livres from '../components/Livres.astro';
 
+import { getCollection } from "astro:content";
+import { Debug } from "astro:content";
+
+const allBooks = await getCollection('books');
+
 const page = "inspiration";
 ---
+
+<Debug {allBooks} />
 
 <BaseLayout page={page}>
     <Header />
