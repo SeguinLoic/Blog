@@ -20,8 +20,10 @@ const bookCollection = defineCollection({
     name: z.string(),
     author : z.string(),
     year: z.number(),
-    image: image(),
-    imageAlt: z.string(),
+    image: z.object({
+       source: image(),
+       alt: z.string()
+    }),
     note: z.string(),
   })
 })
