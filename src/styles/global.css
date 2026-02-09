@@ -66,24 +66,6 @@
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Mukta Malar';
-  src: url('/fonts/MuktaMalar-SemiBold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Mukta Malar';
-  src: url('/fonts/MuktaMalar-Bold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Mukta Malar';
-  src: url('/fonts/MuktaMalar-ExtraBold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
   font-family: 'Roboto Slab';
   src: url('/fonts/RobotoSlab-Regular.ttf') format('truetype');
   font-style: normal;
