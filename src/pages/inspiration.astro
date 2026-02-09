@@ -31,7 +31,7 @@ const page = "inspiration";
             <h2>Bibliothèque</h2>
             {
                 allBooks.filter((books) => books.data.year === 2026).map(book => (
-                    <Image src={book.data.image.source} alt={book.data.image.alt} width="120px" height="120px" />
+                    <Image src={book.data.image.source} alt={book.data.image.alt} width="90px" />
                 ))
             }
             <h3>2026</h3>
