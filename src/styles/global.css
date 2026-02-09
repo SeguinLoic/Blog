@@ -108,6 +108,7 @@ html:after {
     pointer-events: none;
     background-color: #7f7f7f;
     mask-image: url(/map-2.png);
+    mask-image: url(/map.svg);
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: 50%;
