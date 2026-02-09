@@ -1,17 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
 
 const { images } = Astro.props; 
-
-// const newImage = images.map((image) => image.toLowerCase().split("../assets/").pop().split(".jpg")[0]);
-// const allImages = await Astro.glob("/src/assets/*").then(files => {
-//   return files.map(file => file.default);
-// });
-// const myImages = newImage.map((image) => allImages.find(({ src }) => src.includes(image)));
 ---
-<Debug {images} />
-
 
 <div class="carousel">
     <div class="carousel-inner">
@@ -26,20 +17,6 @@ const { images } = Astro.props;
         <button id="next"><img src="/icon-arrow.svg"/></button>
     </div>
 </div>
-
-<!-- <div class="carousel">
-    <div class="carousel-inner">
-        {myImages.map((image) => (
-            <div class="slide">
-                <Image src={image.src} alt="image" layout="constrained" loading="lazy" width="672px" height="672px" />
-            </div>
-        ))}
-    </div>
-    <div class="carousel-controls">
-        <button id="prev"><img src="/icon-arrow.svg"/></button>
-        <button id="next"><img src="/icon-arrow.svg"/></button>
-    </div>
-</div> -->
 
 <script>
 (function () {
