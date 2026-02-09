@@ -1,25 +1,25 @@
 ---
 import { Image } from 'astro:assets';
 
-interface Props {
-    image: string;
-    alt: string;
-    name: string;
-    author: string;
-    note: string;
-}
+// interface Props {
+//     image: string;
+//     alt: string;
+//     name: string;
+//     author: string;
+//     note: string;
+// }
 
 const { image, alt, name, author, note} = Astro.props;
-const newImage = image.source.split("../assets/livres/").pop().split(".jpg")[0];
-const images = await Astro.glob("/src/assets/livres/*").then(files => {
-  return files.map(file => file.default);
-});
-const myImage = images.find(({ src }) => src.includes(newImage));
+// const newImage = image.source.split("../assets/livres/").pop().split(".jpg")[0];
+// const images = await Astro.glob("/src/assets/livres/*").then(files => {
+//   return files.map(file => file.default);
+// });
+// const myImage = images.find(({ src }) => src.includes(newImage));
 ---
 
 <li>
     <div class="couverture">
-        <Image src={myImage.src} alt={alt} layout="full-width" width={myImage.width} height={myImage.height} />
+        <Image src={image} alt={alt} width="90px" />
     </div>
     <div class="contenu">
         {name} 
@@ -27,6 +27,17 @@ const myImage = images.find(({ src }) => src.includes(newImage));
         <p class="note">"{note}"</p>
     </div>
 </li>
+
+<!-- <li>
+    <div class="couverture">
+        <Image src={myImage.src} alt={alt} layout="full-width" width="90px" />
+    </div>
+    <div class="contenu">
+        {name} 
+        <p class="auteur">{author}</p>
+        <p class="note">"{note}"</p>
+    </div>
+</li> -->
 
 <style>
     li {

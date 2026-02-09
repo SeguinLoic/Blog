@@ -29,12 +29,21 @@ const page = "inspiration";
         </section>
         <section class="books">
             <h2>Bibliothèque</h2>
+            <h3>2026</h3>
             {
                 allBooks.filter((books) => books.data.year === 2026).map(book => (
-                    <Image src={book.data.image.source} alt={book.data.image.alt} width="90px" />
+                    <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
+                    // <Image src={book.data.image.source} alt={book.data.image.alt} width="90px" />
                 ))
             }
-            <h3>2026</h3>
+            <h3>2025</h3>
+            {
+                allBooks.filter((books) => books.data.year === 2025).map(book => (
+                    <Livres image={book.data.image.source} alt={book.data.image.alt} name={book.data.name} author={book.data.author} note={book.data.note} />
+                    // <Image src={book.data.image.source} alt={book.data.image.alt} width="90px" />
+                ))
+            }
+            <!-- <h3>2026</h3>
             <ul>
                 {lectures.filter((lecture) => lecture.year === 2026).map(book => (
                     <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
@@ -51,7 +60,7 @@ const page = "inspiration";
                 {lectures.filter((lecture) => lecture.year === 2024).map(book => (
                     <Livres image={book.image} alt={book.image.alt} name={book.name} author={book.author} note={book.note} />
                 ))}
-            </ul>
+            </ul> -->
         </section>
     </main>
     <Footer />
