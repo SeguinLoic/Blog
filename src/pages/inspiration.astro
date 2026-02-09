@@ -9,7 +9,7 @@ import lectures from './lectures.json';
 import Livres from '../components/Livres.astro';
 
 import { getCollection } from "astro:content";
-import { Debug } from "astro:content";
+import { Debug } from 'astro:components';
 
 const allBooks = await getCollection('books');
 
