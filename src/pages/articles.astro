@@ -17,18 +17,25 @@ const page = "articles";
 ---
 
 <NewBaseLayout page={page}>
-    <Header />
     <main>
-        <div class="intro">
-            <h1>Vivre des expériences</h1>
-        </div>
         <div class="fenetre">
+            <div class="intro">
+                <h1>Perdre la notion du temps, en Mongolie</h1>
+                <p>C'est probablement le pays qui m'a le plus marqué de notre voyage en Asie</p>
+                <a href="#">Lire l'histoire</a>
+            </div>
             <Image src={image1} alt="alt" width="900px" height="700px"/>
         </div>
         <div class="desc">
-             {allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
-    <Footer />
+            <Header />
+            {allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
         </div>
     </main>
-    <Footer />
+    <!-- <Footer /> -->
 </NewBaseLayout>
+
+<style>
+.desc {
+    flex-direction: column;
+}
+</style>

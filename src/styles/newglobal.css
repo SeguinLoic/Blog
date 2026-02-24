@@ -61,6 +61,7 @@ main {
 .intro {
     width: 20%;
     padding-top: 100px;
+    position: relative;
 }
 .intro h1 {
     font-size: 100px;
@@ -69,8 +70,10 @@ main {
 }
 
 .fenetre {
-    border: 1px solid red;
     width: 55%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .desc {
