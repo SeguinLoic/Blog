@@ -1,6 +1,7 @@
 ---
 import image1 from "../assets/mongolia-2.jpg";
 import { Image } from 'astro:assets';
+import { Debug } from 'astro:components';
 import '../styles/newglobal.css';
 import NewBaseLayout from '../layouts/NewBaseLayout.astro';
 import Header from '@components/Header.astro';
@@ -13,8 +14,12 @@ const allBlogPosts = (await getCollection('blog')).sort(
 );
 
 
+
+
 const page = "articles";
 ---
+
+<Debug {allBlogPosts} />
 
 <NewBaseLayout page={page}>
     <main>
