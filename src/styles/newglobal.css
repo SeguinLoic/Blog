@@ -116,6 +116,13 @@ html#articles footer {
 html#articles body {
     padding: 0px;
 }
+html#articles .articles {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+    overflow-y: scroll;
+}
 html#articles main .fenetre {
     width: 60%;
     position: relative;
