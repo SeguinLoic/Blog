@@ -16,3 +16,12 @@ body {
 h1, h2, h3, p, ul {
   margin: 0px;
 }
+
+/* HEADER */ 
+html#new-home header p {
+    display: none;
+}
+html#new-home header {
+    padding: 0px;
+    align-items: center;
+}
