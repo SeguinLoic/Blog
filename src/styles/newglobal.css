@@ -82,7 +82,7 @@ main {
     display: flex;
     align-items: center;
 }
-.desc p {
+html#new-home .desc p {
     line-height: 2em;
     padding-top: 100px;
 }
@@ -109,4 +109,32 @@ html#new-home footer,
 html#articles footer {
     padding: 0px;
     justify-content: center;
+}
+
+
+/* ARTICLES */
+html#articles main .fenetre {
+    width: 60%;
+    position: relative;
+    height: 100vH !important;
+    align-items: flex-start;
+}
+html#articles main .fenetre .intro {
+    border: 1px solid green;
+    top: 0;
+    padding: 0px;
+    z-index: 1;
+    width: 100%;
+}
+html#articles main .fenetre img {
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+html#articles main .desc {
+    width: 40%;
+    padding: 40px;
 }
