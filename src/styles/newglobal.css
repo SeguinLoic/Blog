@@ -53,6 +53,21 @@ body {
 h1, h2, h3, p, ul {
   margin: 0px;
 }
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.desc {
+    width: 25%;
+}
+.intro {
+    width: 20%;
+}
+.fenetre {
+    border: 1px solid red;
+    width: 55%;
+}
 
 /* HEADER */ 
 html#new-home header p {
@@ -61,4 +76,15 @@ html#new-home header p {
 html#new-home header {
     padding: 0px;
     align-items: center;
+}
+html#new-home a.logo {
+    background-color: transparent;
+    color: #000 !important;
+    padding: 0px !important;
+}
+
+/* FOOTER */ 
+html#new-home footer {
+    padding: 0px;
+    justify-content: center;
 }
