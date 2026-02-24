@@ -58,15 +58,30 @@ main {
     flex-grow: 1;
 }
 
-.desc {
-    width: 25%;
-}
 .intro {
     width: 20%;
+    padding-top: 100px;
 }
+.intro h1 {
+    font-size: 100px;
+    width: 160%;
+    line-height: 100px;
+}
+
 .fenetre {
     border: 1px solid red;
     width: 55%;
+}
+
+.desc {
+    width: 25%;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.desc p {
+    line-height: 2em;
+    padding-top: 100px;
 }
 
 /* HEADER */ 
