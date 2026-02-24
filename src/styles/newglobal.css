@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+html {
+    display: flex;
+    min-height: 100%;
+}
+body {
+    margin: 0 auto;
+    padding: 40px 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, p, ul {
+  margin: 0px;
+}
