@@ -1,8 +1,17 @@
 ---
+import image1 from "../assets/mongolia-2.jpg";
+import { Image } from 'astro:assets';
 import '../styles/newglobal.css';
 import NewBaseLayout from '../layouts/NewBaseLayout.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
+import ShortBlogPost from '@components/ShortBlogPost.astro';
+import { getCollection } from "astro:content";
+
+const allBlogPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
 
 const page = "articles";
 ---
@@ -13,9 +22,12 @@ const page = "articles";
         <div class="intro">
             <h1>Vivre des expériences</h1>
         </div>
-        <div class="fenetre"></div>
+        <div class="fenetre">
+            <Image src={image1} alt="alt" width="900px" height="700px"/>
+        </div>
         <div class="desc">
-            <!-- <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain. Salut, je suis OneHuman. C’est à mon tour de vous inviter à vivre des aventures. N’hésitez pas, explorez mon blog, plongez vous dans le voyage.</p> -->
+             {allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+    <Footer />
         </div>
     </main>
     <Footer />
