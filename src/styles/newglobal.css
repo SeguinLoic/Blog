@@ -113,6 +113,9 @@ html#articles footer {
 
 
 /* ARTICLES */
+html#articles body {
+    padding: 0px;
+}
 html#articles main .fenetre {
     width: 60%;
     position: relative;
