@@ -1,11 +1,15 @@
 ---
+import '../styles/newglobal.css';
+import NewBaseLayout from '../layouts/NewBaseLayout.astro';
 import Header from '@components/Header.astro';
 import Navigation from '@components/Navigation.astro';
 import Footer from '@components/Footer.astro';
+
+const page = "Nouvelle Home";
 ---
 
-<div>
+<NewBaseLayout page={page}>
     <Header />
     <Navigation />
     <Footer />
-</div>
+</NewBaseLayout>
