@@ -21,7 +21,7 @@ const { articles } = Astro.props;
             <div class="slide">
                 <a href={`/posts/${article.id}`}>
                     <p>{article.data.title}</p>
-                    <Image src={article.data.cover} alt={article.data.coverAlt} layout="constrained" loading="lazy" width="960px" height="960px" />
+                    <Image src={article.data.cover} alt={article.data.coverAlt} quality="max" layout="constrained" loading="lazy" width="960px" height="960px" />
                 </a>
             </div>
         ))}
