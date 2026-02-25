@@ -91,7 +91,9 @@ html#new-home .fenetre img {
     padding-left: 40px;
     display: flex;
     align-items: center;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    border: 1px solid red;
+    height: calc(100vH - 160px);
 }
 html#new-home .desc p {
     line-height: 2em;
