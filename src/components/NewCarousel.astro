@@ -17,6 +17,14 @@ const { articles } = Astro.props;
                 </a>
             </div>
         ))} -->
+        {articles.map((article) => (
+            <div class="slide">
+                <a href={`/posts/${article.id}`}>
+                    <p>{article.data.title}</p>
+                    <Image src={article.data.cover} alt={article.data.coverAlt} layout="constrained" loading="lazy" width="672px" height="672px" />
+                </a>
+            </div>
+        ))}
     </div>
     <div class="carousel-controls">
         <button id="prev"><img src="/icon-arrow.svg"/></button>
