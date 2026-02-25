@@ -114,15 +114,18 @@ html#new-home .carousel .slide a {
 
 
 /* HEADER */ 
-html#new-home header p{
+html#new-home header p,
+html#articles header p { 
     display: none;
 }
-html#new-home header{
+html#new-home header,
+html#articles header {
     padding: 0;
     align-items: center;
     padding-bottom: 24px;
 }
-html#new-home a.logo {
+html#new-home a.logo,
+html#articles a.logo {
     background-color: transparent;
     color: #000 !important;
     padding: 0px !important;
