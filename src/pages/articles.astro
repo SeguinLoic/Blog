@@ -13,9 +13,6 @@ const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-
-
-
 const page = "articles";
 ---
 
@@ -24,11 +21,6 @@ const page = "articles";
 <NewBaseLayout page={page}>
     <main>
         <div class="fenetre">
-            <div class="intro">
-                <h1>Perdre la notion du temps, en Mongolie</h1>
-                <p>C'est probablement le pays qui m'a le plus marqué de notre voyage en Asie</p>
-                <a href="#">Lire l'histoire</a>
-            </div>
             <Image src={image1} alt="alt" width="900px" height="700px"/>
         </div>
         <div class="desc">
@@ -38,7 +30,6 @@ const page = "articles";
             </div>
         </div>
     </main>
-    <!-- <Footer /> -->
 </NewBaseLayout>
 
 <style>
