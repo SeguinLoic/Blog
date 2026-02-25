@@ -139,3 +139,24 @@ html#new-home .carousel .slide:hover p,
 html#new-home .carousel .slide:hover a:after {
     opacity: 1;
 }
+
+
+html#articles article {
+    padding: 24px 0px;
+}
+html#articles article section {
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+}
+html#articles article img {
+    width: 220px;
+}
+html#articles article section .datas div {
+    padding-top: 32px;
+}
+html#articles article section .datas h2 {
+    font-family: 'Inter';
+    font-size: 24px;
+}
