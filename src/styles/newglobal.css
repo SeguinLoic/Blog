@@ -86,15 +86,6 @@ html#new-home .fenetre img {
     height: 100%;
     object-fit: cover;
 }
-.desc {
-    width: 25%;
-    padding-left: 40px;
-    display: flex;
-    align-items: center;
-    overflow-y: scroll;
-    border: 1px solid red;
-    height: calc(100vH - 160px);
-}
 html#new-home .desc p {
     line-height: 2em;
     padding-top: 100px;
@@ -123,18 +114,15 @@ html#new-home .carousel .slide a {
 
 
 /* HEADER */ 
-html#new-home header p,
-html#articles header p {
+html#new-home header p{
     display: none;
 }
-html#new-home header, 
-html#articles header {
+html#new-home header{
     padding: 0;
     align-items: center;
     padding-bottom: 24px;
 }
-html#new-home a.logo,
-html#articles a.logo {
+html#new-home a.logo {
     background-color: transparent;
     color: #000 !important;
     padding: 0px !important;
@@ -161,41 +149,4 @@ html#articles footer {
     padding: 0px;
     justify-content: center;
     padding-top: 24px;
-}
-
-/* ARTICLES */
-html#articles body {
-    padding: 0px;
-}
-html#articles .articles {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    height: 620px;
-    overflow-y: scroll;
-}
-html#articles main .fenetre {
-    width: 60%;
-    position: relative;
-    height: 100vH !important;
-    align-items: flex-start;
-}
-html#articles main .fenetre .intro {
-    border: 1px solid green;
-    top: 0;
-    padding: 0px;
-    z-index: 1;
-    width: 100%;
-}
-html#articles main .fenetre img {
-    border: 1px solid red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-html#articles main .desc {
-    width: 40%;
-    padding: 40px;
 }
