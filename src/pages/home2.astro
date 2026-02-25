@@ -37,11 +37,23 @@ const page = "new-home";
     padding-top: 100px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .intro h1 {
     font-size: 90px;
     width: 160%;
     line-height: 90px;
+}
+.intro a {
+    margin-top: 40px !important;
+    border: 1px solid #4d4d4d;
+    padding: 12px 24px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
 }
 
 .fenetre {
@@ -50,6 +62,7 @@ const page = "new-home";
     /* overflow: hidden; */
     /* justify-content: center; */
     border: 1px solid red;
+    height: calc(100vH - 183px);
 }
 .fenetre img {
     width: 100%;
@@ -62,6 +75,7 @@ const page = "new-home";
     display: flex;
     align-items: flex-end;
     padding-bottom: 100px;
+    padding-left: 40px;
 }
 .desc p {
     line-height: 2em;
@@ -76,9 +90,6 @@ html#new-home .carousel-controls button {
     width: 50px;
     height: 50px;
 }
-html#new-home .carousel {
-    margin: 0px;
-}
 html#new-home .carousel .slide p {
     position: absolute;
 }
@@ -86,4 +97,20 @@ html#new-home .carousel .slide a {
     border: 1px solid red;
     display: flex;
 }
+
+html#new-home .carousel {
+    position: relative;
+    margin-top: 0px !important;
+    border: 1px solid red;
+    height: 100%;
+}
+html#new-home .carousel-inner {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    aspect-ratio: 1;
+    height: 100%;
+    border: 1px solid green;
+}
+
 </style>
