@@ -100,6 +100,7 @@ html#new-home .carousel .slide p {
 html#new-home .carousel .slide a {
     border: 1px solid red;
     display: flex;
+    height: 100%;
 }
 
 html#new-home .carousel {
