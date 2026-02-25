@@ -152,6 +152,7 @@ html#articles article section {
 }
 html#articles article img {
     width: 220px;
+    min-width: 220px;
 }
 html#articles article section .datas div {
     padding-top: 32px;
