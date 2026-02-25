@@ -56,8 +56,8 @@ h1, h2, h3, p, ul {
 main {
     display: flex;
     flex-grow: 1;
+    border: 1px solid red;
 }
-
 .intro {
     width: 20%;
     padding-top: 100px;
@@ -68,19 +68,24 @@ main {
     width: 160%;
     line-height: 100px;
 }
-
 .fenetre {
     width: 55%;
     display: flex;
     overflow: hidden;
     justify-content: center;
 }
-
+html#new-home .fenetre img {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .desc {
-    width: 25%;
+    width: 20%;
     padding-left: 40px;
     display: flex;
     align-items: center;
+    overflow-y: hidden;
 }
 html#new-home .desc p {
     line-height: 2em;
@@ -92,10 +97,11 @@ html#new-home header p,
 html#articles header p {
     display: none;
 }
-html#new-home header,
+html#new-home header, 
 html#articles header {
-    padding: 0px;
+    padding: 0;
     align-items: center;
+    padding-bottom: 24px;
 }
 html#new-home a.logo,
 html#articles a.logo {
@@ -104,13 +110,33 @@ html#articles a.logo {
     padding: 0px !important;
 }
 
+html#new-home .intro p {
+    padding-top: 24px;
+    line-height: 1.7em;
+}
+
+/* SHORTBLOGPOST */ 
+html#new-home article section p {
+    display: none;
+}
+html#new-home .desc img {
+    width: 80px;
+    height: 80px;
+}
+html#new-home .desc h2 {
+    font-size: 18px;
+}
+html#new-home article {
+    padding: 24px 0px;
+}
+
 /* FOOTER */ 
 html#new-home footer,
 html#articles footer {
     padding: 0px;
     justify-content: center;
+    padding-top: 24px;
 }
-
 
 /* ARTICLES */
 html#articles body {
