@@ -111,6 +111,8 @@ html#new-home .carousel .slide a:after {
     z-index: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 40%);
     pointer-events: none;
+    transition: all 0.3s;
+    opacity: 0;
 }
 html#new-home .carousel .slide p {
     position: absolute;
@@ -121,6 +123,8 @@ html#new-home .carousel .slide p {
     color: #fff !important;
     z-index: 1;
     width: 50%;
+    transition: all 0.3s;
+    opacity: 0;
 }
 html#new-home .carousel-controls {
     bottom: 0;
@@ -130,4 +134,8 @@ html#new-home .carousel-controls {
 html#new-home .carousel-controls button {
     width: 50px;
     height: 50px;
+}
+html#new-home .carousel .slide:hover p,
+html#new-home .carousel .slide:hover a:after {
+    opacity: 1;
 }
