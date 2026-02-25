@@ -102,9 +102,11 @@ html#new-home .desc p {
 html#new-home .carousel-controls {
     bottom: 0;
     justify-content: center;
+    top: inherit;
 }
 html#new-home .carousel-controls button {
     width: 50px;
+    height: 50px;
 }
 
 /* HEADER */ 
