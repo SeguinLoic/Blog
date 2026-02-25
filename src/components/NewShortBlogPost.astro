@@ -77,7 +77,7 @@ html#articles article section .infoPost {
     }
     article section {
         border: 1px solid red;
-        height: 100%;
+        width: 100%;
         display: flex;
         padding: 0px 20px;
     }
@@ -86,26 +86,17 @@ html#articles article section .infoPost {
         padding-right: 8px;
     }
     article ul {
-        padding-left: 8px;
-        display: flex;
-        list-style: none;
-        position: relative;
-        z-index: 2;
-        margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
     }
-    article ul:before {
-        content: '';
-        width: 1px;
-        height: 100%;
-        background-color: var(--color-fg);
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0.15;
+    article ul li {
+        padding: 5px 0px;
     }
     article ul li a {
-        padding-right: 8px;
         font-size: 0.9em;
         line-height: 1em;
         display: flex;
@@ -139,9 +130,9 @@ html#articles article section .infoPost {
         opacity: 0;
         transition: all 0.3s;
     }
-    a.link:hover {
+    /* a.link:hover {
         opacity: 0.05;
-    }
+    } */
     @media screen and (max-width: 768px) {
         article {
             padding: 24px 16px;
