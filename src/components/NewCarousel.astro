@@ -5,7 +5,7 @@ import { Debug } from 'astro:components';
 const { articles } = Astro.props; 
 ---
 
-<Debug {articles} />
+<!-- <Debug {articles} /> -->
 
 <div class="carousel">
     <div class="carousel-inner">
@@ -21,7 +21,7 @@ const { articles } = Astro.props;
             <div class="slide">
                 <a href={`/posts/${article.id}`}>
                     <p>{article.data.title}</p>
-                    <Image src={article.data.cover} alt={article.data.coverAlt} layout="constrained" loading="lazy" width="672px" height="672px" />
+                    <Image src={article.data.cover} alt={article.data.coverAlt} layout="constrained" loading="lazy" width="960px" height="960px" />
                 </a>
             </div>
         ))}
