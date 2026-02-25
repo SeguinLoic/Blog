@@ -18,6 +18,7 @@ const allTags = tags.toString().split(",");
             </div>
         </div>
         <div class="allTags">
+            <p>Les tags</p>
             <ul>
                 {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
             </ul>
