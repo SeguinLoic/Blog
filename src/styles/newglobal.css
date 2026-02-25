@@ -58,61 +58,6 @@ main {
     flex-grow: 1;
 }
 
-.intro {
-    width: 25%;
-    padding-top: 100px;
-    position: relative;
-    z-index: 1;
-}
-.intro h1 {
-    font-size: 90px;
-    width: 160%;
-    line-height: 90px;
-}
-html#new-home .intro p {
-    padding-top: 24px;
-    line-height: 1.7em;
-    padding-right: 24px;
-}
-
-.fenetre {
-    width: 50%;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-}
-html#new-home .fenetre img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-html#new-home .desc p {
-    line-height: 2em;
-    padding-top: 100px;
-}
-
-/* CAROUSEL */
-html#new-home .carousel-controls {
-    bottom: 0;
-    justify-content: center;
-    top: inherit;
-}
-html#new-home .carousel-controls button {
-    width: 50px;
-    height: 50px;
-}
-html#new-home .carousel {
-    margin: 0px;
-}
-html#new-home .carousel .slide p {
-    position: absolute;
-}
-html#new-home .carousel .slide a {
-    border: 1px solid red;
-    display: flex;
-}
-
-
 /* HEADER */ 
 html#new-home header p,
 html#articles header p { 
@@ -129,21 +74,6 @@ html#articles a.logo {
     background-color: transparent;
     color: #000 !important;
     padding: 0px !important;
-}
-
-/* SHORTBLOGPOST */ 
-html#new-home article section p {
-    display: none;
-}
-html#new-home .desc img {
-    width: 80px;
-    height: 80px;
-}
-html#new-home .desc h2 {
-    font-size: 18px;
-}
-html#new-home article {
-    padding: 24px 0px;
 }
 
 /* FOOTER */ 
