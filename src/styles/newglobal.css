@@ -108,6 +108,17 @@ html#new-home .carousel-controls button {
     width: 50px;
     height: 50px;
 }
+html#new-home .carousel {
+    margin: 0px;
+}
+html#new-home .carousel .slide p {
+    position: absolute;
+}
+html#new-home .carousel .slide a {
+    border: 1px solid red;
+    display: flex;
+}
+
 
 /* HEADER */ 
 html#new-home header p,
