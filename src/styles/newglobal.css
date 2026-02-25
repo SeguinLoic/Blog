@@ -154,10 +154,10 @@ html#articles article img {
     width: 220px;
     min-width: 220px;
 }
-html#articles article section .datas div {
+html#articles article section .infoPost div {
     padding-top: 32px;
 }
-html#articles article section .datas h2 {
+html#articles article section .infoPost h2 {
     font-family: 'Inter';
     font-size: 24px;
 }
