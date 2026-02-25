@@ -85,18 +85,19 @@ html#articles footer {
 }
 
 /* CAROUSEL */ 
-html#new-home .carousel-controls {
-    bottom: 0;
-    justify-content: center;
-    top: inherit;
+html#new-home .carousel {
+    position: relative;
+    margin-top: 0px !important;
+    height: 100%;
 }
-html#new-home .carousel-controls button {
-    width: 50px;
-    height: 50px;
+html#new-home .carousel-inner {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    aspect-ratio: 0;
+    height: 100%;
 }
-
 html#new-home .carousel .slide a {
-    border: 1px solid red;
     display: flex;
     height: 100%;
 }
@@ -108,18 +109,12 @@ html#new-home .carousel .slide p {
     font-size: 18px;
     color: #fff !important;
 }
-
-html#new-home .carousel {
-    position: relative;
-    margin-top: 0px !important;
-    border: 1px solid red;
-    height: 100%;
+html#new-home .carousel-controls {
+    bottom: 0;
+    justify-content: center;
+    top: inherit;
 }
-html#new-home .carousel-inner {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    aspect-ratio: 0;
-    height: 100%;
-    border: 1px solid green;
+html#new-home .carousel-controls button {
+    width: 50px;
+    height: 50px;
 }
