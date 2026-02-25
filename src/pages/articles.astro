@@ -5,7 +5,7 @@ import '../styles/newglobal.css';
 import NewBaseLayout from '../layouts/NewBaseLayout.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
-import ShortBlogPost from '@components/ShortBlogPost.astro';
+import NewShortBlogPost from '@components/ShortBlogPost.astro';
 import { getCollection } from "astro:content";
 
 const allBlogPosts = (await getCollection('blog')).sort(
@@ -22,7 +22,7 @@ const page = "articles";
         <div class="desc">
             <Header />
             <div class="articles">
-                {allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+                {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
             </div>
         </div>
     </main>
@@ -60,5 +60,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 </style>

@@ -1,0 +1,147 @@
+---
+import { Image } from 'astro:assets';
+
+const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
+const allTags = tags.toString().split(",");
+---
+
+<article>
+    <Image src={image} alt={imageAlt} width="120px" height="120px" />
+    <section> 
+        <div class="datas">
+            <h2>{title}</h2>
+            <div>
+                <p>{desc}</p>
+                <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            </div>
+        </div>
+        <ul>
+            {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+        </ul>
+    </section>
+    <a class="link" href={url}></a>
+</article>
+
+<style>
+    article {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        padding: 32px 24px;
+        position: relative;
+        color: #000;
+    }
+    article:not(:last-of-type):after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-fg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.15;
+    }
+    article section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start; 
+        row-gap: 12px;
+        width: 100%;
+        padding-right: 24px;
+    }
+    article time {
+        font-size: .85em;
+        padding-right: 8px;
+    }
+    article ul {
+        padding-left: 8px;
+        display: flex;
+        list-style: none;
+        position: relative;
+        z-index: 2;
+        margin: 0px;
+    }
+    article ul:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: var(--color-fg);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.15;
+    }
+    article ul li a {
+        padding-right: 8px;
+        font-size: 0.9em;
+        line-height: 1em;
+        display: flex;
+        align-items: center;
+        color: #b38c40 !important;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    article h2 {
+        font-family: Space Grotesk;
+        font-weight: 500;
+        font-size: clamp(1.375rem, 1.275rem + 0.5vw, 1.875rem);
+        line-height: 1.2em;
+        text-wrap: pretty;
+    }
+    article p {
+        line-height: 1.4;
+    }
+    article img {
+        object-fit: cover;
+        overflow-clip-margin: unset;
+    }
+    a.link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: var(--color-fg);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    a.link:hover {
+        opacity: 0.05;
+    }
+    @media screen and (max-width: 768px) {
+        article {
+            padding: 24px 16px;
+        }   
+        article section {
+            padding-right: 16px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        article time {
+            width: 100%;
+            font-size: 0.8em;
+        }
+        article p {
+            display: none;
+        }
+        article ul {
+            padding-left: 0px;
+        }
+        article ul:before {
+            display: none;
+        }
+        article ul li a {
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        article img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+</style>
