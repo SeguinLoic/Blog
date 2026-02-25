@@ -5,7 +5,7 @@ import '../styles/newglobal.css';
 import NewBaseLayout from '../layouts/NewBaseLayout.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
-import NewShortBlogPost from '@components/ShortBlogPost.astro';
+import NewShortBlogPost from '@components/NewShortBlogPost.astro';
 import { getCollection } from "astro:content";
 
 const allBlogPosts = (await getCollection('blog')).sort(
