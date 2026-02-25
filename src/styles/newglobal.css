@@ -112,7 +112,7 @@ html#new-home .carousel-inner {
     display: flex;
     overflow: hidden;
     flex-wrap: nowrap;
-    aspect-ratio: 1;
+    aspect-ratio: 0;
     height: 100%;
     border: 1px solid green;
 }
