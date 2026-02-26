@@ -9,6 +9,7 @@ cover: ./covers/mongolia-6.jpg
 coverAlt: Des dromadaires et une moto
 ---
 import Carousel from '../../components/Carousel.astro';
+import Header from '../../components/Header.astro';
 import image1 from "../../assets/mongolia-2.jpg"
 import image2 from "../../assets/mongolia-3.jpg"
 import image3 from "../../assets/mongolia-4.jpg"
@@ -25,6 +26,7 @@ import image10 from "../../assets/mongolia-11.jpg"
 </div>
 <section>
 <div class="introduction">
+    <Header />
     <a href="/articles">Retour</a>
     <time datetime={frontmatter.pubDate}>{new Date(frontmatter.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
     <h2>{frontmatter.title}</h2>
