@@ -139,3 +139,17 @@ html#new-home .carousel .slide:hover p,
 html#new-home .carousel .slide:hover a:after {
     opacity: 1;
 }
+
+/* BLOGPOST */
+html.blogpost section {
+    border: 1px solid blue;
+    width: 60%;
+    left: 40%;
+    position: relative;
+    padding: 80px;
+}
+html.blogpost .fenetre {
+    border: 1px solid red;
+    width: 40%;
+    position: fixed;
+}
