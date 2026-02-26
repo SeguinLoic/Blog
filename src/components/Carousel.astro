@@ -8,10 +8,7 @@ const { images } = Astro.props;
     <div class="carousel-inner">
         {images.map((image) => (
             <div class="slide">
-                <a href="#">
-                    <p>Le titre de mon article</p>
-                    <Image src={image} alt="image" layout="constrained" loading="lazy" width="672px" height="672px" />
-                </a>
+                <Image src={image} alt="image" layout="constrained" loading="lazy" width="672px" height="672px" />
             </div>
         ))}
     </div>
