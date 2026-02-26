@@ -7,7 +7,7 @@ import Carousel from '@components/Carousel.astro';
 const { frontmatter } = Astro.props;
 ---
 
-<NewBaseLayout page={frontmatter.title} class="blogpost">
+<NewBaseLayout page={frontmatter.title} category="blogpost">
     <!-- <Header /> -->
     <main>
         <slot />

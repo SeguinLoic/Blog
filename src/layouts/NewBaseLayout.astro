@@ -1,10 +1,10 @@
 ---
 import '../styles/newglobal.css';
 import '../styles/contrast.css';
-const { page } = Astro.props;
+const { page, category } = Astro.props;
 ---
 
-<html lang="fr" data-theme="light" id={page}>
+<html lang="fr" data-theme="light" id={page} class={category}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
