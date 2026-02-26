@@ -142,14 +142,20 @@ html#new-home .carousel .slide:hover a:after {
 
 /* BLOGPOST */
 html.blogpost section {
-    border: 1px solid blue;
     width: 60%;
     left: 40%;
     position: relative;
     padding: 80px;
 }
 html.blogpost .fenetre {
-    border: 1px solid red;
     width: 40%;
     position: fixed;
+    height: 100vh;
+}
+html.blogpost .fenetre .carousel {
+    height: 100%;
+}
+html.blogpost .fenetre .carousel .carousel-inner {
+    height: 100%;
+    aspect-ratio: auto;
 }
