@@ -11,8 +11,13 @@ import Header from '@components/Header.astro';
 import NewCarousel from '@components/NewCarousel.astro';
 import Footer from '@components/Footer.astro';
 import { getCollection } from "astro:content";
+import NewShortBlogPost from '@components/NewShortBlogPost.astro';
 
 const allBlogPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const blogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 ).slice(0,4);
 
@@ -27,10 +32,13 @@ const page = "new-home";
             <a href="/articles">Découvrir des aventures</a>
         </div>
         <div class="fenetre">
-            <NewCarousel articles={allBlogPosts} />
+            <NewCarousel articles={blogPosts} />
         </div>
         <div class="desc">
             <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain. <br/> Salut, je suis OneHuman. C’est à mon tour de vous inviter à vivre des aventures. N’hésitez pas, explorez mon blog, plongez vous dans le voyage.</p>
+            <div class="articles">
+                {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+            </div>
         </div>
     </main>
     <Footer />
@@ -62,7 +70,7 @@ const page = "new-home";
 }
 
 .fenetre {
-    width: 55%;
+    width: 45%;
     /* display: flex; */
     /* overflow: hidden; */
     /* justify-content: center; */
