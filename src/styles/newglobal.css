@@ -159,3 +159,21 @@ html.blogpost .fenetre .carousel .carousel-inner {
     height: 100%;
     aspect-ratio: auto;
 }
+
+
+html#new-home article {
+    flex-direction: row-reverse;
+}
+html#new-home .imgPost img {
+    width: 91px;
+    height: 70px;
+}
+html#new-home .infoPost > h2 {
+    font-size: 1.3em;
+}
+html#new-home .infoPost > div > p {
+    display: none;
+}
+html#new-home .allTags {
+    display: none;
+}
