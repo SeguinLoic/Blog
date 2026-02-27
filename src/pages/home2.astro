@@ -19,7 +19,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 const blogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).slice(0,4);
+).slice(0,3);
 
 const page = "new-home";
 ---
@@ -30,7 +30,7 @@ const page = "new-home";
         <div class="intro">
             <h1>Vivre des expériences</h1>
             <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
-            <!-- <a href="/articles">Découvrir des aventures</a> -->
+            <a href="/articles">Découvrir des aventures</a>
         </div>
         <div class="fenetre">
             <NewCarousel articles={blogPosts} />
