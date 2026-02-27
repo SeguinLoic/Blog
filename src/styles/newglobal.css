@@ -163,6 +163,7 @@ html.blogpost .fenetre .carousel .carousel-inner {
 
 html#new-home article {
     flex-direction: row-reverse;
+    padding: 16px 0;
 }
 html#new-home .imgPost img {
     width: 91px;
