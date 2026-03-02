@@ -162,6 +162,19 @@ html.blogpost .fenetre .carousel .carousel-inner {
     height: 100%;
     aspect-ratio: auto;
 }
+html.blogpost section p {
+    line-height: 1.7;
+}
+html.blogpost section .introduction h2 {
+    font-size: 2em;
+    width: 70%;
+}
+html.blogpost section .introduction {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 
 html#new-home article {
