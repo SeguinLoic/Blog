@@ -26,8 +26,6 @@ import image10 from "../../assets/mongolia-11.jpg"
 </div>
 <section>
 <div class="introduction">
-    <Header />
-    <a href="/articles">Retour</a>
     <time datetime={frontmatter.pubDate}>{new Date(frontmatter.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
     <h2>{frontmatter.title}</h2>
     <p>{frontmatter.description}</p>
@@ -37,6 +35,7 @@ import image10 from "../../assets/mongolia-11.jpg"
         ))}
     </ul> */}
 </div>
+<a href="/articles">Retour</a>
 <div class="text">
 La Mongolie, c'était incroyable. La Mongolie, c'est un gros gros coup de cœur. 
 
