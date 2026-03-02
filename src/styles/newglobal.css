@@ -128,9 +128,11 @@ html#new-home .carousel .slide p {
     opacity: 0;
 }
 html#new-home .carousel-controls {
-    bottom: 0;
-    justify-content: flex-end;
     top: inherit;
+    bottom: 0;
+    right: 0;
+    left: inherit;
+    justify-content: flex-end;
 }
 html#new-home .carousel-controls button {
     width: 50px;
