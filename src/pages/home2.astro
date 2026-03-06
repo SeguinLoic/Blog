@@ -30,6 +30,7 @@ const page = "new-home";
             <NewCarousel articles={blogPosts} />
         </div>
         <div class="desc">
+            <h2>Les dernières expéditions</h2>
             <div class="articles">
                 {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
             </div>
