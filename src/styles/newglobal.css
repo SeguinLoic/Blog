@@ -50,6 +50,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+html#new-home body {
+    padding: 0px !important;
+}
 h1, h2, h3, p, ul {
   margin: 0px;
 }
