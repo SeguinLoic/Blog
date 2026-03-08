@@ -19,24 +19,27 @@ const page = "new-home";
 ---
 
 <NewBaseLayout page={page}>
-    <Header />
+    <!-- <Header /> -->
     <main>
-        <div class="intro">
+        <!-- <div class="intro">
             <h1>Vivre des expériences</h1>
             <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
             <a href="/articles">Découvrir des aventures</a>
-        </div>
+        </div> -->
         <div class="fenetre">
+            <h1>Vivre des expériences</h1>
             <NewCarousel articles={blogPosts} />
         </div>
         <div class="desc">
-            <h2>Les dernières expéditions</h2>
+            <Header />
+            <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
+            <!-- <h2>Les dernières expéditions</h2> -->
             <div class="articles">
                 {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
             </div>
         </div>
     </main>
-    <Footer />
+    <!-- <Footer /> -->
 </NewBaseLayout>
 
 <style>
