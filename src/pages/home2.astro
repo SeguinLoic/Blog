@@ -32,8 +32,11 @@ const page = "new-home";
             <a href="/articles">Découvrir des aventures</a>
         </div> -->
         <div class="fenetre">
-            <h1>Vivre des expériences</h1>
-            <Carousel images={[image1, image2, image3]} />
+            <div class="textIntro">
+                <h1>Vivre des expériences</h1>
+                <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
+            </div>
+            <Carousel images={[image3]} />
             <!-- <NewCarousel articles={blogPosts} /> -->
         </div>
         <div class="desc">
@@ -114,7 +117,7 @@ const page = "new-home";
     width: 65%;
     display: flex;
     align-items: flex-start;
-    padding: 80px;
+    padding: 80px 120px;
     flex-direction: column;
     gap: 16px;
     left: 35%;
