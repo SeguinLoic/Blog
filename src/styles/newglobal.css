@@ -136,6 +136,7 @@ html#new-home .carousel-controls {
     right: 0;
     left: inherit;
     justify-content: flex-end;
+    display: none;
 }
 html#new-home .carousel-controls button {
     width: 50px;
@@ -144,6 +145,16 @@ html#new-home .carousel-controls button {
 html#new-home .carousel .slide:hover p,
 html#new-home .carousel .slide:hover a:after {
     opacity: 1;
+}
+html#new-home .carousel:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 40%);
+    pointer-events: none;
 }
 
 /* BLOGPOST */
@@ -180,7 +191,7 @@ html.blogpost section .introduction {
 }
 
 
-html#new-home article {
+/* html#new-home article {
     flex-direction: row-reverse;
     padding: 16px 0;
 }
@@ -200,4 +211,30 @@ html#new-home .infoPost > div > p {
 
 html#new-home article section {
     padding: 6px 20px 6px 0px;
+} */
+
+
+/* NEW HOME ARTICLES */ 
+html#new-home article img {
+    width: 220px;
+    min-width: 220px;
+}
+html#new-home article section .infoPost div {
+    padding-top: 32px;
+}
+html#new-home article section .infoPost h2 {
+    font-family: 'Inter';
+    font-size: 24px;
+}
+
+html#new-home article section .allTags {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+html#new-home article section .infoPost {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
