@@ -9,8 +9,8 @@ import { getCollection } from "astro:content";
 import NewShortBlogPost from '@components/NewShortBlogPost.astro';
 
 import image1 from "../assets/mongolia-2.jpg"
-import image2 from "../assets/mongolia-3.jpg"
-import image3 from "../assets/mongolia-4.jpg"
+import image2 from "../assets/mongolia-6.jpg"
+import image3 from "../assets/mongolia-7.jpg"
 
 const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
