@@ -152,7 +152,7 @@ html#new-home .carousel:after {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 40%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -214,6 +214,9 @@ html#new-home article section {
 
 
 /* NEW HOME ARTICLES */ 
+html#new-home article {
+    padding: 16px 0;
+}
 html#new-home article img {
     width: 220px;
     min-width: 220px;
@@ -236,4 +239,7 @@ html#new-home article section .infoPost {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+html#new-home article:after {
+    display: none;
 }
