@@ -18,7 +18,7 @@ const page = "articles";
     <main>
         <div class="fenetre">
             <Header />
-            <p class="sentence">Ce qui compte le plus, ce n'est pas d'aller voir de beaux endroits, mais c'est de voir la beauté dans chaque endroit</p>
+            <!-- <p class="sentence">Ce qui compte le plus, ce n'est pas d'aller voir de beaux endroits, mais c'est de voir la beauté dans chaque endroit</p> -->
             <Image src={image1} alt="alt" width="762px" height="911px"/>
         </div>
         <div class="desc">
@@ -51,6 +51,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.fenetre {
+    width: 30%;
+    position: fixed;
+    height: 100vH;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 32px solid #fff;
+}
 .fenetre p {
     position: relative;
     z-index: 1;
@@ -65,9 +75,9 @@ body {
 }
 .desc {
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     padding: 60px 90px;
-    left: 40%;
+    left: 30%;
     position: relative;
 }
 .intro {
