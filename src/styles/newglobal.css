@@ -77,6 +77,10 @@ html#articles a.logo {
     color: #000 !important;
     padding: 0px !important;
 }
+html#new-home a.logo {
+    color: #fff !important;
+    padding: 40px !important;
+}
 
 /* FOOTER */ 
 html#new-home footer,
@@ -87,10 +91,18 @@ html#articles footer {
 }
 
 /* CAROUSEL */ 
-html#new-home .carousel {
+/* html#new-home .carousel {
     position: relative;
     margin-top: 0px !important;
     height: 100%;
+} */
+html#new-home .carousel {
+    margin-top: 0 !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 html#new-home .carousel-inner {
     display: flex;

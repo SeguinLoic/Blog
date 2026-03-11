@@ -78,7 +78,7 @@ const page = "new-home";
 .intro p {
     line-height: 1.8em;
 }
-.textIntro {
+/* .textIntro {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -87,6 +87,18 @@ const page = "new-home";
     display: flex;
     flex-direction: column;
     gap: 24px;
+} */
+.textIntro {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 45%;
 }
 .fenetre .textIntro  h1 {
     position: relative !important;
@@ -110,12 +122,23 @@ const page = "new-home";
     width: 50%;
     height: calc(100vH - 183px);
 } */
-.fenetre {
+/* .fenetre {
     width: 30%;
     height: 100vH;
     position: fixed;
     top: 0;
     left: 0;
+} */
+.fenetre {
+    width: 100vW;
+    height: 100vH;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 40px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .fenetre h1 {
      position: absolute;
