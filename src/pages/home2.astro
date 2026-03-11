@@ -7,6 +7,7 @@ import Carousel from '@components/Carousel.astro';
 import Footer from '@components/Footer.astro';
 import { getCollection } from "astro:content";
 import NewShortBlogPost from '@components/NewShortBlogPost.astro';
+import { Image } from 'astro:assets';
 
 import image1 from "../assets/mongolia-2.jpg"
 import image2 from "../assets/mongolia-6.jpg"
@@ -37,7 +38,8 @@ const page = "new-home";
                 <h1>Vivre des expériences</h1>
                 <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
             </div>
-            <Carousel images={[image3]} />
+            <Image src={image3} alt="Mongolie" width="1856px" height="857px" />
+            <!-- <Carousel images={[image3]} /> -->
             <!-- <NewCarousel articles={blogPosts} /> -->
         </div>
         <!-- <div class="desc">
@@ -89,16 +91,13 @@ const page = "new-home";
     gap: 24px;
 } */
 .textIntro {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
     z-index: 1;
-    padding: 40px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     position: relative;
-    width: 45%;
+    width: 46%;
 }
 .fenetre .textIntro  h1 {
     position: relative !important;
@@ -135,7 +134,7 @@ const page = "new-home";
     position: fixed;
     top: 0;
     left: 0;
-    border: 40px solid #fff;
+    border: 32px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
