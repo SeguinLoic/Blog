@@ -27,7 +27,7 @@ const page = "new-home";
 <NewBaseLayout page={page}>
     <!-- <Header /> -->
     <main>
-        <div class="cursor"><div class="inner"></div></div>
+        <div class="cursor"><div class="inner">Explore</div></div>
         <!-- <div class="intro">
             <h1>Vivre des expériences</h1>
             <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
@@ -235,6 +235,8 @@ const page = "new-home";
     pointer-events: none;
     width: 5.9722222222vw;
     z-index: 20;
+    top: 50%;
+    left: 50%;
 }
 .inner {
     backdrop-filter: blur(20px);
@@ -242,7 +244,7 @@ const page = "new-home";
     border-radius: 100%;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    /* opacity: 0; */
     overflow: hidden;
     right: 0;
     top: 0;
