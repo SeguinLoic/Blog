@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateDisplay(event) {
         let x = event.pageX;
         let y = event.pageY;
-        cursor.style.top = y;
-        cursor.style.left = x;
+        cursor.style.top = y + 'px';
+        cursor.style.left = x + 'px';
         console.log(x);
         console.log(y);
     }
