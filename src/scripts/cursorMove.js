@@ -10,6 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
         cursor.style.left = x + 'px';
     }
 
-    fenetre.addEventListener("mousemove", updateDisplay);
+    fenetre.addEventListener("mousemove", function(e) {
+        setTimeout(function () {
+            updateDisplay();
+        }, 500);
+    });
+    fenetre.addEventListener("mouseleave", function (e) {
+        cursor.classList.add("out");
+    });
+    fenetre.addEventListener("mouseenter", function (e) {
+        cursor.classList.remove("out");
+    });
 
 });
