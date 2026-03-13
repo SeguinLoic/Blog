@@ -9,20 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let xPos = 0;
     let yPos = 0;
 
+    fenetre.addEventListener("mousemove", updateDisplay, false);
+
     function updateDisplay(event) {
         x = event.pageX;
         y = event.pageY;
         // cursor.style.top = y + 'px';
         // cursor.style.left = x + 'px';
     }
-
-    fenetre.addEventListener("mousemove", updateDisplay);
-    fenetre.addEventListener("mouseleave", function (e) {
-        cursor.classList.add("out");
-    });
-    fenetre.addEventListener("mouseenter", function (e) {
-        cursor.classList.remove("out");
-    });
 
     function animate() {
         dX = x - xPos;
@@ -38,5 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     animate();
+
+    fenetre.addEventListener("mouseleave", function (e) {
+        cursor.classList.add("out");
+    });
+
+    fenetre.addEventListener("mouseenter", function (e) {
+        cursor.classList.remove("out");
+    });
 
 });
