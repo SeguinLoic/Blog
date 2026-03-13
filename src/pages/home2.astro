@@ -237,6 +237,10 @@ const page = "new-home";
     z-index: 20;
     top: 50%;
     left: 50%;
+    opacity: 1;
+    transform: scale(1);
+    transition-property : opacity, transform;
+    transition-duration : 0.5s;
 }
 .inner {
     backdrop-filter: blur(20px);
@@ -253,6 +257,10 @@ const page = "new-home";
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.cursor.out {
+    opacity: 0;
+    transform: scale(0.5);
 }
 
 </style>
