@@ -9,6 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(y);
     }
 
-    cursor.addEventListener("mousemove", updateDisplay);
-    
+    document.addEventListener("mousemove", updateDisplay);
 });
