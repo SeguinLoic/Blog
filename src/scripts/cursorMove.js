@@ -12,4 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener("mousemove", updateDisplay);
+    
 });
