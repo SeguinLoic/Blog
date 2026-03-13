@@ -46,7 +46,6 @@
 
 
 let canvas = document.querySelector(".fenetre");
-let context = canvas.getContext("2d");
  
 let canvasPos = getPosition(canvas);
 let mouseX = 0;
@@ -74,10 +73,7 @@ function animate() {
   context.clearRect(0, 0, canvas.width, canvas.height);
  
   context.fillStyle = "#00CCFF";
-  context.fillRect(xPos - sqSize / 2,
-                   yPos - sqSize / 2,
-                   sqSize,
-                   sqSize);
+  context.fillRect(xPos - sqSize / 2, yPos - sqSize / 2, sqSize,sqSize);
  
   requestAnimationFrame(animate);
 }
