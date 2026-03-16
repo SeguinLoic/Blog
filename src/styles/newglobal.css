@@ -255,3 +255,8 @@ html#new-home article section .infoPost {
 html#new-home article:after {
     display: none;
 }
+
+/* ALL ARTICLES */ 
+html#articles article:after {
+    display: none !important;
+}
