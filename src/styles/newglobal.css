@@ -301,3 +301,8 @@ html#articles article:after {
         width: 100%;
     }
 }
+@media (max-width: 450px) {
+    html.blogpost .fenetre {
+        height: 250px;
+    }
+}
