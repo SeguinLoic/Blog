@@ -190,12 +190,13 @@ html.blogpost .carousel-controls {
     display: flex;
     justify-content: space-between;
     transform: translateX(-50%);
+    top: inherit;
 }
 html.blogpost .carousel-controls button {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 html.blogpost .carousel-controls button img {
-    filter: invert(0);
+    filter: invert(0) !important;
 }
 html.blogpost section p {
     line-height: 1.7;
