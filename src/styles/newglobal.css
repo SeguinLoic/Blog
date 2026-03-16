@@ -171,8 +171,8 @@ html.blogpost .fenetre {
     width: 55%;
     position: fixed;
     height: 100vh;
-    border: 32px solid #fff;
-    border-right: none;
+    /* border: 32px solid #fff;
+    border-right: none; */
 }
 html.blogpost .fenetre .carousel {
     height: 100%;
