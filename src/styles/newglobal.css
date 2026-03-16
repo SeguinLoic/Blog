@@ -293,3 +293,11 @@ html#articles article:after {
         height: 350px;
     }
 }
+@media (max-width: 600px) {
+    html.blogpost section {
+        padding: 24px;
+    }
+    html.blogpost section .introduction h2 {
+        width: 100%;
+    }
+}
