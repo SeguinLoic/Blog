@@ -69,15 +69,10 @@ html#articles header p {
 html#new-home header,
 html#articles header {
     padding: 0;
-    /* padding-bottom: 24px; */
 }
 html#new-home a.logo,
 html#articles a.logo {
     background-color: transparent;
-    color: #000 !important;
-    padding: 0px !important;
-}
-html#new-home a.logo {
     color: #fff !important;
     padding: 40px !important;
 }
