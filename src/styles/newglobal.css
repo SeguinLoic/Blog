@@ -297,6 +297,53 @@ html#articles article:after {
 /* PAGE ARTICLE */
 @media screen and (max-width: 1600px) {
     html.blogpost section {
+        padding: 60px;
+    }
+}
+@media (min-width:1200px) and (max-width:1600px) {
+    html.blogpost .fenetre,
+    html.blogpost section {
+        width: 50%;
+    }   
+}
+@media (max-width:1024px) {
+    html.blogpost main {
+        flex-direction: column;
+    }
+    html.blogpost .fenetre {
+        width: 100%;
+        position: relative;
+        height: 500px;
+        border: none;
+    } 
+    html.blogpost section {
+        width: 100%;
+        left: 0;
+        position: relative;
+        padding: 40px;
+    }
+}
+@media (max-width: 768px) {
+    html.blogpost .fenetre {
+        height: 350px;
+    }
+}
+@media (max-width: 600px) {
+    html.blogpost section {
+        padding: 24px;
+    }
+    html.blogpost section .introduction h2 {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    html.blogpost .fenetre {
+        height: 250px;
+    }
+}
+
+/* @media screen and (max-width: 1600px) {
+    html.blogpost section {
         padding: 80px 60px;
     }
 }
@@ -343,4 +390,4 @@ html#articles article:after {
     html.blogpost .fenetre {
         height: 250px;
     }
-}
+} */
