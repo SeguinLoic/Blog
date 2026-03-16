@@ -288,3 +288,8 @@ html#articles article:after {
         padding: 40px;
     }
 }
+@media (max-width: 768px) {
+    html.blogpost .fenetre {
+        height: 350px;
+    }
+}
