@@ -220,14 +220,25 @@ html.blogpost section p {
     line-height: 1.7;
 }
 html.blogpost section .introduction h2 {
-    font-size: 2em;
+    font-size: 2.7em;
     width: 70%;
+    line-height: 1.1em;
 }
 html.blogpost section .introduction {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
+}
+html.blogpost section .introduction p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200;
+    line-height: 1.4em;
+    width: 80%;
+}
+html.blogpost section ul {
+    margin-top: 8px;
 }
 html.blogpost section ul li:not(last-child) {
     margin-bottom: 8px;
