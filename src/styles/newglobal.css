@@ -266,6 +266,10 @@ html#articles article:after {
     html.blogpost .fenetre {
         width: 50%;
     }   
+    html.blogpost section {
+        width: 50%;
+        left: 50%;
+    }
 }
 @media (max-width:1024px) {
     html.blogpost main {
