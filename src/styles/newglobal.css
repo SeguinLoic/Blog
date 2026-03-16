@@ -88,11 +88,6 @@ html#articles footer {
 }
 
 /* CAROUSEL */ 
-/* html#new-home .carousel {
-    position: relative;
-    margin-top: 0px !important;
-    height: 100%;
-} */
 html#new-home .carousel {
     margin-top: 0 !important;
     height: 100%;
@@ -258,4 +253,34 @@ html#new-home article:after {
 /* ALL ARTICLES */ 
 html#articles article:after {
     display: none !important;
+}
+
+
+/* PAGE ARTICLE */
+@media screen and (max-width: 1600px) {
+    html.blogpost section {
+        padding: 80px 60px;
+    }
+}
+@media (min-width:1200px) and (max-width:1600px) {
+    html.blogpost .fenetre {
+        width: 50%;
+    }   
+}
+@media (max-width:1024px) {
+    html.blogpost main {
+        flex-direction: column;
+    }
+    html.blogpost .fenetre {
+        width: 100%;
+        position: relative;
+        height: 500px;
+        border: none;
+    } 
+    html.blogpost section {
+        width: 100%;
+        left: 0;
+        position: relative;
+        padding: 40px;
+    }
 }
