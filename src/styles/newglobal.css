@@ -181,6 +181,22 @@ html.blogpost .fenetre .carousel .carousel-inner {
     height: 100%;
     aspect-ratio: auto;
 }
+html.blogpost .carousel-controls {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    right: inherit;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-50%);
+}
+html.blogpost .carousel-controls button {
+    background-color: #fff;
+}
+html.blogpost .carousel-controls button img {
+    filter: invert(0);
+}
 html.blogpost section p {
     line-height: 1.7;
 }
