@@ -301,7 +301,7 @@ html.blogpost section .introduction time {
 html.blogpost section .introduction h2 {
     font-size: clamp(1.5rem, 1.2375rem + 1.3125vw, 2.8125rem);
     line-height: 1.2em;
-    width: 70%;
+    width: 80%;
 }
 html.blogpost section .introduction p {
     font-family: Raleway;
