@@ -410,6 +410,9 @@ html.blogpost .fenetre header {
     html.blogpost header a.logo {
         color: #000 !important;
     }
+    html.blogpost .fenetre .carousel .carousel-inner:after {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     html.blogpost .fenetre .carousel {
