@@ -375,6 +375,13 @@ html.blogpost .fenetre header {
         margin-bottom: 40px;
         padding-bottom: 24px;
     }
+    html.blogpost header {
+        align-items: center;
+        padding: 24px !important;
+    }
+    html.blogpost header a.logo {
+        color: #000 !important;
+    }
 }
 @media (max-width:1024px) {
     html.blogpost main {
