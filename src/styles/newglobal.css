@@ -289,6 +289,9 @@ html.blogpost section ul {
 html.blogpost section ul li:not(last-child) {
     margin-bottom: 8px;
 }
+html.blogpost .fenetre header {
+    display: none;
+}
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre,
     html.blogpost section {
@@ -325,6 +328,9 @@ html.blogpost section ul li:not(last-child) {
         width: 100%;
         left: 0;
         position: relative;
+    }
+    html.blogpost .fenetre header {
+        display: flex;
     }
 }
 @media (max-width: 768px) {
