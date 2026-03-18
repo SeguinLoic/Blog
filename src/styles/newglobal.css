@@ -321,8 +321,11 @@ html.blogpost .fenetre header {
     html.blogpost .fenetre {
         width: 100%;
         position: relative;
-        height: 500px;
+        height: auto;
         border: none;
+    } 
+    html.blogpost .fenetre .carousel {
+        height: 500px;
     } 
     html.blogpost section {
         width: 100%;
