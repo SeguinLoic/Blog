@@ -259,6 +259,9 @@ html.blogpost header a.logo {
     background-color: transparent;
     padding: 0px;
 }
+html.blogpost header a.logo h1 {
+    font-size: 24px;
+}
 html.blogpost section {
     width: 45%;
     left: 55%;
@@ -375,13 +378,6 @@ html.blogpost .fenetre header {
         margin-bottom: 40px;
         padding-bottom: 24px;
     }
-    html.blogpost header {
-        align-items: center;
-        padding: 24px !important;
-    }
-    html.blogpost header a.logo {
-        color: #000 !important;
-    }
 }
 @media (max-width:1024px) {
     html.blogpost main {
@@ -406,11 +402,21 @@ html.blogpost .fenetre header {
         position: relative;
         padding: 0px;
     }
+    html.blogpost header {
+        align-items: center;
+        padding: 24px !important;
+    }
+    html.blogpost header a.logo {
+        color: #000 !important;
+    }
 }
 @media (max-width: 768px) {
     html.blogpost .fenetre .carousel {
         height: 350px;
     } 
+    html.blogpost header a.logo h1 {
+        font-size: 20px;
+    }
 }
 @media (max-width: 600px) {
     html.blogpost section {
