@@ -291,7 +291,7 @@ html.blogpost section .introduction {
     flex-direction: column;
     gap: 16px;
     border-bottom: 1px solid #0000001c;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 html.blogpost section .introduction time {
     color: #979797 !important;
@@ -357,7 +357,7 @@ html.blogpost .fenetre header {
     }
     html.blogpost section .introduction {
         margin-bottom: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 24px;
     }
 }
 @media (max-width:1024px) {
