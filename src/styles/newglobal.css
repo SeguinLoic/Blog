@@ -277,12 +277,11 @@ html.blogpost .fenetre .carousel .carousel-inner {
 html.blogpost .carousel-controls {
     position: absolute;
     z-index: 5;
-    left: 50%;
-    right: inherit;
-    bottom: 32px;
+    left: inherit;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
-    transform: translateX(-50%);
     top: inherit;
 }
 html.blogpost section .introduction {
