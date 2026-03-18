@@ -257,7 +257,7 @@ html#articles article:after {
 /* -----------------------  BLOGPOST ---------------------- */
 html.blogpost section {
     width: 45%;
-    left: 0;
+    left: 55%;
     position: relative;
     padding: 120px 80px;
 }
@@ -265,7 +265,7 @@ html.blogpost .fenetre {
     width: 55%;
     position: fixed;
     height: 100vh;
-    right: 0;
+    left: 0;
 }
 html.blogpost .fenetre .carousel {
     height: 100%;
@@ -333,6 +333,9 @@ html.blogpost .fenetre header {
     html.blogpost section {
         width: 50%;
     }   
+    html.blogpost section {
+        left: 50%;
+    }
     html.blogpost section {
         padding: 60px;
     }
