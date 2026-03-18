@@ -288,7 +288,8 @@ html.blogpost .fenetre .carousel .carousel-inner:after {
     top: 0;
     z-index: 0;
     pointer-events: none;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) -10%, transparent 25%);
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) -10%, transparent 25%); */
+    background: linear-gradient(165deg, rgba(0, 0, 0, .6) -30%, rgba(0, 0, 0, 0) 25%);
 }
 html.blogpost .carousel-controls {
     position: absolute;
