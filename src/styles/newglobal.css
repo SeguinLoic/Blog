@@ -86,10 +86,6 @@ main {
 }
 
 /* ----------------------- HEADER ----------------------- */ 
-html#new-home header p,
-html#articles header p { 
-    display: none;
-}
 html#new-home header,
 html#articles header {
     padding: 0;
