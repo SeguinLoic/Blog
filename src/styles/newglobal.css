@@ -294,7 +294,7 @@ html.blogpost section .introduction {
     padding-bottom: 40px;
 }
 html.blogpost section .introduction time {
-    color: #979797 !important;
+    /* color: #979797 !important; */
     text-transform: uppercase;
     font-size: 0.8em;
 }
