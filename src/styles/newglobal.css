@@ -326,7 +326,10 @@ html.blogpost section ul li:not(last-child) {
     margin-bottom: 8px;
 }
 html.blogpost .fenetre header {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
 }
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre,
@@ -377,6 +380,8 @@ html.blogpost .fenetre header {
     }
     html.blogpost .fenetre header {
         display: flex;
+        position: relative;
+        padding: 0px;
     }
 }
 @media (max-width: 768px) {
