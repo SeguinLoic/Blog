@@ -85,7 +85,7 @@ main {
     flex-grow: 1;
 }
 
-/* HEADER */ 
+/* ----------------------- HEADER ----------------------- */ 
 html#new-home header p,
 html#articles header p { 
     display: none;
@@ -103,7 +103,7 @@ html#new-home a.logo{
     padding: 40px !important;
 }
 
-/* FOOTER */ 
+/* ----------------------- FOOTER ----------------------- */ 
 html#new-home footer,
 html#articles footer {
     padding: 0px;
@@ -111,7 +111,38 @@ html#articles footer {
     padding-top: 24px;
 }
 
-/* CAROUSEL */ 
+
+/* ----------------------- NEW HOME ---------------------- */
+html#new-home article {
+    padding: 16px 0;
+}
+html#new-home article img {
+    width: 220px;
+    min-width: 220px;
+}
+html#new-home article section .infoPost div {
+    padding-top: 32px;
+}
+html#new-home article section .infoPost h2 {
+    font-family: 'Inter';
+    font-size: 24px;
+}
+
+html#new-home article section .allTags {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+html#new-home article section .infoPost {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+html#new-home article:after {
+    display: none;
+}
+/* CAROUSEL */
 html#new-home .carousel {
     margin-top: 0 !important;
     height: 100%;
@@ -184,13 +215,14 @@ html#new-home .carousel:after {
     pointer-events: none;
 }
 
-/* BLOGPOST */
-/* html.blogpost section {
-    width: 45%;
-    left: 55%;
-    position: relative;
-    padding: 80px;
-} */
+
+/* --------------------- ALL ARTICLES --------------------- */ 
+html#articles article:after {
+    display: none !important;
+}
+
+
+/* -----------------------  BLOGPOST ---------------------- */
 html.blogpost section {
     width: 45%;
     left: 0;
@@ -201,8 +233,6 @@ html.blogpost .fenetre {
     width: 55%;
     position: fixed;
     height: 100vh;
-    /* border: 32px solid #fff;
-    border-right: none; */
     right: 0;
 }
 html.blogpost .fenetre .carousel {
@@ -223,46 +253,31 @@ html.blogpost .carousel-controls {
     transform: translateX(-50%);
     top: inherit;
 }
-/* html.blogpost .carousel-controls {
-    position: absolute;
-    z-index: 5;
-    left: 50%;
-    right: inherit;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    transform: translateX(-50%);
-    top: inherit;
-} */
-/* html.blogpost .carousel-controls button {
-    background-color: #fff !important;
-} */
-/* html.blogpost .carousel-controls button img {
-    filter: invert(0) !important;
-} */
-html.blogpost section p,
-html.blogpost section li {
-  font-family: "LibreBaskerville";
-  font-weight: 400;
-  line-height: 1.7;
-}
-html.blogpost section .introduction h2 {
-    font-size: 2.7em;
-    width: 70%;
-    line-height: 1.1em;
-}
 html.blogpost section .introduction {
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+html.blogpost section .introduction h2 {
+    font-size: clamp(1.5rem, 1.2375rem + 1.3125vw, 2.8125rem);
+    line-height: 1.2em;
+    width: 70%;
+}
 html.blogpost section .introduction p {
+    font-family: 'Inter';
     font-size: 18px;
-    text-transform: uppercase;
     font-weight: 200;
+    text-transform: uppercase;
     line-height: 1.4em;
     width: 80%;
+}
+html.blogpost section p,
+html.blogpost section li {
+  font-family: "LibreBaskerville";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
 }
 html.blogpost section ul {
     margin-top: 8px;
@@ -270,69 +285,6 @@ html.blogpost section ul {
 html.blogpost section ul li:not(last-child) {
     margin-bottom: 8px;
 }
-
-
-/* html#new-home article {
-    flex-direction: row-reverse;
-    padding: 16px 0;
-}
-html#new-home .imgPost img {
-    width: 91px;
-    height: 70px;
-}
-html#new-home .infoPost>h2 {
-    font-size: 1.1em;
-    font-family: 'Inter';
-}
-html#new-home .allTags,
-html#new-home article:after,
-html#new-home .infoPost > div > p {
-    display: none;
-}
-
-html#new-home article section {
-    padding: 6px 20px 6px 0px;
-} */
-
-
-/* NEW HOME ARTICLES */ 
-html#new-home article {
-    padding: 16px 0;
-}
-html#new-home article img {
-    width: 220px;
-    min-width: 220px;
-}
-html#new-home article section .infoPost div {
-    padding-top: 32px;
-}
-html#new-home article section .infoPost h2 {
-    font-family: 'Inter';
-    font-size: 24px;
-}
-
-html#new-home article section .allTags {
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-}
-html#new-home article section .infoPost {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-html#new-home article:after {
-    display: none;
-}
-
-/* ALL ARTICLES */ 
-html#articles article:after {
-    display: none !important;
-}
-
-
-/* PAGE ARTICLE */
 @media screen and (max-width: 1600px) {
     html.blogpost section {
         padding: 60px;
@@ -344,54 +296,9 @@ html#articles article:after {
         width: 50%;
     }   
 }
-@media (max-width:1024px) {
-    html.blogpost main {
-        flex-direction: column;
-    }
-    html.blogpost .fenetre {
-        width: 100%;
-        position: relative;
-        height: 500px;
-        border: none;
-    } 
-    html.blogpost section {
-        width: 100%;
-        left: 0;
-        position: relative;
-        padding: 40px;
-    }
-}
-@media (max-width: 768px) {
-    html.blogpost .fenetre {
-        height: 350px;
-    }
-}
-@media (max-width: 600px) {
-    html.blogpost section {
-        padding: 24px;
-    }
+@media screen and (max-width: 1240px) {
     html.blogpost section .introduction h2 {
         width: 100%;
-    }
-}
-@media (max-width: 450px) {
-    html.blogpost .fenetre {
-        height: 250px;
-    }
-}
-
-/* @media screen and (max-width: 1600px) {
-    html.blogpost section {
-        padding: 80px 60px;
-    }
-}
-@media (min-width:1200px) and (max-width:1600px) {
-    html.blogpost .fenetre {
-        width: 50%;
-    }   
-    html.blogpost section {
-        width: 50%;
-        left: 50%;
     }
 }
 @media (max-width:1024px) {
@@ -410,6 +317,10 @@ html#articles article:after {
         position: relative;
         padding: 40px;
     }
+    html.blogpost section .introduction p {
+        text-transform: inherit;
+        width: 100%;
+    }
 }
 @media (max-width: 768px) {
     html.blogpost .fenetre {
@@ -420,12 +331,9 @@ html#articles article:after {
     html.blogpost section {
         padding: 24px;
     }
-    html.blogpost section .introduction h2 {
-        width: 100%;
-    }
 }
 @media (max-width: 450px) {
     html.blogpost .fenetre {
         height: 250px;
     }
-} */
+}
