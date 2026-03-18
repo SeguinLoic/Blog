@@ -349,6 +349,10 @@ html.blogpost .fenetre header {
         text-transform: inherit;
         width: 100%;
     }
+    html.blogpost section .introduction {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
 }
 @media (max-width:1024px) {
     html.blogpost main {
@@ -380,6 +384,10 @@ html.blogpost .fenetre header {
 @media (max-width: 600px) {
     html.blogpost section {
         padding: 24px;
+    }
+    html.blogpost section .introduction {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
     }
 }
 @media (max-width: 450px) {
