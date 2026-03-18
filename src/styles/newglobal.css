@@ -35,6 +35,30 @@
   font-style: normal;
   font-weight: 600;
 }
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   font-family: 'Inter';
@@ -218,7 +242,7 @@ html.blogpost .carousel-controls {
 } */
 html.blogpost section p,
 html.blogpost section li {
-  font-family: "Roboto Slab";
+  font-family: "LibreBaskerville";
   font-weight: 400;
   line-height: 1.7;
 }
