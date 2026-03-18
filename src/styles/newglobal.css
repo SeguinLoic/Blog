@@ -337,6 +337,7 @@ html.blogpost section li {
     font-size: 16px;
     font-weight: 200;
     line-height: 1.9;
+    text-wrap: pretty;
 }
 html.blogpost section ul {
     margin-top: 8px;
@@ -359,12 +360,12 @@ html.blogpost .fenetre header {
         left: 50%;
     }
     html.blogpost section {
-        padding: 60px;
+        padding: 80px 60px;
     }
 }
 @media screen and (max-width: 1240px) {
      html.blogpost section {
-        padding: 40px;
+        padding: 60px 40px;
     }
     html.blogpost section .introduction h2 {
         width: 100%;
@@ -420,7 +421,7 @@ html.blogpost .fenetre header {
 }
 @media (max-width: 600px) {
     html.blogpost section {
-        padding: 24px;
+        padding: 40px 24px;
     }
     html.blogpost section .introduction {
         margin-bottom: 24px;
