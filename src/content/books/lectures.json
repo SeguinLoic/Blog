@@ -152,5 +152,27 @@
       "alt": "Image de couverture du livre 1984"
     },
     "note" : "Les gouvernements. La manipulation. On ne sait jamais vraiment le vrai du vrai."
+  },
+  { 
+    "id": 15,
+    "name": "La Faucheuse - Le glas",
+    "author": "Neal Shusterman",
+    "year": 2026,
+    "image": {
+      "source": "./covers/faucheuse-t3.jpg",
+      "alt": "Image de couverture du livre la faucheuse le glas"
+    },
+   "note" : "La fin d'une série très chouette."
+  },
+  { 
+    "id": 16,
+    "name": "Mémoires vives",
+    "author": "Edward Snowden",
+    "year": 2026,
+    "image": {
+      "source": "./covers/mémoires-vives.jpg",
+      "alt": "Image de couverture du livre Mémoires vives"
+    },
+   "note" : "Vraiment cool. "
   }
 ]
