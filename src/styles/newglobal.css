@@ -215,9 +215,14 @@ html#articles img  {
 }
 
 /* ----------------------- HEADER ----------------------- */ 
-html#new-home header,
-html#articles header {
+html#new-home header {
     padding: 0;
+}
+html#articles header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 40px;
 }
 html#new-home a.logo,
 html#articles a.logo {
