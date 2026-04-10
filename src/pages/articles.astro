@@ -17,18 +17,16 @@ const page = "articles";
     <main>
         <div class="fenetre">
             <Header />
-            <!-- <p class="sentence">Ce qui compte le plus, ce n'est pas d'aller voir de beaux endroits, mais c'est de voir la beauté dans chaque endroit</p> -->
             <Image src={image7} alt="Mongolie" width="1856px" height="857px"/>
-        </div>
-        <div class="desc">
-            <!-- <Header /> -->
-            <div class="navArticles">
-                <h1>Toutes les aventures</h1>
-                <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
-            </div>
-            <div class="articles">
-                {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
-                <!-- {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)} -->
+            <div class="desc">
+                <div class="navArticles">
+                    <h1>Toutes les aventures</h1>
+                    <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
+                </div>
+                <div class="articles">
+                    {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+                    <!-- {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)} -->
+                </div>
             </div>
         </div>
     </main>
