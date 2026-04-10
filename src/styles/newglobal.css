@@ -160,21 +160,19 @@ html#articles img  {
 
 @keyframes move-out {
   from {
-    transform: translateX(0%);
+    left: 30%;
   }
-
   to {
-    transform: translateX(-100%);
+    left: 100%;
   }
 }
 
 @keyframes move-in {
   from {
-    transform: translateX(100%);
+    left: 100%;
   }
-
   to {
-    transform: translateX(0%);
+    left: 30%;
   }
 }
 
