@@ -144,37 +144,47 @@ main {
     display: flex;
     flex-grow: 1;
 }
+.fenetre {
+    background-image: url(/grammar.png);
+}
 
 /* ----------------------- VIEW TRANSITION ----------------------- */ 
 @view-transition {
     navigation: auto;
 }
+html#new-home .textIntro {
+    view-transition-name: textIntro;
+}
 html#articles .desc  {
     view-transition-name: side;
 }
 @keyframes move-out {
-  from {
-    right: 0%;
-  }
-
-  to {
-    right: -100%;
-  }
+  from {right: 0%;}
+  to {right: -100%;}
 }
 @keyframes move-in {
-  from {
-    right: -100%;
-  }
-
-  to {
-    right: 0%;
-  }
+  from {right: -100%;}
+  to {right: 0%;}
+}
+@keyframes fade-out {
+  from {opacity: 1; transform: translateY(0%)}
+  to {opacity: 0; transform: translateY(5%)}
+}
+@keyframes fade-in {
+  from {opacity: 0; transform: translateY(5%)}
+  to {opacity: 1; transform: translateY(0%)}
 }
 ::view-transition-old(side) {
   animation: 0.4s ease-in both move-out;
 }
 ::view-transition-new(side) {
   animation: 0.4s ease-in both move-in;
+}
+::view-transition-old(textIntro) {
+  animation: 0.4s ease-in both fade-out;
+}
+::view-transition-new(textIntro) {
+  animation: 0.4s ease-in both fade-in;
 }
 
 /* ----------------------- HEADER ----------------------- */ 
