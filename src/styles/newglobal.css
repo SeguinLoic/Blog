@@ -171,10 +171,10 @@ html#articles .desc  {
   }
 }
 ::view-transition-old(side) {
-  animation: 0.4s ease-in both move-in;
+  animation: 0.4s ease-in both move-out;
 }
 ::view-transition-new(side) {
-  animation: 0.4s ease-in both move-out;
+  animation: 0.4s ease-in both move-in;
 }
 
 /* ----------------------- HEADER ----------------------- */ 
