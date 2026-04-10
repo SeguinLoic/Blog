@@ -160,21 +160,21 @@ html#articles img  {
 
 @keyframes move-out {
   from {
-    left: 30%;
+    right: 0%;
   }
-  
+
   to {
-    left: 100%;
+    right: -100%;
   }
 }
 
 @keyframes move-in {
   from {
-    left: 100%;
+    right: -100%;
   }
 
   to {
-    left: 30%;
+    right: 0%;
   }
 }
 
@@ -219,10 +219,11 @@ html#new-home header {
     padding: 0;
 }
 html#articles header {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     padding: 40px;
+    z-index: 2;
 }
 html#new-home a.logo,
 html#articles a.logo {
