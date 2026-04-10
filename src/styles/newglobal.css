@@ -145,6 +145,43 @@ main {
     flex-grow: 1;
 }
 
+/* ----------------------- VIEW TRANSITION ----------------------- */ 
+@view-transition {
+    navigation: auto;
+}
+
+html#articles .desc  {
+    view-transition-name: side;
+}
+
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+::view-transition-old(side) {
+  animation: 0.4s ease-in both move-out;
+}
+
+::view-transition-new(side) {
+  animation: 0.4s ease-in both move-in;
+}
+
 /* ----------------------- HEADER ----------------------- */ 
 html#new-home header,
 html#articles header {
@@ -198,6 +235,7 @@ html#new-home article section .infoPost {
 html#new-home article:after {
     display: none;
 }
+
 /* CAROUSEL */
 html#new-home .carousel {
     margin-top: 0 !important;
