@@ -154,6 +154,10 @@ html#articles .desc  {
     view-transition-name: side;
 }
 
+html#articles .fenetre  {
+    view-transition-name: fenetre;
+}
+
 @keyframes move-out {
   from {
     transform: translateX(0%);
@@ -174,12 +178,40 @@ html#articles .desc  {
   }
 }
 
+@keyframes etendre {
+  from {
+    width:30%;
+  }
+
+  to {
+    width:100%;
+  }
+}
+
+@keyframes ecraser {
+  from {
+    width:100%;
+  }
+
+  to {
+    width:30%;
+  }
+}
+
 ::view-transition-old(side) {
   animation: 0.4s ease-in both move-out;
 }
 
 ::view-transition-new(side) {
   animation: 0.4s ease-in both move-in;
+}
+
+::view-transition-old(fenetre) {
+  animation: 0.4s ease-in both etendre;
+}
+
+::view-transition-new(fenetre) {
+  animation: 0.4s ease-in both ecraser;
 }
 
 /* ----------------------- HEADER ----------------------- */ 
