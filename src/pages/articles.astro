@@ -42,17 +42,24 @@ body {
 }
 .fenetre {
     width: 100%;
-    position: fixed;
+    position: relative;
     height: 100vH;
-    /* padding: 40px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 32px solid #fff;
-    border-right: none; */
+}
+.fenetre:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, .5), transparent 70%);
+    pointer-events: none;
 }
 .fenetre img {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -71,16 +78,6 @@ body {
 .fenetre header a h1 {
     color: #fff !important;
 }
-.fenetre:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, .5), transparent 70%);
-    pointer-events: none;
-}
 .desc {
     flex-direction: column;
     width: 70%;
@@ -95,14 +92,6 @@ body {
     padding: 0px;
     z-index: 1;
     width: 100%;
-}
-.fenetre img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .navArticles {
     padding-bottom: 24px;
