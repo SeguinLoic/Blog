@@ -144,9 +144,6 @@ main {
     display: flex;
     flex-grow: 1;
 }
-.fenetre {
-    background-image: url(/grammar.png);
-}
 
 /* ----------------------- VIEW TRANSITION ----------------------- */ 
 @view-transition {
