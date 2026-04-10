@@ -162,6 +162,7 @@ html#articles img  {
   from {
     left: 30%;
   }
+  
   to {
     left: 100%;
   }
@@ -171,6 +172,7 @@ html#articles img  {
   from {
     left: 100%;
   }
+
   to {
     left: 30%;
   }
