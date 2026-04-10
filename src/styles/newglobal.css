@@ -203,6 +203,15 @@ html#articles a.logo {
 html#new-home a.logo {
     padding: 40px !important;
 }
+@media screen and (max-width: 1024px) {
+    html#articles header {
+        position: absolute;
+    }
+    html#articles .fenetre img {
+        position: relative;
+        height: 300px;
+    }
+}
 
 /* ----------------------- FOOTER ----------------------- */ 
 html#new-home footer,
