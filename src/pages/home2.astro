@@ -2,15 +2,10 @@
 import '../styles/newglobal.css';
 import NewBaseLayout from '../layouts/NewBaseLayout.astro';
 import Header from '@components/Header.astro';
-import NewCarousel from '@components/NewCarousel.astro';
-import Carousel from '@components/Carousel.astro';
 import Footer from '@components/Footer.astro';
 import { getCollection } from "astro:content";
-import NewShortBlogPost from '@components/NewShortBlogPost.astro';
 import { Image } from 'astro:assets';
 
-import image1 from "../assets/mongolia-2.jpg"
-import image2 from "../assets/mongolia-6.jpg"
 import image3 from "../assets/mongolia-7.jpg"
 
 const allBlogPosts = (await getCollection('blog')).sort(
@@ -25,15 +20,7 @@ const page = "new-home";
 ---
 
 <NewBaseLayout page={page}>
-    <!-- <Header /> -->
     <main>
-        <!-- <div class="cursor"><div class="inner">Cliquez pour explorer</div></div> -->
-        <!-- <div class="cursor"><div class="inner">Partez à l'aventure</div></div> -->
-        <!-- <div class="intro">
-            <h1>Vivre des expériences</h1>
-            <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
-            <a href="/articles">Découvrir des aventures</a>
-        </div> -->
         <div class="fenetre">
             <Header />
             <div class="textIntro">
@@ -42,57 +29,12 @@ const page = "new-home";
                 <a href="/articles">Partir à l'aventure</a>
             </div>
             <Image src={image3} alt="Mongolie" width="1856px" height="857px" />
-            <!-- <Carousel images={[image3]} /> -->
-            <!-- <NewCarousel articles={blogPosts} /> -->
         </div>
-        <!-- <div class="desc">
-            <Header />
-            <div class="menu">
-                <ul>
-                    <li>#Rando</li>
-                    <li>#Voyage</li>
-                    <li>#1AnEnVadrouille</li>
-                </ul>
-            </div>
-            <p>À quelques jours du grand départ pour mon voyage d’une année en Asie, quelqu’un m’a conseillé de “Vivre des expériences”. Cette phrase m’est restée en tête jusqu’à aujourd’hui. Je trouve que c’est le meilleur conseil que l’on puisse donner à un être humain.</p>
-            <h2>Les dernières expéditions</h2>
-            <div class="articles">
-                {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
-            </div>
-        </div> -->
     </main>
     <!-- <Footer /> -->
 </NewBaseLayout>
 
 <style>
-.intro {
-    width: 25%;
-    padding-top: 100px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-right: 40px;
-}
-.intro h1 {
-    font-size: 65px;
-    line-height: 60px;
-    padding-bottom: 24px;
-}
-.intro p {
-    line-height: 1.8em;
-}
-/* .textIntro {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-} */
 .textIntro {
     z-index: 1;
     padding: 60px;
@@ -103,59 +45,21 @@ const page = "new-home";
     width: 46%;
 }
 .fenetre .textIntro  h1 {
-    position: relative !important;
-    bottom: 0px;
-    left: 0px;
+    color: #fff;
+    font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem);
+    /* line-height: 75px; */
+    line-height: clamp(3.125rem, 2.8125rem + 1.5625vw, 4.6875rem);
 }
 .textIntro p {
     color: #FFF !important;
     line-height: 1.7;
 }
-/* .intro a {
-    margin-top: 24px !important;
-    border: 1px solid #4d4d4d;
-    padding: 12px 24px;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    text-decoration: none;
-} */
-/* .fenetre {
-    width: 50%;
-    height: calc(100vH - 183px);
-} */
-/* .fenetre {
-    width: 30%;
-    height: 100vH;
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
-/* .fenetre {
-    width: calc(100vW - 64px);
-    height: calc(100vH - 64px);
-    position: fixed;
-    top: 32px;
-    left: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 .fenetre {
     width: 100vW;
     height: 100vH;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.fenetre h1 {
-     position: absolute;
-    z-index: 1;
-    bottom: 40px;
-    left: 40px;
-    color: #fff;
-    font-size: 70px;
-    line-height: 75px;
 }
 .fenetre img {
     position: absolute;
@@ -175,15 +79,6 @@ const page = "new-home";
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), transparent 70%);
     pointer-events: none;
 }
-/* .desc {
-    width: 25%;
-    display: flex;
-    align-items: flex-start;
-    padding-left: 40px;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 16px;
-} */
 .desc {
     width: 70%;
     display: flex;
@@ -198,8 +93,6 @@ const page = "new-home";
     line-height: 2em;
     display: none;
 }
-
-
 .menu {
     display: flex;
     width: 100%;
@@ -222,43 +115,10 @@ const page = "new-home";
     opacity: 1;
 }
 
-
-.cursor, .inner {
-    position: absolute;
+@media screen and (max-width: 768px) {
+    .textIntro {
+        z-index: 1;
+        width: 100%;
+    }
 }
-.cursor {
-    align-items: center;
-    display: flex;
-    height: 5.9722222222vw;
-    justify-content: center;
-    pointer-events: none;
-    width: 5.9722222222vw;
-    z-index: 20;
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-    transform: scale(1);
-    transition-property : opacity, transform;
-    transition-duration : 0.3s;
-}
-.inner {
-    backdrop-filter: blur(20px);
-    background: rgba(0, 0, 0, .15);
-    border-radius: 100%;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    right: 0;
-    top: 0;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.cursor.out {
-    opacity: 0;
-    transform: scale(0.8);
-}
-
 </style>
