@@ -129,13 +129,9 @@ html {
 }
 body {
     margin: 0 auto;
-    padding: 40px 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-html#new-home body {
-    padding: 0px !important;
 }
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0px;
@@ -149,10 +145,10 @@ main {
 @view-transition {
     navigation: auto;
 }
-html#new-home .textIntro {
+html#new-home .content {
     view-transition-name: textIntro;
 }
-html#articles .desc  {
+html#articles .content  {
     view-transition-name: side;
 }
 @keyframes move-out {
@@ -189,7 +185,7 @@ html#articles .desc  {
     html:not(#new-home) header {
         position: relative
     }
-        html:not(#new-home) header a {
+    html:not(#new-home) header a {
         color: #000 !important;
     }
 }
