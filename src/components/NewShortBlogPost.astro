@@ -12,11 +12,11 @@ const allTags = tags.toString().split(",");
     <section> 
         <div>
             <div class="title">
-                <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
                 <h2>{title}</h2>
             </div>
             <div class="description">
                 <p>{desc}</p>
+                <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
             </div>
         </div>
         <ul class="tags">
