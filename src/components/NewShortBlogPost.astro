@@ -28,20 +28,13 @@ const allTags = tags.toString().split(",");
 </article>
 
 <style>
-
-
-html#articles article img {
+/* html#articles article img {
     width: 220px;
     min-width: 220px;
 }
 html#articles article section .infoPost div {
     padding-top: 32px;
 }
-html#articles article section .infoPost h2 {
-    font-family: 'Inter';
-    font-size: 24px;
-}
-
 html#articles article section .allTags {
     display: flex;
     width: 30%;
@@ -52,129 +45,121 @@ html#articles article section .infoPost {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+} */
+article {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 24px 0px;
+    position: relative;
+    color: #000;
 }
-
-
-    article {
-        display: flex;
-        position: relative;
-        /* flex-direction: row;
-        align-items: flex-start; */
-        width: 100%;
-        padding: 24px 0px;
-        position: relative;
-        color: #000;
-    }
-
-    article:not(:last-of-type):after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: var(--color-fg);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        opacity: 0.15;
-    }
-    article section {
-        width: 100%;
-        display: flex;
-        padding: 0px 20px;
-    }
-    article time {
-        font-size: .85em;
-        padding-right: 8px;
-    }
-    article ul {
+article:not(:last-of-type):after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-fg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.15;
+}
+article section {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+}
+article h2 {
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-size: clamp(1.875rem, 1.85rem + 0.125vw, 2rem);
+    line-height: 1.2em;
+    text-wrap: pretty;
+}
+article time {
+    font-size: .85em;
+    padding-right: 8px;
+}
+article ul {
     padding: 0px;
     display: flex;
     list-style: none;
     position: relative;
     z-index: 2;
     flex-direction: column;
+}
+article ul li {
+    padding: 5px 0px;
+}
+article ul li a {
+    font-size: 0.9em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    color: #b38c40 !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+article p {
+    line-height: 1.4;
+}
+article img {
+    object-fit: cover;
+    overflow-clip-margin: unset;
+}
+a.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--color-fg);
+    opacity: 0;
+    transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+    article {
+        padding: 24px 0px;
+        flex-direction: column;
+    }   
+    article img {
+        width: 100%;
+        min-width: 100%;
     }
-    article ul li {
-        padding: 5px 0px;
+    article section {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 16px;
+    }
+    article section .infoPost {
+        width: 100%;
+    }
+    article section .infoPost div {
+        padding-top: 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    article time {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    article p {
+        display: none;
+    }
+    article ul {
+        padding-left: 0px;
+    }
+    article ul:before {
+        display: none;
     }
     article ul li a {
         font-size: 0.9em;
-        line-height: 1em;
-        display: flex;
-        align-items: center;
-        color: #b38c40 !important;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    article h2 {
-        font-family: Space Grotesk;
         font-weight: 500;
-        font-size: clamp(1.375rem, 1.275rem + 0.5vw, 1.875rem);
-        line-height: 1.2em;
-        text-wrap: pretty;
-    }
-    article p {
-        line-height: 1.4;
     }
     article img {
-        object-fit: cover;
-        overflow-clip-margin: unset;
+        width: 80px;
+        height: 80px;
     }
-    a.link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: var(--color-fg);
-        opacity: 0;
-        transition: all 0.3s;
-    }
-    /* a.link:hover {
-        opacity: 0.05;
-    } */
-    @media screen and (max-width: 768px) {
-        article {
-            padding: 24px 0px;
-            flex-direction: column;
-        }   
-        article img {
-            width: 100%;
-            min-width: 100%;
-        }
-        article section {
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-top: 16px;
-        }
-        article section .infoPost {
-            width: 100%;
-        }
-        article section .infoPost div {
-            padding-top: 12px;
-        }
-    }
-    @media screen and (max-width: 500px) {
-        article time {
-            width: 100%;
-            font-size: 0.8em;
-        }
-        article p {
-            display: none;
-        }
-        article ul {
-            padding-left: 0px;
-        }
-        article ul:before {
-            display: none;
-        }
-        article ul li a {
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        article img {
-            width: 80px;
-            height: 80px;
-        }
-    }
+}
 </style>
