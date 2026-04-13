@@ -11,6 +11,25 @@ const allTags = tags.toString().split(",");
     </div>
     <section> 
         <div class="title">
+            <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            <h2>{title}</h2>
+        </div>
+        <div class="description">
+            <p>{desc}</p>
+            <ul class="tags">
+                {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+            </ul>
+        </div>
+    </section>
+    <a class="link" href={url}></a>
+</article>
+
+<!-- <article>
+    <div class="image">
+        <Image src={image} alt={imageAlt} width="220px" height="160px" />
+    </div>
+    <section> 
+        <div class="title">
             <h2>{title}</h2>
             <div>
                 <p>{desc}</p>
@@ -25,7 +44,7 @@ const allTags = tags.toString().split(",");
         </div>
     </section>
     <a class="link" href={url}></a>
-</article>
+</article> -->
 
 <style>
 article {
@@ -42,11 +61,19 @@ section {
     display: flex;
     gap: 40px;
 }
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .title h2 {
     font-weight: 500;
     font-size: clamp(1.875rem, 1.85rem + 0.125vw, 2rem);
     line-height: 1.2em;
     text-wrap: pretty;
+}
+.title p {
+    line-height: 1.4;
 }
 .title time {
     font-size: .85em;
@@ -68,8 +95,8 @@ section {
     font-weight: 700;
     text-decoration: none;
 }
-.title p {
-    line-height: 1.4;
+.image {
+    display: flex;
 }
 .image img {
     object-fit: cover;
