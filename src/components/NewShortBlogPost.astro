@@ -10,14 +10,14 @@ const allTags = tags.toString().split(",");
         <Image src={image} alt={imageAlt} width="220px" height="160px" />
     </div>
     <section> 
-        <div class="infoPost">
+        <div class="content">
             <h2>{title}</h2>
             <div>
                 <p>{desc}</p>
                 <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
             </div>
         </div>
-        <div class="allTags">
+        <div class="tags">
             <p>Les tags</p>
             <ul>
                 {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
@@ -28,24 +28,6 @@ const allTags = tags.toString().split(",");
 </article>
 
 <style>
-/* html#articles article img {
-    width: 220px;
-    min-width: 220px;
-}
-html#articles article section .infoPost div {
-    padding-top: 32px;
-}
-html#articles article section .allTags {
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-}
-html#articles article section .infoPost {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 article {
     display: flex;
     position: relative;
@@ -53,16 +35,6 @@ article {
     padding: 24px 0px;
     position: relative;
     color: #000;
-}
-article:not(:last-of-type):after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-fg);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.15;
 }
 article section {
     width: 100%;
@@ -133,10 +105,10 @@ a.link {
         flex-direction: column;
         gap: 12px
     }
-    article section .infoPost {
+    article section .content {
         width: 100%;
     }
-    article section .infoPost div {
+    article section .content div {
         padding-top: 12px;
     }
 }
