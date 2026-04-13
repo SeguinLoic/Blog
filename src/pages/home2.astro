@@ -49,15 +49,19 @@ main .content  h1 {
 .content a {
     color: #FFF !important;
 }
-main div.image img {
+.image {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-main:after {
+.image:after {
     content: "";
     position: absolute;
     left: 0;
@@ -94,7 +98,7 @@ main:after {
     .content {
         padding: 0px 40px;
     }
-    main .content h1 {
+    .content h1 {
         width: 100%;
     }
 }
