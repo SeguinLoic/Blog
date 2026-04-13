@@ -57,14 +57,17 @@ article {
     gap: 40px;
 }
 section {
-    width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 40px;
+    width: 100%;
 }
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+.title time {
+    font-size: .85em;
 }
 .title h2 {
     font-weight: 500;
@@ -72,21 +75,17 @@ section {
     line-height: 1.2em;
     text-wrap: pretty;
 }
-.title p {
+.description p {
     line-height: 1.4;
 }
-.title time {
-    font-size: .85em;
-    padding-right: 8px;
-}
-.tags ul {
+ul.tags {
     padding: 0px;
     list-style: none;
 }
-.tags ul li {
+ul.tags li {
     padding: 5px 0px;
 }
-.tags ul li a {
+ul.tags li a {
     font-size: 0.9em;
     line-height: 1em;
     display: flex;
@@ -129,25 +128,21 @@ a.link {
         flex-direction: column;
         gap: 12px
     }
-    .title {
-        width: 100%;
-    }
 }
 @media screen and (max-width: 500px) {
     .title time {
-        width: 100%;
         font-size: 0.8em;
     }
-    .title p {
+    .description p {
         display: none;
     }
-    .tags ul {
+    ul.tags {
         padding-left: 0px;
     }
-    .tags ul:before {
+    ul.tags:before {
         display: none;
     }
-    .tags ul li a {
+    ul.tags li a {
         font-size: 0.9em;
         font-weight: 500;
     }
