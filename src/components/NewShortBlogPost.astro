@@ -6,11 +6,11 @@ const allTags = tags.toString().split(",");
 ---
 
 <article>
-    <div class="imgPost">
+    <div class="image">
         <Image src={image} alt={imageAlt} width="220px" height="160px" />
     </div>
     <section> 
-        <div class="content">
+        <div class="title">
             <h2>{title}</h2>
             <div>
                 <p>{desc}</p>
@@ -35,34 +35,31 @@ article {
     padding: 24px 0px;
     position: relative;
     color: #000;
+    gap: 40px;
 }
-article section {
+section {
     width: 100%;
     display: flex;
-    padding: 0px 20px;
+    gap: 40px;
 }
-article h2 {
+.title h2 {
     font-weight: 500;
     font-size: clamp(1.875rem, 1.85rem + 0.125vw, 2rem);
     line-height: 1.2em;
     text-wrap: pretty;
 }
-article time {
+.title time {
     font-size: .85em;
     padding-right: 8px;
 }
-article ul {
+.tags ul {
     padding: 0px;
-    display: flex;
     list-style: none;
-    position: relative;
-    z-index: 2;
-    flex-direction: column;
 }
-article ul li {
+.tags ul li {
     padding: 5px 0px;
 }
-article ul li a {
+.tags ul li a {
     font-size: 0.9em;
     line-height: 1em;
     display: flex;
@@ -71,10 +68,10 @@ article ul li a {
     font-weight: 700;
     text-decoration: none;
 }
-article p {
+.title p {
     line-height: 1.4;
 }
-article img {
+.image img {
     object-fit: cover;
     overflow-clip-margin: unset;
 }
@@ -94,43 +91,40 @@ a.link {
         padding: 24px 0px;
         flex-direction: column;
     }   
-    article img {
+    .image img {
         width: 100%;
         min-width: 100%;
     }
-    article section {
+    section {
         padding-right: 0px;
         padding-left: 0px;
         padding-top: 16px;
         flex-direction: column;
         gap: 12px
     }
-    article section .content {
+    .title {
         width: 100%;
-    }
-    article section .content div {
-        padding-top: 12px;
     }
 }
 @media screen and (max-width: 500px) {
-    article time {
+    .title time {
         width: 100%;
         font-size: 0.8em;
     }
-    article p {
+    .title p {
         display: none;
     }
-    article ul {
+    .tags ul {
         padding-left: 0px;
     }
-    article ul:before {
+    .tags ul:before {
         display: none;
     }
-    article ul li a {
+    .tags ul li a {
         font-size: 0.9em;
         font-weight: 500;
     }
-    article img {
+    .image img {
         width: 80px;
         height: 80px;
     }
