@@ -189,6 +189,9 @@ html#articles .desc  {
     html:not(#new-home) header {
         position: relative
     }
+        html:not(#new-home) header a {
+        color: #000 !important;
+    }
 }
 
 /* ----------------------- FOOTER ----------------------- */ 
@@ -452,18 +455,6 @@ html.blogpost .fenetre header {
         width: 100%;
         left: 0;
         position: relative;
-    }
-    html.blogpost .fenetre header {
-        display: flex;
-        position: relative;
-        padding: 0px;
-    }
-    html.blogpost header {
-        align-items: center;
-        padding: 24px !important;
-    }
-    html.blogpost header a.logo {
-        color: #000 !important;
     }
     html.blogpost .fenetre .carousel .carousel-inner:after {
         display: none;
