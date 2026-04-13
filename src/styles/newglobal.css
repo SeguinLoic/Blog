@@ -223,7 +223,7 @@ html#articles footer {
 
 
 /* ----------------------- NEW HOME ---------------------- */
-html#new-home article {
+/* html#new-home article {
     padding: 16px 0;
 }
 html#new-home article img {
@@ -237,7 +237,6 @@ html#new-home article section .infoPost h2 {
     font-family: 'Inter';
     font-size: 24px;
 }
-
 html#new-home article section .allTags {
     display: flex;
     width: 30%;
@@ -251,7 +250,7 @@ html#new-home article section .infoPost {
 }
 html#new-home article:after {
     display: none;
-}
+} */
 
 /* CAROUSEL */
 html#new-home .carousel {
