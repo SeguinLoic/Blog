@@ -15,17 +15,17 @@ const page = "articles";
 ---
 <NewBaseLayout page={page}>
     <main>
-        <div class="fenetre">
-            <Header />
+        <Header />
+        <div class="image">
             <Image src={image7} alt="Mongolie" width="1856px" height="857px"/>
-            <div class="desc">
-                <div class="navArticles">
-                    <h1>Toutes les aventures</h1>
-                    <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
-                </div>
-                <div class="articles">
-                    {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
-                </div>
+        </div>
+        <div class="content">
+            <nav>
+                <h1>Toutes les aventures</h1>
+                <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
+            </nav>
+            <div class="articles">
+                {allBlogPosts.map((post) => <NewShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
             </div>
         </div>
     </main>
@@ -35,11 +35,7 @@ const page = "articles";
 body {
     padding: 0px;
 }
-.articles {
-    display: flex;
-    flex-direction: column;
-}
-.fenetre {
+main {
     width: 100%;
     position: relative;
     height: 100vH;
@@ -48,7 +44,18 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.fenetre:after {
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image:after {
     content: "";
     position: fixed;
     left: 0;
@@ -58,15 +65,12 @@ body {
     background: linear-gradient(45deg, rgba(0, 0, 0, .5), transparent 70%);
     pointer-events: none;
 }
-.fenetre img {
-    position: fixed;
-    top: 0;
-    left: 0;
+.image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.fenetre p {
+main p {
     position: relative;
     z-index: 1;
     color: #fff !important;
@@ -75,10 +79,10 @@ body {
     line-height: 1.6em;
     width: 80%;
 }
-.fenetre header a h1 {
+main header a h1 {
     color: #fff !important;
 }
-.desc {
+.content {
     flex-direction: column;
     width: 70%;
     padding: 60px 90px;
@@ -87,27 +91,21 @@ body {
     background-color: #fff;
     z-index: 1;
 }
-.intro {
-    top: 0;
-    padding: 0px;
-    z-index: 1;
-    width: 100%;
-}
-.navArticles {
+nav {
     padding-bottom: 24px;
 }
 @media screen and (max-width:1024px) {
-    .desc {
+    .content {
         width: 100%;
         padding: 60px 40px;
     }
-    .fenetre img {
+    .image {
         height: 250px;
         position: relative;
     }
 }
 @media screen and (max-width: 768px) {
-    .fenetre img {
+    .image {
         display: none;
     }
 }
