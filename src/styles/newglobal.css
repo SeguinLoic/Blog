@@ -428,7 +428,7 @@ html.blogpost section ul li:not(last-child) {
 }
 @media (max-width: 600px) {
     html.blogpost section {
-        padding: 40px 24px;
+        padding: 32px 20px;
     }
     html.blogpost section .introduction {
         margin-bottom: 24px;
