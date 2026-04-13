@@ -67,14 +67,37 @@ const page = "new-home";
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), transparent 70%);
     pointer-events: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .textIntro {
-        padding: 24px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .fenetre {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .textIntro {
         width: 100%;
         gap: 16px;
+        text-align: center;
+        padding: 0px 80px;
     }
     .textIntro p {
         line-height: 1.5;
+    }
+}
+@media screen and (max-width: 600px) {
+    .textIntro {
+        padding: 0px 40px;
+    }
+    .fenetre .textIntro h1 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .textIntro {
+        padding: 0px 24px;
     }
 }
 </style>

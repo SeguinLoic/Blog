@@ -6,29 +6,29 @@
 </header>
 
 <style>
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    padding: 32px 24px;
+    gap: 8px;
+}
+header a {
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: var(--color-bg) !important;
+    background-color: var(--color-fg);
+    font-weight: 700;
+    font-size: 1.4em;
+}
+@media screen and (max-width: 768px) {
     header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-        width: 100%;
-        padding: 32px 24px;
-        gap: 8px;
+        padding: 24px 16px;
+        align-items: center;
     }
-    .logo {
-        display: flex;
-        text-decoration: none;
-        position: relative;
-        z-index: 1;
-        color: var(--color-bg) !important;
-        background-color: var(--color-fg);
-        font-weight: 700;
-        font-size: 1.4em;
-    }
-    }
-    @media screen and (max-width: 768px) {
-        header {
-            padding: 24px 16px;
-        }
-    }
+}
 </style>
