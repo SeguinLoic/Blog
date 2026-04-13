@@ -183,6 +183,9 @@ html#articles .content  {
 
 
 /* ----------------------- HEADER ----------------------- */ 
+html#articles header {
+    position: absolute;
+}
 @media screen and (max-width: 768px) {
     html:not(#new-home) header {
         position: relative
