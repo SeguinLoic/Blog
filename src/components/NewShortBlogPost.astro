@@ -59,12 +59,13 @@ article {
 section {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: space-between;
     width: 100%;
 }
 .title {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 .title time {
     font-size: .85em;
@@ -75,15 +76,19 @@ section {
     line-height: 1.2em;
     text-wrap: pretty;
 }
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 .description p {
     line-height: 1.4;
 }
 ul.tags {
     padding: 0px;
     list-style: none;
-}
-ul.tags li {
-    padding: 5px 0px;
+    display: flex;
+    gap: 8px;
 }
 ul.tags li a {
     font-size: 0.9em;
