@@ -136,10 +136,23 @@ html#articles article section .infoPost {
     } */
     @media screen and (max-width: 768px) {
         article {
-            padding: 24px 16px;
+            padding: 24px 0px;
+            flex-direction: column;
         }   
+        article img {
+            width: 100%;
+            min-width: 100%;
+        }
         article section {
-            padding-right: 16px;
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-top: 16px;
+        }
+        article section .infoPost {
+            width: 100%;
+        }
+        article section .infoPost div {
+            padding-top: 12px;
         }
     }
     @media screen and (max-width: 500px) {
