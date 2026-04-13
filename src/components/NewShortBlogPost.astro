@@ -10,16 +10,18 @@ const allTags = tags.toString().split(",");
         <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
     </div>
     <section> 
-        <div class="title">
-            <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-            <h2>{title}</h2>
+        <div>
+            <div class="title">
+                <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+                <h2>{title}</h2>
+            </div>
+            <div class="description">
+                <p>{desc}</p>
+            </div>
         </div>
-        <div class="description">
-            <p>{desc}</p>
-            <ul class="tags">
-                {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
-            </ul>
-        </div>
+        <ul class="tags">
+            {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+        </ul>
     </section>
     <a class="link" href={url}></a>
 </article>
