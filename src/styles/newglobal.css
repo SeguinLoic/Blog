@@ -403,12 +403,6 @@ html.blogpost section ul {
 html.blogpost section ul li:not(last-child) {
     margin-bottom: 8px;
 }
-html.blogpost .fenetre header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px;
-}
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre,
     html.blogpost section {
