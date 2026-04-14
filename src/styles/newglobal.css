@@ -450,6 +450,9 @@ html.blogpost section ul li:not(last-child) {
     html.blogpost .carousel-controls {
         padding-left: 16px;
     }
+    html.blogpost .carousel-controls a.mobile.return {
+        font-size: 0.9em;
+    }
     html.blogpost section .introduction {
         margin-bottom: 24px;
         padding-bottom: 24px;
