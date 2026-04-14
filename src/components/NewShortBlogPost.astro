@@ -26,28 +26,6 @@ const allTags = tags.toString().split(",");
     <a class="link" href={url}></a>
 </article>
 
-<!-- <article>
-    <div class="image">
-        <Image src={image} alt={imageAlt} width="220px" height="160px" />
-    </div>
-    <section> 
-        <div class="title">
-            <h2>{title}</h2>
-            <div>
-                <p>{desc}</p>
-                <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-            </div>
-        </div>
-        <div class="tags">
-            <p>Les tags</p>
-            <ul>
-                {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
-            </ul>
-        </div>
-    </section>
-    <a class="link" href={url}></a>
-</article> -->
-
 <style>
 article {
     display: flex;
