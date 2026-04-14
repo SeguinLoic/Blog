@@ -425,6 +425,11 @@ html.blogpost section ul li:not(last-child) {
         font-size: 20px;
     }
 }
+@media screen and (min-width: 768px) {
+    html.blogpost a.mobile.return {
+        display: none;
+    }
+}
 @media (max-width: 600px) {
     html.blogpost section {
         padding: 24px 16px;
