@@ -406,8 +406,16 @@ html.blogpost section ul li:not(last-child) {
         border: none;
     } 
     html.blogpost .fenetre .carousel {
+        height: auto;
+    }
+    html.blogpost .fenetre .carousel .carousel-inner {
         height: 500px;
-    } 
+    }
+    html.blogpost .carousel-controls {
+        position: relative;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+    }
     html.blogpost section {
         width: 100%;
         left: 0;
@@ -417,17 +425,17 @@ html.blogpost section ul li:not(last-child) {
         display: none;
     }
 }
+@media screen and (min-width: 1024px) {
+    html.blogpost a.mobile.return {
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     html.blogpost .fenetre .carousel {
         height: 350px;
     } 
     html.blogpost header a.logo h1 {
         font-size: 20px;
-    }
-}
-@media screen and (min-width: 768px) {
-    html.blogpost a.mobile.return {
-        display: none;
     }
 }
 @media (max-width: 600px) {
