@@ -328,7 +328,7 @@ html.blogpost .carousel-controls {
     top: inherit;
 }
 html.blogpost section .introduction {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -346,11 +346,10 @@ html.blogpost section .introduction h2 {
     width: 80%;
 }
 html.blogpost section .introduction p {
-    font-family: Raleway;
-    font-size: 18px;
+    font-family: Inter;
+    font-size: 19px;
     font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.7em;
+    line-height: 1.5em;
     width: 80%;
 }
 html.blogpost section p, 
