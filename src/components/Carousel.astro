@@ -13,7 +13,7 @@ const { images } = Astro.props;
         ))}
     </div>
     <div class="carousel-controls">
-        <a href="/articles" class="mobile return"><i class="arrow" data-astro-cid-tljqxsdm="">←</i> Retour</a>
+        <a href="/articles" class="return"><i class="arrow" data-astro-cid-tljqxsdm="">←</i> Retour</a>
         <div>
             <button id="prev"><img src="/icon-arrow.svg"/></button>
             <button id="next"><img src="/icon-arrow.svg"/></button>
@@ -150,7 +150,6 @@ const { images } = Astro.props;
 }
 .carousel-controls button img {
     width: 22px;
-    /* filter: invert(1); */
     height: 20px;
 }
 .carousel-controls button#next img {
