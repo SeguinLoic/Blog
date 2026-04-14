@@ -13,7 +13,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 const page = "articles";
 ---
-<NewBaseLayout page={page}>
+<BaseLayout page={page}>
     <main>
         <Header />
         <div class="image">
@@ -29,7 +29,7 @@ const page = "articles";
             </div>
         </div>
     </main>
-</NewBaseLayout>
+</BaseLayout>
 
 <style>
 main {
