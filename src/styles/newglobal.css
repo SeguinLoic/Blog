@@ -449,7 +449,8 @@ html.blogpost section ul li:not(last-child) {
 }
 @media (max-width: 600px) {
     html.blogpost section {
-        padding: 24px 16px;
+        padding: 32px 16px;
+    }
     }
     html.blogpost .carousel-controls {
         padding-left: 16px;
