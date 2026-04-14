@@ -435,9 +435,9 @@ html.blogpost section ul li:not(last-child) {
         left: 0;
         position: relative;
     }
-    html.blogpost .fenetre .carousel .carousel-inner:after {
+    /* html.blogpost .fenetre .carousel .carousel-inner:after {
         display: none;
-    }
+    } */
 }
 @media (max-width: 768px) {
     html.blogpost .fenetre .carousel .carousel-inner {
