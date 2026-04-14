@@ -269,6 +269,14 @@ html#new-home .carousel:after {
 } */
 
 
+/* -----------------------  ARTICLES ---------------------- */
+@media screen and (max-width: 768px) {
+    .articles article:not(:last-child) {
+        border-bottom: 1px solid rgb(0 0 0 / 12%);
+    }
+}
+
+
 /* -----------------------  BLOGPOST ---------------------- */
 html.blogpost header a.logo {
     background-color: transparent;
