@@ -447,6 +447,9 @@ html.blogpost section ul li:not(last-child) {
     html.blogpost section {
         padding: 24px 16px;
     }
+    html.blogpost .carousel-controls {
+        padding-left: 16px;
+    }
     html.blogpost section .introduction {
         margin-bottom: 24px;
         padding-bottom: 24px;
