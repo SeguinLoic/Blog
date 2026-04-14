@@ -334,6 +334,7 @@ html.blogpost .carousel-controls {
         padding: 0px 12px;
         background-color: #f3f3f3;
         font-size: 0.9em;
+        text-decoration: none;
     }
 }
 html.blogpost .carousel-controls div {
