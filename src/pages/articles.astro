@@ -14,7 +14,6 @@ const allBlogPosts = (await getCollection('blog')).sort(
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index)
 
-
 const page = "articles";
 ---
 <BaseLayout page={page}>
