@@ -187,10 +187,10 @@ html#articles header {
     position: absolute;
 }
 @media screen and (max-width: 768px) {
-    html:not(#new-home) header {
+    html:not(#home) header {
         position: relative
     }
-    html:not(#new-home) header a {
+    html:not(#home) header a {
         color: #000 !important;
     }
 }

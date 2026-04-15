@@ -6,138 +6,149 @@ const allTags = tags.toString().split(",");
 ---
 
 <article>
-    <section>
-        <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
-        <ul>
+    <div class="image">
+        <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
+    </div>
+    <section> 
+        <div>
+            <div class="title">
+                <h2>{title}</h2>
+            </div>
+            <div class="description">
+                <p>{desc}</p>
+                <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            </div>
+        </div>
+        <ul class="tags">
             {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
         </ul>
-        <h2>{title}</h2>
-        <p>{desc}</p>
     </section>
-    <Image src={image} alt={imageAlt} width="120px" height="120px" />
     <a class="link" href={url}></a>
 </article>
 
 <style>
+article {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 32px 0px;
+    position: relative;
+    color: #000;
+    gap: 40px;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+}
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title time {
+    font-size: .85em;
+}
+.title h2 {
+    font-weight: 500;
+    font-size: clamp(1.375rem, 1.25rem + 0.625vw, 2rem);
+    line-height: 1.2em;
+    text-wrap: pretty;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.description p {
+    line-height: 1.4;
+}
+ul.tags {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    width: 200px;
+}
+ul.tags li a {
+    font-size: 0.9em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    color: #b38c40 !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+.image {
+    display: flex;
+}
+.image img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    overflow-clip-margin: unset;
+}
+a.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--color-fg);
+    opacity: 0;
+    transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
     article {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        align-items: flex-start;
+        padding: 32px 0;
+        flex-direction: column;
+        gap: 16px;
+    }   
+    .image {
+        height: 300px;
+    }
+    .image img {
         width: 100%;
-        padding: 32px 24px;
-        position: relative;
-        color: #000;
+        min-width: 100%;
+        height: 100%
     }
-    article:not(:last-of-type):after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: var(--color-fg);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        opacity: 0.15;
+    section {
+        flex-direction: column;
+        gap: 12px
     }
-    article section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start; 
-        row-gap: 12px;
-        width: 100%;
-        padding-right: 24px;
+    section>div {
+        flex-direction: column-reverse;
+        gap: 8px;
     }
-    article time {
-        font-size: .85em;
-        padding-right: 8px;
+}
+@media screen and (max-width: 500px) {
+    .title time {
+        font-size: 0.8em;
     }
-    article ul {
-        padding-left: 8px;
-        display: flex;
-        list-style: none;
-        position: relative;
-        z-index: 2;
-        margin: 0px;
+    .description p {
+        display: none;
     }
-    article ul:before {
-        content: '';
-        width: 1px;
-        height: 100%;
-        background-color: var(--color-fg);
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0.15;
+    ul.tags {
+        padding-left: 0px;
     }
-    article ul li a {
-        padding-right: 8px;
+    ul.tags:before {
+        display: none;
+    }
+    ul.tags li a {
         font-size: 0.9em;
-        line-height: 1em;
-        display: flex;
-        align-items: center;
-        color: #b38c40 !important;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    article h2 {
-        font-family: Space Grotesk;
         font-weight: 500;
-        font-size: clamp(1.375rem, 1.275rem + 0.5vw, 1.875rem);
-        line-height: 1.2em;
-        text-wrap: pretty;
     }
-    article p {
-        line-height: 1.4;
+    .image {
+        height: 200px;
     }
-    article img {
-        object-fit: cover;
-        overflow-clip-margin: unset;
-    }
-    a.link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: var(--color-fg);
-        opacity: 0;
-        transition: all 0.3s;
-    }
-    a.link:hover {
-        opacity: 0.05;
-    }
-    @media screen and (max-width: 768px) {
-        article {
-            padding: 24px 16px;
-        }   
-        article section {
-            padding-right: 16px;
-        }
-    }
-    @media screen and (max-width: 500px) {
-        article time {
-            width: 100%;
-            font-size: 0.8em;
-        }
-        article p {
-            display: none;
-        }
-        article ul {
-            padding-left: 0px;
-        }
-        article ul:before {
-            display: none;
-        }
-        article ul li a {
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        article img {
-            width: 80px;
-            height: 80px;
-        }
-    }
+}
 </style>
