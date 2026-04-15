@@ -1,7 +1,7 @@
 ---
 import image7 from "../assets/mongolia-7.jpg";
 import { Image } from 'astro:assets';
-import '../styles/global.css';
+// import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '@components/Header.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
@@ -25,7 +25,7 @@ const page = "articles";
                 <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
             </nav>
             <div class="articles">
-                {allBlogPosts.map((post) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+                {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
             </div>
         </div>
     </main>
