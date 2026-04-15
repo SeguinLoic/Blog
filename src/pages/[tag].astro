@@ -22,26 +22,14 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseLayout page={tag}>
-    <Header/>
     <main>
-        <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
-        {posts.map((post: any) => <ShortBlogPost url={`/posts/${post.id}`} title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+        <Header/>
+        <div class="content">
+            <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
+            {posts.map((post: any) => <ShortBlogPost url={`/posts/${post.id}`} title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
+        </div>
     </main>
 </BaseLayout>
 
 <style>
-    p {
-        color: #fff !important;
-        position: relative;
-        padding: 32px 24px;
-        background-color: var(--color-3);
-    }
-    .tag {
-        font-weight: 600;
-    }
-    @media screen and (max-width: 768px) {
-        p {
-            padding: 24px 16px;
-        }
-    }
 </style>
