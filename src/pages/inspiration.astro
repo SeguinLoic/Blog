@@ -1,9 +1,6 @@
 ---
-import '../styles/global.css';
 import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Footer from '../components/Footer.astro';
 import Livres from '../components/Livres.astro';
 import { getCollection } from "astro:content";
 
@@ -14,7 +11,6 @@ const page = "inspiration";
 
 <BaseLayout page={page}>
     <Header />
-    <Navigation />
     <main>
         <section class="friends">
             <h2>Podcasts</h2>
@@ -47,7 +43,6 @@ const page = "inspiration";
             </ul>
         </section>
     </main>
-    <Footer />
 </BaseLayout>
 
 <style>
