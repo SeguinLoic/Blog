@@ -11,7 +11,8 @@ const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
+const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat().filter((item: any, index: any) => this.indexOf(item) === index);
+
 
 const page = "articles";
 ---
