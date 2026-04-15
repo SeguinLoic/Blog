@@ -1,4 +1,6 @@
 ---
+import image7 from "../assets/mongolia-7.jpg";
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '@components/Header.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
@@ -24,6 +26,9 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 <BaseLayout page={tag}>
     <main>
         <Header/>
+        <div class="image">
+            <Image src={image7} alt="Mongolie" width="1856px" height="857px"/>
+        </div>
         <div class="content">
             <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
             {posts.map((post: any) => <ShortBlogPost url={`/posts/${post.id}`} title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
@@ -32,4 +37,45 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 </BaseLayout>
 
 <style>
+main {
+    width: 100%;
+    position: relative;
+    height: 100vH;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vW;
+    height: 250px;
+}
+.image:after {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, .5), transparent 70%);
+    pointer-events: none;
+}
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0px;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+}
 </style>

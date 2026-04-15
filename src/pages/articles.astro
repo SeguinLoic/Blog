@@ -5,7 +5,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '@components/Header.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
 import { getCollection } from "astro:content";
-import { Debug } from 'astro:components';
 
 const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -17,8 +16,6 @@ const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(i
 const page = "articles";
 ---
 <BaseLayout page={page}>
-    <Debug {allTags} />
-    <Debug {filteredTags} />
     <main>
         <Header />
         <div class="image">
@@ -30,7 +27,6 @@ const page = "articles";
                 <ul class="tags">
                     {filteredTags.map((tag: any) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
                 </ul>
-                <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
             </nav>
             <div class="articles">
                 {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
