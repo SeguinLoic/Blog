@@ -20,7 +20,7 @@ const allTags = tags.toString().split(",");
             </div>
         </div>
         <ul class="tags">
-            {allTags.map((tag) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+            {allTags.map((tag: any) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
         </ul>
     </section>
     <a class="link" href={url}></a>
