@@ -4,10 +4,10 @@ import image7 from "../assets/mongolia-7.jpg";
 import { Image } from 'astro:assets';
 import Header from '@components/Header.astro';
 
-const { frontmatter } = Astro.props;
+const { page } = Astro.props;
 ---
 
-<BaseLayout page={frontmatter.page}>
+<BaseLayout page={page}>
     <main>
         <Header />
         <div class="image">
