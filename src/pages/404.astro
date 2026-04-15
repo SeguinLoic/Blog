@@ -2,16 +2,14 @@
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
 
 const page = "404";
 ---
 
 <BaseLayout page={page}>
     <Header />
-    <Navigation />
     <main>
-        <h2>404</h2>
+        <h1>404</h1>
         <p>Retour à la <a href="/">page d'accueil</a></p>
     </main>
 </BaseLayout>

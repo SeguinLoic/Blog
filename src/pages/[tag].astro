@@ -1,8 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '@components/Header.astro';
-import Navigation from '@components/Navigation.astro';
-import Footer from '@components/Footer.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
 import { getCollection } from 'astro:content';
 
@@ -25,12 +23,10 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 <BaseLayout page={tag}>
     <Header/>
-    <Navigation />
     <main>
         <p>Les posts avec le tag : <span class="tag">#{tag}</span></p>
         {posts.map((post: any) => <ShortBlogPost url={`/posts/${post.id}`} title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
     </main>
-    <Footer />
 </BaseLayout>
 
 <style>
