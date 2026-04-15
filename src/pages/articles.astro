@@ -28,6 +28,9 @@ const page = "articles";
         <div class="content">
             <nav>
                 <h1>Toutes les aventures</h1>
+                <ul class="tags">
+                    {filteredTags.map((tag: any) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
+                </ul>
                 <p>Tags : <span>#Rando</span> <span></span>#1AnEnVadrouille</span> <span></span>#Voyage</span></p>
             </nav>
             <div class="articles">
