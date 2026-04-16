@@ -53,27 +53,7 @@ main {
     height: 100%;
     object-position: 0% 58%;
 }*/
-.image {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #000;
-    background-image: url(/map.svg);
-    background-size: cover;
-}
-.image[data-astro-cid-3zbxo6iv]:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(to right, #000c, #000000e6 20%, #000 30%, #000000f0 38%, #0000 80%);
-}
+
 /* .image:after {
     content: "";
     position: absolute;
@@ -84,12 +64,80 @@ main {
     pointer-events: none;
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
 } */
+
+
+/* .image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000;
+    background-image: url(/map.svg);
+    background-size: cover;
+} */
+/* .image[data-astro-cid-3zbxo6iv]:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #000c, #000000e6 20%, #000 30%, #000000f0 38%, #0000 80%);
+} */
+/* .image img {
+    object-fit: cover;
+    width: 70%;
+    height: 100%;
+    object-position: 0% 58%;
+} */
+
+
+.image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #000;
+    background-image: url(/map.svg);
+    background-size: cover;
+    padding: 0px 16vW;
+    padding-top: 200px;
+    padding-bottom: 60px;
+}
+.image:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #000c, #000000e6 20%, #000 30%, #000000f0 38%, #0000 80%);
+    z-index: 1;
+}
 .image img {
     object-fit: cover;
     width: 70%;
     height: 100%;
     object-position: 0% 58%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
+span.title {
+    color: #fff;
+    z-index: 1;
+    font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem);
+    font-weight: 700;
+    position: relative;
+    width: 50%;
+}
+
 .content {
     display: flex;
     flex-direction: column;
