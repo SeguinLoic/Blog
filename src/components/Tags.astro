@@ -14,6 +14,11 @@ const { tags } = Astro.props;
     display: flex;
     list-style: none;
     gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+html.blogpost ul.tags {
+    flex-direction: row;
 }
 .tags li a {
     font-size: .85em;
