@@ -14,21 +14,15 @@ const page = "articles";
 ---
 
 <PageLayout page={page} title={page}>
-    <nav>
-        <h1>Toutes les aventures</h1>
+    <div class="articles">
         <!-- <ul class="tags">
             {filteredTags.map((tag: any) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
         </ul> -->
-    </nav>
-    <div class="articles">
         {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
     </div>
 </PageLayout>
 
 <style>
-nav {
-    padding-bottom: 40px;
-}
 .articles {
     display: flex;
     flex-direction: column;
