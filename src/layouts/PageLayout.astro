@@ -13,7 +13,6 @@ const { page, title } = Astro.props;
         <Header />
         <div class="image">
             <Title title={title}/>
-            <!-- <span class="title">{title}</span> -->
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
         <div class="content">
@@ -141,6 +140,12 @@ main {
     position: relative;
     background-color: #fff;
     z-index: 1;
+}
+
+@media screen and (max-width: 1500px) {
+    .image {
+        padding: 0px 7vW;
+    }
 }
 @media screen and (max-width: 1239px) {
     .content {
