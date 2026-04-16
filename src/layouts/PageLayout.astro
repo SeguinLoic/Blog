@@ -5,13 +5,16 @@ import { Image } from 'astro:assets';
 import Header from '@components/Header.astro';
 
 const { page, title } = Astro.props;
+
+const parser = new DOMParser();
+const parsedTitle = parser.parseFromString(title, "text/html");
 ---
 
 <BaseLayout page={page}>
     <main>
         <Header />
         <div class="image">
-            <span class="title">{title}</span>
+            <span class="title">{parsedTitle}</span>
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
         <div class="content">
