@@ -11,7 +11,7 @@ const { page, title } = Astro.props;
 <BaseLayout page={page}>
     <main>
         <Header />
-        <div class="image">
+        <div class="hero">
             <Title title={title}/>
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
@@ -96,12 +96,12 @@ main {
 } */
 
 
-.image {
+.hero {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 470px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     background-color: #000;
@@ -111,7 +111,7 @@ main {
     padding-top: 200px;
     padding-bottom: 60px;
 }
-.image:before {
+.hero:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -121,7 +121,7 @@ main {
     background: linear-gradient(to right, #000c, #000000e6 20%, #000 30%, #000000f0 38%, #0000 80%);
     z-index: 1;
 }
-.image img {
+.hero img {
     object-fit: cover;
     width: 70%;
     height: 100%;
@@ -143,8 +143,10 @@ main {
 }
 
 @media screen and (max-width: 1500px) {
-    .image {
+    .hero {
         padding: 0px 7vW;
+        padding-top: 200px;
+        padding-bottom: 60px;
     }
 }
 @media screen and (max-width: 1239px) {
@@ -153,8 +155,7 @@ main {
     }
 }
 @media screen and (max-width:1024px) {
-    .image {
-        height: 250px;
+    .hero {
         position: relative;
     }
     .content {
@@ -162,7 +163,7 @@ main {
     }
 }
 @media screen and (max-width: 768px) {
-    .image {
+    .hero {
         display: none;
     }
     .content {
