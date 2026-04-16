@@ -4,15 +4,15 @@ import cover from "../assets/nz-1.jpg";
 import { Image } from 'astro:assets';
 import Header from '@components/Header.astro';
 
-const { page } = Astro.props;
+const { page, title } = Astro.props;
 ---
 
 <BaseLayout page={page}>
     <main>
         <Header />
         <div class="image">
+            <span class="title">{title}</span>
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
-            <span></span>
         </div>
         <div class="content">
             <slot />
