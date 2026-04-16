@@ -144,6 +144,15 @@ main {
     display: flex;
     flex-grow: 1;
 }
+/* ----------------------- HEADER ----------------------- */ 
+@media screen and (max-width: 768px) {
+    html:not(#home) header {
+        position: relative
+    }
+    html:not(#home) header a {
+        color: #000 !important;
+    }
+}
 
 
 /* ----------------------- VIEW TRANSITION ----------------------- */ 
@@ -184,20 +193,6 @@ html#articles .content  {
 ::view-transition-new(textIntro) {
   animation: 0.3s ease-in both fade-in;
 } */
-
-
-/* ----------------------- HEADER ----------------------- */ 
-html#articles header {
-    position: absolute;
-}
-@media screen and (max-width: 768px) {
-    html:not(#home) header {
-        position: relative
-    }
-    html:not(#home) header a {
-        color: #000 !important;
-    }
-}
 
 /* ----------------------- NEW HOME ---------------------- */
 /* html#new-home .carousel {
