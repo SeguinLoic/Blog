@@ -10,7 +10,7 @@ import Title from '@components/Title.astro';
 
 const { page, title } = Astro.props;
 
-const cover = title === "articles" ? articles : title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? envadrouille : title === "EnRando" ? enrando
+const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? envadrouille : title === "EnRando" ? enrando : articles;
 ---
 
 <BaseLayout page={page}>
