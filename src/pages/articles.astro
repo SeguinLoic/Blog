@@ -11,7 +11,7 @@ const allTags = (await getCollection('blog')).map((post: any) => post.data.tags)
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index)
 
 const page = "articles";
-const title = `<span>Découvrez toutes mes aventures</span>`;
+const title = "Découvrez toutes mes aventures</span>";
 ---
 <PageLayout page={page} title={title}>
     <nav>
