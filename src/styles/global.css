@@ -377,12 +377,6 @@ html.blogpost section li {
     line-height: 1.7;
     text-wrap: pretty;
 }
-html.blogpost section ul {
-    margin-top: 8px;
-}
-html.blogpost section ul li:not(last-child) {
-    margin-bottom: 8px;
-}
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre,
     html.blogpost section {

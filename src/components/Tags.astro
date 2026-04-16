@@ -7,3 +7,23 @@ const { tags } = Astro.props;
         <li><a href={`/${tag}`}>#{tag}</a></li>
     ))}
 </ul>
+
+<style>
+.tags {
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+.tags li a {
+    font-size: .85em;
+    line-height: 1.4em;
+    display: flex;
+    align-items: center;
+    color: #2d2d2d !important;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 4px 6px;
+    border: 1px solid #c3c3c3;
+}
+</style>
