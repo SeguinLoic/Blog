@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import Tags from './Tags.astro';
 
 const {url, title, desc, date, tags, image, imageAlt} = Astro.props;
 const allTags = tags.toString().split(",");
@@ -19,9 +20,7 @@ const allTags = tags.toString().split(",");
                 <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
             </div>
         </div>
-        <ul class="tags">
-            {allTags.map((tag: any) => <li><a href={`/${tag}`}>#{tag}</a></li>)}
-        </ul>
+        <Tags tags={allTags} />
     </section>
     <a class="link" href={url}></a>
 </article>
@@ -70,7 +69,7 @@ section > div {
 .description p {
     line-height: 1.4;
 }
-ul.tags {
+/* ul.tags {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -89,7 +88,7 @@ ul.tags li a {
     text-decoration: none;
     padding: 4px 6px;
     border: 1px solid #c3c3c3;
-}
+} */
 .image {
     display: flex;
 }
@@ -140,7 +139,7 @@ a.link {
     .title time {
         font-size: 0.8em;
     }
-    ul.tags {
+    /* ul.tags {
         padding-left: 0px;
     }
     ul.tags:before {
@@ -149,7 +148,7 @@ a.link {
     ul.tags li a {
         font-size: 0.9em;
         font-weight: 500;
-    }
+    } */
     .image {
         height: 200px;
     }
