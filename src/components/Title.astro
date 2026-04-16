@@ -2,4 +2,15 @@
 const { title } = Astro.props;
 ---
 
-<h1>{title}</h1>
+{title === "articles" ? <h1>Découvrez toutes<br/> mes aventures</h1> : <h1>Vous avez décidé<br/> de partir <span>#${title}</span></h1>;}
+
+<style>
+h1 {
+    color: #fff;
+    z-index: 1;
+    font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem);
+    font-weight: 700;
+    position: relative;
+    width: 50%;
+}
+</style>
