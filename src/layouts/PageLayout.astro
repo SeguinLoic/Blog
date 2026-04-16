@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import image7 from "../assets/mongolia-7.jpg";
+import cover from "../assets/nz-1.jpg";
 import { Image } from 'astro:assets';
 import Header from '@components/Header.astro';
 
@@ -11,7 +11,7 @@ const { page } = Astro.props;
     <main>
         <Header />
         <div class="image">
-            <Image src={image7} alt="Mongolie" width="1856px" height="857px"/>
+            <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
         <div class="content">
             <slot />
