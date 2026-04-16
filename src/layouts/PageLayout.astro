@@ -12,6 +12,7 @@ const { page } = Astro.props;
         <Header />
         <div class="image">
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
+            <span></span>
         </div>
         <div class="content">
             <slot />
@@ -38,12 +39,12 @@ main {
 }
 .image:after {
     content: "";
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, .5), transparent 70%);
+    background: linear-gradient(125deg, rgba(0, 0, 0, .5), transparent 35%);
     pointer-events: none;
 }
 .image img {
