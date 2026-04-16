@@ -132,14 +132,8 @@ main {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    padding: 60px 0px;
-    position: relative;
-    background-color: #fff;
-    z-index: 1;
+    padding: 60px 16vW;
 }
 
 @media screen and (max-width: 1500px) {
@@ -148,20 +142,19 @@ main {
         padding-top: 200px;
         padding-bottom: 60px;
     }
-}
-@media screen and (max-width: 1239px) {
     .content {
-        padding: 60px 40px;
+        width: 100%;
+        padding: 60px 7vW;
     }
 }
 @media screen and (max-width:1024px) {
-    .content {
-        padding: 40px 32px;
+    .hero {
+        padding: 0px 3vW;
+        padding-top: 150px;
+        padding-bottom: 40px;
     }
-}
-@media screen and (max-width: 768px) {
     .content {
-        padding: 24px 16px;
+        padding: 40px 3vW;
     }
 }
 </style>
