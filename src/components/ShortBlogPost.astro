@@ -104,6 +104,27 @@ a.link {
     opacity: 0;
     transition: all .3s;
 }
+@media screen and (max-width: 1024px) {
+    article,
+    section {
+        gap: 32px;
+    }
+    section {
+        flex-direction: column;
+        gap: 16px;
+    }
+    section>div {
+        gap: 8px;
+    }
+    .tags {
+        flex-direction: row;
+        width: auto;
+    }
+    .image img {
+        width: 220px;
+        height: 150px;
+    }
+}
 @media screen and (max-width: 768px) {
     article {
         margin: 0px;
