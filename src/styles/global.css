@@ -147,7 +147,7 @@ main {
 }
 /* ----------------------- HEADER ----------------------- */ 
 @media screen and (max-width: 768px) {
-    header {
+    html header {
         position: relative;
         border: 1px solid red;
     }
