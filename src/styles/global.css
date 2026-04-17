@@ -149,12 +149,10 @@ main {
 @media screen and (max-width: 768px) {
     html header {
         position: relative !important;
-        border: 1px solid red;
     }
     html:is(#home) header, 
     html:is(#lost) header {
         position: absolute !important;
-        border: 1px solid green;
     } 
     html:not(#home) header a,
     html:not(#lost) header a {
