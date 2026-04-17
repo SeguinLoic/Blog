@@ -286,6 +286,9 @@ html#new-home .carousel:after {
 .articles article:last-child::after {
     display: none;
 }
+html#articles .tags {
+    flex-direction: row;
+}
 
 
 /* -----------------------  BLOGPOST ---------------------- */
