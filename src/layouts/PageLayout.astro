@@ -17,7 +17,7 @@ const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? en
         <Header />
         <div class="hero">
             <Title title={title}/>
-            {title === "articles" ? "" : <a href="/articles">Retour aux articles</a>}
+            {title === "articles" ? "" : <a href="/articles"><i class="arrow" data-astro-cid-tljqxsdm="">←</i> Retour aux articles</a>}
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
         <div class="content">
@@ -50,6 +50,24 @@ main {
     padding: 0px 16vW;
     padding-top: 225px;
     padding-bottom: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #000;
+    background-image: url(/map.svg);
+    background-size: cover;
+    padding: 0px 16vW;
+    padding-top: 225px;
+    padding-bottom: 80px;
 }
 .hero:before {
     content: "";
@@ -59,6 +77,11 @@ main {
     left: 0;
     top: 0;
     background: linear-gradient(to right, #000c, #000000e6 20%, #000 30%, #000000f0 38%, #0000 80%);
+    z-index: 1;
+}
+.hero a {
+    color: #fff !important;
+    position: relative;
     z-index: 1;
 }
 .hero img {
