@@ -1,0 +1,56 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Un petit aperçu de la Chine, un Pékin un poil express
+pubDate: 2026-04-17
+description: Malgré la rapidité du séjour, la Chine nous a étonnés, surpris et charmés. Ça donne envie d'y retourner.
+author: OneHuman
+tags: ["EnVoyage", "1AnEnVadrouille"]
+cover: ./covers/china-1.jpg
+coverAlt: Les boulevards de Pékin à 5h du matin
+---
+import Carousel from '../../components/Carousel.astro';
+import Tags from '../../components/Tags.astro';
+import Header from '../../components/Header.astro';
+
+import image1 from "../../assets/china-1.jpg"
+import image2 from "../../assets/china-2.jpg"
+import image3 from "../../assets/china-4.jpg"
+import image4 from "../../assets/china-5.jpg"
+import image5 from "../../assets/china-6.jpg"
+import image6 from "../../assets/china-10.jpg"
+import image7 from "../../assets/china-12.jpg"
+import image8 from "../../assets/china-9.jpg"
+import image9 from "../../assets/china-8.jpg"
+import image10 from "../../assets/china-13.jpg"
+import image11 from "../../assets/china-15.jpg"
+
+<div class="fenetre">
+    <Header />
+    <Carousel images={[image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11]} />
+</div>
+<section>
+<div class="introduction">
+    <time datetime={frontmatter.pubDate}>{new Date(frontmatter.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+    <h2>{frontmatter.title}</h2>
+    <p>{frontmatter.description}</p>
+    <Tags tags={frontmatter.tags} />
+</div>
+<div class="text">
+Et voilà, notre petit séjour en Chine se termine !
+<br/>
+Bon, la Chine c'était court mais très intéressant. Ça n'a duré que quelques jours pour une bonne raison : en tant que français, nous avons le droit à 15 jours de "free visa", sans avoir à justifier quoi que ce soit. Une aubaine ! 
+<br/>
+On en a donc profité pour visiter un peu la capitale, la grande muraille et la côte. J'ai l'impression que l'expérience est différente selon les voyageurs, mais en ce qui nous concerne, on a trouvé les Chinois vraiment sympas. 
+Toujours aux petits soins, toujours à nous sourire, nous donner à manger. On a été agréablement surpris de leur hospitalité et leur générosité. 
+<br/>
+Nous avons été à un concert au centre de Qingdao l'autre soir et, bien sûr, on a rapidement été repérés par le chanteur principal du groupe (évidemment, quand il dit en Chinois "levez la main droite" et que je lève la gauche...). Au bout d'un moment les organisateurs ont décidé d'offrir des cadeaux, et..., nous avons été les premiers invités à monter sur scène pour recevoir un présent. Un peu gênant, mais trop touchant. Et des petites attentions comme ça, on en a eu tous les jours. Bref, ils sont trop sympas. 
+<br/>
+Niveau sécurité on ne se pose aucune question puisque le moindre brin d'herbe est surveillé par des caméras. Avec le temps on ne fait même plus attention. Je ne sais pas comment le ressentent les Chinois, mais pour les voyageurs c'est assez sécurisant. Aucune mention de pickpocket, on a l'impression de pouvoir laisser nos affaires sans surveillance, on sait qu'il ne leur arrivera rien. 
+<br/>
+Ce qui est un peu plus difficile, c'est de devoir s'armer d'applications mobile pour contourner le "méga firewall chinois", ça a été la galère à configurer, mais maintenant on est des pros ! Si vous avez besoin de configurer votre imprimante en réseau, on peut vous le faire. 
+<br/>
+Nous voilà donc sur un ferry pour la Corée du Sud. On va passer quelques jours à bien manger et écouter de la K-pop. Il y aura certainement plus d'ambiance que sur notre bateau. Au début on a eu droit à notre shooting photo avec un groupe de touristes Chinois et ensuite... plus rien. Quechi. Nada. Pas de film dans la salle de ciné, pas de karaoké avec des Chinois bourrés. Bref, 21h17 au lit, en train de vous raconter nos aventures et jouer à Balatro. On verra demain !
+<br/>
+<i>Xièxiè</i>
+</div>
+</section>
