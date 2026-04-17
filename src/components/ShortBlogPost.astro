@@ -7,25 +7,27 @@ const allTags = tags.toString().split(",");
 ---
 
 <article>
-    <div class="image">
-        <a href={url}>
-            <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
-        </a>
-    </div>
-    <section> 
-        <div>
+    <div class="link">
+        <div class="image">
             <a href={url}>
-                <div class="title">
-                    <h2>{title}</h2>
-                </div>
-                <div class="description">
-                    <p>{desc}</p>
-                    <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
-                </div>
+                <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
             </a>
         </div>
-        <Tags tags={allTags} />
-    </section>
+        <section> 
+            <div>
+                <a href={url}>
+                    <div class="title">
+                        <h2>{title}</h2>
+                    </div>
+                    <div class="description">
+                        <p>{desc}</p>
+                        <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <Tags tags={allTags} />
     <!-- <a class="link" href={url}></a> -->
 </article>
 
@@ -105,7 +107,7 @@ section>div a:hover .title h2 {
     object-fit: cover;
     overflow-clip-margin: unset;
 }
-a.link {
+/* a.link {
     position: absolute;
     top: 0;
     left: 0;
@@ -115,7 +117,7 @@ a.link {
     background-color: var(--color-fg);
     opacity: 0;
     transition: all .3s;
-}
+} */
 @media screen and (max-width: 1024px) {
     article,
     section {
