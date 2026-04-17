@@ -14,17 +14,19 @@ const allTags = tags.toString().split(",");
     </div>
     <section> 
         <div>
-            <div class="title">
-                <h2>{title}</h2>
-            </div>
-            <div class="description">
-                <p>{desc}</p>
-                <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
-            </div>
+            <a href={url}>
+                <div class="title">
+                    <h2>{title}</h2>
+                </div>
+                <div class="description">
+                    <p>{desc}</p>
+                    <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                </div>
+            </a>
         </div>
         <Tags tags={allTags} />
     </section>
-    <a class="link" href={url}></a>
+    <!-- <a class="link" href={url}></a> -->
 </article>
 
 <style>
