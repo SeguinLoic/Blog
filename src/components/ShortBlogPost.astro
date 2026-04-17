@@ -7,28 +7,25 @@ const allTags = tags.toString().split(",");
 ---
 
 <article>
-    <div class="link">
-        <div class="image">
+    <div class="image">
+        <a href={url}>
+            <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
+        </a>
+    </div>
+    <section> 
+        <div>
             <a href={url}>
-                <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
+                <div class="title">
+                    <h2>{title}</h2>
+                </div>
+                <div class="description">
+                    <p>{desc}</p>
+                    <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                </div>
             </a>
         </div>
-        <section> 
-            <div>
-                <a href={url}>
-                    <div class="title">
-                        <h2>{title}</h2>
-                    </div>
-                    <div class="description">
-                        <p>{desc}</p>
-                        <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </div>
-    <Tags tags={allTags} />
-    <!-- <a class="link" href={url}></a> -->
+        <Tags tags={allTags} />
+    </section>
 </article>
 
 <style>
@@ -68,6 +65,7 @@ section>div a {
     width: 100%;
     justify-content: space-between;
     text-decoration: none;
+    padding-left: 40px;
 }
 section>div a:hover .title h2 {
     text-decoration: underline;
@@ -98,7 +96,8 @@ section>div a:hover .title h2 {
 .description span {
     font-size: 0.9em;
 }
-.image {
+.image,
+.image a {
     display: flex;
 }
 .image img {
@@ -107,17 +106,6 @@ section>div a:hover .title h2 {
     object-fit: cover;
     overflow-clip-margin: unset;
 }
-/* a.link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% - 200px);
-    height: calc(100% - 32px);
-    z-index: 1;
-    background-color: var(--color-fg);
-    opacity: 0;
-    transition: all .3s;
-} */
 @media screen and (max-width: 1024px) {
     article,
     section {
