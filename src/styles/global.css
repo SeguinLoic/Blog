@@ -153,6 +153,7 @@ main {
     }
     html:is(#home) header, html:is(#lost) header {
         position: absolute;
+        border: 1px solid green;
     } 
     html:not(#home) header a,
     html:not(#lost) header a {
