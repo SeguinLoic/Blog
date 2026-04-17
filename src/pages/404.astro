@@ -3,7 +3,7 @@ import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '@components/Header.astro';
 import { Image } from 'astro:assets';
-import image3 from "../assets/mongolia-7.jpg"
+import image3 from "../assets/mongolia-10.jpg"
 
 const page = "404";
 ---
@@ -13,6 +13,7 @@ const page = "404";
         <Header />
         <div class="content">
             <h1>404</h1>
+            <p class="punchline">Vous venez de vous perdre dans le Désert de Gobi</p>
             <p>Retour à la <a href="/">page d'accueil</a></p>
         </div>
         <div class="image">
@@ -32,15 +33,16 @@ main {
     color: #fff;
     font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem);
     line-height: clamp(3.125rem, 2.8125rem + 1.5625vw, 4.6875rem);
-    width: 70%;
 }
 .content {
     z-index: 1;
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
     width: 45%;
+    align-items: center;
+    justify-content: center;
 }
 .content p {
     color: #FFF !important;
