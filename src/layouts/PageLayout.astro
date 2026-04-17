@@ -95,16 +95,22 @@ main {
     }
 }
 @media screen and (max-width: 600px) {
-    .hero[data-astro-cid-3zbxo6iv] {
+    .hero {
         flex-direction: column;
+        padding: 0px 5vW;
+        padding-top: 100px;
+        padding-bottom: 32px;
     }
     .hero:before {
         background: linear-gradient(to right, #000c, #000000e6 100%, #000 130%, #000000f0 38%, #0000 80%);
     }
-    .hero img {
+    /*.hero img {
         width: 100%;
         position: relative;
         z-index: 1;
+    }*/
+    .hero img {
+        display: none;
     }
 }
 </style>
