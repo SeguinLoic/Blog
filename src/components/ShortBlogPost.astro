@@ -99,11 +99,18 @@ section>div a:hover .title h2 {
 .image a {
     display: flex;
 }
+.image a {
+    overflow: hidden;
+}
 .image img {
     width: 260px;
     height: 170px;
     object-fit: cover;
     overflow-clip-margin: unset;
+    transition: all 0.3s;
+}
+.image a:hover img {
+    transform: scale(1.05);
 }
 @media screen and (max-width: 1024px) {
     article,
@@ -112,18 +119,23 @@ section>div a:hover .title h2 {
     }
     section {
         flex-direction: column;
-        gap: 16px;
-    }
-    section>div {
-        gap: 8px;
-    }
-    .tags {
-        flex-direction: row;
-        width: auto;
+        justify-content: space-between;
     }
     .image img {
         width: 220px;
         height: 150px;
+    }
+    .title {
+        order: 2;
+    }
+    .description {
+        order: 1;
+    }
+    section>div a {
+        gap: 8px;
+    }
+    .description p {
+        display: none;
     }
 }
 @media screen and (max-width: 768px) {
@@ -133,6 +145,10 @@ section>div a:hover .title h2 {
         flex-direction: column;
         gap: 16px;
     }   
+    .image, 
+    .image a {
+        width: 100%;
+    }
     .image {
         height: 300px;
     }
