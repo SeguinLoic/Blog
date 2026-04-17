@@ -457,7 +457,7 @@ html.blogpost section li {
 }
 @media (max-width: 600px) {
     html.blogpost section {
-        padding: 32px 16px;
+        padding: 32px 5vW;
     }
     html.blogpost section .introduction p {
         font-size: 17px;
