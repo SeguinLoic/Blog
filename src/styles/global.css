@@ -151,6 +151,9 @@ main {
         position: relative;
         border: 1px solid red;
     }
+    html:is(#home) header, html:is(#lost) header {
+        border: 1px solid green;
+    } 
     html:not(#home) header a,
     html:not(#lost) header a {
         color: #000 !important;
