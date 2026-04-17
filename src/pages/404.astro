@@ -1,10 +1,39 @@
 ---
+import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '@components/Header.astro';
 
 const page = "404";
 ---
 
 <BaseLayout page={page}>
-    <h1>404</h1>
-    <p>Retour à la <a href="/">page d'accueil</a></p>
+    <main>
+        <Header />
+        <div class="content">
+            <h1>404</h1>
+            <p>Retour à la <a href="/">page d'accueil</a></p>
+        </div>
+    </main>
 </PageLayout>
+
+<style>
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* .content  h1 {
+    color: #fff;
+    font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem);
+    line-height: clamp(3.125rem, 2.8125rem + 1.5625vw, 4.6875rem);
+    width: 70%;
+}
+.content {
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 45%;
+} */
+</style>

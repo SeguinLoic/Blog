@@ -16,7 +16,7 @@ const page = "articles";
 
 <PageLayout page={page} title={page}>
     <div class="articles">
-        <Tags tags={filteredTags} />
+        <!-- <Tags tags={filteredTags} /> -->
         {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
     </div>
 </PageLayout>
