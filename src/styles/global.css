@@ -147,9 +147,9 @@ main {
 }
 /* ----------------------- HEADER ----------------------- */ 
 @media screen and (max-width: 768px) {
-    html:not(#home) header,
-    html:not(#lost) header {
-        position: relative
+    html:not(#home) header, html:not(#lost) header {
+        position: relative;
+        border: 1px solid red;
     }
     html:not(#home) header a,
     html:not(#lost) header a {
