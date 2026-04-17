@@ -351,6 +351,8 @@ html.blogpost .carousel-controls {
 html.blogpost .carousel-controls div {
     display: flex;
 }
+
+
 html.blogpost section .introduction {
     margin-bottom: 40px;
     display: flex;
@@ -360,14 +362,14 @@ html.blogpost section .introduction {
     padding-bottom: 40px;
 }
 html.blogpost section .introduction time {
-    /* color: #979797 !important; */
     text-transform: uppercase;
     font-size: 0.8em;
 }
 html.blogpost section .introduction h2 {
     font-size: clamp(1.5rem, 1.2375rem + 1.3125vw, 2.8125rem);
     line-height: 1.2em;
-    width: 80%;
+    width: 100%;
+    text-wrap: pretty;
 }
 html.blogpost section .introduction p {
     font-family: Inter;
