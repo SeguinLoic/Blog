@@ -148,12 +148,17 @@ main {
 /* ----------------------- HEADER ----------------------- */ 
 @media screen and (max-width: 768px) {
     html header {
-        position: relative;
+        position: relative !important;
         border: 1px solid red;
     }
-    html:is(#home) header, html:is(#lost) header {
+    html:is(#home) header, 
+    html:is(#lost) header {
         position: absolute;
         border: 1px solid green;
+    } 
+    html:is(#home) header a, 
+    html:is(#lost) header a {
+        color: #fff !important;
     } 
     html:not(#home) header a,
     html:not(#lost) header a {
