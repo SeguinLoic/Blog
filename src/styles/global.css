@@ -156,14 +156,14 @@ main {
         position: absolute !important;
         border: 1px solid green;
     } 
-    html:is(#home) header a, 
-    html:is(#lost) header a {
-        color: #fff !important;
-    } 
     html:not(#home) header a,
     html:not(#lost) header a {
         color: #000 !important;
     }
+    html:is(#home) header a, 
+    html:is(#lost) header a {
+        color: #fff !important;
+    } 
 }
 
 
