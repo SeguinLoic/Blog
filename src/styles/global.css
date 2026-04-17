@@ -411,7 +411,7 @@ html.blogpost section li {
         width: 100%;
     }
     html.blogpost section .introduction {
-        margin-bottom: 40px;
+        margin-bottom: 24px;
         padding-bottom: 24px;
     }
 }
@@ -467,10 +467,6 @@ html.blogpost section li {
     }
     html.blogpost .carousel-controls a.return {
         font-size: 0.9em;
-    }
-    html.blogpost section .introduction {
-        margin-bottom: 24px;
-        padding-bottom: 24px;
     }
 }
 @media (max-width: 450px) {
