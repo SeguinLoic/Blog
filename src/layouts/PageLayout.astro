@@ -17,6 +17,7 @@ const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? en
         <Header />
         <div class="hero">
             <Title title={title}/>
+            {title === "articles" ? "" : <a href="/articles">Retour aux articles</a>}
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
         <div class="content">
