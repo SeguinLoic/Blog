@@ -13,7 +13,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
 allTags.map((elem: any) => { 
-    tags.map(tag => {
+    tags.forEach(tag => {
         tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
     })
 });
