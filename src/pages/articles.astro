@@ -36,7 +36,7 @@ const page = "articles";
     <nav>
         <p>Filtrer par thématique :</p>
         <Filter filters={tags} />
-        <Tags tags={filteredTags} />
+        <!-- <Tags tags={filteredTags} /> -->
     </nav>
     <div class="articles">
         {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
