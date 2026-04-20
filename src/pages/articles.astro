@@ -15,7 +15,13 @@ const allBlogPosts = (await getCollection('blog')).sort(
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index);
 filteredTags.forEach((elem) => {
-    tags.push({name:elem, number: 1});
+    tags.push({name:elem, number: 0});
+});
+
+allTags.forEach(elem => {
+    tags.forEach(tag => {
+        tag.name === elem ? tag.number + 1 : "";
+    });
 });
 
 // allTags.forEach(elem => {
