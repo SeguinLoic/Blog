@@ -13,10 +13,8 @@ const { images } = Astro.props;
         ))}
     </div>
     <div class="carousel-controls">
-        <div>
-            <button id="prev"><img src="/icon-arrow.svg"/></button>
-            <button id="next"><img src="/icon-arrow.svg"/></button>
-        </div>
+        <button id="prev"><img src="/icon-arrow.svg"/></button>
+        <button id="next"><img src="/icon-arrow.svg"/></button>
     </div>
 </div>
 
@@ -148,6 +146,7 @@ const { images } = Astro.props;
     top: 50%;
     display: flex;
     justify-content: space-between;
+    transform: translateY(-50%);
 }
 .carousel-controls button {
     padding: 13px;
@@ -170,6 +169,13 @@ const { images } = Astro.props;
 @media screen and (max-width: 768px) {
     .carousel-controls button {
         padding: 10px;
+    }
+    .carousel-controls[data-astro-cid-z34dqrwr] {
+        right: inherit;
+        top: initial;
+        transform: translateY(-50%);
+        bottom: 0;
+        left: 50%;
     }
 }
 </style>
