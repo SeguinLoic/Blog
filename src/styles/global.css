@@ -260,7 +260,6 @@ html#home .carousel-controls {
     right: 0;
     left: inherit;
     justify-content: flex-end;
-    display: none;
 }
 html#home .carousel-controls button {
     width: 50px;
