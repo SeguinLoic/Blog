@@ -7,12 +7,14 @@ import { getCollection } from "astro:content";
 
 
 const tags = [];
+
 const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
-allTags.map((elem: any) => { 
+
+allTags.forEach(elem => {
     if(tags.length === 0) {
         tags.push({name: elem, number: 1});
     } else {
@@ -26,7 +28,7 @@ allTags.map((elem: any) => {
     // tags.forEach(tag => {
     //     tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
     // })
-});
+}); 
 
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index);
 
