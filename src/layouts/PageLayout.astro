@@ -7,6 +7,7 @@ import enrando from "../assets/sancy-7.jpg";
 import { Image } from 'astro:assets';
 import Header from '@components/Header.astro';
 import Title from '@components/Title.astro';
+import Tags from '@components/Tags.astro';
 
 const { page, title } = Astro.props;
 const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? envadrouille : title === "EnRando" ? enrando : articles;
@@ -20,6 +21,7 @@ const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? en
             {title === "articles" ? "" : <a href="/articles"><i class="arrow" data-astro-cid-tljqxsdm="">←</i> Toutes les aventures</a>}
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
+        {title === "articles" ? <nav><p>Filtrer par thématique :</p><Tags tags={filteredTags} /></nav> : ""}
         <div class="content">
             <slot />
         </div>
