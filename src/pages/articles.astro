@@ -3,7 +3,6 @@ import PageLayout from '../layouts/PageLayout.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
 import Tags from '@components/Tags.astro';
 import Filter from '@components/Filter.astro';
-import { Debug } from 'astro:components';
 import { getCollection } from "astro:content";
 
 
@@ -28,9 +27,6 @@ allTags.forEach(elem => {
 
 const page = "articles";
 ---
-<Debug {allTags} />
-<Debug {filteredTags} />
-<Debug {tags} />
 
 <PageLayout page={page} title={page}>
     <nav>
