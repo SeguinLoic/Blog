@@ -292,6 +292,12 @@ html#articles .content {
 html#articles .tags {
     flex-direction: row;
 }
+html#articles nav .tags li a {
+    border: none;
+    padding: 0px;
+    font-size: 1em;
+    color: #000;
+}
 
 
 /* -----------------------  BLOGPOST ---------------------- */
