@@ -209,7 +209,7 @@ html#articles .content  {
     position: absolute;
     height: 100%;
 } */
-html#home .carousel {
+/* html#home .carousel {
     margin-top: 0 !important;
     height: 100%;
     position: absolute;
@@ -223,7 +223,7 @@ html#home .carousel-inner {
     flex-wrap: nowrap;
     aspect-ratio: 0 ;
     height: 100%;
-}
+} */
 html#home .carousel .slide a {
     display: flex;
     height: 100%;

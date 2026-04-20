@@ -33,7 +33,8 @@ const { images } = Astro.props;
     $slides[currentSlide].classList.add("active");
 
     function slideTo(index) {
-        currentSlide = index >= $slides.length || index < 1 ? 0 : index;
+        // currentSlide = index >= $slides.length || index < 1 ? 0 : index;
+        currentSlide = index >= $slides.length ? 0 : currentSlide = index < 1 ? $slides.length : index;
         $slides.forEach($elt => $elt.classList.remove("active"));
         $slides[currentSlide].classList.add("active");
         // $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
@@ -114,18 +115,26 @@ const { images } = Astro.props;
 
 <style>
 .carousel {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .carousel-inner {
     display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    aspect-ratio: 1;
 }
 .slide {
-    flex: 0 0 100%;
     height: 100%;
     transition: .5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.slide.active {
+    opacity: 1;
 }
 .slide img {
     width: 100%;
