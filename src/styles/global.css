@@ -209,7 +209,7 @@ html#articles .content  {
     position: absolute;
     height: 100%;
 } */
-html#new-home .carousel {
+html#home .carousel {
     margin-top: 0 !important;
     height: 100%;
     position: absolute;
@@ -217,19 +217,19 @@ html#new-home .carousel {
     left: 0;
     width: 100%;
 }
-html#new-home .carousel-inner {
+html#home .carousel-inner {
     display: flex;
     overflow: hidden;
     flex-wrap: nowrap;
-    aspect-ratio: 0;
+    aspect-ratio: 0 ;
     height: 100%;
 }
-html#new-home .carousel .slide a {
+html#home .carousel .slide a {
     display: flex;
     height: 100%;
     position: relative;
 }
-html#new-home .carousel .slide a:after {
+html#home .carousel .slide a:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -242,7 +242,7 @@ html#new-home .carousel .slide a:after {
     transition: all 0.3s;
     opacity: 0;
 }
-html#new-home .carousel .slide p {
+html#home .carousel .slide p {
     position: absolute;
     bottom: 60px;
     left: 60px;
@@ -254,7 +254,7 @@ html#new-home .carousel .slide p {
     transition: all 0.3s;
     opacity: 0;
 }
-html#new-home .carousel-controls {
+html#home .carousel-controls {
     top: inherit;
     bottom: 0;
     right: 0;
@@ -262,15 +262,15 @@ html#new-home .carousel-controls {
     justify-content: flex-end;
     display: none;
 }
-html#new-home .carousel-controls button {
+html#home .carousel-controls button {
     width: 50px;
     height: 50px;
 }
-html#new-home .carousel .slide:hover p,
-html#new-home .carousel .slide:hover a:after {
+html#home .carousel .slide:hover p,
+html#home .carousel .slide:hover a:after {
     opacity: 1;
 }
-html#new-home .carousel:after {
+html#home .carousel:after {
     content: '';
     width: 100%;
     height: 100%;
