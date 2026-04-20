@@ -58,9 +58,26 @@ nav {
     }
 }
 @media screen and (max-width: 600px) {
+    .articles {
+        margin-top: 40px;
+    }
     nav {
         flex-direction: column;
         padding: 24px 0px;
+        position: relative;
+        height: auto;
+        background-color: transparent;
+    }
+    nav:after {
+        content: '';
+        width: 100vW;
+        height: 100%;
+        background-color: red;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        z-index: -1;
     }
 }
 </style>
