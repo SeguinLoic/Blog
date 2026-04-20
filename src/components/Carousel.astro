@@ -33,7 +33,8 @@ const { images } = Astro.props;
     let currentSlide = 0;
 
     function slideTo(index) {
-        currentSlide = index >= $slides.length || index < 1 ? 0 : index;
+        // currentSlide = index >= $slides.length || index < 1 ? 0 : index;
+        currentSlide = index >= $slides.length ? 0 : currentSlide = index < 0 ? ($slides.length - 1) : index;
         $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
     }
 
