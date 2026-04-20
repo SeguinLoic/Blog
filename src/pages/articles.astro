@@ -28,27 +28,20 @@ const page = "articles";
 .articles {
     display: flex;
     flex-direction: column;
+    margin-top: 160px;
 }
 nav {
-    margin-bottom: 60px;
-    margin-top: -60px;
-    padding: 32px 0px;
-    background-color: #f5f5f5;
-    display: flex;
-    position: relative;
-    display: flex;
-    gap: 16px;
-}
-nav:after {
-    content: '';
-    width: 99.2vW;
-    height: 100%;
+    padding: 32px 0;
     background-color: #f5f5f5;
     position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    z-index: -1;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    left: 0;
+    padding: 32px 16vW;
+    height: 100px;
+    align-items: center;
+    justify-content: flex-start;
 }
 @media screen and (max-width: 1024px) {
     nav {
