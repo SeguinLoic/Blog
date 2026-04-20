@@ -206,6 +206,10 @@ html#articles .content  {
 
 /* ----------------------- NEW HOME ---------------------- */
 /* html#new-home .carousel {
+    position: absolute;
+    height: 100%;
+} */
+html#new-home .carousel {
     margin-top: 0 !important;
     height: 100%;
     position: absolute;
@@ -275,7 +279,7 @@ html#new-home .carousel:after {
     left: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 50%);
     pointer-events: none;
-} */
+}
 
 
 /* -----------------------  ARTICLES ---------------------- */
@@ -289,9 +293,6 @@ html#articles .content {
 .articles article:last-child::after {
     display: none;
 }
-/* html#articles .tags {
-    flex-direction: row;
-} */
 html#articles nav .tags li a {
     border: none;
     padding: 0px;
