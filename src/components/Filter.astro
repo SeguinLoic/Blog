@@ -1,0 +1,9 @@
+---
+const { filters } = Astro.props;
+---
+
+<ul class="filters">
+    {filters.map((filter) => (
+        <li><a href={`/${filter.name}`}>#{filter.name}(${filter.number})</a></li>
+    ))}
+</ul>

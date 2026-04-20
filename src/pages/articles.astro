@@ -2,6 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
 import Tags from '@components/Tags.astro';
+import Filter from '@components/Filter.astro';
 import { Debug } from 'astro:components';
 import { getCollection } from "astro:content";
 
@@ -14,6 +15,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index);
+
 filteredTags.forEach((elem) => {
     tags.push({name:elem, number: 0});
 });
@@ -24,27 +26,6 @@ allTags.forEach(elem => {
     });
 });
 
-// allTags.forEach(elem => {
-//     if(tags.length === 0) {
-//         tags.push({name: elem, number: 1});
-//     } else {
-//         tags.forEach(tag => {
-//             tag.name !== elem ? tags.push({name: elem, number: 1}) : "";
-//         });
-//     } 
-//     // else {
-//     //     for (const tag of tags) {
-//     //         tag.name === elem ? tag.number += 1 : tags.push({name: elem, number: 1});
-//     //     }
-//     // }
-//     // for (const tag of tags) {
-//     //     tag && tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
-//     // }
-//     // tags.forEach(tag => {
-//     //     tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
-//     // })
-// }); 
-
 const page = "articles";
 ---
 <Debug {allTags} />
@@ -54,6 +35,7 @@ const page = "articles";
 <PageLayout page={page} title={page}>
     <nav>
         <p>Filtrer par thématique :</p>
+        <Filter filters={tags} />
         <Tags tags={filteredTags} />
     </nav>
     <div class="articles">
