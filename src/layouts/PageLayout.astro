@@ -21,7 +21,6 @@ const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? en
             {title === "articles" ? "" : <a href="/articles"><i class="arrow" data-astro-cid-tljqxsdm="">←</i> Toutes les aventures</a>}
             <Image src={cover} alt="Roy's Peak" width="1856px" height="857px"/>
         </div>
-        {title === "articles" ? <nav><p>Filtrer par thématique :</p><Tags tags={filteredTags} /></nav> : ""}
         <div class="content">
             <slot />
         </div>
