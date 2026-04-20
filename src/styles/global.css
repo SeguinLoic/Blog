@@ -383,7 +383,8 @@ html.blogpost section .introduction p {
 }
 html.blogpost section p, 
 html.blogpost section li {
-    font-family: 'Geist';
+    /* font-family: 'Geist'; */
+    font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
