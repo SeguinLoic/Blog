@@ -20,7 +20,7 @@ filteredTags.forEach((elem) => {
 
 allTags.forEach(elem => {
     tags.forEach(tag => {
-        tag.name === elem ? tag.number + 1 : "";
+        tag.name === elem ? tag.number += 1 : "";
     });
 });
 
