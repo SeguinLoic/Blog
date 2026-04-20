@@ -1,17 +1,14 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import ShortBlogPost from '@components/ShortBlogPost.astro';
-import Tags from '@components/Tags.astro';
 import Filter from '@components/Filter.astro';
 import { getCollection } from "astro:content";
-
-
-const tags = [];
 
 const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
+const tags = [];
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index);
 
@@ -32,7 +29,6 @@ const page = "articles";
     <nav>
         <p>Filtrer par thématique :</p>
         <Filter filters={tags} />
-        <!-- <Tags tags={filteredTags} /> -->
     </nav>
     <div class="articles">
         {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}

@@ -7,7 +7,6 @@ import enrando from "../assets/sancy-7.jpg";
 import { Image } from 'astro:assets';
 import Header from '@components/Header.astro';
 import Title from '@components/Title.astro';
-import Tags from '@components/Tags.astro';
 
 const { page, title } = Astro.props;
 const cover = title === "EnVoyage" ? envoyage : title === "1AnEnVadrouille" ? envadrouille : title === "EnRando" ? enrando : articles;
