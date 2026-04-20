@@ -17,7 +17,8 @@ const allTags = (await getCollection('blog')).map((post: any) => post.data.tags)
 allTags.forEach(elem => {
     if(tags.length === 0) {
         tags.push({name: elem, number: 1});
-    // } else {
+    } 
+    // else {
     //     for (const tag of tags) {
     //         tag.name === elem ? tag.number += 1 : tags.push({name: elem, number: 1});
     //     }
