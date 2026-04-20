@@ -242,7 +242,7 @@ html#home .carousel .slide a:after {
     transition: all 0.3s;
     opacity: 0;
 }
-html#home .carousel .slide p {
+/* html#home .carousel .slide p {
     position: absolute;
     bottom: 60px;
     left: 60px;
@@ -253,8 +253,9 @@ html#home .carousel .slide p {
     width: 80%;
     transition: all 0.3s;
     opacity: 0;
-}
-html#home .carousel-controls {
+} */
+
+/* html#home .carousel-controls {
     top: 50%;
     right: 0;
     left: inherit;
@@ -264,7 +265,8 @@ html#home .carousel-controls {
 html#home .carousel-controls button {
     width: 50px;
     height: 50px;
-}
+} */
+
 html#home .carousel .slide:hover p,
 html#home .carousel .slide:hover a:after {
     opacity: 1;
