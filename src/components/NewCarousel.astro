@@ -1,34 +1,23 @@
 ---
 import { Image } from 'astro:assets';
-import { Debug } from 'astro:components';
 
-const { articles } = Astro.props; 
+const { images } = Astro.props; 
 ---
-
-<!-- <Debug {articles} /> -->
 
 <div class="carousel">
     <div class="carousel-inner">
-        <!-- {images.map((image) => (
+        {images.map((image) => (
             <div class="slide">
-                <a href="#">
-                    <p>Le titre de mon article</p>
-                    <Image src={image} alt="image" layout="constrained" loading="lazy" width="672px" height="672px" />
-                </a>
-            </div>
-        ))} -->
-        {articles.map((article) => (
-            <div class="slide">
-                <a href={`/posts/${article.id}`}>
-                    <p>{article.data.title}</p>
-                    <Image src={article.data.cover} alt={article.data.coverAlt} quality="max" layout="constrained" loading="lazy" width="960px" height="960px" />
-                </a>
+                <Image src={image} alt="image" layout="constrained" loading="lazy" width="1920px" height="1080px" />
             </div>
         ))}
     </div>
     <div class="carousel-controls">
-        <button id="prev"><img src="/icon-arrow.svg"/></button>
-        <button id="next"><img src="/icon-arrow.svg"/></button>
+        <a href="/articles" class="return"><span class="arrow">←</span> Retour</a>
+        <div>
+            <button id="prev"><img src="/icon-arrow.svg"/></button>
+            <button id="next"><img src="/icon-arrow.svg"/></button>
+        </div>
     </div>
 </div>
 
@@ -36,7 +25,7 @@ const { articles } = Astro.props;
 
 (function () {
     "use stict"
-    const slideTimeout = 4000;
+    // const slideTimeout = 4000;
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
     const $slides = document.querySelectorAll('.slide');
@@ -57,20 +46,20 @@ const { articles } = Astro.props;
     next.addEventListener('click', () => slideTo(++currentSlide))
 
     // Initialisation de l'intervalle pour afficher les slides
-    intervalId = setInterval(showSlide, slideTimeout)
+    // intervalId = setInterval(showSlide, slideTimeout)
     
     // Boucle sur tous les éléments de type "slide" pour ajouter des écouteurs d'événement pour les interactions avec la souris et le toucher
     $slides.forEach($elt => {
         let startX;
         let endX;
 
-        $elt.addEventListener('mouseover', () => {
-            clearInterval(intervalId);
-        }, false)
+        // $elt.addEventListener('mouseover', () => {
+        //     clearInterval(intervalId);
+        // }, false)
 
-        $elt.addEventListener('mouseout', () => {
-            intervalId = setInterval(showSlide, slideTimeout);
-        }, false);
+        // $elt.addEventListener('mouseout', () => {
+        //     intervalId = setInterval(showSlide, slideTimeout);
+        // }, false);
 
         $elt.addEventListener('touchstart', (event) => {
             startX = event.touches[0].clientX;
@@ -124,7 +113,6 @@ const { articles } = Astro.props;
 <style>
 .carousel {
     position: relative;
-    margin-top: 24px;
 }
 .carousel-inner {
     display: flex;
@@ -136,7 +124,6 @@ const { articles } = Astro.props;
     flex: 0 0 100%;
     height: 100%;
     transition: .5s ease-in-out;
-    overflow: hidden;
 }
 .slide img {
     width: 100%;
@@ -153,8 +140,8 @@ const { articles } = Astro.props;
     justify-content: space-between;
 }
 .carousel-controls button {
-    padding: 12px;
-    background-color: #000;
+    padding: 13px;
+    background-color: #fff;
     border: none;
     cursor: pointer;
     display: flex;
@@ -163,10 +150,14 @@ const { articles } = Astro.props;
 }
 .carousel-controls button img {
     width: 22px;
-    filter: invert(1);
     height: 20px;
 }
 .carousel-controls button#next img {
     transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+    .carousel-controls button {
+        padding: 10px;
+    }
 }
 </style>
