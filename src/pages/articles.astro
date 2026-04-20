@@ -13,12 +13,12 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 const allTags = (await getCollection('blog')).map((post: any) => post.data.tags).flat();
 allTags.map((elem: any) => { 
-    console.log(elem);
-    tags.forEach(tag => {
-        console.log(tags);
-        console.log(tag);
-        tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
-    })
+    for (const tag of tags) {
+        tag && tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
+    }
+    // tags.forEach(tag => {
+    //     tag.name === elem ? tag.number++ : tags.push({name: elem, number: 1});
+    // })
 });
 
 const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(item) === index);
@@ -26,8 +26,6 @@ const filteredTags = allTags.filter((item: any, index: any) => allTags.indexOf(i
 const page = "articles";
 ---
 <Debug {allTags} />
-<Debug {elem} />
-<Debug {tag} />
 <Debug {tags} />
 <PageLayout page={page} title={page}>
     <nav>
