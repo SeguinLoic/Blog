@@ -289,9 +289,9 @@ html#articles .content {
 .articles article:last-child::after {
     display: none;
 }
-html#articles .tags {
+/* html#articles .tags {
     flex-direction: row;
-}
+} */
 html#articles nav .tags li a {
     border: none;
     padding: 0px;
