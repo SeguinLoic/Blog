@@ -236,13 +236,24 @@ const { posts } = Astro.props;
     z-index: 6;
     justify-content: flex-end;
 }
+.postInfo a {
+    color: #fff !important;
+}
 @keyframes animTitle {
     0% {transform: translateY(-10px); opacity: 0;}
     100% {transform: translateY(0px); opacity: 1;}
 }
-@keyframes animTitlebefore {
+@keyframes animTitleBefore {
     0% {transform: translateY(0px); opacity: 1;}
     100% {transform: translateY(10px); opacity: 0;}
+}
+@keyframes animCurrent {
+    0% {transform: translateY(-150%); opacity: 0;}
+    100% {transform: translateY(-140%); opacity: 1;}
+}
+@keyframes animCurrentBefore {
+    0% {transform: translateY(-140%); opacity: 1;}
+    100% {transform: translateY(-130%); opacity: 0;}
 }
 .postInfo p {
     color: #fff !important;
@@ -254,13 +265,11 @@ const { posts } = Astro.props;
     pointer-events: none;
     transform: translateY(-10px);
     text-wrap: pretty;
-    animation: animTitlebefore 1s linear;
+    animation: animTitleBefore 0.4s linear;
 }
 .slide.active .postInfo p {
     pointer-events: auto;
-    /* opacity: 1;
-    transform: translateY(0px); */
-    animation: animTitle 1s linear;
+    animation: animTitle 0.4s linear;
     animation-fill-mode: forwards;
 }
 .postInfo .current {
@@ -268,10 +277,15 @@ const { posts } = Astro.props;
     position: absolute;
     left: 30px;
     top: 0;
-    transform: translateY(-140%);
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+    animation: animCurrentbefore 0.4s linear;
 }
-.postInfo a {
-    color: #fff !important;
+.slide.active .postInfo .current {
+    pointer-events: auto;
+    animation: animCurrent 0.4s linear;
+    animation-fill-mode: forwards;
 }
 @media screen and (max-width: 768px) {
     .carousel-controls button {
