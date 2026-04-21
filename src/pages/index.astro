@@ -16,7 +16,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 const page = "home";
 ---
-<Debug ={allBlogPosts} />
+<Debug {allBlogPosts} />
 <BaseLayout page={page}>
     <main>
         <Header />
