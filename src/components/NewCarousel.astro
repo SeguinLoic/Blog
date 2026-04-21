@@ -161,10 +161,14 @@ const { posts } = Astro.props;
 .carousel-controls .total {
     color: #fff;
     position: absolute;
-    left: 60px;
+    /* left: 60px; */
+    left: 132px;
     top: 0;
     transform: translateY(-140%);
     font-weight: 700;
+}
+.carousel-controls .total span {
+    display: none;
 }
 .postInfo {
     position: absolute;
@@ -234,6 +238,29 @@ const { posts } = Astro.props;
     pointer-events: auto;
     animation: animCurrent 0.4s linear;
     animation-fill-mode: forwards;
+}
+.line {
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 70px;
+    height: 3px;
+    background-color: #3d3d3d;
+    transform: translateY(-19px);
+}
+@keyframes animLine {
+    0%{width: 0%}
+    100%{width: 100%}
+}
+.slide.active .line:after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    animation: animLine 5s linear;
 }
 @media screen and (max-width: 1500px) {
     .postInfo,
