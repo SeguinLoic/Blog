@@ -225,30 +225,24 @@ const { posts } = Astro.props;
 .postInfo {
     position: absolute;
     bottom: 0;
-    right: 150px;
+    right: 0;
     z-index: 1;
-    padding: 0px 40px;
-    gap: 12px;
+    padding: 0 40px 40px;
+    row-gap: 16px;
     display: flex;
     flex-direction: column;
-    width: calc(33% - 150px);
+    width: 33%;
     height: 200px;
     z-index: 6;
-    transition: .5s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-    /* transform: translateY(-20px); */
     justify-content: flex-end;
-    padding-bottom: 40px;
 }
-.slide.active .postInfo {
+.slide.active .postInfo p {
     opacity: 1;
     pointer-events: auto;
-    /* transform: translateY(0px); */
+    transform: translateY(0px);
 }
 .postInfo .current {
     color: #fff;
-    font-weight: 700;
     position: absolute;
     left: 30px;
     top: 0;
@@ -259,6 +253,10 @@ const { posts } = Astro.props;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.5em;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
 }
 .postInfo a {
     color: #fff !important;
