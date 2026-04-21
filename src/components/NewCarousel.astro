@@ -10,7 +10,7 @@ const { posts } = Astro.props;
         {posts.map((post: any) => (
             <div class="slide">
                 <div class="postInfo">
-                    <span class="current"></span>
+                    <span class="current">{(posts.indexOf(post) + 1)}</span>
                     <p>{post.data.title}</p>
                     <a href={`/posts/${post.id}`}>Lire l'article</a>
                 </div>
@@ -19,6 +19,7 @@ const { posts } = Astro.props;
         ))}
     </div>
     <div class="carousel-controls">
+        <span class="total">{posts.length}</span>
         <button id="prev"><img src="/icon-arrow.svg"/></button>
         <button id="next"><img src="/icon-arrow.svg"/></button>
     </div>
