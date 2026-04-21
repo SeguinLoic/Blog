@@ -10,7 +10,7 @@ import NewCarousel from '@components/NewCarousel.astro';
 import { getCollection } from "astro:content";
 import { Debug } from 'astro:components';
 
-const allBlogPosts = (await getCollection('blog')).map((post: any) => post.data.homepage.src);
+const allBlogPosts = (await getCollection('blog')).map((post: any) => post.data.homepage.src ? post : "");
 
 const page = "home";
 ---
