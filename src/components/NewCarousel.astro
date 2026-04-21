@@ -238,6 +238,9 @@ const { posts } = Astro.props;
     color: #c5c5c5 !important;
     text-decoration: none;
 }
+.postInfo a:hover {
+    text-decoration: underline !important;
+}
 @keyframes animTitle {
     0% {transform: translateY(-10px); opacity: 0;}
     100% {transform: translateY(0px); opacity: 1;}
@@ -256,9 +259,9 @@ const { posts } = Astro.props;
 }
 .postInfo p {
     color: #fff !important;
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.4em;
     transition: .5s ease-in-out;
     opacity: 0;
     pointer-events: none;
