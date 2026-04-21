@@ -33,7 +33,7 @@ const { posts } = Astro.props;
     const next = document.querySelector('#next');
     const $slides = document.querySelectorAll('.slide');
     let intervalId;
-    let currentSlide = 0;
+    let currentSlide = 1;
     $slides[currentSlide].classList.add("active");
 
     function slideTo(index) {
