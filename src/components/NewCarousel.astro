@@ -252,7 +252,7 @@ const { posts } = Astro.props;
     0%{width: 0%}
     100%{width: 100%}
 }
-.slide.active .line:after {
+.line:after {
     content: '';
     width: 0%;
     height: 100%;
@@ -260,6 +260,8 @@ const { posts } = Astro.props;
     top: 0;
     left: 0;
     background-color: #fff;
+}
+.slide.active .line:after {
     animation: animLine 5s linear;
 }
 @media screen and (max-width: 1500px) {
