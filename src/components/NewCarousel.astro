@@ -263,11 +263,11 @@ const { posts } = Astro.props;
     pointer-events: none;
     transform: translateY(-10px);
     text-wrap: pretty;
-    animation: animTitleBefore 0.4s linear;
+    animation: animTitleBefore 0.5s linear;
 }
 .slide.active .postInfo p {
     pointer-events: auto;
-    animation: animTitle 0.4s linear;
+    animation: animTitle 0.5s linear;
     animation-fill-mode: forwards;
 }
 .postInfo .current {
@@ -278,12 +278,33 @@ const { posts } = Astro.props;
     transform: translateY(-150%);
     opacity: 0;
     pointer-events: none;
-    animation: animCurrentbefore 0.6s linear;
+    animation: animCurrentbefore 0.4s linear;
 }
 .slide.active .postInfo .current {
     pointer-events: auto;
-    animation: animCurrent 0.6s linear;
+    animation: animCurrent 0.4s linear;
     animation-fill-mode: forwards;
+}
+@media screen and (max-width: 1500px) {
+    .postInfo,
+    .carousel-controls {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .postInfo,
+    .carousel-controls {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .postInfo p {
+        font-size: 1.6em;
+    }
+    .postInfo,
+    .carousel-controls {
+        width: 55%;
+    }
 }
 @media screen and (max-width: 768px) {
     .carousel-controls button {
