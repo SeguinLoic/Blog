@@ -14,7 +14,7 @@ const { posts } = Astro.props;
         ))} -->
         {posts.map((post: any) => (
             <div class="slide">
-                <a href={post.url} class="postInfo">
+                <a href={`/posts/{post.id}`} class="postInfo">
                     <p>{post.data.title}</p>
                     <p>{post.data.description}</p>
                 </a>
