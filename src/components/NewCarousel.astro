@@ -156,7 +156,7 @@ const { posts } = Astro.props;
     opacity: 1;
     pointer-events: auto;
 }
-.carousel-controls {
+/* .carousel-controls {
     position: absolute;
     z-index: 5;
     right: 0;
@@ -164,6 +164,17 @@ const { posts } = Astro.props;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+} */
+.carousel-controls {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 33%;
+    background-color: #000000;
 }
 .carousel-controls button {
     padding: 13px;
@@ -186,12 +197,22 @@ const { posts } = Astro.props;
 .postInfo {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 100px;
     z-index: 1;
     padding: 40px;
     gap: 12px;
     display: flex;
     flex-direction: column;
+    width: calc(33% - 100px);
+    height: 200px;
+    z-index: 6;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+.slide.active .postInfo {
+    opacity: 1;
+    pointer-events: auto;
 }
 .postInfo p {
     color: #fff !important;
