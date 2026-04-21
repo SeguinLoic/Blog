@@ -7,10 +7,16 @@ import image1 from "../assets/mongolia-7.jpg"
 import image2 from "../assets/mongolia-2.jpg"
 import image3 from "../assets/china-10.jpg"
 import NewCarousel from '@components/NewCarousel.astro';
+import { getCollection } from "astro:content";
+import { Debug } from 'astro:components';
+
+const allBlogPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
 const page = "home";
 ---
-
+<Debug ={allBlogPosts} />
 <BaseLayout page={page}>
     <main>
         <Header />
@@ -41,7 +47,7 @@ main {
 }
 .content {
     z-index: 1;
-    padding: 40px;
+    padding: 40px 60px;
     display: flex;
     flex-direction: column;
     gap: 24px;
