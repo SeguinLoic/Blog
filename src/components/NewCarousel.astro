@@ -10,7 +10,7 @@ const { posts } = Astro.props;
         {posts.map((post: any) => (
             <div class="slide">
                 <div class="postInfo">
-                    <span class="current">{(posts.indexOf(post) + 1)}</span>
+                    <span class="current">0{(posts.indexOf(post) + 1)}</span>
                     <p>{post.data.title}</p>
                     <a href={`/posts/${post.id}`}>Lire l'article</a>
                 </div>
@@ -19,7 +19,7 @@ const { posts } = Astro.props;
         ))}
     </div>
     <div class="carousel-controls">
-        <span class="total">{posts.length}</span>
+        <span class="total">/ 0{posts.length}</span>
         <button id="prev"><img src="/icon-arrow.svg"/></button>
         <button id="next"><img src="/icon-arrow.svg"/></button>
     </div>
@@ -214,6 +214,14 @@ const { posts } = Astro.props;
 .carousel-controls button#next img {
     transform: rotate(180deg);
 }
+.carousel-controls .total {
+    color: #fff;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    transform: translateY(-140%);
+    font-weight: 700;
+}
 .postInfo {
     position: absolute;
     bottom: 0;
@@ -237,6 +245,14 @@ const { posts } = Astro.props;
     opacity: 1;
     pointer-events: auto;
     /* transform: translateY(0px); */
+}
+.postInfo .current {
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    transform: translateY(-140%);
 }
 .postInfo p {
     color: #fff !important;
