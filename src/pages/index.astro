@@ -14,7 +14,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-allBlogPosts.map((post) => post.data.homepage.length > 0;)
+allBlogPosts.map((post: any) => post.data.homepage.length > 0);
 
 const page = "home";
 ---
