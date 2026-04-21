@@ -46,13 +46,23 @@ const { posts } = Astro.props;
     next.addEventListener('click', () => slideTo(++currentSlide))
 
     function showSlide() {
-        slideTo(currentSlide);
-        ++currentSlide;
+        slideTo(++currentSlide);
+        // ++currentSlide;
     }
 
     // Initialisation de l'intervalle pour afficher les slides
     intervalId = setInterval(showSlide, slideTimeout)
     
+
+
+
+
+
+
+
+
+
+
     // Boucle sur tous les éléments de type "slide" pour ajouter des écouteurs d'événement pour les interactions avec la souris et le toucher
     // $slides.forEach($elt => {
     //     let startX;
