@@ -10,11 +10,7 @@ import NewCarousel from '@components/NewCarousel.astro';
 import { getCollection } from "astro:content";
 import { Debug } from 'astro:components';
 
-const allBlogPosts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
-
-allBlogPosts.map((post: any) => post.data.homepage.length > 0);
+const allBlogPosts = (await getCollection('blog')).map((post: any) => post.data.homepage.src);
 
 const page = "home";
 ---
