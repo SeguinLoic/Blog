@@ -250,12 +250,12 @@ const { posts } = Astro.props;
     100% {transform: translateY(10px); opacity: 0;}
 }
 @keyframes animCurrent {
-    0% {transform: translateY(-150%); opacity: 0;}
+    0% {transform: translateY(-160%); opacity: 0;}
     100% {transform: translateY(-140%); opacity: 1;}
 }
 @keyframes animCurrentBefore {
     0% {transform: translateY(-140%); opacity: 1;}
-    100% {transform: translateY(-130%); opacity: 0;}
+    100% {transform: translateY(-120%); opacity: 0;}
 }
 .postInfo p {
     color: #fff !important;
@@ -279,7 +279,7 @@ const { posts } = Astro.props;
     position: absolute;
     left: 30px;
     top: 0;
-    transform: translateY(-150%);
+    transform: translateY(-160%);
     opacity: 0;
     pointer-events: none;
     animation: animCurrentbefore 0.4s linear;
