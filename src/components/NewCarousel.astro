@@ -209,10 +209,12 @@ const { posts } = Astro.props;
     transition: .5s ease-in-out;
     opacity: 0;
     pointer-events: none;
+    transform: translateY(-20px);
 }
 .slide.active .postInfo {
     opacity: 1;
     pointer-events: auto;
+    transform: translateY(0px);
 }
 .postInfo p {
     color: #fff !important;
