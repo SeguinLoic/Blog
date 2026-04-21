@@ -247,6 +247,10 @@ const { posts } = Astro.props;
     height: 3px;
     background-color: #3d3d3d;
     transform: translateY(-19px);
+    z-index: 0;
+}
+.slide.active .line {
+    z-index: 1;
 }
 @keyframes animLine {
     0%{width: 0%}
