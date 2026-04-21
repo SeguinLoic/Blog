@@ -236,10 +236,15 @@ const { posts } = Astro.props;
     z-index: 6;
     justify-content: flex-end;
 }
+@keyframes animTitle {
+    0% {transform: translateY(-10px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
 .slide.active .postInfo p {
-    opacity: 1;
     pointer-events: auto;
-    transform: translateY(0px);
+    /* opacity: 1;
+    transform: translateY(0px); */
+    animation: animTitle 1s linear;
 }
 .postInfo .current {
     color: #fff;
@@ -250,13 +255,14 @@ const { posts } = Astro.props;
 }
 .postInfo p {
     color: #fff !important;
-    font-size: 24px;
+    font-size: 1.9em;
     font-weight: 700;
     line-height: 1.5em;
     transition: .5s ease-in-out;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
+    text-wrap: pretty;
 }
 .postInfo a {
     color: #fff !important;
