@@ -42,8 +42,8 @@ const { posts } = Astro.props;
         $slides[currentSlide].classList.add("active");
     }
 
-    prev.addEventListener('click', () => slideTo(--currentSlide))
-    next.addEventListener('click', () => slideTo(++currentSlide))
+    prev.addEventListener('click', () => intervalId = setInterval(slideBack, slideTimeout))
+    next.addEventListener('click', () => intervalId = setInterval(slideAhead, slideTimeout))
 
     // function showSlide() {
     //     slideTo(++currentSlide);
