@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 
-const { images, posts } = Astro.props; 
+const { posts } = Astro.props; 
 ---
 
 <div class="carousel">
@@ -11,8 +11,12 @@ const { images, posts } = Astro.props;
                 <Image src={image} alt="image" layout="constrained" loading="lazy" width="1920px" height="1080px" />
             </div>
         ))} -->
-        {posts.map((post) => (
+        {posts.map((post: any) => (
             <div class="slide">
+                <a href={post.url} class="postInfo">
+                    <p>{post.data.title}</p>
+                    <p>{post.data.description}</p>
+                </a>
                 <Image src={post.data.homepage} alt="image" layout="constrained" loading="lazy" width="1920px" height="1080px" />
             </div>
         ))}
