@@ -7,9 +7,10 @@ const { posts } = Astro.props;
     <div class="carousel-inner">
         {posts.map((post: any) => (
             <div class="slide">
-                <a href={`/posts/${post.id}`} class="postInfo">
+                <div class="postInfo">
                     <p>{post.data.title}</p>
-                </a>
+                    <a href={`/posts/${post.id}`}>Lire l'article</a>
+                </div>
                 <Image src={post.data.homepage} alt="image" layout="constrained" loading="lazy" width="1920px" height="1080px" />
             </div>
         ))}
@@ -182,19 +183,17 @@ const { posts } = Astro.props;
 .carousel-controls button#next img {
     transform: rotate(180deg);
 }
-a.postInfo {
+.postInfo {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 1;
     padding: 40px;
-    background-color: #000;
     gap: 12px;
     display: flex;
     flex-direction: column;
-    width: 600px;
 }
-a.postInfo p {
+.postInfo p {
     color: #fff !important;
     font-size: 24px;
     font-weight: 700;
