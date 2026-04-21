@@ -1,9 +1,10 @@
 ---
 import { Image } from 'astro:assets';
+import { Debug } from 'astro:components';
 
 const { posts } = Astro.props; 
 ---
-
+<Debug {posts} />
 <div class="carousel">
     <div class="carousel-inner">
         <!-- {images.map((image) => (
@@ -172,6 +173,25 @@ const { posts } = Astro.props;
 }
 .carousel-controls button#next img {
     transform: rotate(180deg);
+}
+a.postInfo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 40px;
+    background-color: #000;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+a.postInfo p {
+    color: #fff !important;
+}
+a.postInfo p:first-child {
+    font-size: 24px;
+    font-weight: 700;
 }
 @media screen and (max-width: 768px) {
     .carousel-controls button {
