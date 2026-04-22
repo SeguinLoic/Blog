@@ -17,6 +17,11 @@ const { posts } = Astro.props;
             </div>
         ))}
     </div>
+    <div class="mobile-navigation">
+        {posts.map((post: any) => (
+            <span class={`line line-${(posts.indexOf(post) + 1)}`}></span>
+        ))}
+    </div>
     <div class="carousel-controls">
         <span class="total"><span>/</span> 0{posts.length}</span>
         <button id="prev"><img src="/icon-arrow.svg"/></button>
@@ -92,6 +97,9 @@ const { posts } = Astro.props;
 .slide.active img {
     opacity: 1;
     pointer-events: auto;
+}
+.mobile-navigation {
+    display: none;
 }
 .carousel-controls {
     position: absolute;
@@ -282,6 +290,9 @@ const { posts } = Astro.props;
     }
 }
 @media screen and (max-width: 768px) {
+    .mobile-navigation {
+        display: flex;
+    }
     .postInfo p,
     .postInfo a, 
     .carousel-controls,
