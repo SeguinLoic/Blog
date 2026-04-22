@@ -330,7 +330,7 @@ const { posts } = Astro.props;
         opacity: 1;
         background-color: #fff;
         border-radius: 10px;
-        transition: width 0.3s;
+        transition: width 0.5s;
     }
     .line:after {
         border-radius: 10px;
@@ -338,6 +338,9 @@ const { posts } = Astro.props;
     .mobile-navigation .line.active {
         width: 40px !important;
         background-color: #3d3d3d;
+    }
+    .mobile-navigation .line.active:after {
+        animation: animLine 5s linear;
     }
     .slide:nth-child(2) .line {
         left: 50px;
