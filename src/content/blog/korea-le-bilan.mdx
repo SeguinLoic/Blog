@@ -1,0 +1,71 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: On a beaucoup beaucoup ri, en Corée
+pubDate: 2026-04-22
+description: Il va falloir que je trouve une petite description pour celui-ci
+author: OneHuman
+tags: ["EnVoyage", "1AnEnVadrouille"]
+cover: ./covers/korea-14.jpg
+coverAlt: Un temple illuminé dans la nuit
+---
+import Carousel from '../../components/Carousel.astro';
+import Tags from '../../components/Tags.astro';
+import Header from '../../components/Header.astro';
+
+import image1 from "../../assets/korea/korea-1.jpg"
+import image2 from "../../assets/korea/korea-2.jpg"
+import image3 from "../../assets/korea/korea-3.jpg"
+import image4 from "../../assets/korea/korea-4.jpg"
+import image5 from "../../assets/korea/korea-5.jpg"
+import image6 from "../../assets/korea/korea-6.jpg"
+import image7 from "../../assets/korea/korea-7.jpg"
+import image8 from "../../assets/korea/korea-8.jpg"
+import image9 from "../../assets/korea/korea-9.jpg"
+import image10 from "../../assets/korea/korea-10.jpg"
+import image11 from "../../assets/korea/korea-11.jpg"
+import image12 from "../../assets/korea/korea-12.jpg"
+import image13 from "../../assets/korea/korea-13.jpg"
+import image14 from "../../assets/korea/korea-14.jpg"
+import image15 from "../../assets/korea/korea-15.jpg"
+import image16 from "../../assets/korea/korea-16.jpg"
+import image17 from "../../assets/korea/korea-17.jpg"
+import image18 from "../../assets/korea/korea-18.jpg"
+import image19 from "../../assets/korea/korea-19.jpg"
+import image20 from "../../assets/korea/korea-20.jpg"
+
+<div class="fenetre">
+    <Header />
+    <Carousel images={[image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20]} />
+</div>
+<section>
+<div class="introduction">
+    <time datetime={frontmatter.pubDate}>{new Date(frontmatter.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+    <h2>{frontmatter.title}</h2>
+    <p>{frontmatter.description}</p>
+    <Tags tags={frontmatter.tags} />
+</div>
+<div class="text">
+Ainsi s'achève notre court séjour en Corée du Sud. C'est une chance d'avoir pu arriver jusqu'à cette partie du globe, mais nous n'avons pu rester que 12 jours, ce qui n'est pas assez pour en comprendre sa culture et ses enjeux, à mon goût. 
+<br/>
+On a néanmoins trempé un orteil ! On a pu prendre la température d'un pays qui est empreint de traditions fortes mais qui n'a pas peur de flirter avec la modernité. Dans ce pays où l'âge représente une échelle dans le respect, il peut être délicat pour la jeunesse de définir sa place. Au sein des familles, les jeunes femmes doivent servir les hommes plus anciens. Les jeunes hommes doivent posséder un appartement, un foyer s'ils veulent pouvoir un jour se mettre en couple et se marier (et il faut voir le prix de l'immobilier à Séoul !). Attention, je ne suis pas en train de faire des généralités, mais ce sont des pratiques qui sont encore largement répandues aujourd'hui même si elles ont tendance à évoluer. 
+<br/>
+Parce que tout évolue très vite dans ce pays. Un pays qui a vécu une forte et rapide croissance économique, notamment grâce à un peuple qui a connu des semaines à 68 heures de travail. Un pays dont l'entreprise phare "Samsung" est une fierté absolue. Ils en sont d'ailleurs quasi tous équipés, du smartphone à la télé, en passant par la coloration pour cheveux (ah non, ça c'était LG). Il y a du wifi jusque dans les transports. La plupart des restaurants sont dotés de tablettes ou de bornes de commandes pour le choix du repas et le paiement. Les grands opérateurs mobiles possèdent les meilleurs équipes de E-Sport de la planète. Les rues des grandes métropoles sont inondées de panneaux publicitaires LED. Il y a des robots qui se baladent dans les grandes gares (Ils ressemblent à Wall-E, pas à ceux de iRobot). Et si je vous disais aujourd'hui qu'il y a des voitures volantes vous pourriez me croire (mais on n'y est pas encore).
+<br/>
+Ce que je trouve fascinant et qu'il faut bien garder en mémoire, c'est que ce n'est que la moitié d'un pays ! Les relations entre les deux parties de la Corée pourraient s'apparenter au partage d'une chambre entre deux frères. Le premier voulant le partage équitable et sans animosité des jouets et l'autre, têtu et colérique, n'en ferait qu'à  sa tête, n'hésitant pas à jeter ses excréments au visage de son frangin. (C'est à moitié faux).
+<br/>
+Malgré cette ambiance politique un peu tendue, il y a des gens. Des gens très gentils, polis, et ceux que nous avons rencontrés étaient très drôles. On a appris avec eux les coutumes en termes de sorties et de nourriture, dont je vous livre le secret aujourd'hui. Pour votre prochain voyage en Corée, voici comment doit se dérouler une soirée :
+- 1er round, barbecue coréen + Soju,
+- 2ème round, on change de resto pour un poulet frit + bière
+- 3ème round, karaoké et pourquoi pas Makgeolli.
+Et oui, deux restos ! Du jamais vu ! En même temps, je dois avouer que je suis souvent resté sur ma faim après nos repas. Mais aujourd'hui je comprends mieux, ils mangent plusieurs fois, comme les "Hobbits". 
+<br/>
+Petite liste de trucs sympas qu'on a découverts pendant notre séjour : 
+- on se douche dans les toilettes et inversement,
+- il n'y a pas souvent de draps dans les hôtels,
+- on peut laisser nos affaires sans surveillance, même dans la rue, il n'y aura aucun vol,
+- les voitures ont toutes leurs vitres teintées,
+- ils mangent épicé et il y a de la crevette PARTOUT,
+- il y a des chaises devant les restaurants pour commander et patienter en attendant qu'une table se libère,
+- il est possible de manger du poulpe fraichement découpé, il bouge encore dans l'assiette (et dans la bouche 🤢)
+</div>
+</section>
