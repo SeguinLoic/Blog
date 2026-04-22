@@ -25,7 +25,6 @@ const { posts } = Astro.props;
 </div>
 
 <script>
-
 (function () {
     "use stict"
     const slideTimeout = 5000;
@@ -48,6 +47,7 @@ const { posts } = Astro.props;
         slideTo(--currentSlide);
         intervalId = setInterval(showSlide, slideTimeout);
     })
+
     next.addEventListener('click', () => {
         clearInterval(intervalId);
         intervalId = null;
@@ -55,63 +55,11 @@ const { posts } = Astro.props;
         intervalId = setInterval(showSlide, slideTimeout);
     })
 
-    // prev.addEventListener('click', () => {
-    //     clearInterval(intervalId);
-    //     intervalId = setInterval(slideBack, slideTimeout);
-    // })
-    // next.addEventListener('click', () => {
-    //     clearInterval(intervalId);
-    //     intervalId = setInterval(slideAhead, slideTimeout);
-    // })
-    // next.addEventListener('click', () => slideAhead())
-
     function showSlide() {
         slideTo(++currentSlide);
     }
 
-    // Initialisation de l'intervalle pour afficher les slides
-    // intervalId = setInterval(showSlide, slideTimeout)
-    intervalId = setInterval(showSlide, slideTimeout)
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    // Boucle sur tous les éléments de type "slide" pour ajouter des écouteurs d'événement pour les interactions avec la souris et le toucher
-    // $slides.forEach($elt => {
-    //     let startX;
-    //     let endX;
-
-    //     $elt.addEventListener('mouseover', () => {
-    //         clearInterval(intervalId);
-    //     }, false)
-
-    //     $elt.addEventListener('mouseout', () => {
-    //         intervalId = setInterval(showSlide, slideTimeout);
-    //     }, false);
-
-    //     $elt.addEventListener('touchstart', (event) => {
-    //         startX = event.touches[0].clientX;
-    //     });
-
-    //     $elt.addEventListener('touchend', (event) => {
-    //         endX = event.changedTouches[0].clientX;
-    //         if (startX > endX) {
-    //             slideTo(currentSlide + 1);
-    //         } else if (startX < endX) {
-    //             slideTo(currentSlide - 1);
-    //         }
-    //     });
-
-    // })
+    intervalId = setInterval(showSlide, slideTimeout);
 })()
 </script>
 
@@ -219,9 +167,13 @@ const { posts } = Astro.props;
 .postInfo a {
     color: #c5c5c5 !important;
     text-decoration: none;
+    pointer-events: none;
 }
 .postInfo a:hover {
     text-decoration: underline !important;
+}
+.slide.active .postInfo a {
+    pointer-events: auto;
 }
 @keyframes animTitle {
     0% {transform: translateY(-10px); opacity: 0;}

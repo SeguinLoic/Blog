@@ -137,7 +137,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0px;
 }
 h1 {
-    /* font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem); */
     font-size: clamp(2rem, 1.525rem + 2.375vw, 4.375rem);
     line-height: clamp(3.125rem, 2.8125rem + 1.5625vw, 4.6875rem);
 }
@@ -205,72 +204,6 @@ html#articles .content  {
 } */
 
 /* ----------------------- NEW HOME ---------------------- */
-/* html#new-home .carousel {
-    position: absolute;
-    height: 100%;
-} */
-/* html#home .carousel {
-    margin-top: 0 !important;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-html#home .carousel-inner {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    aspect-ratio: 0 ;
-    height: 100%;
-} */
-/* html#home .carousel .slide a {
-    display: flex;
-    height: 100%;
-    position: relative;
-}
-html#home .carousel .slide a:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 40%);
-    pointer-events: none;
-    transition: all 0.3s;
-    opacity: 0;
-} */
-/* html#home .carousel .slide p {
-    position: absolute;
-    bottom: 60px;
-    left: 60px;
-    font-weight: 500;
-    font-size: 24px;
-    color: #fff !important;
-    z-index: 1;
-    width: 80%;
-    transition: all 0.3s;
-    opacity: 0;
-} */
-
-/* html#home .carousel-controls {
-    top: 50%;
-    right: 0;
-    left: inherit;
-    justify-content: flex-end;
-    transform: translateY(-50%);
-}
-html#home .carousel-controls button {
-    width: 50px;
-    height: 50px;
-} */
-
-/* html#home .carousel .slide:hover p,
-html#home .carousel .slide:hover a:after {
-    opacity: 1;
-} */
 html#home .carousel:after {
     content: '';
     width: 100%;
@@ -281,7 +214,6 @@ html#home .carousel:after {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 50%);
     pointer-events: none;
 }
-
 
 /* -----------------------  ARTICLES ---------------------- */
 html#articles .content {
@@ -300,7 +232,6 @@ html#articles nav .tags li a {
     font-size: 1em;
     color: #000;
 }
-
 
 /* -----------------------  BLOGPOST ---------------------- */
 html.blogpost header a.logo {
