@@ -44,11 +44,15 @@ const { posts } = Astro.props;
 
     prev.addEventListener('click', () => {
         clearInterval(intervalId);
-        slideBack();
+        intervalId = null;
+        slideTo(--currentSlide);
+        intervalId = setInterval(showSlide, slideTimeout);
     })
     next.addEventListener('click', () => {
         clearInterval(intervalId);
-        slideAhead();
+        intervalId = null;
+        slideTo(++currentSlide);
+        intervalId = setInterval(showSlide, slideTimeout);
     })
 
     // prev.addEventListener('click', () => {
@@ -61,20 +65,13 @@ const { posts } = Astro.props;
     // })
     // next.addEventListener('click', () => slideAhead())
 
-    // function showSlide() {
-    //     slideTo(++currentSlide);
-    // }
-
-    function slideAhead() {
+    function showSlide() {
         slideTo(++currentSlide);
-    }
-    function slideBack() {
-        slideTo(--currentSlide);
     }
 
     // Initialisation de l'intervalle pour afficher les slides
     // intervalId = setInterval(showSlide, slideTimeout)
-    intervalId = setInterval(slideAhead, slideTimeout)
+    intervalId = setInterval(showSlide, slideTimeout)
 
 
     
