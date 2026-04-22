@@ -282,30 +282,28 @@ const { posts } = Astro.props;
     }
 }
 @media screen and (max-width: 768px) {
-    .slide:nth-child(1) .postInfo .current {
-        left: 20px;
-    }
-    .slide:nth-child(2) .postInfo .current {
-        left: 30px;
-    }
-    .slide:nth-child(3) .postInfo .current {
-        left: 40px;
-    }
+    .postInfo p,
+    .postInfo a, 
+    .carousel-controls,
+    .carousel-controls:after,
     .postInfo .current {
-        left: 20px;
-        top: 0;
-        transform: translateY(0%);
-        opacity: 1;
+        display: none;
     }
     .postInfo {
         width: 100%;
         height: 40px;
     }
-    .postInfo p,
-    .postInfo a, 
-    .carousel-controls,
-    .carousel-controls:after {
-        display: none;
+    .line {
+        left: 0px;
+        width: 40px;
+        transform: translateY(0px);
+        opacity:1;
+    }
+    .slide:nth-child(2) .line {
+        left: 50px;
+    }
+    .slide:nth-child(3) .line {
+        left: 100px;
     }
 }
 </style>
