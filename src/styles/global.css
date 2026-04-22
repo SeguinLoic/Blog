@@ -398,6 +398,11 @@ html.blogpost section li {
         left: 0;
         position: relative;
     }
+    html#articles .tags {
+        min-width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 768px) {
     html.blogpost .fenetre .carousel .carousel-inner {
