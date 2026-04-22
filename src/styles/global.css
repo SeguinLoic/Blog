@@ -363,6 +363,12 @@ html.blogpost section li {
         padding-bottom: 32px;
     }
 }
+@media screen and (max-width: 1200px) {
+    html#articles .tags {
+        min-width: 160px;
+        flex-direction: column;
+    }
+}
 @media (max-width:1024px) {
     html.blogpost main {
         flex-direction: column;
