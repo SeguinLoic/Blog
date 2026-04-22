@@ -294,10 +294,23 @@ const { posts } = Astro.props;
         height: 40px;
     }
     .line {
-        left: 0px;
+        width: 4px !important;
+        left: 0;
         width: 40px;
-        transform: translateY(0px);
-        opacity:1;
+        transform: translateY(0);
+        opacity: 1;
+        background-color: #fff;
+        border-radius: 10px;
+        height: 4px;
+        transition: all 0.3s;
+    }
+    .line:after {
+        border-radius: 10px;
+    }
+    .slide.active .line {
+        opacity: 1;
+        width: 40px !important;
+        background-color: #3d3d3d;
     }
     .slide:nth-child(2) .line {
         left: 50px;
