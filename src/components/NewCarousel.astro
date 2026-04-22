@@ -42,12 +42,23 @@ const { posts } = Astro.props;
         $slides[currentSlide].classList.add("active");
     }
 
-    prev.addEventListener('click', () => slideBack())
-    next.addEventListener('click', () => slideAhead())
+    
+
+    prev.addEventListener('click', () => {
+        clearInterval(intervalId);
+        intervalId = setInterval(slideBack, slideTimeout);
+    })
+    next.addEventListener('click', () => {
+        clearInterval(intervalId);
+        intervalId = setInterval(slideAhead, slideTimeout);
+    })
+    // next.addEventListener('click', () => slideAhead())
 
     // function showSlide() {
     //     slideTo(++currentSlide);
     // }
+
+
     function slideAhead() {
         slideTo(++currentSlide);
     }
@@ -57,8 +68,8 @@ const { posts } = Astro.props;
 
     // Initialisation de l'intervalle pour afficher les slides
     // intervalId = setInterval(showSlide, slideTimeout)
-    // intervalId = setInterval(slideAhead, slideTimeout)
-    addEventListener("DOMContentLoaded", (event) => { intervalId = setInterval(slideAhead, slideTimeout) })
+    intervalId = setInterval(slideAhead, slideTimeout)
+
 
     
 
