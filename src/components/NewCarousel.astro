@@ -46,6 +46,8 @@ const { posts } = Astro.props;
     function slideTo(index) {
         currentSlide = index >= $slides.length ? 0 : currentSlide = index < 0 ? ($slides.length - 1) : index;
         $slides.forEach($elt => $elt.classList.remove("active"));
+        mobileLines.forEach($elt => $elt.classList.remove("active"));
+        mobileLines[currentSlide].classList.add("active");
         $slides[currentSlide].classList.add("active");
     }
 
@@ -321,21 +323,19 @@ const { posts } = Astro.props;
         height: 40px;
     }
     .line {
-        width: 4px !important;
+        width: 4px;
+        height: 4px;
         left: 0;
-        width: 40px;
         transform: translateY(0);
         opacity: 1;
         background-color: #fff;
         border-radius: 10px;
-        height: 4px;
         transition: width 0.3s;
     }
     .line:after {
         border-radius: 10px;
     }
-    .slide.active .line {
-        opacity: 1;
+    .mobile-navigation .line.active {
         width: 40px !important;
         background-color: #3d3d3d;
     }
