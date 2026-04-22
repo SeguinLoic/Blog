@@ -282,19 +282,20 @@ const { posts } = Astro.props;
     }
 }
 @media screen and (max-width: 768px) {
-    .carousel-controls button {
-        padding: 10px;
-    }
-    .carousel-controls[data-astro-cid-z34dqrwr] {
+    .carousel-controls {
         right: inherit;
         top: initial;
-        transform: translateY(-50%);
+        transform: translateY(0%) translateX(-50%);
         bottom: 0;
         left: 50%;
+        background: none;
+        height: 40px;
+        width: 100px;
     }
     .postInfo p,
     .postInfo a, 
-    .carousel-controls button {
+    .carousel-controls button,
+    .carousel-controls:after {
         display: none;
     }
 }
