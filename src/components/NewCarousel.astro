@@ -57,7 +57,9 @@ const { posts } = Astro.props;
 
     // Initialisation de l'intervalle pour afficher les slides
     // intervalId = setInterval(showSlide, slideTimeout)
-    intervalId = setInterval(slideAhead, slideTimeout)
+    // intervalId = setInterval(slideAhead, slideTimeout)
+    addEventListener("DOMContentLoaded", (event) => { intervalId = setInterval(slideAhead, slideTimeout) })
+
     
 
 
