@@ -100,7 +100,7 @@ const { posts } = Astro.props;
     justify-content: flex-end;
     bottom: 0;
     right: 0;
-    height: 200px;
+    height: 180px;
     width: 33%;
     background-color: #000;
     background-image: url(/map.svg);
@@ -141,8 +141,7 @@ const { posts } = Astro.props;
 .carousel-controls .total {
     color: #fff;
     position: absolute;
-    /* left: 60px; */
-    left: 132px;
+    left: 122px;
     top: 0;
     transform: translateY(-140%);
     font-weight: 700;
@@ -182,7 +181,7 @@ const { posts } = Astro.props;
     display: flex;
     flex-direction: column;
     width: 33%;
-    height: 200px;
+    height: 180px;
     z-index: 6;
     justify-content: flex-end;
 }
@@ -220,7 +219,7 @@ const { posts } = Astro.props;
 .postInfo .current {
     color: #fff;
     position: absolute;
-    left: 30px;
+    left: 20px;
     top: 0;
     transform: translateY(-160%);
     opacity: 0;
@@ -235,7 +234,7 @@ const { posts } = Astro.props;
 .line {
     position: absolute;
     top: 0;
-    left: 55px;
+    left: 45px;
     width: 70px;
     height: 3px;
     background-color: #3d3d3d;
@@ -293,8 +292,9 @@ const { posts } = Astro.props;
         bottom: 0;
         left: 50%;
     }
-    .postInfo,
-    .carousel-controls {
+    .postInfo p,
+    .postInfo a, 
+    .carousel-controls button {
         display: none;
     }
 }
