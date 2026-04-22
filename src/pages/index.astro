@@ -53,11 +53,17 @@ main {
     line-height: 1.7;
 }
 .content a {
-    color: #000000 !important;
+    color: #000000;
     text-decoration: none;
     background-color: #fff;
     padding: 10px 16px;
     font-weight: 500;
+    transition: all 0.3s;
+}
+.content a:hover {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: underline;
 }
 .image {
     position: fixed;
@@ -93,7 +99,7 @@ main {
     }
     .content {
         width: 100%;
-        gap: 16px;
+        gap: 32px;
         text-align: center;
         padding: 0 80px;
         flex-grow: 1;
