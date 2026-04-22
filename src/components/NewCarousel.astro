@@ -36,9 +36,12 @@ const { posts } = Astro.props;
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
     const $slides = document.querySelectorAll('.slide');
+    const mobileNavigation = document.querySelector('.mobile-navigation');
+    const mobileLines = mobileNavigation.querySelectorAll('.line');
     let intervalId;
     let currentSlide = 0;
     $slides[currentSlide].classList.add("active");
+    mobileLines[currentSlide].classList.add("active");
 
     function slideTo(index) {
         currentSlide = index >= $slides.length ? 0 : currentSlide = index < 0 ? ($slides.length - 1) : index;
@@ -291,6 +294,19 @@ const { posts } = Astro.props;
 }
 @media screen and (max-width: 768px) {
     .mobile-navigation {
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 10px;
+        z-index: 2;
+        justify-content: center;
+        gap: 6px;
+    }
+    .mobile-navigation .line {
+        position: relative;
         display: flex;
     }
     .postInfo p,
