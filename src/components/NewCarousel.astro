@@ -295,6 +295,11 @@ const { posts } = Astro.props;
     }
 }
 @media screen and (max-width: 768px) {
+    .carousel-controls,
+    .carousel-controls:after,
+    .postInfo {
+        display: none;
+    }
     .mobile-navigation {
         display: flex;
         position: absolute;
@@ -310,19 +315,6 @@ const { posts } = Astro.props;
     .mobile-navigation .line {
         position: relative;
         display: flex;
-    }
-    .postInfo p,
-    .postInfo a, 
-    .carousel-controls,
-    .carousel-controls:after,
-    .postInfo .current {
-        display: none;
-    }
-    .postInfo {
-        width: 100%;
-        height: 40px;
-    }
-    .line {
         width: 4px;
         height: 4px;
         left: 0;
@@ -332,7 +324,7 @@ const { posts } = Astro.props;
         border-radius: 10px;
         transition: width 0.5s;
     }
-    .line:after {
+    .mobile-navigation .line:after {
         border-radius: 10px;
     }
     .mobile-navigation .line.active {
@@ -341,12 +333,6 @@ const { posts } = Astro.props;
     }
     .mobile-navigation .line.active:after {
         animation: animLine 5s linear;
-    }
-    .slide:nth-child(2) .line {
-        left: 50px;
-    }
-    .slide:nth-child(3) .line {
-        left: 100px;
     }
 }
 </style>
