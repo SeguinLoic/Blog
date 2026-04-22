@@ -42,22 +42,28 @@ const { posts } = Astro.props;
         $slides[currentSlide].classList.add("active");
     }
 
-    
-
     prev.addEventListener('click', () => {
         clearInterval(intervalId);
-        intervalId = setInterval(slideBack, slideTimeout);
+        slideBack();
     })
     next.addEventListener('click', () => {
         clearInterval(intervalId);
-        intervalId = setInterval(slideAhead, slideTimeout);
+        slideAhead();
     })
+
+    // prev.addEventListener('click', () => {
+    //     clearInterval(intervalId);
+    //     intervalId = setInterval(slideBack, slideTimeout);
+    // })
+    // next.addEventListener('click', () => {
+    //     clearInterval(intervalId);
+    //     intervalId = setInterval(slideAhead, slideTimeout);
+    // })
     // next.addEventListener('click', () => slideAhead())
 
     // function showSlide() {
     //     slideTo(++currentSlide);
     // }
-
 
     function slideAhead() {
         slideTo(++currentSlide);
