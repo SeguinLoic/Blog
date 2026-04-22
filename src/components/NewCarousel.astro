@@ -150,31 +150,7 @@ const { posts } = Astro.props;
 .carousel-controls .total span {
     display: none;
 }
-.postInfo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    padding: 0 40px 40px;
-    row-gap: 16px;
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    height: 200px;
-    z-index: 6;
-    justify-content: flex-end;
-}
-.postInfo a {
-    color: #c5c5c5 !important;
-    text-decoration: none;
-    pointer-events: none;
-}
-.postInfo a:hover {
-    text-decoration: underline !important;
-}
-.slide.active .postInfo a {
-    pointer-events: auto;
-}
+
 @keyframes animTitle {
     0% {transform: translateY(-10px); opacity: 0;}
     100% {transform: translateY(0px); opacity: 1;}
@@ -190,6 +166,39 @@ const { posts } = Astro.props;
 @keyframes animCurrentBefore {
     0% {transform: translateY(-140%); opacity: 1;}
     100% {transform: translateY(-120%); opacity: 0;}
+}
+@keyframes animLine {
+    0%{width: 0%}
+    100%{width: 100%}
+}
+
+.postInfo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0 40px 40px;
+    row-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 200px;
+    z-index: 6;
+    justify-content: flex-end;
+}
+.slide.active .postInfo {
+    z-index: 7;
+}
+.postInfo a {
+    color: #c5c5c5 !important;
+    text-decoration: none;
+    pointer-events: none;
+}
+.postInfo a:hover {
+    text-decoration: underline !important;
+}
+.slide.active .postInfo a {
+    pointer-events: auto;
 }
 .postInfo p {
     color: #fff !important;
@@ -236,10 +245,6 @@ const { posts } = Astro.props;
 .slide.active .line {
     opacity: 1;
 }
-@keyframes animLine {
-    0%{width: 0%}
-    100%{width: 100%}
-}
 .line:after {
     content: '';
     width: 0%;
@@ -252,6 +257,9 @@ const { posts } = Astro.props;
 .slide.active .line:after {
     animation: animLine 5s linear;
 }
+
+
+
 @media screen and (max-width: 1500px) {
     .postInfo,
     .carousel-controls {
