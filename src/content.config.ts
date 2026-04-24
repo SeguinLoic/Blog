@@ -1,5 +1,6 @@
 import { defineCollection } from "astro:content";
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
+// import { glob, file } from 'astro/loaders';
 import { z } from "astro/zod";
 
 const blogCollection = defineCollection({
@@ -15,21 +16,21 @@ const blogCollection = defineCollection({
   })
 });
 
-const bookCollection = defineCollection({
-  loader: file("src/content/books/lectures.json"),
-  schema: ({ image }) => z.object({
-    name: z.string(),
-    author : z.string(),
-    year: z.number(),
-    image: z.object({
-       source: image(),
-       alt: z.string()
-    }),
-    note: z.string(),
-  })
-})
+// const bookCollection = defineCollection({
+//   loader: file("src/content/books/lectures.json"),
+//   schema: ({ image }) => z.object({
+//     name: z.string(),
+//     author : z.string(),
+//     year: z.number(),
+//     image: z.object({
+//        source: image(),
+//        alt: z.string()
+//     }),
+//     note: z.string(),
+//   })
+// })
 
 export const collections = { 
-  blog : blogCollection,
-  books: bookCollection,
+  blog : blogCollection
+  // books: bookCollection,
 };
