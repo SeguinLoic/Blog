@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import '../styles/contrast.css';
 const { page, category } = Astro.props;
 ---
 
@@ -14,8 +13,5 @@ const { page, category } = Astro.props;
   </head>
   <body>
       <slot />
-      <script>
-        import "../scripts/colorMode.js";
-      </script>
   </body>
 </html>
