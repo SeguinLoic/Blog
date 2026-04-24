@@ -292,6 +292,7 @@ html.blogpost .carousel-controls {
         font-size: 0.9em;
         text-decoration: none;
         gap: 3px;
+        color: #000;
     }
 }
 html.blogpost .carousel-controls div {
@@ -401,6 +402,9 @@ html.blogpost section li {
         min-width: auto;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    html.blogpost .carousel-controls a {
+        color: #000;
     }
 }
 @media (max-width: 768px) {
