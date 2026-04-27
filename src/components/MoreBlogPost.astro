@@ -15,7 +15,8 @@ const allBlogPosts = (await getCollection('blog')).sort(
 {
     allBlogPosts.map((post:any) => {
         <article>
-            <div class="image">
+            <h2>{post.data.title}</h2>
+            {/* <div class="image">
                 <a href={post.url}>
                     <Image src={post.data.cover} alt={post.data.coverAlt} layout='constrained' width="800px" height="600px" />
                 </a>
@@ -31,7 +32,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
                         </div>
                     </a>
                 </div>
-            </section> 
+            </section>  */}
         </article>
     })
     
