@@ -304,8 +304,6 @@ html.blogpost section .introduction {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* border-bottom: 1px solid #0000001c; */
-    /* padding-bottom: 40px; */
 }
 html.blogpost section .introduction time {
     text-transform: uppercase;
@@ -414,6 +412,9 @@ html.blogpost section li {
     }
 }
 @media (max-width: 600px) {
+    html.blogpost section .introduction {
+        margin-bottom: 32px;
+    }
     html.blogpost section {
         padding: 32px 5vW;
     }
