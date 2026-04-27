@@ -19,11 +19,14 @@ const allBlogPosts = (await getCollection('blog')).sort(
   margin-top: 60px;
 }
 .morePost h2 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 @media screen and (max-width: 600px) {
   .morePost {
     margin-top: 40px;
   } 
+  .morePost h2 {
+    margin-bottom: 24px;
+  }
 }
 </style>
