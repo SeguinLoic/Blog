@@ -76,15 +76,19 @@ const { images } = Astro.props;
     transition: .5s ease-in-out;
     position: absolute;
     transform: translateX(100%);
-    z-index: 1;
     pointer-events: none;
+    animation: animSlideOut 0.4s linear;
 }
-@keyframes animSlide {
-    0% {transform: translateX(100%); z-index: 1; pointer-events: none;}
-    100% {transform: translateX(0%); z-index: 2; pointer-events: auto;}
+@keyframes animSlideIn {
+    0% {transform: translateX(100%); pointer-events: none;}
+    100% {transform: translateX(0%); pointer-events: auto;}
+}
+@keyframes animSlideOut {
+    0% {transform: translateX(0%); pointer-events: auto;}
+    100% {transform: translateX(-100%); pointer-events: none;}
 }
 .slide.active {
-    animation: animSlide 0.4s linear;
+    animation: animSlideIn 0.4s linear;
     animation-fill-mode: forwards;
 }
 .slide img {
