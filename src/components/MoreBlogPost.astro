@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import Tags from './Tags.astro';
 import { getCollection } from "astro:content";
 import { Debug } from 'astro:components';
 
@@ -10,34 +9,32 @@ const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 ).filter((post:any) => post.data.title !== title);
 
-//const lastFour = allBlogPosts.slice(0, 4);
-
-// const allTags = tags.toString().split(",");
+const lastThree = allBlogPosts.slice(0, 3);
 ---
-
-<Debug {allBlogPosts} />
-
-<article>
-    <!-- <div class="image">
-        <a href={url}>
-            <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
-        </a>
-    </div>
-    <section> 
-        <div>
-            <a href={url}>
-                <div class="title">
-                    <h2>{title}</h2>
+{
+    lastThree.map((post:any) => {
+        <article>
+            <div class="image">
+                <a href={post.url}>
+                    <Image src={post.data.cover} alt={post.data.coverAlt} layout='constrained' width="800px" height="600px" />
+                </a>
+            </div>
+            <section> 
+                <div>
+                    <a href={post.url}>
+                        <div class="title">
+                            <h2>{post.data.title}</h2>
+                        </div>
+                        <div class="description">
+                            <span>Publié le <time datetime={post.data.date}>{new Date(post.data.date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                        </div>
+                    </a>
                 </div>
-                <div class="description">
-                    <p>{desc}</p>
-                    <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
-                </div>
-            </a>
-        </div>
-        <Tags tags={allTags} />
-    </section> -->
-</article>
+            </section> 
+        </article>
+    })
+    
+}
 
 <style>
 article {
