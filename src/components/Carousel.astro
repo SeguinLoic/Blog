@@ -123,6 +123,18 @@ const { images } = Astro.props;
 .carousel-controls button#next img {
     transform: rotate(180deg);
 }
+
+.dots {
+    display: flex;
+    gap: 6px;
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
 @media screen and (max-width: 768px) {
     .carousel-controls button {
         padding: 10px;
