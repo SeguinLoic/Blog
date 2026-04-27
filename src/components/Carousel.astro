@@ -106,8 +106,25 @@ const { images } = Astro.props;
     0% {transform: translateX(0%); pointer-events: auto;}
     100% {transform: translateX(-100%); pointer-events: none;}
 }
-.slide.active {
+@keyframes animSlideForth {
+    0% {transform: translateX(100%); pointer-events: none;}
+    100% {transform: translateX(0%); pointer-events: auto;}
+}
+@keyframes animSlideBack {
+    0% {transform: translateX(-100%); pointer-events: none;}
+    100% {transform: translateX(0%); pointer-events: auto;}
+}
+
+/* .slide.active {
     animation: animSlideIn 0.4s linear;
+    animation-fill-mode: forwards;
+} */
+.slide.active.forth {
+    animation: animSlideForth 0.4s linear;
+    animation-fill-mode: forwards;
+}
+.slide.active.back {
+    animation: animSlideBack 0.4s linear;
     animation-fill-mode: forwards;
 }
 .slide img {
