@@ -296,7 +296,7 @@ html.blogpost .carousel-controls {
     bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
-    html.blogpost .carousel-controls a.return {
+    /* html.blogpost .carousel-controls a.return {
         display: flex;
         align-items: center;
         padding: 0px 12px;
@@ -305,6 +305,9 @@ html.blogpost .carousel-controls {
         text-decoration: none;
         gap: 3px;
         color: #000;
+    } */
+    html.blogpost .carousel-controls a.return {
+        display: none;
     }
 }
 html.blogpost .carousel-controls div {
