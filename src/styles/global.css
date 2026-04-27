@@ -291,9 +291,10 @@ html.blogpost .carousel-controls {
     display: flex;
     justify-content: center;
     top: inherit;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     bottom: 20px;
+    align-items: center;
 }
 @media screen and (min-width: 1024px) {
     /* html.blogpost .carousel-controls a.return {
