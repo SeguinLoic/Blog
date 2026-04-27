@@ -391,6 +391,9 @@ html.blogpost section li {
         left: 0;
         position: relative;
     }
+    html.blogpost section .introduction p {
+        font-weight: 500;
+    }
     html#articles .tags {
         min-width: auto;
         flex-direction: row;
