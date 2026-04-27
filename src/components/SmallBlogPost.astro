@@ -41,23 +41,6 @@ article:after {
     opacity: 0.1;
     pointer-events: none;
 }
-section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px;
-}
-section>div {
-    display: flex;
-    width: 100%;
-}
-section>div a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    text-decoration: none;
-}
 section>div a:hover .title h2 {
     text-decoration: underline;
 }
@@ -71,23 +54,10 @@ section>div a:hover .title h2 {
 }
 .title h2 {
     font-weight: 500;
-    font-size: clamp(1.375rem, 1.25rem + 0.625vw, 2rem);
+    font-size: clamp(1.375rem, 1.35rem + 0.125vw, 1.5rem);
     line-height: 1.2em;
     text-wrap: pretty;
     color: #000;
-}
-.description {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    color: #000;
-}
-.description p {
-    line-height: 1.4;
-    font-size: 1.05em;
-}
-.description span {
-    font-size: 0.9em;
 }
 .image,
 .image a {
@@ -97,8 +67,8 @@ section>div a:hover .title h2 {
     overflow: hidden;
 }
 .image img {
-    width: 260px;
-    height: 170px;
+    width: 160px;
+    height: 110px;
     object-fit: cover;
     overflow-clip-margin: unset;
     transition: all 0.3s;
@@ -107,31 +77,17 @@ section>div a:hover .title h2 {
     transform: scale(1.05);
 }
 @media screen and (max-width: 1200px) {
-    article,
-    section {
+    article {
         gap: 32px;
     }
 }
 @media screen and (max-width: 1024px) {
-    section {
-        flex-direction: column;
-        justify-content: space-between;
-    }
     .image img {
         width: 220px;
         height: 150px;
     }
     .title {
         order: 2;
-    }
-    .description {
-        order: 1;
-    }
-    section>div a {
-        gap: 8px;
-    }
-    .description p {
-        display: none;
     }
 }
 @media screen and (max-width: 768px) {
@@ -150,17 +106,6 @@ section>div a:hover .title h2 {
         width: 100%;
         min-width: 100%;
         height: 100%
-    }
-    section {
-        flex-direction: column;
-        gap: 12px
-    }
-    section>div {
-        flex-direction: column-reverse;
-        gap: 8px;
-    }
-    .description p {
-        display: none;
     }
 }
 @media screen and (max-width: 500px) {
