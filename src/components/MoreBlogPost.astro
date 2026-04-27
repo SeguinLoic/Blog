@@ -8,15 +8,22 @@ const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const lastFour = allBlogPosts.slice(0, 3);
+allBlogPosts.filter((post:any) => post.data.title !== title);
+
+//const lastFour = allBlogPosts.slice(0, 4);
 
 const { title } = Astro.props;
 // const allTags = tags.toString().split(",");
 ---
 
-<Debug {lastFour} />
+<Debug {allBlogPosts} />
 
 <article>
+    {
+        lastFour.map((post) => {
+            post.data.title === title ? 
+        })
+    }
     <!-- <div class="image">
         <a href={url}>
             <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
