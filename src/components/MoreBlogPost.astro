@@ -10,11 +10,15 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 ---
 <div class="morePost">
+    <h2>Poursuivre avec d'autres aventures</h2>
     {allBlogPosts.map((post: any) => <SmallBlogPost title={post.data.title} date={post.data.pubDate} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
 </div>
 
 <style>
 .morePost {
   margin-top: 60px;
+}
+.morePost h2 {
+  margin-bottom: 24px;
 }
 </style>
