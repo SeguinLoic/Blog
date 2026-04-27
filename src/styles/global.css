@@ -358,10 +358,6 @@ html.blogpost section li {
         text-transform: inherit;
         width: 100%;
     }
-    html.blogpost section .introduction {
-        margin-bottom: 32px;
-        padding-bottom: 32px;
-    }
 }
 @media screen and (max-width: 1200px) {
     html#articles .tags {
