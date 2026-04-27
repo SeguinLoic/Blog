@@ -392,12 +392,20 @@ html.blogpost section li {
     html.blogpost .fenetre .carousel .carousel-inner {
         height: 400px;
     }
+    /* html.blogpost .carousel-controls {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        background-color: rgb(0 0 0 / 5%);
+    } */
     html.blogpost .carousel-controls {
         position: relative;
         justify-content: space-between;
         align-items: center;
         padding-left: 40px;
         background-color: rgb(0 0 0 / 5%);
+        bottom: 0;
     }
     html.blogpost section {
         width: 100%;
