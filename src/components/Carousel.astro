@@ -15,8 +15,8 @@ const { images } = Astro.props;
     <div class="carousel-controls">
         <a href="/articles" class="return"><span class="arrow">←</span> Retour</a>
         <div class="dots">
-            {images.map((post: any) => (
-                <span class={`dot dot-${(posts.indexOf(post) + 1)}`}></span>
+            {images.map((image: any) => (
+                <span class={`dot dot-${(images.indexOf(image) + 1)}`}></span>
             ))}
         </div>
         <div>
