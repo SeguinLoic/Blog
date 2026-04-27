@@ -129,20 +129,27 @@ const { images } = Astro.props;
 
 .dots {
     display: flex;
-    /* gap: 6px; */
     border: 1px solid red;
     width: 100px;
     flex-wrap: nowrap;
 }
 .dot {
-    width: 6px;
+    width: 12px;
     height: 6px;
-    background-color: #fff;
-    border-radius: 6px;
     display: flex;
     flex: 0 0 100%;
-    max-width: 6px;
-    margin: 0px 3px !important;
+    max-width: 12px;
+}
+.dot:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 
 @media screen and (max-width: 768px) {
