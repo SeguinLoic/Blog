@@ -12,6 +12,8 @@ homepage: ""
 import Carousel from '../../components/Carousel.astro';
 import Tags from '../../components/Tags.astro';
 import Header from '../../components/Header.astro';
+import MoreBlogPost from '../../components/MoreBlogPost.astro';
+
 import image1 from "../../assets/kazakhstan/kazak-1.jpg"
 import image2 from "../../assets/kazakhstan/kazak-2.jpg"
 import image3 from "../../assets/kazakhstan/kazak-3.JPG"
@@ -58,4 +60,5 @@ Dans les derniers faits marquants, les expérimentations et les découvertes, vo
 <br/>
 <i>Raxmet</i>
 </div>
+<MoreBlogPost title={frontmatter.title} />
 </section>

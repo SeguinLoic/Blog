@@ -12,6 +12,8 @@ homepage: ./covers/mongolia-7.jpg
 import Carousel from '../../components/Carousel.astro';
 import Tags from '../../components/Tags.astro';
 import Header from '../../components/Header.astro';
+import MoreBlogPost from '../../components/MoreBlogPost.astro';
+
 import image1 from "../../assets/mongolia/mongolia-2.jpg"
 import image2 from "../../assets/mongolia/mongolia-6.jpg"
 import image3 from "../../assets/mongolia/mongolia-7.jpg"
@@ -68,4 +70,5 @@ Aujourd'hui, on quitte ce magnifique pays. Un pays aux mille couleurs et texture
 <br/>
 <i>Bayarlalaa</i>
 </div>
+<MoreBlogPost title={frontmatter.title} />
 </section>

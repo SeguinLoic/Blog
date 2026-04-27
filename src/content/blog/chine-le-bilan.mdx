@@ -12,6 +12,7 @@ homepage: ""
 import Carousel from '../../components/Carousel.astro';
 import Tags from '../../components/Tags.astro';
 import Header from '../../components/Header.astro';
+import MoreBlogPost from '../../components/MoreBlogPost.astro';
 
 import image1 from "../../assets/china/china-1.jpg"
 import image2 from "../../assets/china/china-2.jpg"
@@ -59,4 +60,5 @@ Nous voilà donc sur un ferry pour la Corée du Sud. On va passer quelques jours
 <br/>
 <i>Xièxiè</i>
 </div>
+<MoreBlogPost title={frontmatter.title} />
 </section>
