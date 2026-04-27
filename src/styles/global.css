@@ -299,9 +299,8 @@ html.blogpost .carousel-controls div {
     display: flex;
 }
 
-
 html.blogpost section .introduction {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
