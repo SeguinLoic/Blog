@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import ShortBlogPost from "./ShortBlogPost.astro";
 import { getCollection } from "astro:content";
 import { Debug } from 'astro:components';
 
@@ -12,32 +12,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
 ---
 <Debug {allBlogPosts} />
 <div class="morePost">
-{
-    allBlogPosts.map((post:any) => {
-        <Debug {post} />
-        <article>
-            <h2>{post.data.title}</h2>
-            {/* <div class="image">
-                <a href={post.url}>
-                    <Image src={post.data.cover} alt={post.data.coverAlt} layout='constrained' width="800px" height="600px" />
-                </a>
-            </div>
-            <section> 
-                <div>
-                    <a href={post.url}>
-                        <div class="title">
-                            <h2>{post.data.title}</h2>
-                        </div>
-                        <div class="description">
-                            <span>Publié le <time datetime={post.data.date}>{new Date(post.data.date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
-                        </div>
-                    </a>
-                </div>
-            </section>  */}
-        </article>
-    })
-    
-}
+    {allBlogPosts.map((post: any) => <ShortBlogPost title={post.data.title} desc={post.data.description} date={post.data.pubDate} tags={post.data.tags} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
 </div>
 
 <style>
