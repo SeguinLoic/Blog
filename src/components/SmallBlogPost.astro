@@ -1,22 +1,29 @@
 ---
-import SmallBlogPost from "./ShortBlogPost.astro";
-import { getCollection } from "astro:content";
-import { Debug } from 'astro:components';
+import { Image } from 'astro:assets';
 
-const { title } = Astro.props;
-
-const allBlogPosts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).filter((post:any) => post.data.title !== title).slice(0, 3);
-
+const {url, title, date, image, imageAlt} = Astro.props;
 ---
-<Debug {allBlogPosts} />
-<div class="morePost">
-    {allBlogPosts.map((post: any) => <SmallBlogPost title={post.data.title} date={post.data.pubDate} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
-</div>
+
+<article>
+    <div class="image">
+        <a href={url}>
+            <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
+        </a>
+    </div>
+    <section> 
+        <div>
+            <a href={url}>
+                <div class="title">
+                    <h2>{title}</h2>
+                    <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                </div>
+            </a>
+        </div>
+    </section>
+</article>
 
 <style>
-/* article {
+article {
     display: flex;
     width: 100%;
     margin-bottom: 32px;
@@ -165,5 +172,5 @@ section>div a:hover .title h2 {
     .image {
         height: 200px;
     }
-} */
+}
 </style>
