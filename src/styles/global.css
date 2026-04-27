@@ -301,12 +301,12 @@ html.blogpost .carousel-controls div {
 
 
 html.blogpost section .introduction {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-bottom: 1px solid #0000001c;
-    padding-bottom: 40px;
+    /* border-bottom: 1px solid #0000001c; */
+    /* padding-bottom: 40px; */
 }
 html.blogpost section .introduction time {
     text-transform: uppercase;
