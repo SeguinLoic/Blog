@@ -12,6 +12,7 @@ homepage: ./covers/korea-14.jpg
 import Carousel from '../../components/Carousel.astro';
 import Tags from '../../components/Tags.astro';
 import Header from '../../components/Header.astro';
+import MoreBlogPost from '../../components/MoreBlogPost.astro';
 
 import image1 from "../../assets/korea/korea-1.jpg"
 import image2 from "../../assets/korea/korea-2.jpg"
@@ -75,6 +76,7 @@ Petite liste de trucs sympas qu'on a découverts pendant notre séjour :
 <br/>
 <div class="articles">
     <h2>Vous pourriez aussi aimer</h2>
+    <MoreBlogPost title={frontmatter.title}>
     <ul>
         <li>Article 1</li>
         <li>Article 2</li>

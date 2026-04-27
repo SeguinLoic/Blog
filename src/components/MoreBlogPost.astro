@@ -1,0 +1,192 @@
+---
+import { Image } from 'astro:assets';
+import Tags from './Tags.astro';
+import { getCollection } from "astro:content";
+import { Debug } from 'astro:components';
+
+const allBlogPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const lastFour = allBlogPosts.slice(0, 3):
+
+const { title } = Astro.props;
+// const allTags = tags.toString().split(",");
+---
+
+<Debug {lastFour} />
+
+<article>
+    <!-- <div class="image">
+        <a href={url}>
+            <Image src={image} alt={imageAlt} layout='constrained' width="800px" height="600px" />
+        </a>
+    </div>
+    <section> 
+        <div>
+            <a href={url}>
+                <div class="title">
+                    <h2>{title}</h2>
+                </div>
+                <div class="description">
+                    <p>{desc}</p>
+                    <span>Publié le <time datetime={date}>{new Date(date).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+                </div>
+            </a>
+        </div>
+        <Tags tags={allTags} />
+    </section> -->
+</article>
+
+<style>
+article {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    color: #000;
+    gap: 40px;
+}
+article:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    pointer-events: none;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+}
+section>div {
+    display: flex;
+    width: 100%;
+}
+section>div a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+}
+section>div a:hover .title h2 {
+    text-decoration: underline;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title time {
+    font-size: .85em;
+}
+.title h2 {
+    font-weight: 500;
+    font-size: clamp(1.375rem, 1.25rem + 0.625vw, 2rem);
+    line-height: 1.2em;
+    text-wrap: pretty;
+    color: #000;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #000;
+}
+.description p {
+    line-height: 1.4;
+    font-size: 1.05em;
+}
+.description span {
+    font-size: 0.9em;
+}
+.image,
+.image a {
+    display: flex;
+}
+.image a {
+    overflow: hidden;
+}
+.image img {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+    overflow-clip-margin: unset;
+    transition: all 0.3s;
+}
+.image a:hover img {
+    transform: scale(1.05);
+}
+@media screen and (max-width: 1200px) {
+    article,
+    section {
+        gap: 32px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .image img {
+        width: 220px;
+        height: 150px;
+    }
+    .title {
+        order: 2;
+    }
+    .description {
+        order: 1;
+    }
+    section>div a {
+        gap: 8px;
+    }
+    .description p {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    article {
+        flex-direction: column;
+        gap: 16px;
+    }   
+    .image, 
+    .image a {
+        width: 100%;
+    }
+    .image {
+        height: 300px;
+    }
+    .image img {
+        width: 100%;
+        min-width: 100%;
+        height: 100%
+    }
+    section {
+        flex-direction: column;
+        gap: 12px
+    }
+    section>div {
+        flex-direction: column-reverse;
+        gap: 8px;
+    }
+    .description p {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .title time {
+        font-size: 0.8em;
+    }
+    .image {
+        height: 200px;
+    }
+}
+</style>
