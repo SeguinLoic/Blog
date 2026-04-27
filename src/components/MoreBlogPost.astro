@@ -8,9 +8,7 @@ const { title } = Astro.props;
 
 const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
-
-allBlogPosts.filter((post:any) => post.data.title === title);
+).filter((post:any) => post.data.title !== title);
 
 //const lastFour = allBlogPosts.slice(0, 4);
 
