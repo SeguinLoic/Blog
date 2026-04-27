@@ -88,7 +88,7 @@ const { images } = Astro.props;
     display: flex;
     justify-content: space-between;
 }
-.carousel-controls button {
+/* .carousel-controls button {
     padding: 13px;
     background-color: #fff;
     border: none;
@@ -96,10 +96,24 @@ const { images } = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.carousel-controls button {
+    padding: 13px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* .carousel-controls button img {
+    width: 22px;
+    height: 20px;
+} */
 .carousel-controls button img {
     width: 22px;
     height: 20px;
+    filter: invert(1);
 }
 .carousel-controls button#next img {
     transform: rotate(180deg);
