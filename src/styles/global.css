@@ -375,6 +375,7 @@ html.blogpost section li {
     } 
     html.blogpost .fenetre .carousel {
         height: auto;
+        touch-action: none;
     }
     html.blogpost .fenetre .carousel .carousel-inner {
         height: 400px;
