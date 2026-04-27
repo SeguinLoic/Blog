@@ -8,8 +8,10 @@ const { title } = Astro.props;
 const allBlogPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 ).filter((post:any) => post.data.title !== title).slice(0, 3);
+
 ---
 <Debug {allBlogPosts} />
+<div class="morePost">
 {
     allBlogPosts.map((post:any) => {
         <article>
@@ -34,6 +36,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
     })
     
 }
+</div>
 
 <style>
 article {
