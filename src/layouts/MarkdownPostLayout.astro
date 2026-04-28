@@ -12,6 +12,11 @@ const { frontmatter } = Astro.props;
 </BaseLayout>
 
 <style is:global>
+section.content {
+    width: 45%;
+    left: 55%;
+    position: relative;
+}
 section.content .introduction,
 section.content .text {
     padding: 0px 80px;
@@ -20,6 +25,12 @@ section.content .introduction {
     padding-top: 120px;
 }
 @media screen and (max-width: 1600px) {
+    section.content {
+        width: 50%;
+    }   
+    section.content {
+        left: 50%;
+    }
     section.content .introduction,
     section.content .text {
         padding: 0px 60px;
@@ -35,6 +46,13 @@ section.content .introduction {
     }
     section.content .introduction {
         padding-top: 60px;
+    }
+}
+@media (max-width:1024px) {
+    section.content {
+        width: 100%;
+        left: 0;
+        position: relative;
     }
 }
 @media (max-width: 600px) {

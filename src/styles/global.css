@@ -147,12 +147,11 @@ html.blogpost header a.logo {
 html.blogpost header a.logo h1 {
     font-size: 24px;
 }
-html.blogpost section {
+/* html.blogpost section {
     width: 45%;
     left: 55%;
     position: relative;
-    /* padding: 120px 80px; */
-}
+} */
 html.blogpost .fenetre {
     width: 55%;
     position: fixed;
@@ -193,13 +192,12 @@ html.blogpost section li {
 }
 
 @media screen and (max-width: 1600px) {
-    html.blogpost .fenetre,
-    html.blogpost section {
+    html.blogpost .fenetre {
         width: 50%;
     }   
-    html.blogpost section {
+    /* html.blogpost section {
         left: 50%;
-    }
+    } */
 }
 
 @media screen and (max-width: 1240px) {
@@ -230,11 +228,11 @@ html.blogpost section li {
         height: auto;
         border: none;
     } 
-    html.blogpost section {
+    /* html.blogpost section {
         width: 100%;
         left: 0;
         position: relative;
-    }
+    } */
     html.blogpost section .introduction p {
         font-weight: 500;
     }
