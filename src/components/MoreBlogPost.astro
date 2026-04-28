@@ -36,7 +36,12 @@ const allBlogPosts = (await getCollection('blog')).sort(
 .morePost a {
   color: #fff;
 }
-
+a.return {
+  text-decoration: none;
+}
+a.return:hover {
+  text-decoration: underline;
+}
 .choice {
   color: #fff;
   margin: 32px 0px;
