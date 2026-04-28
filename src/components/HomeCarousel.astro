@@ -10,12 +10,8 @@ const { posts } = Astro.props;
                 <div class="postInfo">
                     <span class="current">0{(posts.indexOf(post) + 1)}</span>
                     <span class="line"></span>
-                    <a href={`/posts/${post.id}`}>
-                        <p>{post.data.title}</p>
-                        <span>Lire l'article →</span>
-                    </a>
-                    {/* <p>{post.data.title}</p>
-                    <a href={`/posts/${post.id}`}>Lire l'article →</a> */}
+                    <p>{post.data.title}</p>
+                    <a href={`/posts/${post.id}`}>Lire l'article →</a>
                 </div>
                 <Image src={post.data.homepage} alt="image" layout="constrained" loading="lazy" width="1920px" height="1080px" />
             </div>
