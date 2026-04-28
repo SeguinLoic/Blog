@@ -10,7 +10,10 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 ---
 <div class="morePost">
-    <a href="/articles" class="return"><span class="arrow">←</span> Retourer aux articles</a>
+    <a href="/articles" class="return"><span class="arrow">←</span> Retourner aux articles</a>
+    <span class="choice">
+      <i>ou</i>
+    </span>
     <h2>Poursuivre avec d'autres aventures</h2>
     {allBlogPosts.map((post: any) => <SmallBlogPost title={post.data.title} date={post.data.pubDate} url={`/posts/${post.id}`} image={post.data.cover} imageAlt={post.data.coverAlt} />)}
 </div>
