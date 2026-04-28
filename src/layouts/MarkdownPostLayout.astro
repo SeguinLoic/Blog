@@ -23,7 +23,38 @@ section.content .text {
 }
 section.content .introduction {
     padding-top: 120px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+section.content .introduction time {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+section.content .introduction h2 {
+    /* font-size: clamp(1.5rem, 1.2375rem + 1.3125vw, 2.8125rem); */
+    font-size: clamp(1.625rem, 1.3875rem + 1.1875vw, 2.8125rem);
+    line-height: 1.2em;
+    width: 100%;
+    text-wrap: pretty;
+}
+section.content .introduction p {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5em;
+    width: 80%;
+}
+section.content p, 
+section.content li {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-wrap: pretty;
+}
+
 @media screen and (max-width: 1600px) {
     section.content {
         width: 50%;
@@ -47,12 +78,23 @@ section.content .introduction {
     section.content .introduction {
         padding-top: 60px;
     }
+    section.content .introduction h2 {
+        width: 100%;
+        text-wrap: pretty;
+    }
+    section.content .introduction p {
+        text-transform: inherit;
+        width: 100%;
+    }
 }
 @media (max-width:1024px) {
     section.content {
         width: 100%;
         left: 0;
         position: relative;
+    }
+    section.content .introduction p {
+        font-weight: 500;
     }
 }
 @media (max-width: 600px) {
@@ -65,6 +107,10 @@ section.content .introduction {
     }
     section.content .introduction {
         padding-top: 32px;
+    }
+    section.content .introduction p {
+        font-size: 17px;
+        line-height: 1.6em;
     }
 }
 </style>
