@@ -25,6 +25,9 @@ const allBlogPosts = (await getCollection('blog')).sort(
   padding: 0px 80px;
   padding-top: 60px;
   padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .morePost h2 {
   margin-bottom: 32px;
@@ -33,6 +36,33 @@ const allBlogPosts = (await getCollection('blog')).sort(
 .morePost a {
   color: #fff;
 }
+
+.choice {
+  color: #fff;
+  margin: 32px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.5;
+}
+.choice i:before, 
+.choice i:after {
+  content: '';
+  width: 48%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+}
+.choice i:before {
+  left: 0;
+}
+.choice i:after {
+  right: 0;
+}
+
 @media screen and (max-width: 1600px) {
   .morePost {
     padding: 0px 60px;
