@@ -203,17 +203,6 @@ html#articles .content  {
   animation: 0.3s ease-in both fade-in;
 } */
 
-/* ----------------------- NEW HOME ---------------------- */
-html#home .carousel:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 50%);
-    pointer-events: none;
-}
 
 /* -----------------------  ARTICLES ---------------------- */
 html#articles .content {
@@ -232,6 +221,7 @@ html#articles nav .tags li a {
     font-size: 1em;
     color: #000;
 }
+
 
 /* -----------------------  BLOGPOST ---------------------- */
 html.blogpost header a.logo {
@@ -253,88 +243,6 @@ html.blogpost .fenetre {
     height: 100vh;
     left: 0;
 }
-
-
-html.blogpost .fenetre .carousel {
-    height: 100%;
-}
-html.blogpost .fenetre .carousel .carousel-inner {
-    height: 100%;
-    aspect-ratio: auto;
-}
-html.blogpost .fenetre .carousel .carousel-inner:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 25%); */
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    pointer-events: none;
-    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) -10%, transparent 25%); */
-    background: linear-gradient(165deg, rgba(0, 0, 0, .6) -30%, rgba(0, 0, 0, 0) 25%);
-}
-/* html.blogpost .carousel-controls {
-    position: absolute;
-    z-index: 5;
-    left: inherit;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    top: inherit;
-} */
-html.blogpost .carousel-controls {
-    position: absolute;
-    z-index: 5;
-    left: inherit;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    top: inherit;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 10px;
-}
-html.blogpost .carousel-controls:before {
-    content: '';
-    width: 100%;
-    height: 200%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to top, rgb(0 0 0 / 80%) 10%, transparent);
-}
-
-
-/* @media screen and (min-width: 1024px) {
-    html.blogpost .carousel-controls a.return {
-        display: flex;
-        align-items: center;
-        padding: 0px 12px;
-        background-color: #f3f3f3;
-        font-size: 0.9em;
-        text-decoration: none;
-        gap: 3px;
-        color: #000;
-    }
-    html.blogpost .carousel-controls a.return {
-        display: none;
-    }
-} */
-
-
-html.blogpost .carousel-controls div {
-    display: flex;
-}
-
-
-
-
 html.blogpost section .introduction {
     margin-bottom: 40px;
     display: flex;
@@ -369,8 +277,6 @@ html.blogpost section li {
     text-wrap: pretty;
 }
 
-
-
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre,
     html.blogpost section {
@@ -383,6 +289,7 @@ html.blogpost section li {
         padding: 80px 60px;
     }
 }
+
 @media screen and (max-width: 1240px) {
      html.blogpost section {
         padding: 60px 40px;
@@ -396,12 +303,14 @@ html.blogpost section li {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1200px) {
     html#articles .tags {
         min-width: 160px;
         flex-direction: column;
     }
 }
+
 @media (max-width:1024px) {
     html.blogpost main {
         flex-direction: column;
@@ -412,28 +321,6 @@ html.blogpost section li {
         height: auto;
         border: none;
     } 
-    html.blogpost .fenetre .carousel {
-        height: auto;
-        touch-action: none;
-    }
-    html.blogpost .fenetre .carousel .carousel-inner {
-        height: 400px;
-    }
-    /* html.blogpost .carousel-controls {
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 40px;
-        background-color: rgb(0 0 0 / 5%);
-    } */
-    /* html.blogpost .carousel-controls {
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 40px;
-        background-color: rgb(0 0 0 / 5%);
-        bottom: 0;
-    } */
     html.blogpost section {
         width: 100%;
         left: 0;
@@ -447,24 +334,14 @@ html.blogpost section li {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    html.blogpost .carousel-controls a {
-        color: #000;
-    }
-    html.blogpost .carousel-controls {
-        padding-bottom: 0px;
-    }
 }
+
 @media (max-width: 768px) {
-    html.blogpost .fenetre .carousel .carousel-inner {
-        height: 350px;
-    } 
-    html.blogpost .fenetre .carousel .carousel-inner:after {
-        display: none;
-    }
     html.blogpost header a.logo h1 {
         font-size: 20px;
     }
 }
+
 @media (max-width: 600px) {
     html.blogpost section .introduction {
         margin-bottom: 32px;
@@ -476,15 +353,4 @@ html.blogpost section li {
         font-size: 17px;
         line-height: 1.6em;
     }
-    html.blogpost .carousel-controls {
-        padding-left: 16px;
-    }
-    html.blogpost .carousel-controls a.return {
-        font-size: 0.9em;
-    }
-}
-@media (max-width: 450px) {
-    html.blogpost .fenetre .carousel .carousel-inner {
-        height: 300px;
-    } 
 }
