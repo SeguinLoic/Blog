@@ -17,13 +17,18 @@ const allBlogPosts = (await getCollection('blog')).sort(
 
 <style>
 .morePost {
-  margin-top: 60px;
-  padding: 80px;
-  color: #fff;
   background-color: #000;
+  margin-top: 60px;
+  padding: 0px 80px;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 .morePost h2 {
   margin-bottom: 32px;
+}
+.morePost h2, 
+.morePost a {
+  color: #fff;
 }
 @media screen and (max-width: 600px) {
   .morePost {
