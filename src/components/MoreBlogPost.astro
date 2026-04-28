@@ -30,10 +30,24 @@ const allBlogPosts = (await getCollection('blog')).sort(
 .morePost a {
   color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1600px) {
   .morePost {
-    margin-top: 40px;
-  } 
+    padding: 0px 60px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .morePost {
+    padding: 0px 40px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .morePost {
+    margin-top: 32px;
+    padding: 0px 5vW;
+    padding-bottom: 32px;
+  }
   .morePost h2 {
     margin-bottom: 24px;
   }

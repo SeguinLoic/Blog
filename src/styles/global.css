@@ -285,15 +285,15 @@ html.blogpost section li {
     html.blogpost section {
         left: 50%;
     }
-    html.blogpost section {
+    /* html.blogpost section {
         padding: 80px 60px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1240px) {
-     html.blogpost section {
+     /* html.blogpost section {
         padding: 60px 40px;
-    }
+    } */
     html.blogpost section .introduction h2 {
         width: 100%;
         text-wrap: pretty;
@@ -343,12 +343,12 @@ html.blogpost section li {
 }
 
 @media (max-width: 600px) {
-    html.blogpost section .introduction {
+    /* html.blogpost section .introduction {
         margin-bottom: 32px;
     }
     html.blogpost section {
         padding: 32px 5vW;
-    }
+    } */
     html.blogpost section .introduction p {
         font-size: 17px;
         line-height: 1.6em;
