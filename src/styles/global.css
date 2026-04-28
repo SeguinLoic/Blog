@@ -235,7 +235,7 @@ html.blogpost section {
     width: 45%;
     left: 55%;
     position: relative;
-    padding: 120px 80px;
+    /* padding: 120px 80px; */
 }
 html.blogpost .fenetre {
     width: 55%;
