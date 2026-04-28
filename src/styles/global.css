@@ -253,6 +253,8 @@ html.blogpost .fenetre {
     height: 100vh;
     left: 0;
 }
+
+
 html.blogpost .fenetre .carousel {
     height: 100%;
 }
@@ -307,8 +309,10 @@ html.blogpost .carousel-controls:before {
     left: 0;
     background: linear-gradient(to top, rgb(0 0 0 / 80%) 10%, transparent);
 }
-@media screen and (min-width: 1024px) {
-    /* html.blogpost .carousel-controls a.return {
+
+
+/* @media screen and (min-width: 1024px) {
+    html.blogpost .carousel-controls a.return {
         display: flex;
         align-items: center;
         padding: 0px 12px;
@@ -317,14 +321,19 @@ html.blogpost .carousel-controls:before {
         text-decoration: none;
         gap: 3px;
         color: #000;
-    } */
+    }
     html.blogpost .carousel-controls a.return {
         display: none;
     }
-}
+} */
+
+
 html.blogpost .carousel-controls div {
     display: flex;
 }
+
+
+
 
 html.blogpost section .introduction {
     margin-bottom: 40px;
@@ -359,6 +368,9 @@ html.blogpost section li {
     line-height: 1.7;
     text-wrap: pretty;
 }
+
+
+
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre,
     html.blogpost section {
