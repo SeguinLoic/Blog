@@ -33,12 +33,14 @@ const allBlogPosts = (await getCollection('blog')).sort(
 @media screen and (max-width: 1600px) {
   .morePost {
     padding: 0px 60px;
+    padding-top: 60px;
     padding-bottom: 80px;
   }
 }
 @media screen and (max-width: 1240px) {
   .morePost {
     padding: 0px 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -46,6 +48,7 @@ const allBlogPosts = (await getCollection('blog')).sort(
   .morePost {
     margin-top: 32px;
     padding: 0px 5vW;
+    padding-top: 32px;
     padding-bottom: 32px;
   }
   .morePost h2 {
