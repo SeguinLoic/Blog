@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 600;
 }
-@font-face {
+/* @font-face {
   font-family: 'LibreBaskerville';
   src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -58,8 +58,8 @@
   src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: 'CormorantGaramond';
   src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -82,8 +82,8 @@
   src: url('/fonts/PlayfairDisplay-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: 'Raleway';
   src: url('/fonts/Raleway-Light.ttf') format('truetype');
   font-weight: 200;
@@ -94,8 +94,8 @@
   src: url('/fonts/Raleway-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: 'Geist';
   src: url('/fonts/Geist-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -118,7 +118,7 @@
   src: url('/fonts/Geist-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-}
+} */
 * {
   box-sizing: border-box;
   font-family: 'Inter';
@@ -269,7 +269,6 @@ html.blogpost section .introduction p {
 }
 html.blogpost section p, 
 html.blogpost section li {
-    /* font-family: 'Geist'; */
     font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
@@ -285,15 +284,9 @@ html.blogpost section li {
     html.blogpost section {
         left: 50%;
     }
-    /* html.blogpost section {
-        padding: 80px 60px;
-    } */
 }
 
 @media screen and (max-width: 1240px) {
-     /* html.blogpost section {
-        padding: 60px 40px;
-    } */
     html.blogpost section .introduction h2 {
         width: 100%;
         text-wrap: pretty;
@@ -343,12 +336,6 @@ html.blogpost section li {
 }
 
 @media (max-width: 600px) {
-    /* html.blogpost section .introduction {
-        margin-bottom: 32px;
-    }
-    html.blogpost section {
-        padding: 32px 5vW;
-    } */
     html.blogpost section .introduction p {
         font-size: 17px;
         line-height: 1.6em;
