@@ -21,7 +21,7 @@ const { images } = Astro.props;
                 ))}
             </div>
         </div>
-        <div>
+        <div class="buttons">
             <button id="prev"><img src="/icon-arrow.svg"/></button>
             <button id="next"><img src="/icon-arrow.svg"/></button>
         </div>
@@ -129,9 +129,9 @@ const { images } = Astro.props;
     transform: rotate(180deg);
 }
 
+/* ------- DOTS ------- */ 
 .dots {
     display: flex;
-    /* width: 62px; */
     width: 44px;
     flex-wrap: nowrap;
     justify-content: center;
@@ -164,6 +164,9 @@ const { images } = Astro.props;
 }
 
 @media screen and (max-width: 768px) {
+    .buttons {
+        display: none;
+    }
     .carousel-controls button {
         padding: 10px;
     }

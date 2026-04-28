@@ -414,14 +414,14 @@ html.blogpost section li {
         padding-left: 40px;
         background-color: rgb(0 0 0 / 5%);
     } */
-    html.blogpost .carousel-controls {
+    /* html.blogpost .carousel-controls {
         position: relative;
         justify-content: space-between;
         align-items: center;
         padding-left: 40px;
         background-color: rgb(0 0 0 / 5%);
         bottom: 0;
-    }
+    } */
     html.blogpost section {
         width: 100%;
         left: 0;
@@ -437,6 +437,9 @@ html.blogpost section li {
     }
     html.blogpost .carousel-controls a {
         color: #000;
+    }
+    html.blogpost .carousel-controls {
+        padding-bottom: 0px;
     }
 }
 @media (max-width: 768px) {
