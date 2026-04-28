@@ -60,6 +60,8 @@ main {
     display: flex;
     flex-grow: 1;
 }
+
+
 /* ----------------------- HEADER ----------------------- */ 
 @media screen and (max-width: 768px) {
     html header {
@@ -137,6 +139,19 @@ html#articles nav .tags li a {
     font-size: 1em;
     color: #000;
 }
+@media screen and (max-width: 1200px) {
+    html#articles .tags {
+        min-width: 160px;
+        flex-direction: column;
+    }
+}
+@media (max-width:1024px) {
+    html#articles .tags {
+        min-width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
 
 /* -----------------------  BLOGPOST ---------------------- */
@@ -147,77 +162,17 @@ html.blogpost header a.logo {
 html.blogpost header a.logo h1 {
     font-size: 24px;
 }
-/* html.blogpost section {
-    width: 45%;
-    left: 55%;
-    position: relative;
-} */
 html.blogpost .fenetre {
     width: 55%;
     position: fixed;
     height: 100vh;
     left: 0;
 }
-/* html.blogpost section .introduction {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-html.blogpost section .introduction time {
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-html.blogpost section .introduction h2 {
-    font-size: clamp(1.5rem, 1.2375rem + 1.3125vw, 2.8125rem);
-    font-size: clamp(1.625rem, 1.3875rem + 1.1875vw, 2.8125rem);
-    line-height: 1.2em;
-    width: 100%;
-    text-wrap: pretty;
-}
-html.blogpost section .introduction p {
-    font-family: Inter;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.5em;
-    width: 80%;
-}
-html.blogpost section p, 
-html.blogpost section li {
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
-    text-wrap: pretty;
-} */
-
 @media screen and (max-width: 1600px) {
     html.blogpost .fenetre {
         width: 50%;
     }   
-    /* html.blogpost section {
-        left: 50%;
-    } */
 }
-
-/* @media screen and (max-width: 1240px) {
-    html.blogpost section .introduction h2 {
-        width: 100%;
-        text-wrap: pretty;
-    }
-    html.blogpost section .introduction p {
-        text-transform: inherit;
-        width: 100%;
-    }
-} */
-
-@media screen and (max-width: 1200px) {
-    html#articles .tags {
-        min-width: 160px;
-        flex-direction: column;
-    }
-}
-
 @media (max-width:1024px) {
     html.blogpost main {
         flex-direction: column;
@@ -228,30 +183,9 @@ html.blogpost section li {
         height: auto;
         border: none;
     } 
-    /* html.blogpost section {
-        width: 100%;
-        left: 0;
-        position: relative;
-    } */
-    /* html.blogpost section .introduction p {
-        font-weight: 500;
-    } */
-    html#articles .tags {
-        min-width: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
-
 @media (max-width: 768px) {
     html.blogpost header a.logo h1 {
         font-size: 20px;
     }
 }
-
-/* @media (max-width: 600px) {
-    html.blogpost section .introduction p {
-        font-size: 17px;
-        line-height: 1.6em;
-    }
-} */
