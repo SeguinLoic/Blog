@@ -5,7 +5,13 @@ import Header from '@components/Header.astro';
 import HomeCarousel from '@components/HomeCarousel.astro';
 import { getCollection } from "astro:content";
 
-const allBlogPosts = (await getCollection('blog')).map((post: any) => post.data.homepage.src ? post : "").filter(function(elem: any) { return elem });
+const allBlogPosts = (await getCollection('blog')).map((post: any) => post.data.homepage.src ? post : "").filter(function(elem: any) { return elem }).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// const allBlogPosts = (await getCollection('blog')).sort(
+//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+// );
 
 const page = "home";
 ---
