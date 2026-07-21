@@ -1,0 +1,79 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Visiter le Laos sans technologie c'était la folie
+pubDate: 2026-07-21
+description: Parcourir ce magnifique pays au fil de l'eau, randonner dans la jungle, le tout sans smartphone : ça a été une expérience formidable.
+author: OneHuman
+tags: ["EnVoyage", "1AnEnVadrouille"]
+cover: ./covers/laos-1.jpg
+coverAlt: Vue imprenable sur Nong Khiaw
+homepage: ./covers/laos-1.jpg
+---
+import Carousel from '../../components/Carousel.astro';
+import Tags from '../../components/Tags.astro';
+import Header from '../../components/Header.astro';
+import MoreBlogPost from '../../components/MoreBlogPost.astro';
+
+import image1 from "../../assets/laos/laos-1.jpg"
+import image2 from "../../assets/laos/laos-2.jpg"
+import image3 from "../../assets/laos/laos-3.jpg"
+import image4 from "../../assets/laos/laos-4.jpg"
+import image5 from "../../assets/laos/laos-5.JPG"
+import image6 from "../../assets/laos/laos-6.JPG"
+import image7 from "../../assets/laos/laos-7.jpg"
+import image8 from "../../assets/laos/laos-8.jpg"
+import image9 from "../../assets/laos/laos-9.jpg"
+import image10 from "../../assets/laos/laos-10.jpg"
+import image11 from "../../assets/laos/laos-11.JPG"
+import image12 from "../../assets/laos/laos-12.jpg"
+import image13 from "../../assets/laos/laos-13.jpg"
+import image14 from "../../assets/laos/laos-14.jpg"
+import image15 from "../../assets/laos/laos-15.jpg"
+import image16 from "../../assets/laos/laos-16.jpg"
+import image17 from "../../assets/laos/laos-17.jpg"
+import image18 from "../../assets/laos/laos-18.jpg"
+import image19 from "../../assets/laos/laos-19.jpg"
+import image20 from "../../assets/laos/laos-20.JPG"
+import image21 from "../../assets/laos/laos-21.JPG"
+import image22 from "../../assets/laos/laos-22.JPG"
+import image23 from "../../assets/laos/laos-23.JPG"
+import image24 from "../../assets/laos/laos-24.jpg"
+import image25 from "../../assets/laos/laos-25.jpg"
+import image26 from "../../assets/laos/laos-26.jpg"
+import image27 from "../../assets/laos/laos-27.jpg"
+import image28 from "../../assets/laos/laos-28.JPG"
+import image29 from "../../assets/laos/laos-29.JPG"
+
+<div class="fenetre">
+    <Header />
+    <Carousel images={[image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29]} />
+</div>
+<section class="content">
+<div class="introduction">
+    <time datetime={frontmatter.pubDate}>{new Date(frontmatter.pubDate).toLocaleDateString("fr-FR", { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+    <h2>{frontmatter.title}</h2>
+    <p>{frontmatter.description}</p>
+    <Tags tags={frontmatter.tags} />
+</div>
+<div class="text">
+Le Laos, nous ne sommes restés que 15j, alors ça sera un bilan petit format. En plus, on a voyagé sans technologie, c'est le moment du debrief ! 
+<br/>
+En passant la frontière depuis la Thaïlande et en visitant les quelques villes du nord du Laos, on n'a pas eu l'impression d'avoir quitté la Thaïlande. Ça se ressemble beaucoup au niveau des paysages, de l'ambiance. Une grande différence cependant, le Laos est plus pauvre. Dans le Nord, il y a de très belles montagnes avec de beaux points de vue, de sympathiques rivières sur lesquelles on peut faire du bateau (on n'en aura jamais autant fait de toute notre vie), de la jungle pour un peu d'aventure. D'ailleurs, en parlant d'aventure, les routes du Laos c'est quelque chose, faut être bien accrochés, mais ça nous a plus fait rire que pleurer. On a passé un très bon moment ici et on serait restés plus longtemps si on n'avait pas rdv avec notre prochaine destination. 
+<br/>
+Voyager sans téléphone ça donne quoi ? 
+Bah c'était aussi une très belle aventure ! Et on recommencera, c'est sûr. Déjà, au Laos, on s'est rendu compte que c'était très facile de se déplacer et de trouver des hébergements. On a toujours pris les tickets de bus aux stations, en y allant un peu tôt parfois pour être sûrs de partir le jour même. Pour les hébergements, on a trouvé des hostels vraiment cools, souvent moins chers que sur booking (on a vérifié après). Au début c'était très perturbant de ne pas utiliser de GPS, de ne pas savoir exactement où on était, mais ça s'est révélé être vraiment libérateur. Pas besoin de savoir combien de temps va prendre un trajet ou de savoir exactement le trajet que va faire le bus. Moins de "charge mentale" pour ça = plus de temps pour lire, discuter avec des gens, profiter des paysages. L'esprit est plus léger. On se rend compte que toutes les choses que l'on doit savoir, on finit toujours par les apprendre en discutant avec les gens plutôt qu'en discutant avec Google. 
+On sait très bien que dans certains pays ce n'est pas possible (notre prochaine destination, par exemple), mais dans des pays un peu "flex", c'est une belle façon de voyager. Encore un truc à ramener à la maison, ça. 
+<br/>
+Bref, le Laos, ça rime avec chouettos.
+On y retournera avec plaisir pour visiter le sud du pays. 
+<br/>
+Aller, une petite liste des trucs divers : 
+- Il y a toujours un slip qui traîne dans les salle de bain commune,
+- On peut trouver du chien dans des restos,
+- Les jumeaux ne sont pas acceptés dans les tribus animistes, une femme qui accouche de jumeaux ne peut pas les garder dans le village, 
+- Les enfants font du scooter à 11 ans.
+<br/>
+<span>ຂອບໃຈ</span>
+</div>
+<MoreBlogPost title={frontmatter.title} />
+</section>
